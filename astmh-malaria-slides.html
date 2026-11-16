@@ -1136,22 +1136,22 @@
             <i class="fa-solid fa-arrow-down" style="color:var(--accent); align-self:center;"></i>
             <div class="pipe-stage" style="padding:12px 18px;"><div class="pipe-title" style="font-size:15px;">Assembly</div><div class="pipe-sub">Flye long-read + SPAdes short-read</div></div>
             <i class="fa-solid fa-arrow-down" style="color:var(--accent); align-self:center;"></i>
-            <div class="pipe-stage" style="padding:12px 18px;"><div class="pipe-title" style="font-size:15px;">Polish &amp; scaffold</div><div class="pipe-sub">Pilon &times;3 &rarr; Samba scaffolding</div></div>
+            <div class="pipe-stage" style="padding:12px 18px;"><div class="pipe-title" style="font-size:15px;">Polish &amp; evaluate</div><div class="pipe-sub">Pilon &times;3, QUAST + BUSCO</div></div>
             <i class="fa-solid fa-arrow-down" style="color:var(--accent); align-self:center;"></i>
-            <div class="pipe-stage terminal" style="padding:12px 18px;"><div class="pipe-title" style="font-size:15px;">Evaluate &amp; annotate</div><div class="pipe-sub">QUAST + BUSCO, then COMPANION</div></div>
+            <div class="pipe-stage terminal" style="padding:12px 18px;"><div class="pipe-title" style="font-size:15px;">Annotation</div><div class="pipe-sub">The open problem — where we are building</div></div>
           </div>
 
           <div class="col">
-            <div class="section-label" style="margin-top:0;">Galaxy integration in progress</div>
-            <p class="body" style="font-size:21px;">COMPANION is being rebuilt as a Galaxy workflow — <strong>reproducible annotation of eukaryotic parasites</strong> inside BRC Analytics.</p>
-            <p class="body">Annotation joins variant calling as a second entry point: assembled genomes, not just read archives, become material for a rerunnable pipeline.</p>
+            <div class="section-label" style="margin-top:0;">Annotation tooling in development</div>
+            <p class="body" style="font-size:21px;">Existing <em>ab initio</em> predictors were built for model organisms — <strong>microbial eukaryotes are where they struggle</strong>: unusual genetic codes, unusual genome architectures.</p>
+            <p class="body">We are developing state-of-the-art <em>ab initio</em> annotation tools specifically for these difficult genomes — <strong>and the Galaxy workflows around them</strong>, so annotation becomes a recorded, reusable analysis inside BRC Analytics.</p>
           </div>
         </div>
 
         <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
         <div class="slide-footer">Future directions</div>
       </div>
-      <aside class="notes">Second future direction: the COMPANION annotation pipeline — QC, dual assembly, polishing, scaffolding, evaluation — is being ported into Galaxy so annotation of eukaryotic parasites becomes a recorded, reusable workflow inside BRC Analytics, alongside the variant-calling case study.</aside>
+      <aside class="notes">Second future direction: assembly is a solved problem — the frontier is annotation. We are building state-of-the-art ab initio annotation tools aimed at the microbial eukaryotes where existing predictors underperform, plus the Galaxy workflows to run them inside BRC Analytics.</aside>
     </section>
 
     <!-- ============ 18. Practical next steps ============ -->
