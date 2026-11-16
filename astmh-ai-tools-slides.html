@@ -740,29 +740,15 @@
         <h2 class="slide-title">What a Session Looks Like</h2>
         <div class="title-divider"></div>
 
-        <div class="cols">
-          <div class="col" style="flex: 0 0 560px;">
-            <div class="chat-window">
-              <div class="chat-msg user"><span class="who">You</span>Which Cryptosporidium parvum assemblies are in the catalog?</div>
-              <div class="chat-msg agent"><span class="who">Assistant</span>Three: ASM34v2, ASM15v2, and IOWA-ATCC — all RefSeq-reference-quality.</div>
-              <div class="chat-msg user"><span class="who">You</span>What comparative-genomics workflows can run on IOWA-ATCC?</div>
-              <div class="chat-msg agent"><span class="who">Assistant</span>The comparative genomics workflow is compatible. Launch it pre-filled?</div>
-              <div class="chat-tool">→ workflow launch · reference: GCF_000165345.1 · Galaxy history: C_parvum_cmp</div>
-            </div>
-          </div>
-          <div class="col" style="display: flex; flex-direction: column; justify-content: center; gap: 18px;">
-            <div class="callout-light" style="width: 100%;">
-              <div class="label">For the skeptics</div>
-              <p class="body" style="font-size: 18px;">The LLM does navigation and plumbing. <strong>Every compute step is a vetted tool in a public history</strong> — nothing is made up.</p>
-            </div>
-            <p class="small" style="font-style: italic; margin: 0;">Illustrative — replace with real session screenshots.</p>
-          </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+          <img src="assistant-session-1.png" alt="BRC Analysis Assistant session — K13 variation in P. falciparum" style="max-height: 545px; width: auto; max-width: 100%; border: 1px solid #DDD; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);" />
+          <p class="small" style="margin: 0;"><strong>A real captured session</strong> — investigating K13 variation in <em>P. falciparum</em> 3D7. The assistant returns the reference assembly, a compatible variant-calling workflow, and SRA data options; you confirm, it launches into Galaxy.</p>
         </div>
 
         <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
         <div class="slide-footer">Analysis Assistant</div>
       </div>
-      <aside class="notes">Mock dialogue standing in for screenshots. The chat-tool line is the key visual: the handoff into a named Galaxy history.</aside>
+      <aside class="notes">Real session, not a mock: user asks about K13 variation in P. falciparum and the assistant comes back with the 3D7 reference assembly, a compatible paired-end variant-calling workflow, and SRA data options — the Analysis Setup checklist on the right fills in as it goes. For the skeptics: the LLM does navigation and plumbing; every compute step is a vetted tool in a public history.</aside>
     </section>
 
     <!-- ============ 7. MCP: two servers ============ -->
