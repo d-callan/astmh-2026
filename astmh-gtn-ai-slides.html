@@ -554,8 +554,8 @@
         <div class="subtitle">Grounding AI agents in the Galaxy Training Network — and running them on usegalaxy.org</div>
         <div class="kicker-divider"></div>
         <div class="author">Scott Cain</div>
-        <div class="affiliation">Galaxy Project &middot; ASTMH 2026</div>
-        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <div class="affiliation">Pennsylvania State University &middot; Galaxy Project &middot; ASTMH 2026</div>
+        <img src="star.svg" class="slide-logo" alt="" />
         <div class="slide-footer">November 2026</div>
       </div>
       <aside class="notes">Frame up front: this talk is not "use AI for genomics." It's about what you point the AI at. The GTN is 550+ human-written, human-reviewed tutorials — and it happens to be exactly the corpus an agent needs. Humans write it; machines read it. That asymmetry is the whole talk.</aside>
@@ -592,7 +592,7 @@
           <p class="body">An agent with no curriculum <em>improvises</em>. <strong style="color:var(--highlight);">The GTN is a curriculum.</strong></p>
         </div>
 
-        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="star.svg" class="slide-logo" alt="" />
         <div class="slide-footer">Motivation</div>
       </div>
       <aside class="notes">Say out loud that the room contains both AI enthusiasts and AI skeptics, and that this talk is aimed at both. The failure mode isn't that the model refuses — it's that it answers confidently. The concrete example to speak, not read: an invented TB pipeline that skips the low-coverage/repeat-region masking step produces transmission clusters that look fine and are wrong.</aside>
@@ -653,7 +653,7 @@
 
         <p class="small" style="margin: 0;">Counts from <span class="mono" style="font-size:13px;">galaxyproject/training-material</span>, main branch, November 2026. Also in there: 140 tested workflows, 290 reusable FAQ snippets, 37 learning pathways.</p>
 
-        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="star.svg" class="slide-logo" alt="" />
         <div class="slide-footer">The GTN</div>
       </div>
       <aside class="notes">Lead with the One Health list, not the numbers — this audience recognizes those titles. TB transmission clustering, AMR gene identification, pox virus tiled-amplicon: these are ASTMH problems, already written up, already with workflows. Then the numbers for scale. Note the fourth bullet: a Nextflow pipeline gives you the steps; a GTN tutorial tells you why the steps.</aside>
@@ -705,7 +705,7 @@
           <p class="body">No scraping. No RAG pipeline to build. <strong style="color:var(--highlight);">The curriculum is already a corpus.</strong></p>
         </div>
 
-        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="star.svg" class="slide-logo" alt="" />
         <div class="slide-footer">The GTN</div>
       </div>
       <aside class="notes">This is the pivot of the talk. Nobody designed the GTN as AI infrastructure — it's Markdown, YAML and JSON because that's how you maintain 557 tutorials with 700 volunteers across a dozen countries. The accident is that those are exactly the formats an agent ingests without help. Live-demo option: run that curl and show the JSON.</aside>
@@ -753,7 +753,7 @@
           </div>
         </div>
 
-        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="star.svg" class="slide-logo" alt="" />
         <div class="slide-footer">Policy</div>
       </div>
       <aside class="notes">This is the slide that earns trust with the skeptics — and it isn't my policy, it's the community's, written down in AGENTS.md and AI-policy.md in the repo. Worth saying plainly: the GTN also states it can't offer support on anything referencing AI output. Agents get told, in the repository, to point users at the human chat channels instead of answering for them.</aside>
@@ -808,7 +808,7 @@
           <p class="body">Tutorial for the method. <strong>Galaxy for the compute. History for the proof.</strong></p>
         </div>
 
-        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="star.svg" class="slide-logo" alt="" />
         <div class="slide-footer">How</div>
       </div>
       <aside class="notes">All three are available now and none require you to pick a model. Galaxy MCP works with any MCP client — Claude Code, Codex, your own script, a local model on university HPC. The Job Error Wizard is the one people underrate: it reads the real stderr, so it is grounded in the same way the GTN grounds the method.</aside>
@@ -846,7 +846,7 @@
           </div>
         </div>
 
-        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="star.svg" class="slide-logo" alt="" />
         <div class="slide-footer">Walkthrough</div>
       </div>
       <aside class="notes">*** REMINDER: this session is still a mock-up — replace it with a real captured run before presenting. *** Walk the four beats: question, lookup, citation, execution. Dwell on the last agent message — it volunteers that the tutorial's demo data is smaller than the real dataset. That honesty is only possible because it read a real tutorial written by a human who said so. An ungrounded agent has nothing to be honest about.</aside>
@@ -894,7 +894,7 @@
           <p class="body">You don't have to trust the agent. <strong style="color:var(--highlight);">You can check its homework against a page anyone can read.</strong></p>
         </div>
 
-        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="star.svg" class="slide-logo" alt="" />
         <div class="slide-footer">Why it works</div>
       </div>
       <aside class="notes">Payoff slide. The fourth card is the one that can't be automated and is the reason the GTN bans AI-written tutorials — a stated rationale is only worth something if a person actually held the opinion. Tie back: Galaxy records what ran, the GTN records why it should have.</aside>
@@ -941,7 +941,7 @@
           <p class="body">These are the questions to ask of <strong>any</strong> AI-assisted result — including the ones in this talk.</p>
         </div>
 
-        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="star.svg" class="slide-logo" alt="" />
         <div class="slide-footer">Limits</div>
       </div>
       <aside class="notes">Do not skip this slide for time. In a room with real skeptics, naming the limits yourself is what makes the rest credible. The subsampled-data point is the most practically important one — it is the single most common way a tutorial-derived analysis goes wrong at real scale.</aside>
@@ -987,7 +987,7 @@
           <p class="body">A hole in the curriculum used to mean <em>no workshop for your pathogen</em>. Now it also means an agent grounding on the GTN <strong style="color:var(--highlight);">finds nothing to ground on &mdash; and improvises instead.</strong></p>
         </div>
 
-        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="star.svg" class="slide-logo" alt="" />
         <div class="slide-footer">The gap</div>
       </div>
       <aside class="notes">This number is checkable and you should invite them to check it: every topic from the GTN JSON API, 689 materials, searching titles and tags. TB is genuinely excellent &mdash; three tutorials and real depth, because a community decided to build it. Nothing structural stopped anyone writing the malaria equivalent; nobody has. Then land the closing line, which is the hinge of the whole talk: grounding only protects you where the curriculum exists, so the coverage gap is now also an AI-reliability gap for exactly the diseases in this room.</aside>
@@ -1031,7 +1031,7 @@
           <p class="body">Write the tutorial your field is missing. It teaches a student today &mdash; and <strong style="color:var(--highlight);">grounds every agent that reads it tomorrow.</strong></p>
         </div>
 
-        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="star.svg" class="slide-logo" alt="" />
         <div class="slide-footer">Getting started</div>
       </div>
       <aside class="notes">Four doors, and the fourth is the real ask — it follows straight from the previous slide. The dual return is the argument: a tutorial you write is a lesson for a student AND grounding for every agent that reads it afterwards. Nobody outside this field is going to write the malaria tutorial. If someone asks how hard it is: a tutorial is Markdown plus a workflow you have already run, and the GTN has a tutorial on writing tutorials.</aside>
@@ -1068,7 +1068,7 @@
           </div>
         </div>
 
-        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="star.svg" class="slide-logo" alt="" />
         <div class="slide-footer">Thank you</div>
       </div>
       <aside class="notes">Land on the thesis line and leave both QRs up for questions. If there's time for one more sentence: the GTN didn't change anything to become AI infrastructure — it just kept being well-structured, human-written, and public, which turns out to be the same thing.</aside>
