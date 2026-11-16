@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Query the Whole Archive — ASTMH 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- reveal.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css" id="theme" />
+
+  <!-- Fonts + Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+
+  <style>
+    :root {
+      /* BRC palette (from brochure/poster) */
+      --navy:        #28285B;
+      --navy-dark:   #1F1F47;
+      --navy-soft:   #3F3F6E;
+      --accent:      #956F00;   /* gold — the "red equivalent" for bars/markers */
+      --accent-soft: #B8881A;
+      --highlight:   #FFEB78;   /* soft yellow — for emphasis backgrounds */
+      --muted:       #637381;
+      --muted-light: #9AA2AE;
+      --panel:       #F7F7FB;
+      --border:      #E3E3ED;
+      --white:       #FFFFFF;
+    }
+
+    /* ===== Print PDF: match paper size to slide dimensions (1280x760) ===== */
+    @page {
+      size: 1280px 760px;
+      margin: 0;
+    }
+
+    /* Reveal.js print-pdf mode: force each slide to fill its pdf-page box. */
+    html.print-pdf .pdf-page {
+      height: 760px !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      overflow: hidden !important;
+    }
+    html.print-pdf .pdf-page > section,
+    html.print-pdf .reveal .slides > section {
+      top: 0 !important;
+      left: 0 !important;
+      width: 1280px !important;
+      height: 760px !important;
+      min-height: 760px !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      transform: none !important;
+    }
+    html.print-pdf .slide {
+      height: 760px !important;
+    }
+
+    /* ===== Base reveal overrides ===== */
+    .reveal {
+      font-family: 'Inter', sans-serif;
+      color: var(--navy-soft);
+      font-size: 22px;
+    }
+    .reveal .slides { text-align: left; }
+
+    .reveal section {
+      padding: 0;
+      height: 100%;
+    }
+
+    .reveal h1, .reveal h2, .reveal h3 {
+      font-family: 'Merriweather', serif;
+      color: var(--navy);
+      text-transform: none;
+      letter-spacing: -0.5px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .reveal a { color: var(--navy); border-bottom: 2px solid var(--highlight); }
+    .reveal strong { color: var(--navy); font-weight: 600; }
+
+    /* ===== Slide frame (every slide) ===== */
+    .slide {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 70px 90px 60px;
+      box-sizing: border-box;
+      background: var(--white);
+    }
+
+    .slide::before {
+      /* top accent bar — navy with gold underline */
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 6px;
+      background: var(--navy);
+    }
+    .slide::after {
+      content: '';
+      position: absolute;
+      top: 6px; left: 0; right: 0;
+      height: 3px;
+      background: var(--accent);
+    }
+
+    .slide-logo {
+      position: absolute;
+      bottom: 18px;
+      left: 30px;
+      height: 22px;
+      width: auto;
+      opacity: 0.75;
+    }
+
+    .slide-footer {
+      position: absolute;
+      bottom: 22px;
+      right: 30px;
+      font-size: 12px;
+      color: var(--muted-light);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+    }
+
+    /* ===== Slide title + divider ===== */
+    .slide h2.slide-title {
+      font-size: 40px;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+    .slide .title-divider {
+      width: 60px;
+      height: 4px;
+      background: var(--accent);
+      margin-bottom: 36px;
+    }
+
+    /* ===== Bullet list (minimal, square marker) ===== */
+    .reveal ul.clean {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .reveal ul.clean li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 22px;
+      font-size: 22px;
+      color: var(--navy-soft);
+      line-height: 1.5;
+    }
+    .reveal ul.clean li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 10px;
+      width: 12px; height: 12px;
+      background: var(--accent);
+    }
+
+    /* ===== Two-column layout ===== */
+    .cols {
+      display: flex;
+      gap: 40px;
+      align-items: stretch;
+    }
+    .cols > .col { flex: 1; min-width: 0; }
+
+    /* ===== Dark callout (navy box, gold edge) ===== */
+    .callout-dark {
+      position: relative;
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 8px;
+      padding: 32px 32px 32px 40px;
+      box-shadow: 0 10px 25px rgba(40, 40, 91, 0.18);
+    }
+    .callout-dark::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 8px;
+      background: var(--accent);
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+    .callout-dark .label {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--highlight);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 14px;
+    }
+    .callout-dark .body {
+      font-family: 'Merriweather', serif;
+      font-size: 24px;
+      line-height: 1.45;
+      font-style: italic;
+      margin: 0;
+    }
+    .callout-dark .body.emphatic {
+      color: var(--highlight);
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    /* Light highlight callout variant */
+    .callout-light {
+      background: var(--highlight);
+      border-radius: 8px;
+      padding: 22px 26px;
+      border-left: 8px solid var(--accent);
+      color: var(--navy);
+    }
+    .callout-light .label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+    }
+    .callout-light .body {
+      font-family: 'Merriweather', serif;
+      font-size: 20px;
+      line-height: 1.45;
+      margin: 0;
+    }
+
+    /* ===== Card grid (icon + label) ===== */
+    .card-grid {
+      display: grid;
+      gap: 18px;
+    }
+    .card-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .card-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+    .card-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 22px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 130px;
+    }
+    .card .card-icon {
+      color: var(--navy);
+      font-size: 26px;
+      margin-bottom: 14px;
+    }
+    .card .card-label {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--navy-soft);
+      line-height: 1.3;
+    }
+    .card.accent {
+      background: var(--navy);
+      border-color: var(--navy);
+    }
+    .card.accent .card-icon { color: var(--highlight); }
+    .card.accent .card-label { color: var(--white); }
+    .card.accent strong { color: var(--highlight); }
+
+    /* ===== Title slide ===== */
+    .title-slide h1 {
+      font-size: 58px;
+      line-height: 1.1;
+      margin-bottom: 28px;
+    }
+    .title-slide .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 26px;
+      color: var(--muted);
+      font-weight: 400;
+      margin-bottom: 42px;
+    }
+    .title-slide .kicker-divider {
+      width: 80px;
+      height: 4px;
+      background: var(--accent);
+      margin-bottom: 36px;
+    }
+    .title-slide .author {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+    .title-slide .affiliation {
+      font-size: 18px;
+      color: var(--muted);
+    }
+
+    /* ===== Section divider slide ===== */
+    .section-slide {
+      background: var(--navy);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 70px 110px;
+    }
+    .section-slide::before { display: none; }
+    .section-slide::after { display: none; }
+    .section-slide .kicker {
+      color: var(--highlight);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .section-slide h2 {
+      color: var(--white);
+      font-size: 52px;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .section-slide .section-sub {
+      font-size: 22px;
+      color: var(--muted-light);
+      max-width: 760px;
+    }
+    .section-slide .kicker-divider {
+      width: 80px; height: 4px;
+      background: var(--accent);
+      margin: 24px 0 0;
+    }
+
+    /* ===== Inline arrow between columns ===== */
+    .between-arrow {
+      display: flex;
+      align-items: center;
+      color: var(--accent);
+      font-size: 32px;
+      padding: 0 4px;
+    }
+
+    /* ===== Misc ===== */
+    .small { font-size: 14px; color: var(--muted); }
+    .kicker {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted-light);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    .emph {
+      font-family: 'Merriweather', serif;
+      font-style: italic;
+      color: var(--navy);
+      font-size: 22px;
+    }
+    .section-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 20px 0 10px;
+    }
+    .mono {
+      font-family: 'Courier New', monospace;
+      font-size: 15px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2px 8px;
+      color: var(--navy);
+    }
+
+    /* Highlight inline span */
+    .hl {
+      background: linear-gradient(transparent 55%, var(--highlight) 55%);
+      padding: 0 2px;
+    }
+
+    /* Stat */
+    .stat {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 24px 28px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      border-top: 4px solid var(--accent);
+    }
+    .stat-num {
+      font-family: 'Merriweather', serif;
+      font-size: 56px;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-top: 8px;
+    }
+
+    /* Pipeline mini-diagram */
+    .pipeline {
+      display: flex;
+      align-items: stretch;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .pipe-stage {
+      flex: 1;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 14px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .pipe-stage.terminal {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: var(--white);
+    }
+    .pipe-stage.terminal .pipe-title { color: var(--white); }
+    .pipe-stage.terminal .pipe-sub { color: var(--highlight); }
+    .pipe-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+    }
+    .pipe-sub {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+    .pipe-arrow {
+      display: flex; align-items: center;
+      color: var(--accent); font-size: 18px;
+    }
+
+    /* Placeholder block */
+    .placeholder {
+      border: 2px dashed var(--border);
+      border-radius: 8px;
+      padding: 40px;
+      text-align: center;
+      color: var(--muted-light);
+      font-size: 16px;
+      font-style: italic;
+    }
+
+    /* ===== QR block ===== */
+    .qr-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      text-align: center;
+    }
+    .qr-block img {
+      width: 110px;
+      height: 110px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 4px;
+      background: var(--white);
+    }
+    .qr-block .qr-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 1.3;
+    }
+
+    /* Status pill */
+    .status-pill {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: var(--highlight);
+      color: var(--accent);
+      vertical-align: middle;
+    }
+    .status-pill.indev {
+      background: var(--panel);
+      color: var(--muted);
+      border: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<div class="reveal">
+  <div class="slides">
+
+    <!-- ============ 1. Title ============ -->
+    <section>
+      <div class="slide title-slide">
+        <h1>Query the<br/>Whole Archive</h1>
+        <div class="subtitle">Finding needles in SRA: Logan on BRC Analytics + Galaxy</div>
+        <div class="kicker-divider"></div>
+        <div class="author">Anton Nekrutenko</div>
+        <div class="affiliation">Pennsylvania State University · BRC Analytics · ASTMH 2026</div>
+        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="slide-footer">November 2026</div>
+      </div>
+      <aside class="notes">First of two talks. This one sets up BRC Analytics, then the Logan collaboration and sequence search at SRA scale. Next talk continues from the haplotype workflow into HyphAeon/ChronAeon.</aside>
+    </section>
+
+    <!-- ============ 2. What is BRC Analytics ============ -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">What is BRC Analytics</h2>
+        <div class="title-divider"></div>
+
+        <ul class="clean" style="margin-bottom: 30px;">
+          <li>Free, public web platform for <strong>infectious-disease genomics</strong></li>
+          <li>A curated catalog: <strong>organisms → genome assemblies → vetted analysis workflows</strong> — one site, nothing to install</li>
+          <li>You click; the analysis runs.</li>
+        </ul>
+
+        <div class="card-grid cols-3">
+          <div class="card">
+            <i class="fa-solid fa-bacteria card-icon"></i>
+            <div class="card-label">Curated organisms<br/>
+              <span style="font-weight: 400; color: var(--muted); font-size: 14px;">The pathogens that matter, not every accession on earth.</span>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-dna card-icon"></i>
+            <div class="card-label">Trusted assemblies<br/>
+              <span style="font-weight: 400; color: var(--muted); font-size: 14px;">Vetted reference genomes, linked to annotations.</span>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-diagram-project card-icon"></i>
+            <div class="card-label">Vetted workflows<br/>
+              <span style="font-weight: 400; color: var(--muted); font-size: 14px;">Launch forms pre-wired to the right tools and settings.</span>
+            </div>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="slide-footer">BRC Analytics</div>
+      </div>
+      <aside class="notes">Thirty seconds — assume nobody in the room has heard of it. The word to land is "curated": somebody already chose the organisms, assemblies, and workflows.</aside>
+    </section>
+
+    <!-- ============ 3. BRC sits on Galaxy ============ -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">BRC Analytics Sits on Galaxy</h2>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="margin-bottom: 26px;">
+          <div class="col">
+            <div class="section-label" style="margin-top:0;">Same team builds both</div>
+            <ul class="clean">
+              <li><strong>Galaxy = the infrastructure underneath.</strong> Every run lands in a <em>history</em> — tools, versions, parameters, datasets all recorded, shareable, rerunnable.</li>
+              <li><strong>BRC Analytics = a curation layer on top.</strong> Which organisms matter, which assemblies are trusted, which workflows are appropriate — the interface is simpler because the curation did the work.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pipeline" style="margin-bottom: 26px;">
+          <div class="pipe-stage terminal">
+            <div class="pipe-title">BRC Analytics</div>
+            <div class="pipe-sub">Curation layer — organisms, assemblies, workflows</div>
+          </div>
+          <div class="pipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="pipe-stage terminal">
+            <div class="pipe-title">Galaxy</div>
+            <div class="pipe-sub">Execution + durable, shareable history</div>
+          </div>
+        </div>
+
+        <div class="callout-light">
+          <div class="label">Why this matters today</div>
+          <p class="body">Everything shown today happens <strong>on the record</strong> — searches and analyses are reproducible by default.</p>
+        </div>
+
+        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="slide-footer">Architecture</div>
+      </div>
+      <aside class="notes">The audience doesn't need to know what Galaxy is beyond this: it's the engine that keeps the record. One team, two layers.</aside>
+    </section>
+
+    <!-- ============ 4. The problem ============ -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">The Problem: SRA is Vast but Unqueryable</h2>
+        <div class="title-divider"></div>
+
+        <p class="emph" style="margin-bottom: 20px;">
+          BRC Analytics aims to support <span class="hl">global pathogen surveillance</span> — so we partnered with the <strong>Logan</strong> project.
+        </p>
+
+        <ul class="clean" style="margin-bottom: 30px;">
+          <li>SRA holds <strong>petabytes of pathogen sequencing</strong> — clinical isolates, metagenomes, wastewater, wildlife.</li>
+          <li>Almost all of it is effectively invisible: searchable by <strong>metadata</strong> — accession, project title — but not by <strong>sequence content</strong>.</li>
+        </ul>
+
+        <div class="callout-dark">
+          <div class="label">The question nobody could ask</div>
+          <p class="body">"Show me every sample containing this gene" — <strong style="color:var(--highlight);">there was no way to ask it</strong> without downloading petabytes.</p>
+        </div>
+
+        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="slide-footer">Motivation</div>
+      </div>
+      <aside class="notes">Open with the mission line: global surveillance is the goal, Logan is the partner — then land the problem. Make it concrete for field researchers: you suspect a marker gene is out there — a resistance determinant, a vaccine target. Metadata search can only find what the submitter bothered to label. Next slide: Logan itself.</aside>
+    </section>
+
+    <!-- ============ 5. Logan: the archive, indexed ============ -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">Logan: The Archive, Indexed</h2>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="margin-bottom: 22px;">
+          <div class="col">
+            <ul class="clean">
+              <li>Logan — led by <strong>Rayan Chikhi</strong> (Institut Pasteur) &amp; <strong>Artem Babaian</strong> (U. Toronto) — re-assembled <strong>all of SRA into unitigs</strong>, indexed for <span class="hl">content search</span>.</li>
+              <li><strong>v1 · Dec 2023 freeze:</strong> 27.3M accessions. <strong>v1.2 · end-of-2025 freeze:</strong> rebuilt to pull in ~11M newer accessions — rolling out now.</li>
+            </ul>
+          </div>
+          <div class="col" style="flex: 0 0 300px; display: flex; flex-direction: column; justify-content: center; gap: 16px;">
+            <div class="stat" style="width: 100%;">
+              <div class="stat-num" style="font-size: 42px;">27.3M</div>
+              <div class="stat-label">accessions —<br/>Dec 2023 freeze</div>
+            </div>
+            <div class="stat" style="width: 100%;">
+              <div class="stat-num" style="font-size: 42px;">≈38M</div>
+              <div class="stat-label">v1.2 —<br/>end-2025 freeze</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout-dark">
+          <div class="label">The relationship in one line</div>
+          <p class="body">The data are queryable <strong style="color:var(--highlight);">only through Galaxy</strong> — on <strong style="color:var(--highlight);">usegalaxy.org</strong>, or on <strong style="color:var(--highlight);">logan-search.org</strong>, which runs on infrastructure provided by brc-analytics.org.</p>
+        </div>
+
+        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="slide-footer">Logan</div>
+      </div>
+      <aside class="notes">Credit where due: Logan is not ours — led by Rayan Chikhi (Institut Pasteur) and Artem Babaian (U. Toronto), bioRxiv 2024.07.30.605881. v1 = Dec 2023 SRA freeze, 27.3M accessions; v1.2 = end-of-2025 freeze (~38M), rolling out now to incorporate new accessions. Our contribution is access: the only query surfaces are Galaxy-based, and logan-search.org runs on BRC Analytics infrastructure.</aside>
+    </section>
+
+    <!-- ============ 6. Three tools, three levels of specificity ============ -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">Three Tools, Three Levels of Specificity</h2>
+        <div class="title-divider"></div>
+
+        <div class="card-grid cols-3" style="margin-bottom: 24px;">
+          <div class="card">
+            <i class="fa-solid fa-bolt card-icon"></i>
+            <div class="card-label">kmindex<br/>
+              <span style="font-weight: 400; color: var(--muted); font-size: 14px;">k-mer lookup — "is <em>this</em> sequence in the archive?" Near-exact: primers, markers.</span>
+            </div>
+            <div class="status-pill" style="margin-top: 12px;">~ minutes</div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-align-left card-icon"></i>
+            <div class="card-label">LexicMap<br/>
+              <span style="font-weight: 400; color: var(--muted); font-size: 14px;">Alignment — "anything <em>like</em> this sequence?" Tolerates SNPs/indels, BLAST-like scores.</span>
+            </div>
+            <div class="status-pill" style="margin-top: 12px;">up to hours</div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-cubes card-icon"></i>
+            <div class="card-label">Protein search<br/>
+              <span style="font-weight: 400; color: var(--muted); font-size: 14px;">"Anything encoding something like this protein?" — the most divergent homologs.</span>
+            </div>
+            <div class="status-pill" style="margin-top: 12px;">up to hours</div>
+          </div>
+        </div>
+
+        <div class="callout-light">
+          <div class="label">One input, three depths</div>
+          <p class="body">Same question — "which samples contain this?" — asked at increasing tolerance for divergence. <strong>All three run on Galaxy today;</strong> the workflows packaging them for gene pages are what's still coming.</p>
+        </div>
+
+        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="slide-footer">Search tools</div>
+      </div>
+      <aside class="notes">The ladder: k-mers = strictest and fastest; alignment = tolerant; protein = catches what nucleotide-level search misses entirely. Expectation-setting on runtime: deeper search, longer wait — results land in your history when done.</aside>
+    </section>
+
+    <!-- ============ 7. What a search returns ============ -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">What a Search Returns</h2>
+        <div class="title-divider"></div>
+
+        <ul class="clean" style="margin-bottom: 26px;">
+          <li>Whatever the tool, the answer has the same shape: <strong>a ranked list of hits</strong> — which SRA samples contain your sequence — with match statistics and confidence metrics.</li>
+          <li>The uniform point: <strong>the archive is queryable by <em>content</em></strong> — annotation doesn't matter.</li>
+          <li>One marker gene → a cohort of accessions in minutes to hours — a question that used to mean <strong>weeks of scripting and downloading</strong>.</li>
+        </ul>
+
+        <div class="callout-dark" style="margin-bottom: 22px;">
+          <div class="label">What next?</div>
+          <p class="body">Fetching the underlying reads and reconstructing haplotypes from the hits — that's where the <strong style="color:var(--highlight);">in-development workflows</strong> come in.</p>
+        </div>
+
+        <div class="placeholder" style="padding: 18px;">Screenshot: Logan search results UI</div>
+
+        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="slide-footer">Results</div>
+      </div>
+      <aside class="notes">Deliberately generic on output formats — every tool describes hits in its own way; the audience doesn't care. Honest framing: tools give you the hit list today; the fetch/haplotype steps are workflows still in development.</aside>
+    </section>
+
+    <!-- ============ 8. Haplotypes from hits (in development) ============ -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">Next Step: Haplotypes from Hits <span class="status-pill indev" style="font-size: 13px;">in development</span></h2>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="margin-bottom: 20px;">
+          <div class="col">
+            <ul class="clean">
+              <li><strong>disassembler / logan-walker</strong> — our tool for closing the loop. For each hit accession it <strong>streams that run's unitig graph straight from Logan's public S3 bucket</strong>, anchors your gene in it, and walks the graph to reconstruct the <strong>complete coding haplotype</strong> — including within-sample variant alleles.</li>
+              <li>A faster route works from LexicMap hits against Logan <strong>contigs</strong> — tiled onto the reference into a codon-checked cohort.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pipeline" style="margin-bottom: 22px;">
+          <div class="pipe-stage">
+            <div class="pipe-title">Search hits</div>
+            <div class="pipe-sub">Accessions from kmindex / LexicMap</div>
+          </div>
+          <div class="pipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="pipe-stage">
+            <div class="pipe-title">Graph walk</div>
+            <div class="pipe-sub">Unitigs streamed from S3, per run</div>
+          </div>
+          <div class="pipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="pipe-stage">
+            <div class="pipe-title">Haplotypes</div>
+            <div class="pipe-sub">Full-length coding sequences + variants</div>
+          </div>
+          <div class="pipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="pipe-stage terminal">
+            <div class="pipe-title">Cohort</div>
+            <div class="pipe-sub">Codon alignment + tree — ready for analysis</div>
+          </div>
+        </div>
+
+        <div class="callout-light">
+          <div class="label">Status honesty</div>
+          <p class="body">On bioconda today; <strong>Galaxy wrappers under review</strong> — a prototype, not yet on Galaxy or BRC Analytics. One of several Logan use-case workflows destined for the <strong>in-development gene pages</strong>.</p>
+        </div>
+
+        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="slide-footer">disassembler</div>
+      </div>
+      <aside class="notes">Mechanism in one breath: hit accession → stream its unitig graph from S3 → anchor the query gene by shared k-mers → walk with GraphAligner → full-length haplotype, including intra-host variants. GitHub: nekrut/disassembler — QR on the resources slide.</aside>
+    </section>
+
+    <!-- ============ 9. What this unlocks ============ -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">What This Unlocks</h2>
+        <div class="title-divider"></div>
+
+        <div class="card-grid cols-3" style="margin-bottom: 26px;">
+          <div class="card accent">
+            <i class="fa-solid fa-magnifying-glass card-icon"></i>
+            <div class="card-label" style="font-size: 17px;">Annotation-independent discovery<br/>
+              <span style="font-weight: 400; color: var(--white); font-size: 13px; opacity: 0.85;">Hits don't depend on how a sample was <em>labeled</em> — samples where the collector never suspected a pathogen still surface.</span>
+            </div>
+          </div>
+          <div class="card accent">
+            <i class="fa-solid fa-globe card-icon"></i>
+            <div class="card-label" style="font-size: 17px;">Environmental + metagenomic surveillance<br/>
+              <span style="font-weight: 400; color: var(--white); font-size: 13px; opacity: 0.85;">Wastewater, wildlife, vectors — search the whole archive, not a single study.</span>
+            </div>
+          </div>
+          <div class="card accent">
+            <i class="fa-solid fa-people-group card-icon"></i>
+            <div class="card-label" style="font-size: 17px;">Cohorts from the archive<br/>
+              <span style="font-weight: 400; color: var(--white); font-size: 13px; opacity: 0.85;">A thousand samples carrying your gene — built by query, not by field campaign.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout-light">
+          <div class="label">Setting up the next talk</div>
+          <p class="body">Haplotypes at archive scale → <strong>evolutionary questions at archive scale.</strong></p>
+        </div>
+
+        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="slide-footer">Impact</div>
+      </div>
+      <aside class="notes">This is the "so what" slide for a tropmed room. Then hand the thread to talk 2: what do you ask of a few thousand haplotypes?</aside>
+    </section>
+
+    <!-- ============ 10. Status + how to try ============ -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">Status + How to Try It</h2>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="margin-bottom: 24px;">
+          <div class="col">
+            <div class="section-label" style="margin-top:0;"><span class="status-pill">live today</span></div>
+            <ul class="clean">
+              <li>All three tools on Galaxy — query the archive from <strong>usegalaxy.org</strong> or <strong>logan-search.org</strong></li>
+              <li>kmindex answers in <strong>minutes</strong>; LexicMap and protein search in <strong>up to a few hours</strong> — results land in your history when done</li>
+            </ul>
+            <div class="section-label"><span class="status-pill indev">in development</span></div>
+            <ul class="clean" style="margin-bottom: 0;">
+              <li>Use-case workflows around the tools — <strong>hit → read download</strong>, <strong>hit → haplotype reconstruction</strong></li>
+              <li>Destined for the <strong>BRC Analytics gene pages</strong></li>
+            </ul>
+          </div>
+          <div class="col" style="flex: 0 0 300px; display: flex; flex-direction: column; justify-content: center; gap: 18px;">
+            <div class="qr-block">
+              <img src="qr-logan-search.svg" alt="Logan Search QR" />
+              <div class="qr-label">logan-search.org</div>
+            </div>
+            <div class="qr-block">
+              <img src="qr-usegalaxy.svg" alt="usegalaxy.org QR" />
+              <div class="qr-label">usegalaxy.org</div>
+            </div>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="slide-footer">Try it</div>
+      </div>
+      <aside class="notes">The honest split: tools are live, workflow packaging is coming. Two QRs here are the ones they'll actually use — logan-search.org is the fastest door.</aside>
+    </section>
+
+    <!-- ============ 11. Bridge to next talk + resources ============ -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">You've Found the Needles — Now What?</h2>
+        <div class="title-divider"></div>
+
+        <div class="callout-dark" style="margin-bottom: 26px;">
+          <div class="label">Bridge</div>
+          <p class="body">Every sequence in the archive containing your gene, reconstructed into haplotypes — <strong style="color:var(--highlight);">now what do you want to ask of them?</strong> Next: HyphAeon + ChronAeon — evolutionary questions at archive scale.</p>
+        </div>
+
+        <div class="section-label" style="margin-top:0;">Resources</div>
+        <div style="display: flex; gap: 28px; align-items: flex-start; flex-wrap: wrap;">
+          <div class="qr-block">
+            <img src="qr-logan-search.svg" alt="Logan Search QR" />
+            <div class="qr-label">logan-search.org</div>
+          </div>
+          <div class="qr-block">
+            <img src="qr-usegalaxy.svg" alt="usegalaxy.org QR" />
+            <div class="qr-label">usegalaxy.org</div>
+          </div>
+          <div class="qr-block">
+            <img src="qr-learn.svg" alt="BRC Learn QR" />
+            <div class="qr-label">brc-analytics.org<br/>/learn</div>
+          </div>
+          <div class="qr-block">
+            <img src="qr-logan-github.svg" alt="Logan project QR" />
+            <div class="qr-label">Logan project<br/>GitHub</div>
+          </div>
+          <div class="qr-block">
+            <img src="qr-disassembler.svg" alt="disassembler QR" />
+            <div class="qr-label">disassembler<br/>(prototype)</div>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="slide-footer">Thank you</div>
+      </div>
+      <aside class="notes">Leave the resources up during questions — five QRs: the two query surfaces, the Learn guide, the Logan project (credit the builders), and disassembler for the bioinformatics-curious.</aside>
+    </section>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    slideNumber: 'c/t',
+    transition: 'fade',
+    controls: true,
+    progress: true,
+    width: 1280,
+    height: 760,
+    margin: 0.04,
+    plugins: [ RevealNotes ]
+  });
+</script>
+</body>
+</html>

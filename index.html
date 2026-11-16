@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>ASTMH 2026 — Slide Decks · BRC Analytics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy:        #28285B;
+      --navy-dark:   #1F1F47;
+      --navy-soft:   #3F3F6E;
+      --accent:      #956F00;
+      --accent-soft: #B8881A;
+      --highlight:   #FFEB78;
+      --muted:       #637381;
+      --muted-light: #9AA2AE;
+      --panel:       #F7F7FB;
+      --border:      #E3E3ED;
+      --white:       #FFFFFF;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: var(--panel);
+      color: var(--navy-soft);
+    }
+
+    header {
+      background: var(--navy);
+      border-bottom: 4px solid var(--accent);
+      padding: 56px 40px 48px;
+    }
+    .header-inner { max-width: 1060px; margin: 0 auto; }
+    header .kicker {
+      color: var(--highlight);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    header h1 {
+      font-family: 'Merriweather', serif;
+      color: var(--white);
+      font-size: 42px;
+      line-height: 1.15;
+      margin: 0 0 14px;
+    }
+    header .sub {
+      color: var(--muted-light);
+      font-size: 18px;
+      max-width: 720px;
+      line-height: 1.5;
+    }
+
+    main {
+      max-width: 1060px;
+      margin: 0 auto;
+      padding: 48px 40px 80px;
+    }
+
+    .talk-list { display: flex; flex-direction: column; gap: 18px; }
+
+    a.talk {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      border-left: 6px solid var(--accent);
+      padding: 26px 30px;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.15s ease, transform 0.15s ease;
+    }
+    a.talk:hover {
+      box-shadow: 0 10px 30px rgba(40, 40, 91, 0.14);
+      transform: translateY(-2px);
+    }
+    a.talk .talk-body { flex: 1; min-width: 0; }
+    a.talk .talk-title {
+      font-family: 'Merriweather', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.25;
+      margin-bottom: 6px;
+    }
+    a.talk .talk-sub {
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+    a.talk .talk-meta {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+    }
+    a.talk .talk-arrow {
+      color: var(--accent);
+      font-size: 26px;
+      flex-shrink: 0;
+    }
+
+    .notes {
+      margin-top: 34px;
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .notes code {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1px 7px;
+      font-size: 13px;
+      color: var(--navy);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 26px 40px;
+      font-size: 13px;
+      color: var(--muted-light);
+      text-align: center;
+    }
+    footer img { height: 20px; vertical-align: middle; margin-right: 8px; opacity: 0.7; }
+    footer a { color: var(--navy); text-decoration: none; border-bottom: 2px solid var(--highlight); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="kicker">ASTMH 2026 · Symposium &amp; Talks</div>
+    <h1>BRC Analytics &amp; Galaxy — Slide Decks</h1>
+    <div class="sub">Slide decks from the 2026 ASTMH annual meeting. Each deck is a self-running Reveal.js presentation — open it in any browser.</div>
+  </div>
+</header>
+
+<main>
+  <div class="talk-list">
+
+    <a class="talk" href="astmh-malaria-slides.html">
+      <div class="talk-body">
+        <div class="talk-title">Your Pathogen Question. A Reproducible Analysis.</div>
+        <div class="talk-sub">Malaria as a case study for BRC Analytics — from a well-posed question to a five-taxon variant-calling run.</div>
+        <div class="talk-meta">Ananias A. Escalante · Temple University</div>
+      </div>
+      <div class="talk-arrow">&#8250;</div>
+    </a>
+
+    <a class="talk" href="astmh-logan-slides.html">
+      <div class="talk-body">
+        <div class="talk-title">Query the Whole Archive</div>
+        <div class="talk-sub">Finding needles in SRA: Logan on BRC Analytics + Galaxy.</div>
+        <div class="talk-meta">Anton Nekrutenko · Pennsylvania State University</div>
+      </div>
+      <div class="talk-arrow">&#8250;</div>
+    </a>
+
+    <a class="talk" href="astmh-hyphaeon-slides.html">
+      <div class="talk-body">
+        <div class="talk-title">Evolutionary Questions at Archive Scale</div>
+        <div class="talk-sub">From every read in the archive to an answer in minutes: HyphAeon + ChronAeon on BRC Analytics + Galaxy.</div>
+        <div class="talk-meta">Sergei L. Kosakovsky Pond · Temple University</div>
+      </div>
+      <div class="talk-arrow">&#8250;</div>
+    </a>
+
+    <a class="talk" href="astmh-ai-tools-slides.html">
+      <div class="talk-body">
+        <div class="talk-title">Verifiable AI for Pathogen Genomics</div>
+        <div class="talk-sub">AI you can check: agentic analysis on BRC Analytics.</div>
+        <div class="talk-meta">Danielle Callan · Temple University</div>
+      </div>
+      <div class="talk-arrow">&#8250;</div>
+    </a>
+
+    <a class="talk" href="astmh-gtn-ai-slides.html">
+      <div class="talk-body">
+        <div class="talk-title">Human-Written, Agent-Readable</div>
+        <div class="talk-sub">Grounding AI agents in the Galaxy Training Network — and running them on usegalaxy.org.</div>
+        <div class="talk-meta">Scott Cain · Galaxy Project</div>
+      </div>
+      <div class="talk-arrow">&#8250;</div>
+    </a>
+
+  </div>
+
+  <div class="notes">
+    Decks are built with <strong>Reveal.js</strong>. Tips: press <code>S</code> for the speaker-notes view, <code>Esc</code> for slide overview, <code>F</code> for fullscreen.
+    Append <code>?print-pdf</code> to a deck's URL before printing to export a PDF.
+  </div>
+</main>
+
+<footer>
+  <img src="brc-logo.png" alt="BRC Analytics" />
+  <a href="https://brc-analytics.org">brc-analytics.org</a> · November 2026
+</footer>
+
+</body>
+</html>
