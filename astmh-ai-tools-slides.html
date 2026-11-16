@@ -716,10 +716,14 @@
               <li>Analysis runs in your Galaxy history: <strong>recorded, shareable, rerunnable</strong></li>
             </ul>
           </div>
-          <div class="col" style="flex: 0 0 340px; display: flex; align-items: center;">
-            <div class="callout-dark" style="width: 100%;">
+          <div class="col" style="flex: 0 0 340px; display: flex; flex-direction: column; justify-content: center; gap: 18px;">
+            <div class="callout-dark" style="width: 100%; margin: 0;">
               <div class="label">For the web-only user</div>
               <p class="body" style="font-size: 20px;">No terminal, no client, no setup — and still <strong style="color:var(--highlight);">a real, auditable run</strong>.</p>
+            </div>
+            <div class="qr-block">
+              <img src="qr-brc-assistant.svg" alt="BRC Analysis Assistant QR" />
+              <div class="qr-label">brc-analytics.org<br/>/assistant</div>
             </div>
           </div>
         </div>
@@ -789,6 +793,10 @@
               <li><strong>The guardrail:</strong> curation via MCP gives high-level guidance — e.g. <em>which workflows are compatible with which assemblies</em> — steering agents toward sensible analyses, not improvised ones</li>
               <li>Works with Claude Code, Codex, Antigravity — <strong>any MCP client</strong>, your own scripts, <strong>a local model on university HPC</strong>. We don't pick your AI for you</li>
             </ul>
+            <div class="qr-block" style="margin-top: 18px;">
+              <img src="qr-brc-mcp.svg" alt="BRC MCP endpoint QR" />
+              <div class="qr-label">Hosted BRC MCP<br/>/api/v1/mcp</div>
+            </div>
           </div>
         </div>
 
@@ -853,9 +861,13 @@
           <div class="col" style="flex: 0 0 360px; display: flex; flex-direction: column; justify-content: center; gap: 16px;">
             <div class="callout-dark" style="width: 100%;">
               <div class="label">From the preprint</div>
-              <p class="body" style="font-size: 20px;">Orbit (<span style="font-family:'Courier New',monospace; font-size:17px;">galaxyproject/loom</span>) is the harness that turns ephemeral prompts into <strong style="color:var(--highlight);">auditable scientific records</strong>.</p>
+              <p class="body" style="font-size: 20px;">Orbit (<span style="font-family:'Courier New',monospace; font-size:17px;">galaxyproject/orbit</span>) is the harness that turns ephemeral prompts into <strong style="color:var(--highlight);">auditable scientific records</strong>.</p>
             </div>
             <div class="placeholder" style="padding: 16px; font-size: 13px;">Screenshot: Orbit plan / notebook view</div>
+            <div class="qr-block">
+              <img src="qr-orbit.svg" alt="Orbit repository QR" />
+              <div class="qr-label">github.com/<br/>galaxyproject/orbit</div>
+            </div>
           </div>
         </div>
 
@@ -961,7 +973,7 @@
             </ul>
             <div class="callout-dark">
               <div class="label">Try it</div>
-              <p class="body" style="font-size: 20px;">Assistant on brc-analytics.org · MCP endpoints public · Orbit via loom releases.</p>
+              <p class="body" style="font-size: 20px;">Assistant on brc-analytics.org · MCP endpoints public · Orbit on GitHub (galaxyproject/orbit).</p>
             </div>
           </div>
           <div class="col" style="flex: 0 0 300px; display: flex; flex-direction: column; justify-content: center; gap: 22px;">
