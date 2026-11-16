@@ -852,6 +852,7 @@
           <div class="col">
             <div class="section-label" style="margin-top:0;">How it works</div>
             <ul class="clean">
+              <li><strong>Install it locally</strong> — point it at any OpenAI- or Anthropic-compatible API</li>
               <li>Chat drafts an analysis <strong>plan</strong> → steps run remotely on real Galaxy</li>
               <li><span class="mono">notebook.md</span> + git = the record — a provenance trail, not a chat log</li>
               <li><strong>Human gate at each step:</strong> approve plan, approve parameters, review run</li>
@@ -859,7 +860,7 @@
 
             <div class="section-label">The guardrail</div>
             <ul class="clean" style="margin-bottom: 0;">
-              <li>Missing tool → agent authors a <strong>reviewable User-Defined Tool</strong> instead of silently improvising locally</li>
+              <li>Missing tool → agent authors a <strong>reviewable User-Defined Tool</strong> <span style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--accent); border:1px solid var(--accent); border-radius:10px; padding:2px 8px; vertical-align:middle;">beta</span> instead of silently improvising locally</li>
               <li>Export → <span class="mono">gxformat2</span> → PR to <strong>iwc-lab</strong> — the workflow outlives the session</li>
             </ul>
           </div>
@@ -868,7 +869,6 @@
               <div class="label">From the preprint</div>
               <p class="body" style="font-size: 20px;">Orbit (<span style="font-family:'Courier New',monospace; font-size:17px;">galaxyproject/orbit</span>) is the harness that turns ephemeral prompts into <strong style="color:var(--highlight);">auditable scientific records</strong>.</p>
             </div>
-            <div class="placeholder" style="padding: 16px; font-size: 13px;">Screenshot: Orbit plan / notebook view</div>
             <div class="qr-block">
               <img src="qr-orbit.svg" alt="Orbit repository QR" />
               <div class="qr-label">github.com/<br/>galaxyproject/orbit</div>
