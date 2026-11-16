@@ -736,62 +736,39 @@
 
     <!-- ============ 6. Assistant vignette ============ -->
     <section>
-      <div class="slide">
+      <div class="slide" style="padding-top: 45px;">
         <h2 class="slide-title" style="margin-bottom: 8px;">What a Session Looks Like</h2>
         <div class="title-divider" style="margin-bottom: 10px;"></div>
 
-        <div style="display: flex; align-items: center; gap: 24px;">
-          <div style="flex: 1; min-width: 0;">
-            <img src="assistant-session-1.png" alt="BRC Analysis Assistant session — K13 variation in P. falciparum" style="width: 100%; border: 1px solid #DDD; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);" />
-          </div>
-          <p class="small" style="flex: 0 0 250px; margin: 0; font-size: 15px; line-height: 1.6;"><strong>A real captured session</strong> — a plain question about K13 variation in <em>P. falciparum</em> 3D7 returns the reference assembly, a compatible variant-calling workflow, and SRA data options.</p>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 14px;">
+          <img src="assistant-session-1.png" alt="BRC Analysis Assistant session — K13 variation in P. falciparum" style="display: block; margin: 0 auto; max-height: 540px; width: auto; max-width: 100%; border: 1px solid #DDD; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);" />
+          <p class="small" style="margin: 0; font-size: 15px;"><strong>A real captured session</strong> — a plain question about K13 variation in <em>P. falciparum</em> 3D7 returns the organism, the right reference assembly out of 27, and compatible workflows — the setup checklist on the right tracks what's still to decide.</p>
         </div>
 
         <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
         <div class="slide-footer">Analysis Assistant</div>
       </div>
-      <aside class="notes">Real session, not a mock. Beat one: the opening question — 'what workflows and data can I use to investigate K13 variation in P. falciparum 3D7?' The assistant comes back with the 3D7 reference assembly, a paired-end variant-calling workflow built for haploid organisms, and notes there's extensive public SRA data. Point at the Analysis Setup checklist on the right — it fills in as the conversation goes.</aside>
+      <aside class="notes">Real session, actual site. The opening question — K13 variation in P. falciparum 3D7 — gets organism confirmation, the right reference assembly (of 27 available), and the start of the workflow recommendation. Point at the Analysis Setup panel: 0/7 configured at the start — it fills in as the conversation decides things. The powered-by line at the bottom is worth a sentence for the skeptics: the model is named, the data handling is stated.</aside>
     </section>
 
     <!-- ============ 7. Assistant vignette II ============ -->
     <section>
-      <div class="slide">
+      <div class="slide" style="padding-top: 45px;">
         <h2 class="slide-title" style="margin-bottom: 8px;">What a Session Looks Like</h2>
         <div class="title-divider" style="margin-bottom: 10px;"></div>
 
-        <div style="display: flex; align-items: center; gap: 24px;">
-          <div style="flex: 1; min-width: 0;">
-            <img src="assistant-session-2.png" alt="BRC Analysis Assistant — follow-up on MalariaGEN BioProject" style="width: 100%; border: 1px solid #DDD; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);" />
-          </div>
-          <p class="small" style="flex: 0 0 250px; margin: 0; font-size: 15px; line-height: 1.6;"><strong>You can keep asking</strong> — for K13 it recommends amplicon and targeted-capture data and names the BioProjects; a follow-up (&ldquo;is PRJEB2136 MalariaGEN?&rdquo;) gets a sourced answer.</p>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 14px;">
+          <img src="assistant-session-2.png" alt="BRC Analysis Assistant — small test set request, checklist filling in" style="display: block; margin: 0 auto; max-height: 540px; width: auto; max-width: 100%; border: 1px solid #DDD; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);" />
+          <p class="small" style="margin: 0; font-size: 15px;"><strong>And refine</strong> — &ldquo;a small test set for the suggested workflow?&rdquo; returns concrete runs with sizes and a smallest-first pick — while the checklist moves: workflow and data characteristics, done.</p>
         </div>
 
         <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
         <div class="slide-footer">Analysis Assistant</div>
       </div>
-      <aside class="notes">Beat two — this is a conversation, not a search box. The assistant has already narrowed to amplicon/targeted-capture data for K13 and named the big surveillance BioProjects (PRJEB2136, PRJEB2141, PRJNA983279). The user checks its work — 'is PRJEB2136 MalariaGEN?' — and it confirms with the study accession and scale. Follow-up questions are the point of the interface.</aside>
+      <aside class="notes">Same session, further along — the refinement beat. 'A small amount of public data to test the suggested workflow' gets a real table: recent P. falciparum WGS runs from Burkina Faso with sizes, and a smallest-first recommendation for a quick pipeline test. The beat to point at is the right panel: Analysis Setup has moved to 2/7 — Workflow and Data Characteristics done. The checklist is the handoff forming in real time.</aside>
     </section>
 
-    <!-- ============ 8. Assistant vignette III ============ -->
-    <section>
-      <div class="slide">
-        <h2 class="slide-title" style="margin-bottom: 8px;">What a Session Looks Like</h2>
-        <div class="title-divider" style="margin-bottom: 10px;"></div>
-
-        <div style="display: flex; align-items: center; gap: 24px;">
-          <div style="flex: 1; min-width: 0;">
-            <img src="assistant-session-3.png" alt="BRC Analysis Assistant — small test set request" style="width: 100%; border: 1px solid #DDD; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);" />
-          </div>
-          <p class="small" style="flex: 0 0 250px; margin: 0; font-size: 15px; line-height: 1.6;"><strong>And refine</strong> — &ldquo;a small test set first?&rdquo; returns concrete accessions in a table — plus the better suggestion: amplicon runs test the same pipeline on a fraction of the bytes.</p>
-        </div>
-
-        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
-        <div class="slide-footer">Analysis Assistant</div>
-      </div>
-      <aside class="notes">Beat three — refinement. 'Can I pull a small test set rather than the entire thing?' gets a real table of accessions with platforms and sizes — and then the assistant pushes back usefully: WGS runs are 2–4 GBases each, so for a quick pipeline test it suggests amplicon runs from the same BioProject instead. That is a collaborator's answer, not a search engine's.</aside>
-    </section>
-
-    <!-- ============ 9. MCP: two servers ============ -->
+    <!-- ============ 8. MCP: two servers ============ -->
     <section>
       <div class="slide">
         <h2 class="slide-title">MCP — Two Servers: What vs Where</h2>
@@ -835,7 +812,7 @@
       <aside class="notes">For the already-bought-in crowd: keep your client — Claude Code, Codex, Antigravity, or a local model. BRC MCP is hosted + public; Galaxy MCP installs via uvx and points at a Galaxy instance. The guardrail is that BRC curation — not just raw tools — is what the agent sees.</aside>
     </section>
 
-    <!-- ============ 10. Orbit ============ -->
+    <!-- ============ 9. Orbit ============ -->
     <section>
       <div class="slide">
         <h2 class="slide-title">Orbit — Agentic Workbench with a Paper Trail</h2>
@@ -874,7 +851,7 @@
       <aside class="notes">Orbit is the local-harness door — verifiable agentic science on your own machine, your own LLM. Human approval at every gate.</aside>
     </section>
 
-    <!-- ============ 11. What verification caught ============ -->
+    <!-- ============ 10. What verification caught ============ -->
     <section>
       <div class="slide">
         <h2 class="slide-title">What Verification Actually Caught</h2>
@@ -917,7 +894,7 @@
       <aside class="notes">Payoff slide — verification isn't abstract virtue; it caught real problems in real published studies.</aside>
     </section>
 
-    <!-- ============ 12. Where the three fit ============ -->
+    <!-- ============ 11. Where the three fit ============ -->
     <section>
       <div class="slide">
         <h2 class="slide-title">Where the Three Fit</h2>
@@ -974,7 +951,7 @@
       <aside class="notes">One-line summary per door: who it's for, what it touches, what it records.</aside>
     </section>
 
-    <!-- ============ 13. Takeaways ============ -->
+    <!-- ============ 12. Takeaways ============ -->
     <section>
       <div class="slide">
         <h2 class="slide-title">Takeaways</h2>
