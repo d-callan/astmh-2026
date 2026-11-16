@@ -801,26 +801,44 @@
       <div class="slide">
         <h2 class="slide-title">Why This Is Difficult</h2>
         <div class="title-divider"></div>
-        <p class="emph" style="margin-bottom:30px;">Plasmodium is a good example to see the assumptions hidden in pipelines.</p>
+        <p class="emph" style="margin-bottom:10px;"><em>Plasmodium</em> is a good example to see the assumptions hidden in pipelines.</p>
 
-        <div class="card-grid cols-4">
-          <div class="card">
-            <i class="fa-solid fa-layer-group card-icon"></i>
-            <div class="card-label">MIXED INFECTIONS<br/><span style="font-weight:400; color:var(--muted); font-size:15px;">Multiple clones in one blood sample</span></div>
-          </div>
-          <div class="card">
-            <i class="fa-solid fa-bookmark card-icon"></i>
-            <div class="card-label">REFERENCE CHOICE<br/><span style="font-weight:400; color:var(--muted); font-size:15px;">Assemblies differ among taxa</span></div>
-          </div>
-          <div class="card">
-            <i class="fa-solid fa-user card-icon"></i>
-            <div class="card-label">HOST BACKGROUND<br/><span style="font-weight:400; color:var(--muted); font-size:15px;">Patient reads may dominate</span></div>
-          </div>
-          <div class="card">
-            <i class="fa-solid fa-circle-check card-icon"></i>
-            <div class="card-label">VALIDATION SETS<br/><span style="font-weight:400; color:var(--muted); font-size:15px;">High-quality truth sets can be limited</span></div>
-          </div>
-        </div>
+        <svg viewBox="0 0 1140 430" width="100%" style="display:block; margin:0 auto; max-height:430px;" role="img" aria-label="Malaria genomics assumptions: mixed infections, reference choice, host background, validation sets">
+          <!-- spokes -->
+          <line x1="330" y1="100" x2="475" y2="160" stroke="#D8D8E4" stroke-width="2.5"/>
+          <line x1="330" y1="330" x2="475" y2="280" stroke="#D8D8E4" stroke-width="2.5"/>
+          <line x1="810" y1="100" x2="665" y2="160" stroke="#D8D8E4" stroke-width="2.5"/>
+          <line x1="810" y1="330" x2="665" y2="280" stroke="#D8D8E4" stroke-width="2.5"/>
+          <!-- hub -->
+          <ellipse cx="570" cy="220" rx="145" ry="130" fill="#28285B"/>
+          <text x="570" y="212" text-anchor="middle" fill="#FFFFFF" font-family="Merriweather, serif" font-weight="700" font-size="26">MALARIA</text>
+          <text x="570" y="246" text-anchor="middle" fill="#FFFFFF" font-family="Merriweather, serif" font-weight="700" font-size="26">GENOMICS</text>
+          <!-- spoke cards -->
+          <g>
+            <rect x="30" y="40" width="300" height="120" rx="14" fill="#FFFFFF" stroke="#E3E3ED" stroke-width="2"/>
+            <text x="52" y="84" fill="#28285B" font-family="Inter, sans-serif" font-weight="700" font-size="16" letter-spacing="1">MIXED INFECTIONS</text>
+            <text x="52" y="118" fill="#637381" font-family="Inter, sans-serif" font-size="15">Multiple clones in one</text>
+            <text x="52" y="140" fill="#637381" font-family="Inter, sans-serif" font-size="15">blood sample</text>
+          </g>
+          <g>
+            <rect x="30" y="270" width="300" height="120" rx="14" fill="#FFFFFF" stroke="#E3E3ED" stroke-width="2"/>
+            <text x="52" y="314" fill="#28285B" font-family="Inter, sans-serif" font-weight="700" font-size="16" letter-spacing="1">HOST BACKGROUND</text>
+            <text x="52" y="348" fill="#637381" font-family="Inter, sans-serif" font-size="15">Patient reads may</text>
+            <text x="52" y="370" fill="#637381" font-family="Inter, sans-serif" font-size="15">dominate</text>
+          </g>
+          <g>
+            <rect x="810" y="40" width="300" height="120" rx="14" fill="#FFFFFF" stroke="#E3E3ED" stroke-width="2"/>
+            <text x="832" y="84" fill="#28285B" font-family="Inter, sans-serif" font-weight="700" font-size="16" letter-spacing="1">REFERENCE CHOICE</text>
+            <text x="832" y="118" fill="#637381" font-family="Inter, sans-serif" font-size="15">Assemblies differ</text>
+            <text x="832" y="140" fill="#637381" font-family="Inter, sans-serif" font-size="15">among taxa</text>
+          </g>
+          <g>
+            <rect x="810" y="270" width="300" height="120" rx="14" fill="#FFFFFF" stroke="#E3E3ED" stroke-width="2"/>
+            <text x="832" y="314" fill="#28285B" font-family="Inter, sans-serif" font-weight="700" font-size="16" letter-spacing="1">VALIDATION SETS</text>
+            <text x="832" y="348" fill="#637381" font-family="Inter, sans-serif" font-size="15">High-quality truth sets</text>
+            <text x="832" y="370" fill="#637381" font-family="Inter, sans-serif" font-size="15">can be limited</text>
+          </g>
+        </svg>
 
         <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
         <div class="slide-footer">Hidden assumptions</div>
@@ -828,50 +846,68 @@
       <aside class="notes">Malaria genomics hides four assumptions that standard pipelines bake in silently: mixed infections, reference choice, host background, thin validation sets. The next slides show how each was handled.</aside>
     </section>
 
-    <!-- ============ 9. From design to execution ============ -->
+    <!-- ============ 9. Training orbit ============ -->
     <section>
       <div class="slide">
-        <h2 class="slide-title">From Design to Execution</h2>
+        <h2 class="slide-title">Training Orbit</h2>
         <div class="title-divider"></div>
+        <p class="emph" style="margin-bottom:24px;">Three sources of context taught Orbit how to build the pipeline.</p>
 
-        <div class="cols" style="margin-bottom:26px;">
-          <div class="col" style="flex:1.1;">
-            <div class="section-label" style="margin-top:0;">Constraints</div>
-            <ul class="clean">
-              <li><strong>Silverback cluster + cohorts</strong> — ARM64 nodes, SLURM limits, storage policy</li>
-              <li><strong>SRA lists + NCBI references</strong> for five species</li>
-            </ul>
-            <div class="section-label">The assistant</div>
-            <ul class="clean">
-              <li><strong>Orbit (AI agent)</strong> maps each MalariaGEN step to a tool that runs in a workflow</li>
-            </ul>
+        <div class="cols" style="align-items:center; gap:22px; margin-bottom:0;">
+          <div class="col" style="flex:1.25; display:flex; flex-direction:column; gap:12px;">
+            <div class="card" style="min-height:0; padding:13px 18px;">
+              <div class="card-label">MALARIAGEN PF6 EXTENDED METHODS<br/><span style="font-weight:400; color:var(--muted); font-size:14px;">7,182 <em>P. falciparum</em> genomes: mapping, BAM improvement, joint genotyping, filtering, masking, sample QC</span></div>
+            </div>
+            <div class="card" style="min-height:0; padding:13px 18px;">
+              <div class="card-label">GALAXY TRAINING NETWORK + IWC<br/><span style="font-weight:400; color:var(--muted); font-size:14px;">GTN variant-calling tutorial (mpileup &rarr; call &rarr; filter); IWC survey found no population-scale joint-genotyping workflow</span></div>
+            </div>
+            <div class="card" style="min-height:0; padding:13px 18px;">
+              <div class="card-label">BRC ANALYTICS + MCP SERVER<br/><span style="font-weight:400; color:var(--muted); font-size:14px;">Organism catalog, assemblies and workflow context — plus the SRA lists and NCBI references for five species</span></div>
+            </div>
           </div>
-          <div class="col">
-            <div class="card-grid" style="grid-template-columns:1fr 1fr; gap:14px;">
-              <div class="card" style="min-height:0; padding:16px;">
+
+          <div style="flex:0 0 auto;"><i class="fa-solid fa-arrow-right" style="color:var(--accent); font-size:24px;"></i></div>
+
+          <div class="col" style="flex:0 0 255px;">
+            <div class="callout-dark" style="text-align:center; padding:22px 16px; margin:0;">
+              <div class="label" style="text-align:center;">Galaxy AI agent</div>
+              <p class="body" style="font-size:30px; font-family:'Merriweather',serif; font-weight:700; color:var(--highlight); margin:6px 0 10px;">Orbit</p>
+              <p class="body" style="font-size:14px;">Maps each MalariaGEN step to a tool that runs in a workflow</p>
+            </div>
+            <div style="display:flex; justify-content:center; align-items:center; gap:10px; margin-top:14px;">
+              <i class="fa-regular fa-square-check" style="color:var(--accent); font-size:26px;"></i>
+              <span style="font-size:17px; color:var(--muted); font-style:italic;">Yes, I am a robot</span>
+            </div>
+          </div>
+
+          <div style="flex:0 0 auto;"><i class="fa-solid fa-arrow-right" style="color:var(--accent); font-size:24px;"></i></div>
+
+          <div class="col" style="flex:1;">
+            <div class="card-grid" style="grid-template-columns:1fr 1fr; gap:12px;">
+              <div class="card" style="min-height:0; padding:13px 15px;">
                 <div class="card-num">PLAN</div>
-                <div class="card-label" style="font-size:15px;">10 steps, every flag tabulated</div>
+                <div class="card-label" style="font-size:14px;">10 steps, every flag tabulated</div>
               </div>
-              <div class="card" style="min-height:0; padding:16px;">
+              <div class="card" style="min-height:0; padding:13px 15px;">
                 <div class="card-num">CHECKS</div>
-                <div class="card-label" style="font-size:15px;">A verification command per step</div>
+                <div class="card-label" style="font-size:14px;">A verification command per step</div>
               </div>
-              <div class="card" style="min-height:0; padding:16px;">
+              <div class="card" style="min-height:0; padding:13px 15px;">
                 <div class="card-num">GATE</div>
-                <div class="card-label" style="font-size:15px;">3-sample mini-test before launch</div>
+                <div class="card-label" style="font-size:14px;">3-sample mini-test before launch</div>
               </div>
-              <div class="card" style="min-height:0; padding:16px;">
+              <div class="card" style="min-height:0; padding:13px 15px;">
                 <div class="card-num">CODE</div>
-                <div class="card-label" style="font-size:15px;">SLURM arrays + one config.sh</div>
+                <div class="card-label" style="font-size:14px;">SLURM arrays + one config.sh</div>
               </div>
             </div>
           </div>
         </div>
 
         <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
-        <div class="slide-footer">Design → execution</div>
+        <div class="slide-footer">Context → Orbit → pipeline</div>
       </div>
-      <aside class="notes">The working method: survey the constraints first (cluster, samples, references), have the assistant map the published protocol to runnable tools, then plan → checks → gate → code. The gate is a 3-sample pilot before the full launch.</aside>
+      <aside class="notes">The context Orbit was given: the published MalariaGEN Pf6 protocol, the Galaxy training corpus plus the IWC workflow survey, and BRC Analytics itself via the MCP server. From that it produced a 10-step plan, a verification per step, a 3-sample gate, and the SLURM code. And the checkbox under Orbit is the joke — yes, it is a robot.</aside>
     </section>
 
     <!-- ============ 10. The MalariaGEN protocol ============ -->
@@ -1087,7 +1123,38 @@
       <aside class="notes">The closing loop: the run doesn't die in a private history — the workflow and its products can surface on the organism's tab on brc-analytics.org, so the next researcher finds the analysis already done where they look for the organism.</aside>
     </section>
 
-    <!-- ============ 17. Practical next steps ============ -->
+    <!-- ============ 17. Future directions: annotated genomes ============ -->
+    <section>
+      <div class="slide">
+        <div class="kicker">Future directions · Comparative genomics</div>
+        <h2 class="slide-title">Assembled &amp; Annotated Genomes</h2>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="align-items:center; margin-top:10px;">
+          <div class="col" style="flex:0 0 440px; display:flex; flex-direction:column; gap:6px; align-items:stretch;">
+            <div class="pipe-stage" style="padding:12px 18px;"><div class="pipe-title" style="font-size:15px;">Quality control</div><div class="pipe-sub">FastQC &rarr; fastp &amp; fastpLong</div></div>
+            <i class="fa-solid fa-arrow-down" style="color:var(--accent); align-self:center;"></i>
+            <div class="pipe-stage" style="padding:12px 18px;"><div class="pipe-title" style="font-size:15px;">Assembly</div><div class="pipe-sub">Flye long-read + SPAdes short-read</div></div>
+            <i class="fa-solid fa-arrow-down" style="color:var(--accent); align-self:center;"></i>
+            <div class="pipe-stage" style="padding:12px 18px;"><div class="pipe-title" style="font-size:15px;">Polish &amp; scaffold</div><div class="pipe-sub">Pilon &times;3 &rarr; Samba scaffolding</div></div>
+            <i class="fa-solid fa-arrow-down" style="color:var(--accent); align-self:center;"></i>
+            <div class="pipe-stage terminal" style="padding:12px 18px;"><div class="pipe-title" style="font-size:15px;">Evaluate &amp; annotate</div><div class="pipe-sub">QUAST + BUSCO, then COMPANION</div></div>
+          </div>
+
+          <div class="col">
+            <div class="section-label" style="margin-top:0;">Galaxy integration in progress</div>
+            <p class="body" style="font-size:21px;">COMPANION is being rebuilt as a Galaxy workflow — <strong>reproducible annotation of eukaryotic parasites</strong> inside BRC Analytics.</p>
+            <p class="body">Annotation joins variant calling as a second entry point: assembled genomes, not just read archives, become material for a rerunnable pipeline.</p>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="slide-footer">Future directions</div>
+      </div>
+      <aside class="notes">Second future direction: the COMPANION annotation pipeline — QC, dual assembly, polishing, scaffolding, evaluation — is being ported into Galaxy so annotation of eukaryotic parasites becomes a recorded, reusable workflow inside BRC Analytics, alongside the variant-calling case study.</aside>
+    </section>
+
+    <!-- ============ 18. Practical next steps ============ -->
     <section>
       <div class="slide">
         <div class="kicker">Practical next steps</div>
@@ -1123,7 +1190,7 @@
       <aside class="notes">Four concrete steps, and the fourth is the invitation — asking for a missing assembly, workflow, or adaptation is a supported path, not an imposition.</aside>
     </section>
 
-    <!-- ============ 18. Acknowledgements ============ -->
+    <!-- ============ 19. Acknowledgements ============ -->
     <section>
       <div class="slide" style="display:flex; flex-direction:column; justify-content:center;">
         <div class="kicker">Acknowledgements</div>
