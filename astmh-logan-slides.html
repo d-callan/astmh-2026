@@ -861,7 +861,43 @@
       <aside class="notes">The honest split: tools are live, workflow packaging is coming. Two QRs here are the ones they'll actually use — logan-search.org is the fastest door.</aside>
     </section>
 
-    <!-- ============ 11. Bridge to next talk + resources ============ -->
+    <!-- ============ 11. Future directions: gene pages + BioNym ============ -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">Future Directions: BRC Gene Pages <span class="status-pill indev" style="font-size: 13px;">in development</span></h2>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="margin-bottom: 24px;">
+          <div class="col">
+            <div class="section-label" style="margin-top:0;">What's on the page</div>
+            <ul class="clean" style="margin-bottom: 0;">
+              <li><strong>UCSC Genome Browser</strong> links into the specific region around your gene</li>
+              <li><strong>Configurable Galaxy workflows</strong> that consume the gene or protein sequence as input — launch straight from the page</li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="section-label" style="margin-top:0;">The BioNym knowledge graph — ways in</div>
+            <ul class="clean" style="margin-bottom: 0;">
+              <li>A <strong>high-level summary</strong> of what the graph knows about the gene</li>
+              <li>An <strong>"ask" feature</strong> — natural-language questions over the graph, backed by an LLM at TACC</li>
+              <li><strong>Network diagrams</strong> of the full graph — plus dedicated views for slices: publication claims, expression datasets, orthology</li>
+            </ul>
+          </div>
+          <div class="col" style="flex: 0 0 180px; display: flex; flex-direction: column; justify-content: center;">
+            <div class="qr-block">
+              <img src="qr-bionym.svg" alt="BioNym repository QR" />
+              <div class="qr-label">BioNym repo<br/>github.com/d-callan/bionym</div>
+            </div>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="slide-footer">Future directions</div>
+      </div>
+      <aside class="notes">Gene pages aren't landed yet — flag this as future directions. BioNym is our knowledge-graph pipeline (repo linked): the graph sits under the page and the page offers several doors into it — summary, ask-an-LLM, whole-graph view, and topic slices. Plus UCSC region links and workflow launchers wired to the gene's sequence.</aside>
+    </section>
+
+    <!-- ============ 12. Bridge to next talk + resources ============ -->
     <section>
       <div class="slide">
         <h2 class="slide-title">You've Found the Needles — Now What?</h2>
