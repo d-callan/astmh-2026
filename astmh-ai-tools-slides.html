@@ -728,8 +728,6 @@
           </div>
         </div>
 
-        <div class="placeholder" style="padding: 18px;">Screenshot: assistant chat → workflow launch handoff</div>
-
         <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
         <div class="slide-footer">Analysis Assistant</div>
       </div>
@@ -811,38 +809,7 @@
       <aside class="notes">For the already-bought-in crowd: keep your client — Claude Code, Codex, Antigravity, or a local model. BRC MCP is hosted + public; Galaxy MCP installs via uvx and points at a Galaxy instance. The guardrail is that BRC curation — not just raw tools — is what the agent sees.</aside>
     </section>
 
-    <!-- ============ 8. MCP vignette ============ -->
-    <section>
-      <div class="slide">
-        <h2 class="slide-title">MCP in a Real Client</h2>
-        <div class="title-divider"></div>
-
-        <div class="cols">
-          <div class="col" style="flex: 0 0 560px;">
-            <div class="chat-window">
-              <div class="chat-msg user"><span class="who">You</span>Find Illumina RNA-seq runs for taxonomy ID 5833.</div>
-              <div class="chat-tool">brc-mcp · ena_search_runs(taxon=5833, instrument=Illumina, library=RNA-Seq)</div>
-              <div class="chat-msg agent"><span class="who">Agent</span>Found 214 runs — 12 paired-end BioProjects, e.g. PRJNA&hellip;. Want them staged into a Galaxy collection?</div>
-              <div class="chat-tool">galaxy-mcp · create_collection + invoke_workflow(...)</div>
-              <div class="chat-msg agent"><span class="who">Agent</span>Staged and launched in history <strong>5833_rnaseq</strong> — tools, versions, and inputs all recorded.</div>
-            </div>
-          </div>
-          <div class="col" style="display: flex; flex-direction: column; justify-content: center; gap: 18px;">
-            <div class="callout-dark" style="width: 100%;">
-              <div class="label">Live answers, not guesses</div>
-              <p class="body" style="font-size: 20px;">The agent queries the <strong style="color:var(--highlight);">same catalog the website uses</strong> — then executes where the record lives.</p>
-            </div>
-            <p class="small" style="font-style: italic; margin: 0;">Illustrative — replace with a captured client session.</p>
-          </div>
-        </div>
-
-        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
-        <div class="slide-footer">MCP</div>
-      </div>
-      <aside class="notes">Two tool calls visible: BRC MCP answers what, Galaxy MCP does where. History is the durable artifact.</aside>
-    </section>
-
-    <!-- ============ 9. Orbit ============ -->
+    <!-- ============ 8. Orbit ============ -->
     <section>
       <div class="slide">
         <h2 class="slide-title">Orbit — Agentic Workbench with a Paper Trail</h2>
@@ -853,9 +820,8 @@
             <div class="section-label" style="margin-top:0;">How it works</div>
             <ul class="clean">
               <li><strong>Install it locally</strong> — point it at any OpenAI- or Anthropic-compatible API</li>
-              <li>Chat drafts an analysis <strong>plan</strong> → steps run remotely on real Galaxy</li>
+              <li><strong>Human gate at each step</strong> — the agent drafts plans and parameters; you approve and review before anything runs on Galaxy</li>
               <li><span class="mono">notebook.md</span> + git = the record — a provenance trail, not a chat log</li>
-              <li><strong>Human gate at each step:</strong> approve plan, approve parameters, review run</li>
             </ul>
 
             <div class="section-label">The guardrail</div>
@@ -882,7 +848,7 @@
       <aside class="notes">Orbit is the "power user" door — and it's literally the workbench from the paper. Human approval at every gate.</aside>
     </section>
 
-    <!-- ============ 10. What verification caught ============ -->
+    <!-- ============ 9. What verification caught ============ -->
     <section>
       <div class="slide">
         <h2 class="slide-title">What Verification Actually Caught</h2>
@@ -925,7 +891,7 @@
       <aside class="notes">Payoff slide — verification isn't abstract virtue; it caught real problems in real published studies.</aside>
     </section>
 
-    <!-- ============ 11. Where the three fit ============ -->
+    <!-- ============ 10. Where the three fit ============ -->
     <section>
       <div class="slide">
         <h2 class="slide-title">Where the Three Fit</h2>
@@ -982,7 +948,7 @@
       <aside class="notes">One-line summary per door: who it's for, what it touches, what it records.</aside>
     </section>
 
-    <!-- ============ 12. Takeaways ============ -->
+    <!-- ============ 11. Takeaways ============ -->
     <section>
       <div class="slide">
         <h2 class="slide-title">Takeaways</h2>
