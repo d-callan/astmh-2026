@@ -1,0 +1,4023 @@
+Run	ScientificName	LibraryStrategy
+DRR000475	Plasmodium cynomolgi strain B	WGS
+DRR000471	Plasmodium cynomolgi strain B	WGS
+DRR000474	Plasmodium cynomolgi strain B	WGS
+DRR000473	Plasmodium cynomolgi strain B	WGS
+DRR000477	Plasmodium cynomolgi strain B	WGS
+DRR000472	Plasmodium cynomolgi strain B	WGS
+DRR000469	Plasmodium cynomolgi strain B	WGS
+DRR000470	Plasmodium cynomolgi strain B	WGS
+DRR000476	Plasmodium cynomolgi strain B	WGS
+DRR000478	Plasmodium cynomolgi ATCC 30046	WGS
+DRR000479	Plasmodium cynomolgi ATCC 30046	WGS
+DRR000480	Plasmodium cynomolgi ATCC 30046	WGS
+ERR16765615	Plasmodium vivax Sal-1	WGS
+ERR16765168	Plasmodium vivax Sal-1	WGS
+ERR16765152	Plasmodium vivax Sal-1	WGS
+ERR17722860	Plasmodium ovale curtisi	WGS
+ERR17722862	Plasmodium ovale curtisi	WGS
+ERR17722865	Plasmodium ovale curtisi	WGS
+ERR17722866	Plasmodium ovale curtisi	WGS
+ERR17722867	Plasmodium ovale curtisi	WGS
+ERR17722868	Plasmodium ovale	WGS
+ERR17722870	Plasmodium ovale curtisi	WGS
+ERR17722871	Plasmodium ovale	WGS
+ERR17722875	Plasmodium ovale wallikeri	WGS
+ERR17722876	Plasmodium ovale curtisi	WGS
+ERR17722880	Plasmodium ovale curtisi	WGS
+ERR17722882	Plasmodium ovale curtisi	WGS
+ERR17722885	Plasmodium ovale wallikeri	WGS
+ERR17722886	Plasmodium ovale curtisi	WGS
+ERR17722891	Plasmodium ovale wallikeri	WGS
+ERR17722892	Plasmodium ovale wallikeri	WGS
+ERR17722893	Plasmodium ovale curtisi	WGS
+ERR17722894	Plasmodium ovale curtisi	WGS
+ERR17722896	Plasmodium ovale	WGS
+ERR17722897	Plasmodium ovale curtisi	WGS
+ERR17722898	Plasmodium ovale curtisi	WGS
+ERR17722902	Plasmodium ovale	WGS
+ERR17722903	Plasmodium ovale wallikeri	WGS
+ERR17722908	Plasmodium ovale wallikeri	WGS
+ERR17722910	Plasmodium ovale curtisi	WGS
+ERR17722911	Plasmodium ovale	WGS
+ERR17722914	Plasmodium ovale wallikeri	WGS
+ERR17722917	Plasmodium ovale	WGS
+ERR17722918	Plasmodium ovale curtisi	WGS
+ERR17722920	Plasmodium ovale	WGS
+ERR17722921	Plasmodium ovale curtisi	WGS
+ERR17722928	Plasmodium ovale wallikeri	WGS
+ERR17722929	Plasmodium ovale	WGS
+ERR17722930	Plasmodium ovale	WGS
+ERR17722932	Plasmodium ovale	WGS
+ERR17722934	Plasmodium ovale	WGS
+ERR17722937	Plasmodium ovale curtisi	WGS
+ERR17722942	Plasmodium ovale curtisi	WGS
+ERR17722944	Plasmodium ovale wallikeri	WGS
+ERR17722946	Plasmodium ovale	WGS
+ERR17722948	Plasmodium ovale curtisi	WGS
+ERR17722949	Plasmodium ovale curtisi	WGS
+ERR17722952	Plasmodium ovale wallikeri	WGS
+ERR17722953	Plasmodium ovale curtisi	WGS
+ERR17722957	Plasmodium ovale	WGS
+ERR17722959	Plasmodium ovale	WGS
+ERR17722962	Plasmodium ovale wallikeri	WGS
+ERR17722965	Plasmodium ovale curtisi	WGS
+SRR41444601	Plasmodium ovale	AMPLICON
+SRR41444603	Plasmodium ovale	AMPLICON
+SRR41444600	Plasmodium ovale	AMPLICON
+SRR41444602	Plasmodium ovale	AMPLICON
+SRR41444599	Plasmodium ovale	AMPLICON
+ERR16762360	Plasmodium vivax Sal-1	WGS
+ERR16765154	Plasmodium vivax Sal-1	WGS
+ERR16762361	Plasmodium vivax Sal-1	WGS
+ERR16762362	Plasmodium vivax Sal-1	WGS
+ERR16765155	Plasmodium vivax Sal-1	WGS
+ERR16762363	Plasmodium vivax Sal-1	WGS
+ERR16762364	Plasmodium vivax Sal-1	WGS
+ERR16764983	Plasmodium vivax Sal-1	WGS
+ERR16765102	Plasmodium vivax Sal-1	WGS
+ERR16762366	Plasmodium vivax Sal-1	WGS
+ERR16765101	Plasmodium vivax Sal-1	WGS
+ERR16765119	Plasmodium vivax Sal-1	WGS
+ERR16766336	Plasmodium vivax Sal-1	WGS
+ERR17722861	Plasmodium ovale	WGS
+ERR17722863	Plasmodium ovale	WGS
+ERR17722864	Plasmodium ovale wallikeri	WGS
+ERR17722869	Plasmodium ovale curtisi	WGS
+ERR17722872	Plasmodium ovale wallikeri	WGS
+ERR17722873	Plasmodium ovale	WGS
+ERR17722874	Plasmodium ovale	WGS
+ERR17722877	Plasmodium ovale curtisi	WGS
+ERR17722878	Plasmodium ovale wallikeri	WGS
+ERR17722879	Plasmodium ovale curtisi	WGS
+ERR17722883	Plasmodium ovale curtisi	WGS
+ERR17722884	Plasmodium ovale	WGS
+ERR17722887	Plasmodium ovale	WGS
+ERR17722899	Plasmodium ovale curtisi	WGS
+ERR17722900	Plasmodium ovale wallikeri	WGS
+ERR17722901	Plasmodium ovale	WGS
+ERR17722904	Plasmodium ovale	WGS
+ERR17722906	Plasmodium ovale	WGS
+ERR17722907	Plasmodium ovale curtisi	WGS
+ERR17722909	Plasmodium ovale	WGS
+ERR17722913	Plasmodium ovale wallikeri	WGS
+ERR17722915	Plasmodium ovale curtisi	WGS
+ERR17722919	Plasmodium ovale wallikeri	WGS
+ERR17722922	Plasmodium ovale curtisi	WGS
+ERR17722923	Plasmodium ovale wallikeri	WGS
+ERR17722924	Plasmodium ovale curtisi	WGS
+ERR17722925	Plasmodium ovale curtisi	WGS
+ERR17722926	Plasmodium ovale	WGS
+ERR17722927	Plasmodium ovale	WGS
+ERR17722935	Plasmodium ovale	WGS
+ERR17722936	Plasmodium ovale wallikeri	WGS
+ERR17722938	Plasmodium ovale curtisi	WGS
+ERR17722941	Plasmodium ovale wallikeri	WGS
+ERR17722950	Plasmodium ovale curtisi	WGS
+ERR17722951	Plasmodium ovale wallikeri	WGS
+ERR17722954	Plasmodium ovale	WGS
+ERR17722955	Plasmodium ovale wallikeri	WGS
+ERR17722956	Plasmodium ovale curtisi	WGS
+ERR17722958	Plasmodium ovale	WGS
+ERR17722961	Plasmodium ovale curtisi	WGS
+ERR17722963	Plasmodium ovale	WGS
+ERR17722964	Plasmodium ovale wallikeri	WGS
+ERR17722966	Plasmodium ovale wallikeri	WGS
+ERR17722967	Plasmodium ovale wallikeri	WGS
+ERR17722969	Plasmodium ovale	WGS
+ERR17722970	Plasmodium ovale	WGS
+ERR17722972	Plasmodium ovale wallikeri	WGS
+ERR16766301	Plasmodium vivax Sal-1	WGS
+ERR16762365	Plasmodium vivax Sal-1	WGS
+ERR16765100	Plasmodium vivax Sal-1	WGS
+ERR16764984	Plasmodium vivax Sal-1	WGS
+ERR17585546	Plasmodium vivax	AMPLICON
+ERR17585549	Plasmodium vivax	AMPLICON
+ERR17585551	Plasmodium vivax	AMPLICON
+ERR17585553	Plasmodium vivax	AMPLICON
+ERR17585555	Plasmodium vivax	AMPLICON
+ERR17585558	Plasmodium vivax	AMPLICON
+ERR17585559	Plasmodium vivax	AMPLICON
+ERR17585563	Plasmodium vivax	AMPLICON
+ERR17585564	Plasmodium vivax	AMPLICON
+ERR17585566	Plasmodium vivax	AMPLICON
+ERR17585567	Plasmodium vivax	AMPLICON
+ERR17585572	Plasmodium vivax	AMPLICON
+ERR17585574	Plasmodium vivax	AMPLICON
+ERR17585581	Plasmodium vivax	AMPLICON
+ERR17585584	Plasmodium vivax	AMPLICON
+ERR17585586	Plasmodium vivax	AMPLICON
+ERR17585587	Plasmodium vivax	AMPLICON
+ERR17585594	Plasmodium vivax	AMPLICON
+ERR17585595	Plasmodium vivax	AMPLICON
+ERR17585596	Plasmodium vivax	AMPLICON
+ERR17585601	Plasmodium vivax	AMPLICON
+ERR17585607	Plasmodium vivax	AMPLICON
+ERR17585608	Plasmodium vivax	AMPLICON
+ERR17585612	Plasmodium vivax	AMPLICON
+ERR17585613	Plasmodium vivax	AMPLICON
+ERR17585616	Plasmodium vivax	AMPLICON
+ERR17585617	Plasmodium vivax	AMPLICON
+ERR17585620	Plasmodium vivax	AMPLICON
+ERR17585625	Plasmodium vivax	AMPLICON
+ERR17585627	Plasmodium vivax	AMPLICON
+ERR17585628	Plasmodium vivax	AMPLICON
+ERR17585631	Plasmodium vivax	AMPLICON
+ERR17585634	Plasmodium vivax	AMPLICON
+ERR17585637	Plasmodium vivax	AMPLICON
+ERR17585638	Plasmodium vivax	AMPLICON
+ERR17585642	Plasmodium vivax	AMPLICON
+ERR17585644	Plasmodium vivax	AMPLICON
+ERR17722859	Plasmodium ovale curtisi	WGS
+ERR17722881	Plasmodium ovale wallikeri	WGS
+ERR17722888	Plasmodium ovale curtisi	WGS
+ERR17722889	Plasmodium ovale wallikeri	WGS
+ERR17722890	Plasmodium ovale wallikeri	WGS
+ERR17722895	Plasmodium ovale	WGS
+ERR17722905	Plasmodium ovale curtisi	WGS
+ERR17722912	Plasmodium ovale wallikeri	WGS
+ERR17722916	Plasmodium ovale	WGS
+ERR17722931	Plasmodium ovale wallikeri	WGS
+ERR17722933	Plasmodium ovale curtisi	WGS
+ERR17722939	Plasmodium ovale curtisi	WGS
+ERR17722940	Plasmodium ovale	WGS
+ERR17722943	Plasmodium ovale curtisi	WGS
+ERR17722945	Plasmodium ovale curtisi	WGS
+ERR17722947	Plasmodium ovale wallikeri	WGS
+ERR17722960	Plasmodium ovale curtisi	WGS
+ERR17722968	Plasmodium ovale curtisi	WGS
+ERR17722971	Plasmodium ovale curtisi	WGS
+ERR17585544	Plasmodium vivax	AMPLICON
+ERR17585545	Plasmodium vivax	AMPLICON
+ERR17585547	Plasmodium vivax	AMPLICON
+ERR17585548	Plasmodium vivax	AMPLICON
+ERR17585550	Plasmodium vivax	AMPLICON
+ERR17585552	Plasmodium vivax	AMPLICON
+ERR17585554	Plasmodium vivax	AMPLICON
+ERR17585556	Plasmodium vivax	AMPLICON
+ERR17585560	Plasmodium vivax	AMPLICON
+ERR17585561	Plasmodium vivax	AMPLICON
+ERR17585562	Plasmodium vivax	AMPLICON
+ERR17585565	Plasmodium vivax	AMPLICON
+ERR17585568	Plasmodium vivax	AMPLICON
+ERR17585569	Plasmodium vivax	AMPLICON
+ERR17585570	Plasmodium vivax	AMPLICON
+ERR17585571	Plasmodium vivax	AMPLICON
+ERR17585573	Plasmodium vivax	AMPLICON
+ERR17585575	Plasmodium vivax	AMPLICON
+ERR17585576	Plasmodium vivax	AMPLICON
+ERR17585577	Plasmodium vivax	AMPLICON
+ERR17585578	Plasmodium vivax	AMPLICON
+ERR17585579	Plasmodium vivax	AMPLICON
+ERR17585580	Plasmodium vivax	AMPLICON
+ERR17585582	Plasmodium vivax	AMPLICON
+ERR17585583	Plasmodium vivax	AMPLICON
+ERR17585585	Plasmodium vivax	AMPLICON
+ERR17585588	Plasmodium vivax	AMPLICON
+ERR17585589	Plasmodium vivax	AMPLICON
+ERR17585590	Plasmodium vivax	AMPLICON
+ERR17585593	Plasmodium vivax	AMPLICON
+ERR17585597	Plasmodium vivax	AMPLICON
+ERR17585598	Plasmodium vivax	AMPLICON
+ERR17585599	Plasmodium vivax	AMPLICON
+ERR17585600	Plasmodium vivax	AMPLICON
+ERR17585602	Plasmodium vivax	AMPLICON
+ERR17585603	Plasmodium vivax	AMPLICON
+ERR17585604	Plasmodium vivax	AMPLICON
+ERR17585605	Plasmodium vivax	AMPLICON
+ERR17585606	Plasmodium vivax	AMPLICON
+ERR17585609	Plasmodium vivax	AMPLICON
+ERR17585610	Plasmodium vivax	AMPLICON
+ERR17585611	Plasmodium vivax	AMPLICON
+ERR17585614	Plasmodium vivax	AMPLICON
+ERR17585615	Plasmodium vivax	AMPLICON
+ERR17585618	Plasmodium vivax	AMPLICON
+ERR17585619	Plasmodium vivax	AMPLICON
+ERR17585621	Plasmodium vivax	AMPLICON
+ERR17585622	Plasmodium vivax	AMPLICON
+ERR17585623	Plasmodium vivax	AMPLICON
+ERR17585624	Plasmodium vivax	AMPLICON
+ERR17585626	Plasmodium vivax	AMPLICON
+ERR17585629	Plasmodium vivax	AMPLICON
+ERR17585632	Plasmodium vivax	AMPLICON
+ERR17585633	Plasmodium vivax	AMPLICON
+ERR17585635	Plasmodium vivax	AMPLICON
+ERR17585636	Plasmodium vivax	AMPLICON
+ERR17585639	Plasmodium vivax	AMPLICON
+ERR17585640	Plasmodium vivax	AMPLICON
+ERR17585641	Plasmodium vivax	AMPLICON
+ERR17585643	Plasmodium vivax	AMPLICON
+ERR16984659	Plasmodium vivax	WGS
+ERR16984660	Plasmodium vivax	WGS
+ERR16984661	Plasmodium vivax	WGS
+ERR16984662	Plasmodium vivax	WGS
+ERR16984663	Plasmodium vivax	WGS
+ERR16984664	Plasmodium vivax	WGS
+ERR16984665	Plasmodium vivax	WGS
+ERR16984666	Plasmodium vivax	WGS
+ERR16984667	Plasmodium vivax	WGS
+ERR16984668	Plasmodium vivax	WGS
+ERR16984669	Plasmodium vivax	WGS
+ERR16984670	Plasmodium vivax	WGS
+ERR16984671	Plasmodium vivax	WGS
+ERR16984672	Plasmodium vivax	WGS
+ERR16984673	Plasmodium vivax	WGS
+ERR16984674	Plasmodium vivax	WGS
+ERR16984675	Plasmodium vivax	WGS
+ERR16984676	Plasmodium vivax	WGS
+ERR17585557	Plasmodium vivax	AMPLICON
+ERR17585591	Plasmodium vivax	AMPLICON
+ERR17585592	Plasmodium vivax	AMPLICON
+ERR17585630	Plasmodium vivax	AMPLICON
+SRR37811769	Plasmodium sp.	WGS
+SRR37811762	Plasmodium sp.	WGS
+SRR37811761	Plasmodium sp.	WGS
+SRR37811760	Plasmodium sp.	WGS
+SRR37811759	Plasmodium sp.	WGS
+SRR37811758	Plasmodium sp.	WGS
+SRR37811757	Plasmodium sp.	WGS
+SRR37811773	Plasmodium sp.	WGS
+SRR37811772	Plasmodium sp.	WGS
+SRR37811771	Plasmodium sp.	WGS
+SRR37811770	Plasmodium sp.	WGS
+SRR37811768	Plasmodium sp.	WGS
+SRR37811767	Plasmodium sp.	WGS
+SRR37811766	Plasmodium sp.	WGS
+SRR37811765	Plasmodium sp.	WGS
+SRR37811764	Plasmodium sp.	WGS
+SRR37811763	Plasmodium sp.	WGS
+SRR38142104	Plasmodium sp. CGDM	Targeted-Capture
+SRR38142105	Plasmodium sp. CGDM	Targeted-Capture
+SRR38142106	Plasmodium sp. CGDM	Targeted-Capture
+SRR38142107	Plasmodium sp. CGDM	Targeted-Capture
+SRR38142100	Plasmodium sp. GDFIDM	Targeted-Capture
+SRR38142101	Plasmodium sp. GDFIDM	Targeted-Capture
+SRR38142102	Plasmodium sp. GDFIDM	Targeted-Capture
+SRR38142103	Plasmodium sp. GDFIDM	Targeted-Capture
+SRR38223666	Plasmodium berghei	RNA-Seq
+SRR38223665	Plasmodium berghei	RNA-Seq
+SRR38223664	Plasmodium berghei	RNA-Seq
+SRR38223663	Plasmodium berghei	RNA-Seq
+SRR39669449	Plasmodium yoelii	WGS
+SRR39669450	Plasmodium yoelii	WGS
+SRR39669451	Plasmodium yoelii	WGS
+SRR39669455	Plasmodium yoelii	WGS
+SRR39669456	Plasmodium yoelii	WGS
+SRR39669457	Plasmodium yoelii	WGS
+SRR39669452	Plasmodium yoelii	WGS
+SRR39669453	Plasmodium yoelii	WGS
+SRR39669454	Plasmodium yoelii	WGS
+DRR720105	Plasmodium yoelii yoelii 17XNL	RNA-Seq
+DRR720106	Plasmodium yoelii yoelii 17XNL	RNA-Seq
+DRR720107	Plasmodium yoelii yoelii 17XNL	RNA-Seq
+DRR720108	Plasmodium yoelii yoelii 17XNL	RNA-Seq
+DRR720109	Plasmodium yoelii yoelii 17XNL	RNA-Seq
+SRR34571689	Plasmodium sp.	WGS
+SRR37811792	Plasmodium sp.	WGS
+SRR37811791	Plasmodium sp.	WGS
+SRR34571688	Plasmodium sp.	WGS
+SRR37811780	Plasmodium sp.	WGS
+SRR34571677	Plasmodium sp.	WGS
+SRR34571666	Plasmodium sp.	WGS
+SRR34571659	Plasmodium sp.	WGS
+SRR34571658	Plasmodium sp.	WGS
+SRR34571657	Plasmodium sp.	WGS
+SRR34571656	Plasmodium sp.	WGS
+SRR34571655	Plasmodium sp.	WGS
+SRR34571654	Plasmodium sp.	WGS
+SRR34571687	Plasmodium sp.	WGS
+SRR37811790	Plasmodium sp.	WGS
+SRR37811789	Plasmodium sp.	WGS
+SRR34571686	Plasmodium sp.	WGS
+SRR37811788	Plasmodium sp.	WGS
+SRR34571685	Plasmodium sp.	WGS
+SRR34571684	Plasmodium sp.	WGS
+SRR37811787	Plasmodium sp.	WGS
+SRR37811786	Plasmodium sp.	WGS
+SRR34571683	Plasmodium sp.	WGS
+SRR34571682	Plasmodium sp.	WGS
+SRR37811785	Plasmodium sp.	WGS
+SRR37811784	Plasmodium sp.	WGS
+SRR34571681	Plasmodium sp.	WGS
+SRR34571680	Plasmodium sp.	WGS
+SRR37811783	Plasmodium sp.	WGS
+SRR37811782	Plasmodium sp.	WGS
+SRR34571679	Plasmodium sp.	WGS
+SRR34571678	Plasmodium sp.	WGS
+SRR37811781	Plasmodium sp.	WGS
+SRR37811779	Plasmodium sp.	WGS
+SRR34571676	Plasmodium sp.	WGS
+SRR34571675	Plasmodium sp.	WGS
+SRR37811778	Plasmodium sp.	WGS
+SRR37811777	Plasmodium sp.	WGS
+SRR34571674	Plasmodium sp.	WGS
+SRR34571673	Plasmodium sp.	WGS
+SRR37811776	Plasmodium sp.	WGS
+SRR37811775	Plasmodium sp.	WGS
+SRR34571672	Plasmodium sp.	WGS
+SRR34571671	Plasmodium sp.	WGS
+SRR37811774	Plasmodium sp.	WGS
+SRR34571670	Plasmodium sp.	WGS
+SRR34571669	Plasmodium sp.	WGS
+SRR34571668	Plasmodium sp.	WGS
+SRR34571667	Plasmodium sp.	WGS
+SRR34571665	Plasmodium sp.	WGS
+SRR34571664	Plasmodium sp.	WGS
+SRR34571663	Plasmodium sp.	WGS
+SRR34571662	Plasmodium sp.	WGS
+SRR34571661	Plasmodium sp.	WGS
+SRR34571660	Plasmodium sp.	WGS
+DRR720103	Plasmodium yoelii yoelii 17XNL	RNA-Seq
+DRR720104	Plasmodium yoelii yoelii 17XNL	RNA-Seq
+SRR37568976	Plasmodium vivax	AMPLICON
+SRR37568975	Plasmodium vivax	AMPLICON
+SRR37568973	Plasmodium vivax	AMPLICON
+SRR37568972	Plasmodium vivax	AMPLICON
+SRR37568971	Plasmodium vivax	AMPLICON
+SRR37568970	Plasmodium vivax	AMPLICON
+SRR37568969	Plasmodium vivax	AMPLICON
+SRR37568968	Plasmodium vivax	AMPLICON
+SRR37568967	Plasmodium vivax	AMPLICON
+SRR37568966	Plasmodium vivax	AMPLICON
+SRR37568965	Plasmodium vivax	AMPLICON
+SRR37568964	Plasmodium vivax	AMPLICON
+SRR37568962	Plasmodium vivax	AMPLICON
+SRR37568961	Plasmodium vivax	AMPLICON
+SRR37568960	Plasmodium vivax	AMPLICON
+SRR37568959	Plasmodium vivax	AMPLICON
+SRR37568958	Plasmodium vivax	AMPLICON
+SRR37568957	Plasmodium vivax	AMPLICON
+SRR37568956	Plasmodium vivax	AMPLICON
+SRR37568955	Plasmodium vivax	AMPLICON
+SRR37568954	Plasmodium vivax	AMPLICON
+SRR37568953	Plasmodium vivax	AMPLICON
+SRR37568951	Plasmodium vivax	AMPLICON
+SRR37568950	Plasmodium vivax	AMPLICON
+SRR37568949	Plasmodium vivax	AMPLICON
+SRR37568980	Plasmodium vivax	AMPLICON
+SRR37568979	Plasmodium vivax	AMPLICON
+SRR37568977	Plasmodium vivax	AMPLICON
+SRR37569002	Plasmodium vivax	AMPLICON
+SRR37568991	Plasmodium vivax	AMPLICON
+SRR37569041	Plasmodium vivax	AMPLICON
+SRR37568974	Plasmodium vivax	AMPLICON
+SRR37568963	Plasmodium vivax	AMPLICON
+SRR37568952	Plasmodium vivax	AMPLICON
+SRR37569006	Plasmodium vivax	AMPLICON
+SRR37569005	Plasmodium vivax	AMPLICON
+SRR37569004	Plasmodium vivax	AMPLICON
+SRR37569003	Plasmodium vivax	AMPLICON
+SRR37569001	Plasmodium vivax	AMPLICON
+SRR37569000	Plasmodium vivax	AMPLICON
+SRR37568999	Plasmodium vivax	AMPLICON
+SRR37568998	Plasmodium vivax	AMPLICON
+SRR37568997	Plasmodium vivax	AMPLICON
+SRR37568996	Plasmodium vivax	AMPLICON
+SRR37568995	Plasmodium vivax	AMPLICON
+SRR37568994	Plasmodium vivax	AMPLICON
+SRR37568993	Plasmodium vivax	AMPLICON
+SRR37568992	Plasmodium vivax	AMPLICON
+SRR37568990	Plasmodium vivax	AMPLICON
+SRR37568989	Plasmodium vivax	AMPLICON
+SRR37568988	Plasmodium vivax	AMPLICON
+SRR37568987	Plasmodium vivax	AMPLICON
+SRR37568986	Plasmodium vivax	AMPLICON
+SRR37568985	Plasmodium vivax	AMPLICON
+SRR37568984	Plasmodium vivax	AMPLICON
+SRR37568983	Plasmodium vivax	AMPLICON
+SRR37568982	Plasmodium vivax	AMPLICON
+SRR37568981	Plasmodium vivax	AMPLICON
+SRR37532159	Plasmodium vivax	AMPLICON
+SRR37532150	Plasmodium vivax	AMPLICON
+SRR37532149	Plasmodium vivax	AMPLICON
+SRR37532148	Plasmodium vivax	AMPLICON
+SRR37532169	Plasmodium vivax	AMPLICON
+SRR37532168	Plasmodium vivax	AMPLICON
+SRR37532167	Plasmodium vivax	AMPLICON
+SRR37532166	Plasmodium vivax	AMPLICON
+SRR37532165	Plasmodium vivax	AMPLICON
+SRR37532164	Plasmodium vivax	AMPLICON
+SRR37532163	Plasmodium vivax	AMPLICON
+SRR37532162	Plasmodium vivax	AMPLICON
+SRR37532161	Plasmodium vivax	AMPLICON
+SRR37532160	Plasmodium vivax	AMPLICON
+SRR37532158	Plasmodium vivax	AMPLICON
+SRR37532157	Plasmodium vivax	AMPLICON
+SRR37532156	Plasmodium vivax	AMPLICON
+SRR37532155	Plasmodium vivax	AMPLICON
+SRR37532154	Plasmodium vivax	AMPLICON
+SRR37532153	Plasmodium vivax	AMPLICON
+SRR37532152	Plasmodium vivax	AMPLICON
+SRR37532151	Plasmodium vivax	AMPLICON
+SRR37569044	Plasmodium vivax	AMPLICON
+SRR37569043	Plasmodium vivax	AMPLICON
+SRR37569029	Plasmodium vivax	AMPLICON
+SRR37569018	Plasmodium vivax	AMPLICON
+SRR37569042	Plasmodium vivax	AMPLICON
+SRR37569040	Plasmodium vivax	AMPLICON
+SRR37569010	Plasmodium vivax	AMPLICON
+SRR37569009	Plasmodium vivax	AMPLICON
+SRR37569008	Plasmodium vivax	AMPLICON
+SRR37569007	Plasmodium vivax	AMPLICON
+SRR37569039	Plasmodium vivax	AMPLICON
+SRR37569038	Plasmodium vivax	AMPLICON
+SRR37569037	Plasmodium vivax	AMPLICON
+SRR37569036	Plasmodium vivax	AMPLICON
+SRR37569035	Plasmodium vivax	AMPLICON
+SRR37569034	Plasmodium vivax	AMPLICON
+SRR37569033	Plasmodium vivax	AMPLICON
+SRR37569032	Plasmodium vivax	AMPLICON
+SRR37569031	Plasmodium vivax	AMPLICON
+SRR37569030	Plasmodium vivax	AMPLICON
+SRR37569028	Plasmodium vivax	AMPLICON
+SRR37569027	Plasmodium vivax	AMPLICON
+SRR37569026	Plasmodium vivax	AMPLICON
+SRR37569025	Plasmodium vivax	AMPLICON
+SRR37569024	Plasmodium vivax	AMPLICON
+SRR37569023	Plasmodium vivax	AMPLICON
+SRR37569022	Plasmodium vivax	AMPLICON
+SRR37569021	Plasmodium vivax	AMPLICON
+SRR37569020	Plasmodium vivax	AMPLICON
+SRR37569019	Plasmodium vivax	AMPLICON
+SRR37569017	Plasmodium vivax	AMPLICON
+SRR37569016	Plasmodium vivax	AMPLICON
+SRR37569015	Plasmodium vivax	AMPLICON
+SRR37569014	Plasmodium vivax	AMPLICON
+SRR37569013	Plasmodium vivax	AMPLICON
+SRR37569012	Plasmodium vivax	AMPLICON
+SRR37569011	Plasmodium vivax	AMPLICON
+SRR37568978	Plasmodium vivax	AMPLICON
+SRR37532215	Plasmodium vivax	AMPLICON
+SRR37532214	Plasmodium vivax	AMPLICON
+SRR37532179	Plasmodium vivax	AMPLICON
+SRR37532203	Plasmodium vivax	AMPLICON
+SRR37532192	Plasmodium vivax	AMPLICON
+SRR37532178	Plasmodium vivax	AMPLICON
+SRR37532181	Plasmodium vivax	AMPLICON
+SRR37532170	Plasmodium vivax	AMPLICON
+SRR37422167	Plasmodium vivax	RNA-Seq
+SRR37532177	Plasmodium vivax	AMPLICON
+SRR37532176	Plasmodium vivax	AMPLICON
+SRR37532175	Plasmodium vivax	AMPLICON
+SRR37532213	Plasmodium vivax	AMPLICON
+SRR37532212	Plasmodium vivax	AMPLICON
+SRR37532174	Plasmodium vivax	AMPLICON
+SRR37532211	Plasmodium vivax	AMPLICON
+SRR37532210	Plasmodium vivax	AMPLICON
+SRR37532173	Plasmodium vivax	AMPLICON
+SRR37532172	Plasmodium vivax	AMPLICON
+SRR37532209	Plasmodium vivax	AMPLICON
+SRR37532208	Plasmodium vivax	AMPLICON
+SRR37532171	Plasmodium vivax	AMPLICON
+SRR37532207	Plasmodium vivax	AMPLICON
+SRR37532206	Plasmodium vivax	AMPLICON
+SRR37532205	Plasmodium vivax	AMPLICON
+SRR37532204	Plasmodium vivax	AMPLICON
+SRR37532202	Plasmodium vivax	AMPLICON
+SRR37532201	Plasmodium vivax	AMPLICON
+SRR37532200	Plasmodium vivax	AMPLICON
+SRR37532199	Plasmodium vivax	AMPLICON
+SRR37532198	Plasmodium vivax	AMPLICON
+SRR37532197	Plasmodium vivax	AMPLICON
+SRR37532196	Plasmodium vivax	AMPLICON
+SRR37422170	Plasmodium vivax	RNA-Seq
+SRR37422169	Plasmodium vivax	RNA-Seq
+SRR37532195	Plasmodium vivax	AMPLICON
+SRR37532194	Plasmodium vivax	AMPLICON
+SRR37422168	Plasmodium vivax	RNA-Seq
+SRR37422166	Plasmodium vivax	RNA-Seq
+SRR37532193	Plasmodium vivax	AMPLICON
+SRR37532191	Plasmodium vivax	AMPLICON
+SRR37422165	Plasmodium vivax	RNA-Seq
+SRR37422164	Plasmodium vivax	RNA-Seq
+SRR37532190	Plasmodium vivax	AMPLICON
+SRR37532189	Plasmodium vivax	AMPLICON
+SRR37422163	Plasmodium vivax	RNA-Seq
+SRR37422162	Plasmodium vivax	RNA-Seq
+SRR37532188	Plasmodium vivax	AMPLICON
+SRR37422161	Plasmodium vivax	RNA-Seq
+SRR37532187	Plasmodium vivax	AMPLICON
+SRR37532186	Plasmodium vivax	AMPLICON
+SRR37422160	Plasmodium vivax	RNA-Seq
+SRR37422159	Plasmodium vivax	RNA-Seq
+SRR37532185	Plasmodium vivax	AMPLICON
+SRR37532184	Plasmodium vivax	AMPLICON
+SRR37422158	Plasmodium vivax	RNA-Seq
+SRR37422157	Plasmodium vivax	RNA-Seq
+SRR37532183	Plasmodium vivax	AMPLICON
+SRR37532182	Plasmodium vivax	AMPLICON
+SRR37532180	Plasmodium vivax	AMPLICON
+SRR37422202	Plasmodium vivax	RNA-Seq
+SRR37422201	Plasmodium vivax	RNA-Seq
+SRR37422226	Plasmodium vivax	RNA-Seq
+SRR37422200	Plasmodium vivax	RNA-Seq
+SRR37422199	Plasmodium vivax	RNA-Seq
+SRR37422215	Plasmodium vivax	RNA-Seq
+SRR37422204	Plasmodium vivax	RNA-Seq
+SRR37422198	Plasmodium vivax	RNA-Seq
+SRR37422197	Plasmodium vivax	RNA-Seq
+SRR37422193	Plasmodium vivax	RNA-Seq
+SRR37422196	Plasmodium vivax	RNA-Seq
+SRR37422178	Plasmodium vivax	RNA-Seq
+SRR37422195	Plasmodium vivax	RNA-Seq
+SRR37422194	Plasmodium vivax	RNA-Seq
+SRR37422190	Plasmodium vivax	RNA-Seq
+SRR37422187	Plasmodium vivax	RNA-Seq
+SRR37422192	Plasmodium vivax	RNA-Seq
+SRR37422191	Plasmodium vivax	RNA-Seq
+SRR37422186	Plasmodium vivax	RNA-Seq
+SRR37422185	Plasmodium vivax	RNA-Seq
+SRR37422184	Plasmodium vivax	RNA-Seq
+SRR37422183	Plasmodium vivax	RNA-Seq
+SRR37422182	Plasmodium vivax	RNA-Seq
+SRR37422181	Plasmodium vivax	RNA-Seq
+SRR37422230	Plasmodium vivax	RNA-Seq
+SRR37422229	Plasmodium vivax	RNA-Seq
+SRR37422180	Plasmodium vivax	RNA-Seq
+SRR37422179	Plasmodium vivax	RNA-Seq
+SRR37422228	Plasmodium vivax	RNA-Seq
+SRR37422227	Plasmodium vivax	RNA-Seq
+SRR37422177	Plasmodium vivax	RNA-Seq
+SRR37422176	Plasmodium vivax	RNA-Seq
+SRR37422225	Plasmodium vivax	RNA-Seq
+SRR37422224	Plasmodium vivax	RNA-Seq
+SRR37422175	Plasmodium vivax	RNA-Seq
+SRR37422174	Plasmodium vivax	RNA-Seq
+SRR37422223	Plasmodium vivax	RNA-Seq
+SRR37422222	Plasmodium vivax	RNA-Seq
+SRR37422173	Plasmodium vivax	RNA-Seq
+SRR37422172	Plasmodium vivax	RNA-Seq
+SRR37422221	Plasmodium vivax	RNA-Seq
+SRR37422220	Plasmodium vivax	RNA-Seq
+SRR37422171	Plasmodium vivax	RNA-Seq
+SRR37422219	Plasmodium vivax	RNA-Seq
+SRR37422218	Plasmodium vivax	RNA-Seq
+SRR37422217	Plasmodium vivax	RNA-Seq
+SRR37422216	Plasmodium vivax	RNA-Seq
+SRR37422214	Plasmodium vivax	RNA-Seq
+SRR37422213	Plasmodium vivax	RNA-Seq
+SRR37422212	Plasmodium vivax	RNA-Seq
+SRR37422211	Plasmodium vivax	RNA-Seq
+SRR37422210	Plasmodium vivax	RNA-Seq
+SRR37422209	Plasmodium vivax	RNA-Seq
+SRR37422208	Plasmodium vivax	RNA-Seq
+SRR37422207	Plasmodium vivax	RNA-Seq
+SRR37422206	Plasmodium vivax	RNA-Seq
+SRR37422205	Plasmodium vivax	RNA-Seq
+SRR37422189	Plasmodium vivax	RNA-Seq
+SRR37422188	Plasmodium vivax	RNA-Seq
+SRR37422203	Plasmodium vivax	RNA-Seq
+ERR16650804	Plasmodium knowlesi	RNA-Seq
+ERR16650805	Plasmodium knowlesi	RNA-Seq
+ERR16650806	Plasmodium knowlesi	RNA-Seq
+ERR16650807	Plasmodium knowlesi	RNA-Seq
+ERR16650808	Plasmodium knowlesi	RNA-Seq
+ERR16650809	Plasmodium knowlesi	WGS
+ERR16037139	Plasmodium vivax	AMPLICON
+ERR16332742	Plasmodium vivax	AMPLICON
+ERR16332749	Plasmodium vivax	AMPLICON
+ERR16332757	Plasmodium vivax	AMPLICON
+ERR16332764	Plasmodium vivax	AMPLICON
+ERR16332768	Plasmodium vivax	AMPLICON
+ERR16332770	Plasmodium vivax	AMPLICON
+ERR16332784	Plasmodium vivax	AMPLICON
+ERR16332783	Plasmodium vivax	AMPLICON
+ERR16332828	Plasmodium vivax	AMPLICON
+ERR16332829	Plasmodium vivax	AMPLICON
+ERR16332831	Plasmodium vivax	AMPLICON
+ERR16332835	Plasmodium vivax	AMPLICON
+ERR16332838	Plasmodium vivax	AMPLICON
+ERR16332847	Plasmodium vivax	AMPLICON
+ERR16332853	Plasmodium vivax	AMPLICON
+ERR16332859	Plasmodium vivax	AMPLICON
+ERR16332863	Plasmodium vivax	AMPLICON
+ERR16332868	Plasmodium vivax	AMPLICON
+ERR16332871	Plasmodium vivax	AMPLICON
+ERR16332880	Plasmodium vivax	AMPLICON
+ERR16332882	Plasmodium vivax	AMPLICON
+ERR16332883	Plasmodium vivax	AMPLICON
+ERR16332886	Plasmodium vivax	AMPLICON
+ERR16332897	Plasmodium vivax	AMPLICON
+ERR16332899	Plasmodium vivax	AMPLICON
+ERR16332901	Plasmodium vivax	AMPLICON
+ERR16332906	Plasmodium vivax	AMPLICON
+ERR16332918	Plasmodium vivax	AMPLICON
+ERR16332939	Plasmodium vivax	AMPLICON
+ERR16332952	Plasmodium vivax	AMPLICON
+ERR16332954	Plasmodium vivax	AMPLICON
+ERR16332961	Plasmodium vivax	AMPLICON
+ERR16332964	Plasmodium vivax	AMPLICON
+ERR16332981	Plasmodium vivax	AMPLICON
+ERR16332987	Plasmodium vivax	AMPLICON
+ERR16332992	Plasmodium vivax	AMPLICON
+ERR16332998	Plasmodium vivax	AMPLICON
+ERR16332999	Plasmodium vivax	AMPLICON
+ERR16333001	Plasmodium vivax	AMPLICON
+ERR16333007	Plasmodium vivax	AMPLICON
+ERR16333019	Plasmodium vivax	AMPLICON
+ERR16333038	Plasmodium vivax	AMPLICON
+ERR16333039	Plasmodium vivax	AMPLICON
+ERR16333049	Plasmodium vivax	AMPLICON
+ERR16333029	Plasmodium vivax	AMPLICON
+SRR37422238	Plasmodium vivax	RNA-Seq
+SRR37422237	Plasmodium vivax	RNA-Seq
+SRR37422236	Plasmodium vivax	RNA-Seq
+SRR37422235	Plasmodium vivax	RNA-Seq
+SRR37422234	Plasmodium vivax	RNA-Seq
+SRR37422233	Plasmodium vivax	RNA-Seq
+SRR37422232	Plasmodium vivax	RNA-Seq
+SRR37422231	Plasmodium vivax	RNA-Seq
+ERR16332732	Plasmodium vivax	AMPLICON
+ERR16332730	Plasmodium vivax	AMPLICON
+ERR16332737	Plasmodium vivax	AMPLICON
+ERR16332739	Plasmodium vivax	AMPLICON
+ERR16332746	Plasmodium vivax	AMPLICON
+ERR16332754	Plasmodium vivax	AMPLICON
+ERR16332755	Plasmodium vivax	AMPLICON
+ERR16332762	Plasmodium vivax	AMPLICON
+ERR16332767	Plasmodium vivax	AMPLICON
+ERR16332773	Plasmodium vivax	AMPLICON
+ERR16332776	Plasmodium vivax	AMPLICON
+ERR16332780	Plasmodium vivax	AMPLICON
+ERR16332820	Plasmodium vivax	AMPLICON
+ERR16332826	Plasmodium vivax	AMPLICON
+ERR16332833	Plasmodium vivax	AMPLICON
+ERR16332839	Plasmodium vivax	AMPLICON
+ERR16332840	Plasmodium vivax	AMPLICON
+ERR16332841	Plasmodium vivax	AMPLICON
+ERR16332844	Plasmodium vivax	AMPLICON
+ERR16332849	Plasmodium vivax	AMPLICON
+ERR16332851	Plasmodium vivax	AMPLICON
+ERR16332856	Plasmodium vivax	AMPLICON
+ERR16332858	Plasmodium vivax	AMPLICON
+ERR16332861	Plasmodium vivax	AMPLICON
+ERR16332864	Plasmodium vivax	AMPLICON
+ERR16332874	Plasmodium vivax	AMPLICON
+ERR16332884	Plasmodium vivax	AMPLICON
+ERR16332885	Plasmodium vivax	AMPLICON
+ERR16332889	Plasmodium vivax	AMPLICON
+ERR16332893	Plasmodium vivax	AMPLICON
+ERR16332894	Plasmodium vivax	AMPLICON
+ERR16332895	Plasmodium vivax	AMPLICON
+ERR16332900	Plasmodium vivax	AMPLICON
+ERR16332904	Plasmodium vivax	AMPLICON
+ERR16332905	Plasmodium vivax	AMPLICON
+ERR16332910	Plasmodium vivax	AMPLICON
+ERR16332912	Plasmodium vivax	AMPLICON
+ERR16332913	Plasmodium vivax	AMPLICON
+ERR16332914	Plasmodium vivax	AMPLICON
+ERR16332925	Plasmodium vivax	AMPLICON
+ERR16332938	Plasmodium vivax	AMPLICON
+ERR16332945	Plasmodium vivax	AMPLICON
+ERR16332951	Plasmodium vivax	AMPLICON
+ERR16332953	Plasmodium vivax	AMPLICON
+ERR16332960	Plasmodium vivax	AMPLICON
+ERR16332967	Plasmodium vivax	AMPLICON
+ERR16332974	Plasmodium vivax	AMPLICON
+ERR16332984	Plasmodium vivax	AMPLICON
+ERR16332989	Plasmodium vivax	AMPLICON
+ERR16332993	Plasmodium vivax	AMPLICON
+ERR16332995	Plasmodium vivax	AMPLICON
+ERR16333002	Plasmodium vivax	AMPLICON
+ERR16333008	Plasmodium vivax	AMPLICON
+ERR16333011	Plasmodium vivax	AMPLICON
+ERR16333020	Plasmodium vivax	AMPLICON
+ERR16333023	Plasmodium vivax	AMPLICON
+ERR16333034	Plasmodium vivax	AMPLICON
+ERR16333037	Plasmodium vivax	AMPLICON
+ERR16333050	Plasmodium vivax	AMPLICON
+ERR16333051	Plasmodium vivax	AMPLICON
+ERR16332734	Plasmodium vivax	AMPLICON
+ERR16332735	Plasmodium vivax	AMPLICON
+ERR16332745	Plasmodium vivax	AMPLICON
+ERR16332747	Plasmodium vivax	AMPLICON
+ERR16332750	Plasmodium vivax	AMPLICON
+ERR16332751	Plasmodium vivax	AMPLICON
+ERR16332756	Plasmodium vivax	AMPLICON
+ERR16332761	Plasmodium vivax	AMPLICON
+ERR16332769	Plasmodium vivax	AMPLICON
+ERR16332772	Plasmodium vivax	AMPLICON
+ERR16332771	Plasmodium vivax	AMPLICON
+ERR16332778	Plasmodium vivax	AMPLICON
+ERR16332779	Plasmodium vivax	AMPLICON
+ERR16332782	Plasmodium vivax	AMPLICON
+ERR16332822	Plasmodium vivax	AMPLICON
+ERR16332825	Plasmodium vivax	AMPLICON
+ERR16332837	Plasmodium vivax	AMPLICON
+ERR16332842	Plasmodium vivax	AMPLICON
+ERR16332845	Plasmodium vivax	AMPLICON
+ERR16332855	Plasmodium vivax	AMPLICON
+ERR16332865	Plasmodium vivax	AMPLICON
+ERR16332870	Plasmodium vivax	AMPLICON
+ERR16332888	Plasmodium vivax	AMPLICON
+ERR16332903	Plasmodium vivax	AMPLICON
+ERR16332908	Plasmodium vivax	AMPLICON
+ERR16332911	Plasmodium vivax	AMPLICON
+ERR16332917	Plasmodium vivax	AMPLICON
+ERR16332920	Plasmodium vivax	AMPLICON
+ERR16332921	Plasmodium vivax	AMPLICON
+ERR16332922	Plasmodium vivax	AMPLICON
+ERR16332924	Plasmodium vivax	AMPLICON
+ERR16332936	Plasmodium vivax	AMPLICON
+ERR16332942	Plasmodium vivax	AMPLICON
+ERR16332944	Plasmodium vivax	AMPLICON
+ERR16332947	Plasmodium vivax	AMPLICON
+ERR16332950	Plasmodium vivax	AMPLICON
+ERR16332955	Plasmodium vivax	AMPLICON
+ERR16332957	Plasmodium vivax	AMPLICON
+ERR16332963	Plasmodium vivax	AMPLICON
+ERR16332968	Plasmodium vivax	AMPLICON
+ERR16332976	Plasmodium vivax	AMPLICON
+ERR16332979	Plasmodium vivax	AMPLICON
+ERR16332986	Plasmodium vivax	AMPLICON
+ERR16332990	Plasmodium vivax	AMPLICON
+ERR16332997	Plasmodium vivax	AMPLICON
+ERR16333004	Plasmodium vivax	AMPLICON
+ERR16333010	Plasmodium vivax	AMPLICON
+ERR16333012	Plasmodium vivax	AMPLICON
+ERR16333015	Plasmodium vivax	AMPLICON
+ERR16333016	Plasmodium vivax	AMPLICON
+ERR16333017	Plasmodium vivax	AMPLICON
+ERR16333025	Plasmodium vivax	AMPLICON
+ERR16333027	Plasmodium vivax	AMPLICON
+ERR16333028	Plasmodium vivax	AMPLICON
+ERR16333031	Plasmodium vivax	AMPLICON
+ERR16333033	Plasmodium vivax	AMPLICON
+ERR16333036	Plasmodium vivax	AMPLICON
+ERR16333042	Plasmodium vivax	AMPLICON
+ERR16333048	Plasmodium vivax	AMPLICON
+ERR16333054	Plasmodium vivax	AMPLICON
+ERR16332738	Plasmodium vivax	AMPLICON
+ERR16332740	Plasmodium vivax	AMPLICON
+ERR16332744	Plasmodium vivax	AMPLICON
+ERR16332748	Plasmodium vivax	AMPLICON
+ERR16332752	Plasmodium vivax	AMPLICON
+ERR16332775	Plasmodium vivax	AMPLICON
+ERR16332777	Plasmodium vivax	AMPLICON
+ERR16332821	Plasmodium vivax	AMPLICON
+ERR16332823	Plasmodium vivax	AMPLICON
+ERR16332827	Plasmodium vivax	AMPLICON
+ERR16332830	Plasmodium vivax	AMPLICON
+ERR16332832	Plasmodium vivax	AMPLICON
+ERR16332834	Plasmodium vivax	AMPLICON
+ERR16332846	Plasmodium vivax	AMPLICON
+ERR16332848	Plasmodium vivax	AMPLICON
+ERR16332852	Plasmodium vivax	AMPLICON
+ERR16332854	Plasmodium vivax	AMPLICON
+ERR16332866	Plasmodium vivax	AMPLICON
+ERR16332867	Plasmodium vivax	AMPLICON
+ERR16332872	Plasmodium vivax	AMPLICON
+ERR16332878	Plasmodium vivax	AMPLICON
+ERR16332879	Plasmodium vivax	AMPLICON
+ERR16332887	Plasmodium vivax	AMPLICON
+ERR16332896	Plasmodium vivax	AMPLICON
+ERR16332898	Plasmodium vivax	AMPLICON
+ERR16332919	Plasmodium vivax	AMPLICON
+ERR16332927	Plasmodium vivax	AMPLICON
+ERR16332928	Plasmodium vivax	AMPLICON
+ERR16332932	Plasmodium vivax	AMPLICON
+ERR16332933	Plasmodium vivax	AMPLICON
+ERR16332934	Plasmodium vivax	AMPLICON
+ERR16332941	Plasmodium vivax	AMPLICON
+ERR16332949	Plasmodium vivax	AMPLICON
+ERR16332958	Plasmodium vivax	AMPLICON
+ERR16332962	Plasmodium vivax	AMPLICON
+ERR16332965	Plasmodium vivax	AMPLICON
+ERR16332970	Plasmodium vivax	AMPLICON
+ERR16332971	Plasmodium vivax	AMPLICON
+ERR16332972	Plasmodium vivax	AMPLICON
+ERR16332975	Plasmodium vivax	AMPLICON
+ERR16332983	Plasmodium vivax	AMPLICON
+ERR16332985	Plasmodium vivax	AMPLICON
+ERR16332988	Plasmodium vivax	AMPLICON
+ERR16332991	Plasmodium vivax	AMPLICON
+ERR16332996	Plasmodium vivax	AMPLICON
+ERR16333005	Plasmodium vivax	AMPLICON
+ERR16333006	Plasmodium vivax	AMPLICON
+ERR16333013	Plasmodium vivax	AMPLICON
+ERR16333014	Plasmodium vivax	AMPLICON
+ERR16333022	Plasmodium vivax	AMPLICON
+ERR16333024	Plasmodium vivax	AMPLICON
+ERR16333032	Plasmodium vivax	AMPLICON
+ERR16333041	Plasmodium vivax	AMPLICON
+ERR16333043	Plasmodium vivax	AMPLICON
+ERR16333044	Plasmodium vivax	AMPLICON
+ERR16333045	Plasmodium vivax	AMPLICON
+ERR16333047	Plasmodium vivax	AMPLICON
+ERR16333052	Plasmodium vivax	AMPLICON
+ERR16333053	Plasmodium vivax	AMPLICON
+ERR16333055	Plasmodium vivax	AMPLICON
+ERR16332731	Plasmodium vivax	AMPLICON
+ERR16332733	Plasmodium vivax	AMPLICON
+ERR16332736	Plasmodium vivax	AMPLICON
+ERR16332741	Plasmodium vivax	AMPLICON
+ERR16332743	Plasmodium vivax	AMPLICON
+ERR16332753	Plasmodium vivax	AMPLICON
+ERR16332758	Plasmodium vivax	AMPLICON
+ERR16332759	Plasmodium vivax	AMPLICON
+ERR16332760	Plasmodium vivax	AMPLICON
+ERR16332765	Plasmodium vivax	AMPLICON
+ERR16332763	Plasmodium vivax	AMPLICON
+ERR16332766	Plasmodium vivax	AMPLICON
+ERR16332781	Plasmodium vivax	AMPLICON
+ERR16332824	Plasmodium vivax	AMPLICON
+ERR16332836	Plasmodium vivax	AMPLICON
+ERR16332843	Plasmodium vivax	AMPLICON
+ERR16332850	Plasmodium vivax	AMPLICON
+ERR16332857	Plasmodium vivax	AMPLICON
+ERR16332860	Plasmodium vivax	AMPLICON
+ERR16332873	Plasmodium vivax	AMPLICON
+ERR16332875	Plasmodium vivax	AMPLICON
+ERR16332876	Plasmodium vivax	AMPLICON
+ERR16332877	Plasmodium vivax	AMPLICON
+ERR16332881	Plasmodium vivax	AMPLICON
+ERR16332890	Plasmodium vivax	AMPLICON
+ERR16332891	Plasmodium vivax	AMPLICON
+ERR16332892	Plasmodium vivax	AMPLICON
+ERR16332902	Plasmodium vivax	AMPLICON
+ERR16332907	Plasmodium vivax	AMPLICON
+ERR16332909	Plasmodium vivax	AMPLICON
+ERR16332916	Plasmodium vivax	AMPLICON
+ERR16332923	Plasmodium vivax	AMPLICON
+ERR16332926	Plasmodium vivax	AMPLICON
+ERR16332929	Plasmodium vivax	AMPLICON
+ERR16332930	Plasmodium vivax	AMPLICON
+ERR16332931	Plasmodium vivax	AMPLICON
+ERR16332935	Plasmodium vivax	AMPLICON
+ERR16332940	Plasmodium vivax	AMPLICON
+ERR16332943	Plasmodium vivax	AMPLICON
+ERR16332946	Plasmodium vivax	AMPLICON
+ERR16332948	Plasmodium vivax	AMPLICON
+ERR16332956	Plasmodium vivax	AMPLICON
+ERR16332959	Plasmodium vivax	AMPLICON
+ERR16332966	Plasmodium vivax	AMPLICON
+ERR16332969	Plasmodium vivax	AMPLICON
+ERR16332973	Plasmodium vivax	AMPLICON
+ERR16332977	Plasmodium vivax	AMPLICON
+ERR16332978	Plasmodium vivax	AMPLICON
+ERR16332980	Plasmodium vivax	AMPLICON
+ERR16332982	Plasmodium vivax	AMPLICON
+ERR16332994	Plasmodium vivax	AMPLICON
+ERR16333003	Plasmodium vivax	AMPLICON
+ERR16333009	Plasmodium vivax	AMPLICON
+ERR16333018	Plasmodium vivax	AMPLICON
+ERR16333021	Plasmodium vivax	AMPLICON
+ERR16333026	Plasmodium vivax	AMPLICON
+ERR16333030	Plasmodium vivax	AMPLICON
+ERR16333035	Plasmodium vivax	AMPLICON
+ERR16333040	Plasmodium vivax	AMPLICON
+ERR16333046	Plasmodium vivax	AMPLICON
+ERR16000802	Plasmodium vivax	AMPLICON
+ERR16000808	Plasmodium vivax	AMPLICON
+ERR16000809	Plasmodium vivax	AMPLICON
+ERR16000810	Plasmodium vivax	AMPLICON
+ERR16000813	Plasmodium vivax	AMPLICON
+ERR16000814	Plasmodium vivax	AMPLICON
+ERR16000815	Plasmodium vivax	AMPLICON
+ERR16000823	Plasmodium vivax	AMPLICON
+ERR16000824	Plasmodium vivax	AMPLICON
+ERR16000825	Plasmodium vivax	AMPLICON
+ERR16000828	Plasmodium vivax	AMPLICON
+ERR16000831	Plasmodium vivax	AMPLICON
+ERR16000835	Plasmodium vivax	AMPLICON
+ERR16000838	Plasmodium vivax	AMPLICON
+ERR16000839	Plasmodium vivax	AMPLICON
+ERR16000841	Plasmodium vivax	AMPLICON
+ERR16000842	Plasmodium vivax	AMPLICON
+ERR16000845	Plasmodium vivax	AMPLICON
+ERR16000847	Plasmodium vivax	AMPLICON
+ERR16000848	Plasmodium vivax	AMPLICON
+ERR16000855	Plasmodium vivax	AMPLICON
+ERR16000862	Plasmodium vivax	AMPLICON
+ERR16000863	Plasmodium vivax	AMPLICON
+ERR16000865	Plasmodium vivax	AMPLICON
+ERR16000866	Plasmodium vivax	AMPLICON
+ERR16000867	Plasmodium vivax	AMPLICON
+ERR16000871	Plasmodium vivax	AMPLICON
+ERR16000872	Plasmodium vivax	AMPLICON
+ERR16000873	Plasmodium vivax	AMPLICON
+ERR16000876	Plasmodium vivax	AMPLICON
+ERR16000877	Plasmodium vivax	AMPLICON
+ERR16000886	Plasmodium vivax	AMPLICON
+ERR16000887	Plasmodium vivax	AMPLICON
+ERR16000888	Plasmodium vivax	AMPLICON
+ERR16000889	Plasmodium vivax	AMPLICON
+ERR16000890	Plasmodium vivax	AMPLICON
+ERR16000895	Plasmodium vivax	AMPLICON
+ERR16000896	Plasmodium vivax	AMPLICON
+ERR16000899	Plasmodium vivax	AMPLICON
+ERR16000902	Plasmodium vivax	AMPLICON
+ERR16000905	Plasmodium vivax	AMPLICON
+ERR16000757	Plasmodium vivax	AMPLICON
+ERR16000758	Plasmodium vivax	AMPLICON
+ERR16000759	Plasmodium vivax	AMPLICON
+ERR16000765	Plasmodium vivax	AMPLICON
+ERR16000768	Plasmodium vivax	AMPLICON
+ERR16000769	Plasmodium vivax	AMPLICON
+ERR16000775	Plasmodium vivax	AMPLICON
+ERR16000779	Plasmodium vivax	AMPLICON
+ERR16000784	Plasmodium vivax	AMPLICON
+ERR16000788	Plasmodium vivax	AMPLICON
+ERR16000790	Plasmodium vivax	AMPLICON
+ERR16000796	Plasmodium vivax	AMPLICON
+ERR16000800	Plasmodium vivax	AMPLICON
+ERR16332774	Plasmodium vivax	AMPLICON
+ERR16332862	Plasmodium vivax	AMPLICON
+ERR16332869	Plasmodium vivax	AMPLICON
+ERR16332915	Plasmodium vivax	AMPLICON
+ERR16332937	Plasmodium vivax	AMPLICON
+ERR16333000	Plasmodium vivax	AMPLICON
+ERR16000747	Plasmodium vivax	AMPLICON
+ERR16000753	Plasmodium vivax	AMPLICON
+ERR16000801	Plasmodium vivax	AMPLICON
+ERR16000804	Plasmodium vivax	AMPLICON
+ERR16000805	Plasmodium vivax	AMPLICON
+ERR16000806	Plasmodium vivax	AMPLICON
+ERR16000812	Plasmodium vivax	AMPLICON
+ERR16000817	Plasmodium vivax	AMPLICON
+ERR16000833	Plasmodium vivax	AMPLICON
+ERR16000834	Plasmodium vivax	AMPLICON
+ERR16000836	Plasmodium vivax	AMPLICON
+ERR16000840	Plasmodium vivax	AMPLICON
+ERR16000844	Plasmodium vivax	AMPLICON
+ERR16000850	Plasmodium vivax	AMPLICON
+ERR16000856	Plasmodium vivax	AMPLICON
+ERR16000868	Plasmodium vivax	AMPLICON
+ERR16000870	Plasmodium vivax	AMPLICON
+ERR16000878	Plasmodium vivax	AMPLICON
+ERR16000880	Plasmodium vivax	AMPLICON
+ERR16000882	Plasmodium vivax	AMPLICON
+ERR16000891	Plasmodium vivax	AMPLICON
+ERR16000894	Plasmodium vivax	AMPLICON
+ERR16000897	Plasmodium vivax	AMPLICON
+ERR16000906	Plasmodium vivax	AMPLICON
+ERR16000907	Plasmodium vivax	AMPLICON
+ERR16000745	Plasmodium vivax	AMPLICON
+ERR16000749	Plasmodium vivax	AMPLICON
+ERR16000750	Plasmodium vivax	AMPLICON
+ERR16000751	Plasmodium vivax	AMPLICON
+ERR16000752	Plasmodium vivax	AMPLICON
+ERR16000754	Plasmodium vivax	AMPLICON
+ERR16000760	Plasmodium vivax	AMPLICON
+ERR16000761	Plasmodium vivax	AMPLICON
+ERR16000766	Plasmodium vivax	AMPLICON
+ERR16000770	Plasmodium vivax	AMPLICON
+ERR16000781	Plasmodium vivax	AMPLICON
+ERR16000782	Plasmodium vivax	AMPLICON
+ERR16000783	Plasmodium vivax	AMPLICON
+ERR16000785	Plasmodium vivax	AMPLICON
+ERR16000794	Plasmodium vivax	AMPLICON
+ERR15390142	Plasmodium chabaudi	RNA-Seq
+ERR15390148	Plasmodium chabaudi	RNA-Seq
+ERR15390176	Plasmodium chabaudi	RNA-Seq
+ERR15350951	Plasmodium knowlesi strain H	AMPLICON
+ERR15350952	Plasmodium knowlesi strain H	AMPLICON
+ERR15155954	Plasmodium vivax	AMPLICON
+ERR15156022	Plasmodium vivax	AMPLICON
+ERR15156063	Plasmodium vivax	AMPLICON
+ERR15156324	Plasmodium vivax	AMPLICON
+ERR15155930	Plasmodium vivax	AMPLICON
+ERR15156405	Plasmodium vivax	AMPLICON
+ERR15155947	Plasmodium vivax	AMPLICON
+ERR15155997	Plasmodium vivax	AMPLICON
+ERR15156402	Plasmodium vivax	AMPLICON
+ERR15155857	Plasmodium vivax	AMPLICON
+ERR15155912	Plasmodium vivax	AMPLICON
+ERR15155870	Plasmodium vivax	AMPLICON
+ERR15156505	Plasmodium vivax	AMPLICON
+SRR34795461	Plasmodium gaboni	WGA
+SRR34795449	Plasmodium gaboni	WGA
+SRR34795459	Plasmodium gaboni	WGA
+SRR34795458	Plasmodium gaboni	WGA
+SRR34795457	Plasmodium gaboni	WGA
+SRR34795460	Plasmodium gaboni	WGA
+SRR34795456	Plasmodium gaboni	WGA
+SRR34795455	Plasmodium gaboni	WGA
+SRR34795454	Plasmodium gaboni	WGA
+SRR34795453	Plasmodium gaboni	WGA
+SRR34795452	Plasmodium gaboni	WGA
+SRR34795451	Plasmodium gaboni	WGA
+SRR34795450	Plasmodium malariae	WGA
+SRR34944877	Plasmodium vivax	WGS
+SRR34944874	Plasmodium vivax	WGS
+SRR34944859	Plasmodium vivax	WGS
+SRR34944853	Plasmodium vivax	WGS
+SRR34944879	Plasmodium vivax	WGS
+SRR34944863	Plasmodium vivax	WGS
+SRR34944868	Plasmodium vivax	WGS
+SRR34944865	Plasmodium vivax	WGS
+SRR34944856	Plasmodium vivax	WGS
+SRR34944864	Plasmodium vivax	WGS
+SRR34944876	Plasmodium vivax	WGS
+SRR34944855	Plasmodium vivax	WGS
+SRR34944867	Plasmodium vivax	WGS
+SRR34944871	Plasmodium vivax	WGS
+SRR34944869	Plasmodium vivax	WGS
+SRR34944866	Plasmodium vivax	WGS
+SRR34944875	Plasmodium vivax	WGS
+SRR34944854	Plasmodium vivax	WGS
+SRR34944861	Plasmodium vivax	WGS
+SRR34944881	Plasmodium vivax	WGS
+SRR34944880	Plasmodium vivax	WGS
+SRR34944858	Plasmodium vivax	WGS
+SRR34944878	Plasmodium vivax	WGS
+SRR34944860	Plasmodium vivax	WGS
+SRR34944862	Plasmodium vivax	WGS
+SRR34944857	Plasmodium vivax	WGS
+SRR34944870	Plasmodium vivax	WGS
+SRR34944872	Plasmodium vivax	WGS
+SRR34944873	Plasmodium vivax	WGS
+ERR15156207	Plasmodium vivax	AMPLICON
+ERR15155832	Plasmodium vivax	AMPLICON
+ERR15156149	Plasmodium vivax	AMPLICON
+ERR15156000	Plasmodium vivax	AMPLICON
+ERR15156127	Plasmodium vivax	AMPLICON
+ERR15156060	Plasmodium vivax	AMPLICON
+ERR15155992	Plasmodium vivax	AMPLICON
+ERR15156251	Plasmodium vivax	AMPLICON
+ERR15156042	Plasmodium vivax	AMPLICON
+ERR15156540	Plasmodium vivax	AMPLICON
+ERR15156511	Plasmodium vivax	AMPLICON
+ERR15156265	Plasmodium vivax	AMPLICON
+ERR15155907	Plasmodium vivax	AMPLICON
+ERR15156563	Plasmodium vivax	AMPLICON
+ERR15156276	Plasmodium vivax	AMPLICON
+ERR15156029	Plasmodium vivax	AMPLICON
+ERR15155979	Plasmodium vivax	AMPLICON
+ERR15155991	Plasmodium vivax	AMPLICON
+ERR15156209	Plasmodium vivax	AMPLICON
+ERR15156571	Plasmodium vivax	AMPLICON
+ERR15156030	Plasmodium vivax	AMPLICON
+ERR15156441	Plasmodium sp.	AMPLICON
+ERR15156111	Plasmodium vivax	AMPLICON
+ERR15156117	Plasmodium vivax	AMPLICON
+ERR15155966	Plasmodium vivax	AMPLICON
+ERR15156148	Plasmodium vivax	AMPLICON
+ERR15156140	Plasmodium vivax	AMPLICON
+ERR15156259	Plasmodium vivax	AMPLICON
+ERR15156175	Plasmodium vivax	AMPLICON
+ERR15156557	Plasmodium vivax	AMPLICON
+ERR15156108	Plasmodium vivax	AMPLICON
+ERR15156567	Plasmodium vivax	AMPLICON
+ERR15156414	Plasmodium vivax	AMPLICON
+ERR15156524	Plasmodium vivax	AMPLICON
+ERR15156355	Plasmodium vivax	AMPLICON
+ERR15156068	Plasmodium vivax	AMPLICON
+ERR15155939	Plasmodium vivax	AMPLICON
+ERR15155892	Plasmodium vivax	AMPLICON
+ERR15156069	Plasmodium vivax	AMPLICON
+ERR15156245	Plasmodium vivax	AMPLICON
+ERR15156474	Plasmodium vivax	AMPLICON
+ERR15156009	Plasmodium vivax	AMPLICON
+ERR15155845	Plasmodium vivax	AMPLICON
+ERR15155920	Plasmodium vivax	AMPLICON
+ERR15156420	Plasmodium vivax	AMPLICON
+ERR15156254	Plasmodium vivax	AMPLICON
+ERR15155780	Plasmodium vivax	AMPLICON
+ERR15155940	Plasmodium vivax	AMPLICON
+ERR15156350	Plasmodium vivax	AMPLICON
+ERR15156401	Plasmodium vivax	AMPLICON
+ERR15155888	Plasmodium vivax	AMPLICON
+ERR15156366	Plasmodium vivax	AMPLICON
+ERR15156437	Plasmodium malariae	AMPLICON
+ERR15156181	Plasmodium vivax	AMPLICON
+ERR15156004	Plasmodium vivax	AMPLICON
+ERR15155833	Plasmodium vivax	AMPLICON
+ERR15156011	Plasmodium vivax	AMPLICON
+ERR15155873	Plasmodium vivax	AMPLICON
+ERR15156132	Plasmodium vivax	AMPLICON
+ERR15155941	Plasmodium vivax	AMPLICON
+ERR15156195	Plasmodium vivax	AMPLICON
+ERR15156052	Plasmodium vivax	AMPLICON
+ERR15155975	Plasmodium vivax	AMPLICON
+ERR15155972	Plasmodium vivax	AMPLICON
+ERR15156334	Plasmodium vivax	AMPLICON
+ERR15156016	Plasmodium vivax	AMPLICON
+ERR15156095	Plasmodium vivax	AMPLICON
+ERR15156383	Plasmodium vivax	AMPLICON
+ERR15156198	Plasmodium vivax	AMPLICON
+ERR15155934	Plasmodium vivax	AMPLICON
+ERR15155793	Plasmodium vivax	AMPLICON
+ERR15156244	Plasmodium vivax	AMPLICON
+ERR15156589	Plasmodium vivax	AMPLICON
+ERR15156553	Plasmodium vivax	AMPLICON
+ERR15156308	Plasmodium vivax	AMPLICON
+ERR15155842	Plasmodium vivax	AMPLICON
+ERR15156124	Plasmodium vivax	AMPLICON
+ERR15156512	Plasmodium vivax	AMPLICON
+ERR15156591	Plasmodium vivax	AMPLICON
+ERR15156330	Plasmodium vivax	AMPLICON
+ERR15156577	Plasmodium vivax	AMPLICON
+ERR15156205	Plasmodium vivax	AMPLICON
+ERR15156321	Plasmodium vivax	AMPLICON
+ERR15156137	Plasmodium vivax	AMPLICON
+ERR15156084	Plasmodium vivax	AMPLICON
+ERR15156141	Plasmodium vivax	AMPLICON
+ERR15155786	Plasmodium vivax	AMPLICON
+ERR15156146	Plasmodium vivax	AMPLICON
+ERR15156357	Plasmodium vivax	AMPLICON
+ERR15156081	Plasmodium vivax	AMPLICON
+ERR15155916	Plasmodium vivax	AMPLICON
+ERR15155839	Plasmodium vivax	AMPLICON
+ERR15156536	Plasmodium vivax	AMPLICON
+ERR15156354	Plasmodium vivax	AMPLICON
+ERR15156305	Plasmodium vivax	AMPLICON
+ERR15156464	Plasmodium vivax	AMPLICON
+ERR15156448	Plasmodium vivax	AMPLICON
+ERR15156459	Plasmodium vivax	AMPLICON
+ERR15156086	Plasmodium vivax	AMPLICON
+ERR15155797	Plasmodium vivax	AMPLICON
+ERR15156224	Plasmodium vivax	AMPLICON
+ERR15156048	Plasmodium vivax	AMPLICON
+ERR15156497	Plasmodium vivax	AMPLICON
+ERR15156491	Plasmodium vivax	AMPLICON
+ERR15156239	Plasmodium vivax	AMPLICON
+ERR15156135	Plasmodium vivax	AMPLICON
+ERR15155856	Plasmodium vivax	AMPLICON
+ERR15156188	Plasmodium vivax	AMPLICON
+ERR15156131	Plasmodium vivax	AMPLICON
+ERR15155830	Plasmodium vivax	AMPLICON
+ERR15156079	Plasmodium vivax	AMPLICON
+ERR15156075	Plasmodium vivax	AMPLICON
+ERR15156298	Plasmodium vivax	AMPLICON
+ERR15155828	Plasmodium vivax	AMPLICON
+ERR15156507	Plasmodium vivax	AMPLICON
+ERR15156310	Plasmodium vivax	AMPLICON
+ERR15156138	Plasmodium vivax	AMPLICON
+ERR15156558	Plasmodium vivax	AMPLICON
+ERR15156036	Plasmodium vivax	AMPLICON
+ERR15156070	Plasmodium vivax	AMPLICON
+ERR15156167	Plasmodium vivax	AMPLICON
+ERR15155902	Plasmodium vivax	AMPLICON
+ERR15156249	Plasmodium vivax	AMPLICON
+ERR15156019	Plasmodium vivax	AMPLICON
+ERR15156360	Plasmodium vivax	AMPLICON
+ERR15155893	Plasmodium vivax	AMPLICON
+ERR15156033	Plasmodium vivax	AMPLICON
+ERR15156153	Plasmodium vivax	AMPLICON
+ERR15155956	Plasmodium vivax	AMPLICON
+ERR15156312	Plasmodium vivax	AMPLICON
+ERR15156018	Plasmodium vivax	AMPLICON
+ERR15155882	Plasmodium vivax	AMPLICON
+ERR15156584	Plasmodium vivax	AMPLICON
+ERR15156348	Plasmodium vivax	AMPLICON
+ERR15156359	Plasmodium vivax	AMPLICON
+ERR15155775	Plasmodium vivax	AMPLICON
+ERR15156219	Plasmodium vivax	AMPLICON
+ERR15155994	Plasmodium vivax	AMPLICON
+ERR15156184	Plasmodium vivax	AMPLICON
+ERR15156319	Plasmodium vivax	AMPLICON
+ERR15156517	Plasmodium vivax	AMPLICON
+ERR15156055	Plasmodium vivax	AMPLICON
+ERR15155812	Plasmodium vivax	AMPLICON
+ERR15156415	Plasmodium vivax	AMPLICON
+ERR15156542	Plasmodium vivax	AMPLICON
+ERR15155816	Plasmodium vivax	AMPLICON
+ERR15156116	Plasmodium vivax	AMPLICON
+ERR15156316	Plasmodium vivax	AMPLICON
+ERR15156392	Plasmodium vivax	AMPLICON
+ERR15156156	Plasmodium vivax	AMPLICON
+ERR15156471	Plasmodium vivax	AMPLICON
+ERR15155928	Plasmodium vivax	AMPLICON
+ERR15156163	Plasmodium vivax	AMPLICON
+ERR15156518	Plasmodium vivax	AMPLICON
+ERR15156041	Plasmodium vivax	AMPLICON
+ERR15155868	Plasmodium vivax	AMPLICON
+ERR15156486	Plasmodium vivax	AMPLICON
+ERR15156230	Plasmodium vivax	AMPLICON
+ERR15156150	Plasmodium vivax	AMPLICON
+ERR15156260	Plasmodium vivax	AMPLICON
+ERR15156093	Plasmodium vivax	AMPLICON
+ERR15156237	Plasmodium vivax	AMPLICON
+ERR15156114	Plasmodium vivax	AMPLICON
+ERR15156376	Plasmodium vivax	AMPLICON
+ERR15155897	Plasmodium vivax	AMPLICON
+ERR15155980	Plasmodium vivax	AMPLICON
+ERR15156403	Plasmodium vivax	AMPLICON
+ERR15155923	Plasmodium vivax	AMPLICON
+ERR15156424	Plasmodium vivax	AMPLICON
+ERR15156409	Plasmodium vivax	AMPLICON
+ERR15156258	Plasmodium vivax	AMPLICON
+ERR15156572	Plasmodium vivax	AMPLICON
+ERR15156519	Plasmodium vivax	AMPLICON
+ERR15156575	Plasmodium vivax	AMPLICON
+ERR15156049	Plasmodium vivax	AMPLICON
+ERR15156100	Plasmodium vivax	AMPLICON
+ERR15155823	Plasmodium vivax	AMPLICON
+ERR15155791	Plasmodium vivax	AMPLICON
+ERR15155915	Plasmodium vivax	AMPLICON
+ERR15155883	Plasmodium vivax	AMPLICON
+ERR15156387	Plasmodium vivax	AMPLICON
+ERR15156229	Plasmodium vivax	AMPLICON
+ERR15156185	Plasmodium vivax	AMPLICON
+ERR15156371	Plasmodium vivax	AMPLICON
+ERR15156220	Plasmodium vivax	AMPLICON
+ERR15156065	Plasmodium vivax	AMPLICON
+ERR15155945	Plasmodium vivax	AMPLICON
+ERR15156389	Plasmodium vivax	AMPLICON
+ERR15155851	Plasmodium vivax	AMPLICON
+ERR15156045	Plasmodium vivax	AMPLICON
+ERR15155918	Plasmodium vivax	AMPLICON
+ERR15156191	Plasmodium vivax	AMPLICON
+ERR15156044	Plasmodium vivax	AMPLICON
+ERR15156525	Plasmodium vivax	AMPLICON
+ERR15156436	Plasmodium malariae	AMPLICON
+ERR15155986	Plasmodium vivax	AMPLICON
+ERR15156522	Plasmodium vivax	AMPLICON
+ERR15155818	Plasmodium vivax	AMPLICON
+ERR15156151	Plasmodium vivax	AMPLICON
+ERR15156364	Plasmodium vivax	AMPLICON
+ERR15156286	Plasmodium vivax	AMPLICON
+ERR15156021	Plasmodium vivax	AMPLICON
+ERR15156433	Plasmodium knowlesi	AMPLICON
+ERR15156160	Plasmodium vivax	AMPLICON
+ERR15156006	Plasmodium vivax	AMPLICON
+ERR15155790	Plasmodium vivax	AMPLICON
+ERR15155838	Plasmodium vivax	AMPLICON
+ERR15156422	Plasmodium vivax	AMPLICON
+ERR15156192	Plasmodium vivax	AMPLICON
+ERR15156027	Plasmodium vivax	AMPLICON
+ERR15156173	Plasmodium vivax	AMPLICON
+ERR15156432	Plasmodium knowlesi	AMPLICON
+ERR15156172	Plasmodium vivax	AMPLICON
+ERR15156050	Plasmodium vivax	AMPLICON
+ERR15155901	Plasmodium vivax	AMPLICON
+ERR15155774	Plasmodium vivax	AMPLICON
+ERR15156587	Plasmodium vivax	AMPLICON
+ERR15156197	Plasmodium vivax	AMPLICON
+ERR15156174	Plasmodium vivax	AMPLICON
+ERR15156462	Plasmodium vivax	AMPLICON
+ERR15156460	Plasmodium vivax	AMPLICON
+ERR15156549	Plasmodium vivax	AMPLICON
+ERR15156483	Plasmodium vivax	AMPLICON
+ERR15156496	Plasmodium vivax	AMPLICON
+ERR15156488	Plasmodium vivax	AMPLICON
+ERR15156091	Plasmodium vivax	AMPLICON
+ERR15156080	Plasmodium vivax	AMPLICON
+ERR15156113	Plasmodium vivax	AMPLICON
+ERR15156513	Plasmodium vivax	AMPLICON
+ERR15155880	Plasmodium vivax	AMPLICON
+ERR15155987	Plasmodium vivax	AMPLICON
+ERR15155847	Plasmodium vivax	AMPLICON
+ERR15156289	Plasmodium vivax	AMPLICON
+ERR15156528	Plasmodium vivax	AMPLICON
+ERR15156020	Plasmodium vivax	AMPLICON
+ERR15156204	Plasmodium vivax	AMPLICON
+ERR15156125	Plasmodium vivax	AMPLICON
+ERR15155938	Plasmodium vivax	AMPLICON
+ERR15156530	Plasmodium vivax	AMPLICON
+ERR15155957	Plasmodium vivax	AMPLICON
+ERR15155944	Plasmodium vivax	AMPLICON
+ERR15156155	Plasmodium vivax	AMPLICON
+ERR15156012	Plasmodium vivax	AMPLICON
+ERR15156304	Plasmodium vivax	AMPLICON
+ERR15155974	Plasmodium vivax	AMPLICON
+ERR15155859	Plasmodium vivax	AMPLICON
+ERR15155924	Plasmodium vivax	AMPLICON
+ERR15156426	Plasmodium vivax	AMPLICON
+ERR15156566	Plasmodium vivax	AMPLICON
+ERR15156506	Plasmodium vivax	AMPLICON
+ERR15156106	Plasmodium vivax	AMPLICON
+ERR15156147	Plasmodium vivax	AMPLICON
+ERR15156347	Plasmodium vivax	AMPLICON
+ERR15156235	Plasmodium vivax	AMPLICON
+ERR15156277	Plasmodium vivax	AMPLICON
+ERR15156377	Plasmodium vivax	AMPLICON
+ERR15156410	Plasmodium vivax	AMPLICON
+ERR15155844	Plasmodium vivax	AMPLICON
+ERR15156208	Plasmodium vivax	AMPLICON
+ERR15155872	Plasmodium vivax	AMPLICON
+ERR15156315	Plasmodium vivax	AMPLICON
+ERR15156176	Plasmodium vivax	AMPLICON
+ERR15156349	Plasmodium vivax	AMPLICON
+ERR15156010	Plasmodium vivax	AMPLICON
+ERR15156246	Plasmodium vivax	AMPLICON
+ERR15156396	Plasmodium vivax	AMPLICON
+ERR15156362	Plasmodium vivax	AMPLICON
+ERR15156564	Plasmodium vivax	AMPLICON
+ERR15155824	Plasmodium vivax	AMPLICON
+ERR15155935	Plasmodium vivax	AMPLICON
+ERR15156535	Plasmodium vivax	AMPLICON
+ERR15155958	Plasmodium vivax	AMPLICON
+ERR15155982	Plasmodium vivax	AMPLICON
+ERR15156222	Plasmodium vivax	AMPLICON
+ERR15156261	Plasmodium vivax	AMPLICON
+ERR15155865	Plasmodium vivax	AMPLICON
+ERR15156123	Plasmodium vivax	AMPLICON
+ERR15155785	Plasmodium vivax	AMPLICON
+ERR15155977	Plasmodium vivax	AMPLICON
+ERR15156202	Plasmodium vivax	AMPLICON
+ERR15156470	Plasmodium vivax	AMPLICON
+ERR15156454	Plasmodium vivax	AMPLICON
+ERR15156458	Plasmodium vivax	AMPLICON
+ERR15156051	Plasmodium vivax	AMPLICON
+ERR15156215	Plasmodium vivax	AMPLICON
+ERR15156267	Plasmodium vivax	AMPLICON
+ERR15156487	Plasmodium vivax	AMPLICON
+ERR15156240	Plasmodium vivax	AMPLICON
+ERR15156417	Plasmodium vivax	AMPLICON
+ERR15156034	Plasmodium vivax	AMPLICON
+ERR15155869	Plasmodium vivax	AMPLICON
+ERR15156266	Plasmodium vivax	AMPLICON
+ERR15156253	Plasmodium vivax	AMPLICON
+ERR15156320	Plasmodium vivax	AMPLICON
+ERR15155946	Plasmodium vivax	AMPLICON
+ERR15155853	Plasmodium vivax	AMPLICON
+ERR15156040	Plasmodium vivax	AMPLICON
+ERR15156534	Plasmodium vivax	AMPLICON
+ERR15156187	Plasmodium vivax	AMPLICON
+ERR15156164	Plasmodium vivax	AMPLICON
+ERR15156217	Plasmodium vivax	AMPLICON
+ERR15156394	Plasmodium vivax	AMPLICON
+ERR15156082	Plasmodium vivax	AMPLICON
+ERR15155904	Plasmodium vivax	AMPLICON
+ERR15156268	Plasmodium vivax	AMPLICON
+ERR15155933	Plasmodium vivax	AMPLICON
+ERR15155973	Plasmodium vivax	AMPLICON
+ERR15156509	Plasmodium vivax	AMPLICON
+ERR15155908	Plasmodium vivax	AMPLICON
+ERR15156335	Plasmodium vivax	AMPLICON
+ERR15156071	Plasmodium vivax	AMPLICON
+ERR15156552	Plasmodium vivax	AMPLICON
+ERR15155864	Plasmodium vivax	AMPLICON
+ERR15155910	Plasmodium vivax	AMPLICON
+ERR15156342	Plasmodium vivax	AMPLICON
+ERR15155805	Plasmodium vivax	AMPLICON
+ERR15156017	Plasmodium vivax	AMPLICON
+ERR15156231	Plasmodium vivax	AMPLICON
+ERR15155877	Plasmodium vivax	AMPLICON
+ERR15155969	Plasmodium vivax	AMPLICON
+ERR15155795	Plasmodium vivax	AMPLICON
+ERR15156314	Plasmodium vivax	AMPLICON
+ERR15156353	Plasmodium vivax	AMPLICON
+ERR15156326	Plasmodium vivax	AMPLICON
+ERR15156515	Plasmodium vivax	AMPLICON
+ERR15156280	Plasmodium vivax	AMPLICON
+ERR15156002	Plasmodium vivax	AMPLICON
+ERR15156578	Plasmodium vivax	AMPLICON
+ERR15156508	Plasmodium vivax	AMPLICON
+ERR15156329	Plasmodium vivax	AMPLICON
+ERR15156119	Plasmodium vivax	AMPLICON
+ERR15155836	Plasmodium vivax	AMPLICON
+ERR15156128	Plasmodium vivax	AMPLICON
+ERR15156332	Plasmodium vivax	AMPLICON
+ERR15156037	Plasmodium vivax	AMPLICON
+ERR15156206	Plasmodium vivax	AMPLICON
+ERR15156452	Plasmodium vivax	AMPLICON
+ERR15156468	Plasmodium vivax	AMPLICON
+ERR15156270	Plasmodium vivax	AMPLICON
+ERR15156177	Plasmodium vivax	AMPLICON
+ERR15156421	Plasmodium vivax	AMPLICON
+ERR15156126	Plasmodium vivax	AMPLICON
+ERR15156479	Plasmodium vivax	AMPLICON
+ERR15156492	Plasmodium vivax	AMPLICON
+ERR15156480	Plasmodium vivax	AMPLICON
+ERR15155984	Plasmodium vivax	AMPLICON
+ERR15156201	Plasmodium vivax	AMPLICON
+ERR15155776	Plasmodium vivax	AMPLICON
+ERR15156283	Plasmodium vivax	AMPLICON
+ERR15155968	Plasmodium vivax	AMPLICON
+ERR15156361	Plasmodium vivax	AMPLICON
+ERR15156028	Plasmodium vivax	AMPLICON
+ERR15156122	Plasmodium vivax	AMPLICON
+ERR15156077	Plasmodium vivax	AMPLICON
+ERR15156554	Plasmodium vivax	AMPLICON
+ERR15155988	Plasmodium vivax	AMPLICON
+ERR15156182	Plasmodium vivax	AMPLICON
+ERR15156066	Plasmodium vivax	AMPLICON
+ERR15156313	Plasmodium vivax	AMPLICON
+ERR15156247	Plasmodium vivax	AMPLICON
+ERR15155827	Plasmodium vivax	AMPLICON
+ERR15156358	Plasmodium vivax	AMPLICON
+ERR15156327	Plasmodium vivax	AMPLICON
+ERR15155854	Plasmodium vivax	AMPLICON
+ERR15156130	Plasmodium vivax	AMPLICON
+ERR15156092	Plasmodium vivax	AMPLICON
+ERR15155955	Plasmodium vivax	AMPLICON
+ERR15156180	Plasmodium vivax	AMPLICON
+ERR15156085	Plasmodium vivax	AMPLICON
+ERR15156078	Plasmodium vivax	AMPLICON
+ERR15156200	Plasmodium vivax	AMPLICON
+ERR15156580	Plasmodium vivax	AMPLICON
+ERR15155798	Plasmodium vivax	AMPLICON
+ERR15155950	Plasmodium vivax	AMPLICON
+ERR15156569	Plasmodium vivax	AMPLICON
+ERR15156189	Plasmodium vivax	AMPLICON
+ERR15155971	Plasmodium vivax	AMPLICON
+ERR15156443	Plasmodium sp.	AMPLICON
+ERR15156425	Plasmodium vivax	AMPLICON
+ERR15156223	Plasmodium vivax	AMPLICON
+ERR15155806	Plasmodium vivax	AMPLICON
+ERR15156039	Plasmodium vivax	AMPLICON
+ERR15156046	Plasmodium vivax	AMPLICON
+ERR15156101	Plasmodium vivax	AMPLICON
+ERR15156416	Plasmodium vivax	AMPLICON
+ERR15156250	Plasmodium vivax	AMPLICON
+ERR15155981	Plasmodium vivax	AMPLICON
+ERR15156338	Plasmodium vivax	AMPLICON
+ERR15155998	Plasmodium vivax	AMPLICON
+ERR15156449	Plasmodium vivax	AMPLICON
+ERR15156455	Plasmodium vivax	AMPLICON
+ERR15156144	Plasmodium vivax	AMPLICON
+ERR15156061	Plasmodium vivax	AMPLICON
+ERR15156300	Plasmodium vivax	AMPLICON
+ERR15156484	Plasmodium vivax	AMPLICON
+ERR15156545	Plasmodium vivax	AMPLICON
+ERR15156390	Plasmodium vivax	AMPLICON
+ERR15156521	Plasmodium vivax	AMPLICON
+ERR15155931	Plasmodium vivax	AMPLICON
+ERR15156105	Plasmodium vivax	AMPLICON
+ERR15156031	Plasmodium vivax	AMPLICON
+ERR15156279	Plasmodium vivax	AMPLICON
+ERR15156573	Plasmodium vivax	AMPLICON
+ERR15156388	Plasmodium vivax	AMPLICON
+ERR15155929	Plasmodium vivax	AMPLICON
+ERR15156363	Plasmodium vivax	AMPLICON
+ERR15155922	Plasmodium vivax	AMPLICON
+ERR15155906	Plasmodium vivax	AMPLICON
+ERR15156183	Plasmodium vivax	AMPLICON
+ERR15156529	Plasmodium vivax	AMPLICON
+ERR15156302	Plasmodium vivax	AMPLICON
+ERR15155878	Plasmodium vivax	AMPLICON
+ERR15155909	Plasmodium vivax	AMPLICON
+ERR15156003	Plasmodium vivax	AMPLICON
+ERR15156404	Plasmodium vivax	AMPLICON
+ERR15156287	Plasmodium vivax	AMPLICON
+ERR15156057	Plasmodium vivax	AMPLICON
+ERR15155796	Plasmodium vivax	AMPLICON
+ERR15155863	Plasmodium vivax	AMPLICON
+ERR15156551	Plasmodium vivax	AMPLICON
+ERR15155875	Plasmodium vivax	AMPLICON
+ERR15156541	Plasmodium vivax	AMPLICON
+ERR15155995	Plasmodium vivax	AMPLICON
+ERR15156211	Plasmodium vivax	AMPLICON
+ERR15156102	Plasmodium vivax	AMPLICON
+ERR15156520	Plasmodium vivax	AMPLICON
+ERR15156097	Plasmodium vivax	AMPLICON
+ERR15155900	Plasmodium vivax	AMPLICON
+ERR15156333	Plasmodium vivax	AMPLICON
+ERR15156516	Plasmodium vivax	AMPLICON
+ERR15156152	Plasmodium vivax	AMPLICON
+ERR15156252	Plasmodium vivax	AMPLICON
+ERR15155803	Plasmodium vivax	AMPLICON
+ERR15156537	Plasmodium vivax	AMPLICON
+ERR15155809	Plasmodium vivax	AMPLICON
+ERR15155813	Plasmodium vivax	AMPLICON
+ERR15156186	Plasmodium vivax	AMPLICON
+ERR15155885	Plasmodium vivax	AMPLICON
+ERR15156299	Plasmodium vivax	AMPLICON
+ERR15155932	Plasmodium vivax	AMPLICON
+ERR15156226	Plasmodium vivax	AMPLICON
+ERR15156309	Plasmodium vivax	AMPLICON
+ERR15156581	Plasmodium vivax	AMPLICON
+ERR15156336	Plasmodium vivax	AMPLICON
+ERR15156297	Plasmodium vivax	AMPLICON
+ERR15156216	Plasmodium vivax	AMPLICON
+ERR15156400	Plasmodium vivax	AMPLICON
+ERR15156139	Plasmodium vivax	AMPLICON
+ERR15155889	Plasmodium vivax	AMPLICON
+ERR15155936	Plasmodium vivax	AMPLICON
+ERR15155952	Plasmodium vivax	AMPLICON
+ERR15155965	Plasmodium vivax	AMPLICON
+ERR15156346	Plasmodium vivax	AMPLICON
+ERR15156255	Plasmodium vivax	AMPLICON
+ERR15156234	Plasmodium vivax	AMPLICON
+ERR15156243	Plasmodium vivax	AMPLICON
+ERR15156110	Plasmodium vivax	AMPLICON
+ERR15155990	Plasmodium vivax	AMPLICON
+ERR15156456	Plasmodium vivax	AMPLICON
+ERR15156447	Plasmodium vivax	AMPLICON
+ERR15156165	Plasmodium vivax	AMPLICON
+ERR15156273	Plasmodium vivax	AMPLICON
+ERR15156500	Plasmodium vivax	AMPLICON
+ERR15156476	Plasmodium vivax	AMPLICON
+ERR15156478	Plasmodium vivax	AMPLICON
+ERR15155843	Plasmodium vivax	AMPLICON
+ERR15156087	Plasmodium vivax	AMPLICON
+ERR15156345	Plasmodium vivax	AMPLICON
+ERR15156339	Plasmodium vivax	AMPLICON
+ERR15155834	Plasmodium vivax	AMPLICON
+ERR15156056	Plasmodium vivax	AMPLICON
+ERR15156263	Plasmodium vivax	AMPLICON
+ERR15156293	Plasmodium vivax	AMPLICON
+ERR15156533	Plasmodium vivax	AMPLICON
+ERR15156076	Plasmodium vivax	AMPLICON
+ERR15156064	Plasmodium vivax	AMPLICON
+ERR15156094	Plasmodium vivax	AMPLICON
+ERR15156170	Plasmodium vivax	AMPLICON
+ERR15156282	Plasmodium vivax	AMPLICON
+ERR15155779	Plasmodium vivax	AMPLICON
+ERR15155959	Plasmodium vivax	AMPLICON
+ERR15156399	Plasmodium vivax	AMPLICON
+ERR15156104	Plasmodium vivax	AMPLICON
+ERR15156083	Plasmodium vivax	AMPLICON
+ERR15155815	Plasmodium vivax	AMPLICON
+ERR15156194	Plasmodium vivax	AMPLICON
+ERR15156407	Plasmodium vivax	AMPLICON
+ERR15155784	Plasmodium vivax	AMPLICON
+ERR15156544	Plasmodium vivax	AMPLICON
+ERR15156225	Plasmodium vivax	AMPLICON
+ERR15156294	Plasmodium vivax	AMPLICON
+ERR15156099	Plasmodium vivax	AMPLICON
+ERR15156210	Plasmodium vivax	AMPLICON
+ERR15156074	Plasmodium vivax	AMPLICON
+ERR15155896	Plasmodium vivax	AMPLICON
+ERR15156005	Plasmodium vivax	AMPLICON
+ERR15156288	Plasmodium vivax	AMPLICON
+ERR15156228	Plasmodium vivax	AMPLICON
+ERR15156356	Plasmodium vivax	AMPLICON
+ERR15156428	Plasmodium vivax	AMPLICON
+ERR15156026	Plasmodium vivax	AMPLICON
+ERR15156013	Plasmodium vivax	AMPLICON
+ERR15156157	Plasmodium vivax	AMPLICON
+ERR15155825	Plasmodium vivax	AMPLICON
+ERR15155926	Plasmodium vivax	AMPLICON
+ERR15156199	Plasmodium vivax	AMPLICON
+ERR15156193	Plasmodium vivax	AMPLICON
+ERR15156568	Plasmodium vivax	AMPLICON
+ERR15156062	Plasmodium vivax	AMPLICON
+ERR15156024	Plasmodium vivax	AMPLICON
+ERR15156328	Plasmodium vivax	AMPLICON
+ERR15155792	Plasmodium vivax	AMPLICON
+ERR15156109	Plasmodium vivax	AMPLICON
+ERR15156168	Plasmodium vivax	AMPLICON
+ERR15156196	Plasmodium vivax	AMPLICON
+ERR15156043	Plasmodium vivax	AMPLICON
+ERR15155781	Plasmodium vivax	AMPLICON
+ERR15155913	Plasmodium vivax	AMPLICON
+ERR15155884	Plasmodium vivax	AMPLICON
+ERR15155867	Plasmodium vivax	AMPLICON
+ERR15156136	Plasmodium vivax	AMPLICON
+ERR15156227	Plasmodium vivax	AMPLICON
+ERR15156444	Plasmodium vivax	AMPLICON
+ERR15156463	Plasmodium vivax	AMPLICON
+ERR15156291	Plasmodium vivax	AMPLICON
+ERR15156495	Plasmodium vivax	AMPLICON
+ERR15156502	Plasmodium vivax	AMPLICON
+ERR15156190	Plasmodium vivax	AMPLICON
+ERR15156179	Plasmodium vivax	AMPLICON
+ERR15156375	Plasmodium vivax	AMPLICON
+ERR15156583	Plasmodium vivax	AMPLICON
+ERR15155840	Plasmodium vivax	AMPLICON
+ERR15156365	Plasmodium vivax	AMPLICON
+ERR15155860	Plasmodium vivax	AMPLICON
+ERR15156053	Plasmodium vivax	AMPLICON
+ERR15155891	Plasmodium vivax	AMPLICON
+ERR15155943	Plasmodium vivax	AMPLICON
+ERR15156233	Plasmodium vivax	AMPLICON
+ERR15156560	Plasmodium vivax	AMPLICON
+ERR15156218	Plasmodium vivax	AMPLICON
+ERR15156431	Plasmodium knowlesi	AMPLICON
+ERR15155993	Plasmodium vivax	AMPLICON
+ERR15155787	Plasmodium vivax	AMPLICON
+ERR15156001	Plasmodium vivax	AMPLICON
+ERR15156317	Plasmodium vivax	AMPLICON
+ERR15155876	Plasmodium vivax	AMPLICON
+ERR15156418	Plasmodium vivax	AMPLICON
+ERR15156242	Plasmodium vivax	AMPLICON
+ERR15155874	Plasmodium vivax	AMPLICON
+ERR15156514	Plasmodium vivax	AMPLICON
+ERR15156555	Plasmodium vivax	AMPLICON
+ERR15156143	Plasmodium vivax	AMPLICON
+ERR15155942	Plasmodium vivax	AMPLICON
+ERR15156103	Plasmodium vivax	AMPLICON
+ERR15155782	Plasmodium vivax	AMPLICON
+ERR15156248	Plasmodium vivax	AMPLICON
+ERR15155919	Plasmodium vivax	AMPLICON
+ERR15156561	Plasmodium vivax	AMPLICON
+ERR15156054	Plasmodium vivax	AMPLICON
+ERR15156307	Plasmodium vivax	AMPLICON
+ERR15155967	Plasmodium vivax	AMPLICON
+ERR15155831	Plasmodium vivax	AMPLICON
+ERR15156178	Plasmodium vivax	AMPLICON
+ERR15155810	Plasmodium vivax	AMPLICON
+ERR15155855	Plasmodium vivax	AMPLICON
+ERR15156367	Plasmodium vivax	AMPLICON
+ERR15156212	Plasmodium vivax	AMPLICON
+ERR15156096	Plasmodium vivax	AMPLICON
+ERR15156531	Plasmodium vivax	AMPLICON
+ERR15155817	Plasmodium vivax	AMPLICON
+ERR15156453	Plasmodium vivax	AMPLICON
+ERR15156445	Plasmodium vivax	AMPLICON
+ERR15155820	Plasmodium vivax	AMPLICON
+ERR15156035	Plasmodium vivax	AMPLICON
+ERR15155985	Plasmodium vivax	AMPLICON
+ERR15156352	Plasmodium vivax	AMPLICON
+ERR15156485	Plasmodium vivax	AMPLICON
+ERR15156499	Plasmodium vivax	AMPLICON
+ERR15156482	Plasmodium vivax	AMPLICON
+ERR15156481	Plasmodium vivax	AMPLICON
+ERR15156118	Plasmodium vivax	AMPLICON
+ERR15155917	Plasmodium vivax	AMPLICON
+ERR15156295	Plasmodium vivax	AMPLICON
+ERR15156134	Plasmodium vivax	AMPLICON
+ERR15156274	Plasmodium vivax	AMPLICON
+ERR15156393	Plasmodium vivax	AMPLICON
+ERR15156214	Plasmodium vivax	AMPLICON
+ERR15156325	Plasmodium vivax	AMPLICON
+ERR15156548	Plasmodium vivax	AMPLICON
+ERR15156256	Plasmodium vivax	AMPLICON
+ERR15156032	Plasmodium vivax	AMPLICON
+ERR15155887	Plasmodium vivax	AMPLICON
+ERR15156588	Plasmodium vivax	AMPLICON
+ERR15156213	Plasmodium vivax	AMPLICON
+ERR15156582	Plasmodium vivax	AMPLICON
+ERR15156129	Plasmodium vivax	AMPLICON
+ERR15156290	Plasmodium vivax	AMPLICON
+ERR15155801	Plasmodium vivax	AMPLICON
+ERR15156593	Plasmodium vivax	AMPLICON
+ERR15156526	Plasmodium vivax	AMPLICON
+ERR15156257	Plasmodium vivax	AMPLICON
+ERR15156264	Plasmodium vivax	AMPLICON
+ERR15155811	Plasmodium vivax	AMPLICON
+ERR15156523	Plasmodium vivax	AMPLICON
+ERR15156162	Plasmodium vivax	AMPLICON
+ERR15156284	Plasmodium vivax	AMPLICON
+ERR15156546	Plasmodium vivax	AMPLICON
+ERR15156171	Plasmodium vivax	AMPLICON
+ERR15155871	Plasmodium vivax	AMPLICON
+ERR15155849	Plasmodium vivax	AMPLICON
+ERR15156271	Plasmodium vivax	AMPLICON
+ERR15156586	Plasmodium vivax	AMPLICON
+ERR15155837	Plasmodium vivax	AMPLICON
+ERR15156059	Plasmodium vivax	AMPLICON
+ERR15156378	Plasmodium vivax	AMPLICON
+ERR15156504	Plasmodium vivax	AMPLICON
+ERR15156562	Plasmodium vivax	AMPLICON
+ERR15155821	Plasmodium vivax	AMPLICON
+ERR15156169	Plasmodium vivax	AMPLICON
+ERR15156381	Plasmodium vivax	AMPLICON
+ERR15156038	Plasmodium vivax	AMPLICON
+ERR15156322	Plasmodium vivax	AMPLICON
+ERR15156269	Plasmodium vivax	AMPLICON
+ERR15156318	Plasmodium vivax	AMPLICON
+ERR15156579	Plasmodium vivax	AMPLICON
+ERR15156161	Plasmodium vivax	AMPLICON
+ERR15155999	Plasmodium vivax	AMPLICON
+ERR15156592	Plasmodium vivax	AMPLICON
+ERR15155804	Plasmodium vivax	AMPLICON
+ERR15156439	Plasmodium ovale	AMPLICON
+ERR15156341	Plasmodium vivax	AMPLICON
+ERR15156142	Plasmodium vivax	AMPLICON
+ERR15155789	Plasmodium vivax	AMPLICON
+ERR15156088	Plasmodium vivax	AMPLICON
+ERR15156007	Plasmodium vivax	AMPLICON
+ERR15156023	Plasmodium vivax	AMPLICON
+ERR15156221	Plasmodium vivax	AMPLICON
+ERR15156121	Plasmodium vivax	AMPLICON
+ERR15156323	Plasmodium vivax	AMPLICON
+ERR15156451	Plasmodium vivax	AMPLICON
+ERR15156450	Plasmodium vivax	AMPLICON
+ERR15156473	Plasmodium vivax	AMPLICON
+ERR15156466	Plasmodium vivax	AMPLICON
+ERR15155949	Plasmodium vivax	AMPLICON
+ERR15156493	Plasmodium vivax	AMPLICON
+ERR15156490	Plasmodium vivax	AMPLICON
+ERR15156556	Plasmodium vivax	AMPLICON
+ERR15155903	Plasmodium vivax	AMPLICON
+ERR15156543	Plasmodium vivax	AMPLICON
+ERR15156306	Plasmodium vivax	AMPLICON
+ERR15155794	Plasmodium vivax	AMPLICON
+ERR15156241	Plasmodium vivax	AMPLICON
+ERR15155879	Plasmodium vivax	AMPLICON
+ERR15156406	Plasmodium vivax	AMPLICON
+ERR15155921	Plasmodium vivax	AMPLICON
+ERR15156203	Plasmodium vivax	AMPLICON
+ERR15156301	Plasmodium vivax	AMPLICON
+ERR15155964	Plasmodium vivax	AMPLICON
+ERR15156408	Plasmodium vivax	AMPLICON
+ERR15156073	Plasmodium vivax	AMPLICON
+ERR15156351	Plasmodium vivax	AMPLICON
+ERR15156413	Plasmodium vivax	AMPLICON
+ERR15155783	Plasmodium vivax	AMPLICON
+ERR15155829	Plasmodium vivax	AMPLICON
+ERR15156559	Plasmodium vivax	AMPLICON
+ERR15155970	Plasmodium vivax	AMPLICON
+ERR15155841	Plasmodium vivax	AMPLICON
+ERR15156112	Plasmodium vivax	AMPLICON
+ERR15156067	Plasmodium vivax	AMPLICON
+ERR15155799	Plasmodium vivax	AMPLICON
+ERR15156527	Plasmodium vivax	AMPLICON
+ERR15155927	Plasmodium vivax	AMPLICON
+ERR15155914	Plasmodium vivax	AMPLICON
+ERR15155850	Plasmodium vivax	AMPLICON
+ERR15155951	Plasmodium vivax	AMPLICON
+ERR15155802	Plasmodium vivax	AMPLICON
+ERR15156395	Plasmodium vivax	AMPLICON
+ERR15156570	Plasmodium vivax	AMPLICON
+ERR15156576	Plasmodium vivax	AMPLICON
+ERR15156340	Plasmodium vivax	AMPLICON
+ERR15156311	Plasmodium vivax	AMPLICON
+ERR15156343	Plasmodium vivax	AMPLICON
+ERR15156090	Plasmodium vivax	AMPLICON
+ERR15155848	Plasmodium vivax	AMPLICON
+ERR15156442	Plasmodium sp.	AMPLICON
+ERR15156292	Plasmodium vivax	AMPLICON
+ERR15156469	Plasmodium vivax	AMPLICON
+ERR15156446	Plasmodium vivax	AMPLICON
+ERR15156457	Plasmodium vivax	AMPLICON
+ERR15155822	Plasmodium vivax	AMPLICON
+ERR15155800	Plasmodium vivax	AMPLICON
+ERR15156391	Plasmodium vivax	AMPLICON
+ERR15155976	Plasmodium vivax	AMPLICON
+ERR15155852	Plasmodium vivax	AMPLICON
+ERR15156498	Plasmodium vivax	AMPLICON
+ERR15156503	Plasmodium vivax	AMPLICON
+ERR15156501	Plasmodium vivax	AMPLICON
+ERR15156489	Plasmodium vivax	AMPLICON
+ERR15155858	Plasmodium vivax	AMPLICON
+ERR15156238	Plasmodium vivax	AMPLICON
+ERR15155948	Plasmodium vivax	AMPLICON
+ERR15156370	Plasmodium vivax	AMPLICON
+ERR15155778	Plasmodium vivax	AMPLICON
+ERR15156275	Plasmodium vivax	AMPLICON
+ERR15156397	Plasmodium vivax	AMPLICON
+ERR15155960	Plasmodium vivax	AMPLICON
+ERR15155905	Plasmodium vivax	AMPLICON
+ERR15156014	Plasmodium vivax	AMPLICON
+ERR15156089	Plasmodium vivax	AMPLICON
+ERR15155962	Plasmodium vivax	AMPLICON
+ERR15156278	Plasmodium vivax	AMPLICON
+ERR15156368	Plasmodium vivax	AMPLICON
+ERR15156538	Plasmodium vivax	AMPLICON
+ERR15155996	Plasmodium vivax	AMPLICON
+ERR15155835	Plasmodium vivax	AMPLICON
+ERR15156236	Plasmodium vivax	AMPLICON
+ERR15155899	Plasmodium vivax	AMPLICON
+ERR15156344	Plasmodium vivax	AMPLICON
+ERR15156411	Plasmodium vivax	AMPLICON
+ERR15155808	Plasmodium vivax	AMPLICON
+ERR15156419	Plasmodium vivax	AMPLICON
+ERR15155961	Plasmodium vivax	AMPLICON
+ERR15155881	Plasmodium vivax	AMPLICON
+ERR15156158	Plasmodium vivax	AMPLICON
+ERR15155898	Plasmodium vivax	AMPLICON
+ERR15155895	Plasmodium vivax	AMPLICON
+ERR15155819	Plasmodium vivax	AMPLICON
+ERR15156025	Plasmodium vivax	AMPLICON
+ERR15155846	Plasmodium vivax	AMPLICON
+ERR15156145	Plasmodium vivax	AMPLICON
+ERR15156427	Plasmodium vivax	AMPLICON
+ERR15155807	Plasmodium vivax	AMPLICON
+ERR15156120	Plasmodium vivax	AMPLICON
+ERR15155890	Plasmodium vivax	AMPLICON
+ERR15156386	Plasmodium vivax	AMPLICON
+ERR15155814	Plasmodium vivax	AMPLICON
+ERR15156098	Plasmodium vivax	AMPLICON
+ERR15155983	Plasmodium vivax	AMPLICON
+ERR15155937	Plasmodium vivax	AMPLICON
+ERR15155925	Plasmodium vivax	AMPLICON
+ERR15155989	Plasmodium vivax	AMPLICON
+ERR15156585	Plasmodium vivax	AMPLICON
+ERR15156047	Plasmodium vivax	AMPLICON
+ERR15155963	Plasmodium vivax	AMPLICON
+ERR15156133	Plasmodium vivax	AMPLICON
+ERR15156232	Plasmodium vivax	AMPLICON
+ERR15156154	Plasmodium vivax	AMPLICON
+ERR15156072	Plasmodium vivax	AMPLICON
+ERR15156058	Plasmodium vivax	AMPLICON
+ERR15156337	Plasmodium vivax	AMPLICON
+ERR15156115	Plasmodium vivax	AMPLICON
+ERR15156398	Plasmodium vivax	AMPLICON
+ERR15156539	Plasmodium vivax	AMPLICON
+ERR15156303	Plasmodium vivax	AMPLICON
+ERR15156166	Plasmodium vivax	AMPLICON
+ERR15156461	Plasmodium vivax	AMPLICON
+ERR15156467	Plasmodium vivax	AMPLICON
+ERR15156465	Plasmodium vivax	AMPLICON
+ERR15156296	Plasmodium vivax	AMPLICON
+ERR15155861	Plasmodium vivax	AMPLICON
+ERR15156369	Plasmodium vivax	AMPLICON
+ERR15155978	Plasmodium vivax	AMPLICON
+ERR15156272	Plasmodium vivax	AMPLICON
+ERR15156475	Plasmodium vivax	AMPLICON
+ERR15156477	Plasmodium vivax	AMPLICON
+ERR15156532	Plasmodium vivax	AMPLICON
+ERR15155862	Plasmodium vivax	AMPLICON
+ERR15156574	Plasmodium vivax	AMPLICON
+ERR15156547	Plasmodium vivax	AMPLICON
+ERR15156380	Plasmodium vivax	AMPLICON
+ERR15156262	Plasmodium vivax	AMPLICON
+ERR15156510	Plasmodium vivax	AMPLICON
+ERR15155777	Plasmodium vivax	AMPLICON
+ERR15156285	Plasmodium vivax	AMPLICON
+ERR15155826	Plasmodium vivax	AMPLICON
+ERR15155886	Plasmodium vivax	AMPLICON
+ERR15156008	Plasmodium vivax	AMPLICON
+ERR15156590	Plasmodium vivax	AMPLICON
+ERR15156550	Plasmodium vivax	AMPLICON
+ERR15155866	Plasmodium vivax	AMPLICON
+ERR15317998	Plasmodium knowlesi strain H	AMPLICON
+ERR15318001	Plasmodium knowlesi strain H	AMPLICON
+ERR15318002	Plasmodium knowlesi strain H	AMPLICON
+ERR15318006	Plasmodium knowlesi strain H	AMPLICON
+ERR15318007	Plasmodium knowlesi strain H	AMPLICON
+ERR15318009	Plasmodium knowlesi strain H	AMPLICON
+ERR15318008	Plasmodium knowlesi strain H	AMPLICON
+ERR15318012	Plasmodium knowlesi strain H	AMPLICON
+ERR15318015	Plasmodium knowlesi strain H	AMPLICON
+ERR15318019	Plasmodium knowlesi strain H	AMPLICON
+ERR15318021	Plasmodium knowlesi strain H	AMPLICON
+ERR15318022	Plasmodium knowlesi strain H	AMPLICON
+ERR15317997	Plasmodium knowlesi strain H	AMPLICON
+ERR15317990	Plasmodium knowlesi strain H	AMPLICON
+ERR15317986	Plasmodium knowlesi strain H	AMPLICON
+ERR15317995	Plasmodium knowlesi strain H	AMPLICON
+ERR15318028	Plasmodium knowlesi strain H	AMPLICON
+ERR15318042	Plasmodium knowlesi strain H	AMPLICON
+ERR15318043	Plasmodium knowlesi strain H	AMPLICON
+ERR15317982	Plasmodium knowlesi strain H	AMPLICON
+ERR15317985	Plasmodium knowlesi strain H	AMPLICON
+ERR15318032	Plasmodium knowlesi strain H	AMPLICON
+ERR15317981	Plasmodium knowlesi strain H	AMPLICON
+ERR15317979	Plasmodium knowlesi strain H	AMPLICON
+ERR15317972	Plasmodium knowlesi strain H	AMPLICON
+ERR15317993	Plasmodium knowlesi strain H	AMPLICON
+ERR15317976	Plasmodium knowlesi strain H	AMPLICON
+ERR15318038	Plasmodium knowlesi strain H	AMPLICON
+ERR15318039	Plasmodium knowlesi strain H	AMPLICON
+ERR15318040	Plasmodium knowlesi strain H	AMPLICON
+ERR15319153	Plasmodium knowlesi strain Nuri	AMPLICON
+ERR15319154	Plasmodium knowlesi strain H	AMPLICON
+ERR15319172	Plasmodium lophurae	AMPLICON
+ERR15319166	Plasmodium reichenowi	AMPLICON
+ERR15319157	Plasmodium fragile	AMPLICON
+ERR15319155	Plasmodium malariae	AMPLICON
+ERR15319135	Plasmodium vinckei	AMPLICON
+ERR15319137	Plasmodium berghei yoelii	AMPLICON
+ERR15318053	Plasmodium knowlesi	AMPLICON
+ERR15318046	Plasmodium knowlesi	AMPLICON
+ERR15318047	Plasmodium knowlesi	AMPLICON
+ERR15319142	Plasmodium knowlesi	AMPLICON
+ERR15319160	Plasmodium knowlesi	AMPLICON
+ERR15319163	Plasmodium knowlesi	AMPLICON
+ERR15316012	Plasmodium ovale	WGS
+ERR15316016	Plasmodium ovale	WGS
+ERR15156281	Plasmodium vivax	AMPLICON
+ERR15155953	Plasmodium vivax	AMPLICON
+ERR15156412	Plasmodium vivax	AMPLICON
+ERR15156015	Plasmodium vivax	AMPLICON
+ERR15156423	Plasmodium vivax	AMPLICON
+ERR15156159	Plasmodium vivax	AMPLICON
+ERR15155911	Plasmodium vivax	AMPLICON
+ERR15155894	Plasmodium vivax	AMPLICON
+ERR15156107	Plasmodium vivax	AMPLICON
+ERR15156472	Plasmodium vivax	AMPLICON
+ERR15156331	Plasmodium vivax	AMPLICON
+ERR15155788	Plasmodium vivax	AMPLICON
+ERR15156494	Plasmodium vivax	AMPLICON
+ERR15156565	Plasmodium vivax	AMPLICON
+ERR15317999	Plasmodium knowlesi strain H	AMPLICON
+ERR15318000	Plasmodium knowlesi strain H	AMPLICON
+ERR15318003	Plasmodium knowlesi strain H	AMPLICON
+ERR15318004	Plasmodium knowlesi strain H	AMPLICON
+ERR15318005	Plasmodium knowlesi strain H	AMPLICON
+ERR15318010	Plasmodium knowlesi strain H	AMPLICON
+ERR15318011	Plasmodium knowlesi strain H	AMPLICON
+ERR15317977	Plasmodium knowlesi strain H	AMPLICON
+ERR15317992	Plasmodium knowlesi strain H	AMPLICON
+ERR15318013	Plasmodium knowlesi strain H	AMPLICON
+ERR15318014	Plasmodium knowlesi strain H	AMPLICON
+ERR15318016	Plasmodium knowlesi strain H	AMPLICON
+ERR15318017	Plasmodium knowlesi strain H	AMPLICON
+ERR15318018	Plasmodium knowlesi strain H	AMPLICON
+ERR15318020	Plasmodium knowlesi strain H	AMPLICON
+ERR15318023	Plasmodium knowlesi strain H	AMPLICON
+ERR15317996	Plasmodium knowlesi strain H	AMPLICON
+ERR15317994	Plasmodium knowlesi strain H	AMPLICON
+ERR15318024	Plasmodium knowlesi strain H	AMPLICON
+ERR15318025	Plasmodium knowlesi strain H	AMPLICON
+ERR15317991	Plasmodium knowlesi strain H	AMPLICON
+ERR15317987	Plasmodium knowlesi strain H	AMPLICON
+ERR15318026	Plasmodium knowlesi strain H	AMPLICON
+ERR15317989	Plasmodium knowlesi strain H	AMPLICON
+ERR15318027	Plasmodium knowlesi strain H	AMPLICON
+ERR15317971	Plasmodium knowlesi strain H	AMPLICON
+ERR15317970	Plasmodium knowlesi strain H	AMPLICON
+ERR15318029	Plasmodium knowlesi strain H	AMPLICON
+ERR15318030	Plasmodium knowlesi strain H	AMPLICON
+ERR15317980	Plasmodium knowlesi strain H	AMPLICON
+ERR15317988	Plasmodium knowlesi strain H	AMPLICON
+ERR15318031	Plasmodium knowlesi strain H	AMPLICON
+ERR15318033	Plasmodium knowlesi strain H	AMPLICON
+ERR15318034	Plasmodium knowlesi strain H	AMPLICON
+ERR15317983	Plasmodium knowlesi strain H	AMPLICON
+ERR15317969	Plasmodium knowlesi strain H	AMPLICON
+ERR15317974	Plasmodium knowlesi strain H	AMPLICON
+ERR15317975	Plasmodium knowlesi strain H	AMPLICON
+ERR15317973	Plasmodium knowlesi strain H	AMPLICON
+ERR15317984	Plasmodium knowlesi strain H	AMPLICON
+ERR15318035	Plasmodium knowlesi strain H	AMPLICON
+ERR15317978	Plasmodium knowlesi strain H	AMPLICON
+ERR15318036	Plasmodium knowlesi strain H	AMPLICON
+ERR15318037	Plasmodium knowlesi strain H	AMPLICON
+ERR15318041	Plasmodium knowlesi strain H	AMPLICON
+ERR15319162	Plasmodium vivax Sal-1	AMPLICON
+ERR15319164	Plasmodium vivax	AMPLICON
+ERR15318044	Plasmodium simium	AMPLICON
+ERR15319138	Plasmodium yoelii	AMPLICON
+ERR15318060	Plasmodium knowlesi	AMPLICON
+ERR15318057	Plasmodium knowlesi	AMPLICON
+ERR15319144	Plasmodium knowlesi	AMPLICON
+ERR15319180	Plasmodium knowlesi	AMPLICON
+ERR15318055	Plasmodium knowlesi	AMPLICON
+ERR15319146	Plasmodium knowlesi	AMPLICON
+ERR15316014	Plasmodium ovale	WGS
+ERR15316015	Plasmodium ovale	WGS
+SRR34293587	Plasmodium ovale	AMPLICON
+SRR34413602	Plasmodium knowlesi	WGA
+SRR34413601	Plasmodium knowlesi	WGA
+ERR11641980	Plasmodium ovale curtisi	WGS
+ERR11642088	Plasmodium ovale curtisi	WGS
+ERR11642210	Plasmodium ovale curtisi	WGS
+ERR11642231	Plasmodium ovale curtisi	WGS
+ERR11642245	Plasmodium ovale curtisi	WGS
+ERR11642666	Plasmodium ovale curtisi	WGS
+ERR11656847	Plasmodium ovale curtisi	WGS
+ERR11642674	Plasmodium ovale curtisi	WGS
+ERR11644140	Plasmodium ovale curtisi	WGS
+ERR11647575	Plasmodium ovale curtisi	WGS
+ERR11647576	Plasmodium ovale curtisi	WGS
+ERR11647577	Plasmodium ovale curtisi	WGS
+ERR11647586	Plasmodium ovale curtisi	WGS
+ERR11642246	Plasmodium ovale curtisi	WGS
+ERR11642247	Plasmodium ovale curtisi	WGS
+ERR11642249	Plasmodium ovale curtisi	WGS
+ERR11642260	Plasmodium ovale curtisi	WGS
+ERR11656770	Plasmodium ovale curtisi	WGS
+ERR11647609	Plasmodium ovale curtisi	WGS
+ERR11647614	Plasmodium ovale curtisi	WGS
+ERR11642304	Plasmodium ovale curtisi	WGS
+ERR11647633	Plasmodium ovale curtisi	WGS
+ERR11642601	Plasmodium ovale curtisi	WGS
+ERR11647642	Plasmodium ovale curtisi	WGS
+ERR11642603	Plasmodium ovale curtisi	WGS
+ERR11642604	Plasmodium ovale curtisi	WGS
+ERR11642611	Plasmodium ovale curtisi	WGS
+ERR11642618	Plasmodium ovale curtisi	WGS
+ERR11642619	Plasmodium ovale curtisi	WGS
+ERR11642620	Plasmodium ovale curtisi	WGS
+ERR11642625	Plasmodium ovale curtisi	WGS
+ERR12374096	Plasmodium ovale wallikeri	WGS
+ERR12380462	Plasmodium ovale wallikeri	WGS
+ERR12380509	Plasmodium ovale wallikeri	WGS
+ERR12380540	Plasmodium ovale wallikeri	WGS
+ERR12383321	Plasmodium ovale wallikeri	WGS
+ERR12383322	Plasmodium ovale wallikeri	WGS
+ERR12383591	Plasmodium ovale wallikeri	WGS
+ERR12383910	Plasmodium ovale wallikeri	WGS
+SRR34293588	Plasmodium ovale	AMPLICON
+ERR11641882	Plasmodium ovale curtisi	WGS
+ERR11641887	Plasmodium ovale curtisi	WGS
+ERR11642228	Plasmodium ovale curtisi	WGS
+ERR11642230	Plasmodium ovale curtisi	WGS
+ERR11642234	Plasmodium ovale curtisi	WGS
+ERR11642243	Plasmodium ovale curtisi	WGS
+ERR11642668	Plasmodium ovale curtisi	WGS
+ERR11642672	Plasmodium ovale curtisi	WGS
+ERR11647580	Plasmodium ovale curtisi	WGS
+ERR11647751	Plasmodium ovale curtisi	WGS
+ERR11647601	Plasmodium ovale curtisi	WGS
+ERR11647602	Plasmodium ovale curtisi	WGS
+ERR11642257	Plasmodium ovale curtisi	WGS
+ERR11647603	Plasmodium ovale curtisi	WGS
+ERR11647605	Plasmodium ovale curtisi	WGS
+ERR11642287	Plasmodium ovale curtisi	WGS
+ERR11656779	Plasmodium ovale curtisi	WGS
+ERR11642302	Plasmodium ovale curtisi	WGS
+ERR11642303	Plasmodium ovale curtisi	WGS
+ERR11647619	Plasmodium ovale curtisi	WGS
+ERR11647626	Plasmodium ovale curtisi	WGS
+ERR11642594	Plasmodium ovale curtisi	WGS
+ERR11656795	Plasmodium ovale curtisi	WGS
+ERR11642597	Plasmodium ovale curtisi	WGS
+ERR11642599	Plasmodium ovale curtisi	WGS
+ERR11656812	Plasmodium ovale curtisi	WGS
+ERR11647651	Plasmodium ovale curtisi	WGS
+ERR11642614	Plasmodium ovale curtisi	WGS
+ERR11647678	Plasmodium ovale curtisi	WGS
+ERR12380426	Plasmodium ovale wallikeri	WGS
+ERR12383318	Plasmodium ovale wallikeri	WGS
+ERR12380427	Plasmodium ovale wallikeri	WGS
+ERR12380428	Plasmodium ovale wallikeri	WGS
+ERR12380539	Plasmodium ovale wallikeri	WGS
+ERR12380542	Plasmodium ovale wallikeri	WGS
+ERR12380570	Plasmodium ovale wallikeri	WGS
+ERR12383320	Plasmodium ovale wallikeri	WGS
+ERR12383324	Plasmodium ovale wallikeri	WGS
+ERR12383480	Plasmodium ovale wallikeri	WGS
+ERR13110915	Plasmodium vivax	RNA-Seq
+ERR14986493	Plasmodium vivax	WGS
+ERR14986495	Plasmodium vivax	WGS
+ERR14986523	Plasmodium vivax	WGS
+ERR14986525	Plasmodium vivax	WGS
+ERR14986535	Plasmodium vivax	WGS
+ERR14986543	Plasmodium vivax	WGS
+ERR14986544	Plasmodium vivax	WGS
+ERR14986547	Plasmodium vivax	WGS
+ERR14986556	Plasmodium vivax	WGS
+ERR14986564	Plasmodium vivax	WGS
+ERR14986569	Plasmodium vivax	WGS
+ERR14986592	Plasmodium vivax	WGS
+ERR14986609	Plasmodium vivax	WGS
+ERR14986613	Plasmodium vivax	WGS
+ERR14986635	Plasmodium vivax	WGS
+ERR14986647	Plasmodium vivax	WGS
+ERR14846570	Plasmodium knowlesi	WGS
+ERR14846571	Plasmodium knowlesi	WGS
+ERR15133363	Plasmodium knowlesi	WGS
+ERR15133364	Plasmodium knowlesi	WGS
+ERR14986488	Plasmodium vivax	WGS
+ERR14986491	Plasmodium vivax	WGS
+ERR14986492	Plasmodium vivax	WGS
+ERR14986494	Plasmodium vivax	WGS
+ERR14986498	Plasmodium vivax	WGS
+ERR14986499	Plasmodium vivax	WGS
+ERR14986500	Plasmodium vivax	WGS
+ERR14986504	Plasmodium vivax	WGS
+ERR14986507	Plasmodium vivax	WGS
+ERR14986508	Plasmodium vivax	WGS
+ERR14986514	Plasmodium vivax	WGS
+ERR14986516	Plasmodium vivax	WGS
+ERR14986517	Plasmodium vivax	WGS
+ERR14986520	Plasmodium vivax	WGS
+ERR14986528	Plasmodium vivax	WGS
+ERR14986531	Plasmodium vivax	WGS
+ERR14986533	Plasmodium vivax	WGS
+ERR14986546	Plasmodium vivax	WGS
+ERR14986551	Plasmodium vivax	WGS
+ERR14986557	Plasmodium vivax	WGS
+ERR14986558	Plasmodium vivax	WGS
+ERR14986561	Plasmodium vivax	WGS
+ERR14986563	Plasmodium vivax	WGS
+ERR14986566	Plasmodium vivax	WGS
+ERR14986570	Plasmodium vivax	WGS
+ERR14986576	Plasmodium vivax	WGS
+ERR14986577	Plasmodium vivax	WGS
+ERR14986579	Plasmodium vivax	WGS
+ERR14986580	Plasmodium vivax	WGS
+ERR14986581	Plasmodium vivax	WGS
+ERR14986583	Plasmodium vivax	WGS
+ERR14986586	Plasmodium vivax	WGS
+ERR14986587	Plasmodium vivax	WGS
+ERR14986588	Plasmodium vivax	WGS
+ERR14986590	Plasmodium vivax	WGS
+ERR14986593	Plasmodium vivax	WGS
+ERR14986594	Plasmodium vivax	WGS
+ERR14986596	Plasmodium vivax	WGS
+ERR14986601	Plasmodium vivax	WGS
+ERR14986602	Plasmodium vivax	WGS
+ERR14986604	Plasmodium vivax	WGS
+ERR14986605	Plasmodium vivax	WGS
+ERR14986606	Plasmodium vivax	WGS
+ERR14986608	Plasmodium vivax	WGS
+ERR14986612	Plasmodium vivax	WGS
+ERR14986615	Plasmodium vivax	WGS
+ERR14986616	Plasmodium vivax	WGS
+ERR14986617	Plasmodium vivax	WGS
+ERR14986618	Plasmodium vivax	WGS
+ERR14986624	Plasmodium vivax	WGS
+ERR14986625	Plasmodium vivax	WGS
+ERR14986628	Plasmodium vivax	WGS
+ERR14986629	Plasmodium vivax	WGS
+ERR14986630	Plasmodium vivax	WGS
+ERR14986631	Plasmodium vivax	WGS
+ERR14986634	Plasmodium vivax	WGS
+ERR14986641	Plasmodium vivax	WGS
+ERR14986642	Plasmodium vivax	WGS
+ERR14986652	Plasmodium vivax	WGS
+ERR14986653	Plasmodium vivax	WGS
+ERR14986489	Plasmodium vivax	WGS
+ERR14986490	Plasmodium vivax	WGS
+ERR14986497	Plasmodium vivax	WGS
+ERR14986501	Plasmodium vivax	WGS
+ERR14986502	Plasmodium vivax	WGS
+ERR14986505	Plasmodium vivax	WGS
+ERR14986509	Plasmodium vivax	WGS
+ERR14986510	Plasmodium vivax	WGS
+ERR14986511	Plasmodium vivax	WGS
+ERR14986513	Plasmodium vivax	WGS
+ERR14986518	Plasmodium vivax	WGS
+ERR14986519	Plasmodium vivax	WGS
+ERR14986521	Plasmodium vivax	WGS
+ERR14986522	Plasmodium vivax	WGS
+ERR14986526	Plasmodium vivax	WGS
+ERR14986527	Plasmodium vivax	WGS
+ERR14986530	Plasmodium vivax	WGS
+ERR14986532	Plasmodium vivax	WGS
+ERR14986534	Plasmodium vivax	WGS
+ERR14986537	Plasmodium vivax	WGS
+ERR14986538	Plasmodium vivax	WGS
+ERR14986539	Plasmodium vivax	WGS
+ERR14986540	Plasmodium vivax	WGS
+ERR14986541	Plasmodium vivax	WGS
+ERR14986545	Plasmodium vivax	WGS
+ERR14986548	Plasmodium vivax	WGS
+ERR14986549	Plasmodium vivax	WGS
+ERR14986553	Plasmodium vivax	WGS
+ERR14986555	Plasmodium vivax	WGS
+ERR14986559	Plasmodium vivax	WGS
+ERR14986562	Plasmodium vivax	WGS
+ERR14986567	Plasmodium vivax	WGS
+ERR14986573	Plasmodium vivax	WGS
+ERR14986574	Plasmodium vivax	WGS
+ERR14986584	Plasmodium vivax	WGS
+ERR14986585	Plasmodium vivax	WGS
+ERR14986591	Plasmodium vivax	WGS
+ERR14986595	Plasmodium vivax	WGS
+ERR14986597	Plasmodium vivax	WGS
+ERR14986598	Plasmodium vivax	WGS
+ERR14986600	Plasmodium vivax	WGS
+ERR14986603	Plasmodium vivax	WGS
+ERR14986610	Plasmodium vivax	WGS
+ERR14986611	Plasmodium vivax	WGS
+ERR14986620	Plasmodium vivax	WGS
+ERR14986621	Plasmodium vivax	WGS
+ERR14986622	Plasmodium vivax	WGS
+ERR14986623	Plasmodium vivax	WGS
+ERR14986626	Plasmodium vivax	WGS
+ERR14986627	Plasmodium vivax	WGS
+ERR14986632	Plasmodium vivax	WGS
+ERR14986636	Plasmodium vivax	WGS
+ERR14986640	Plasmodium vivax	WGS
+ERR14986643	Plasmodium vivax	WGS
+ERR14986645	Plasmodium vivax	WGS
+ERR14986646	Plasmodium vivax	WGS
+ERR14986648	Plasmodium vivax	WGS
+ERR14986649	Plasmodium vivax	WGS
+ERR14986650	Plasmodium vivax	WGS
+ERR14986651	Plasmodium vivax	WGS
+ERR14906014	Plasmodium knowlesi strain H	AMPLICON
+ERR14906207	Plasmodium knowlesi strain H	AMPLICON
+ERR14906208	Plasmodium knowlesi strain H	AMPLICON
+ERR14906020	Plasmodium knowlesi strain H	AMPLICON
+ERR14906022	Plasmodium knowlesi strain H	AMPLICON
+ERR14906217	Plasmodium knowlesi strain H	AMPLICON
+ERR14906025	Plasmodium knowlesi strain H	AMPLICON
+ERR14906220	Plasmodium knowlesi strain H	AMPLICON
+ERR14906032	Plasmodium knowlesi strain H	AMPLICON
+ERR14906230	Plasmodium knowlesi strain H	AMPLICON
+ERR14906233	Plasmodium knowlesi strain H	AMPLICON
+ERR14906232	Plasmodium knowlesi strain H	AMPLICON
+ERR14906040	Plasmodium knowlesi strain H	AMPLICON
+ERR14906235	Plasmodium knowlesi strain H	AMPLICON
+ERR14906045	Plasmodium knowlesi strain H	AMPLICON
+ERR14906046	Plasmodium knowlesi strain H	AMPLICON
+ERR14906237	Plasmodium knowlesi strain H	AMPLICON
+ERR14906244	Plasmodium knowlesi strain H	AMPLICON
+ERR14906063	Plasmodium knowlesi strain H	AMPLICON
+ERR14906065	Plasmodium knowlesi strain H	AMPLICON
+ERR14906073	Plasmodium knowlesi strain H	AMPLICON
+ERR14906072	Plasmodium knowlesi strain H	AMPLICON
+ERR14906075	Plasmodium knowlesi strain H	AMPLICON
+ERR14906077	Plasmodium knowlesi strain H	AMPLICON
+ERR14906082	Plasmodium knowlesi strain H	AMPLICON
+ERR14906088	Plasmodium knowlesi strain H	AMPLICON
+ERR14906093	Plasmodium knowlesi strain H	AMPLICON
+ERR14906094	Plasmodium knowlesi strain H	AMPLICON
+ERR14906100	Plasmodium knowlesi strain H	AMPLICON
+ERR14906102	Plasmodium knowlesi strain H	AMPLICON
+ERR14986496	Plasmodium vivax	WGS
+ERR14986503	Plasmodium vivax	WGS
+ERR14986506	Plasmodium vivax	WGS
+ERR14986512	Plasmodium vivax	WGS
+ERR14986515	Plasmodium vivax	WGS
+ERR14986524	Plasmodium vivax	WGS
+ERR14986529	Plasmodium vivax	WGS
+ERR14986536	Plasmodium vivax	WGS
+ERR14986542	Plasmodium vivax	WGS
+ERR14986550	Plasmodium vivax	WGS
+ERR14986552	Plasmodium vivax	WGS
+ERR14986554	Plasmodium vivax	WGS
+ERR14986560	Plasmodium vivax	WGS
+ERR14986565	Plasmodium vivax	WGS
+ERR14986571	Plasmodium vivax	WGS
+ERR14986572	Plasmodium vivax	WGS
+ERR14986575	Plasmodium vivax	WGS
+ERR14986578	Plasmodium vivax	WGS
+ERR14986582	Plasmodium vivax	WGS
+ERR14986589	Plasmodium vivax	WGS
+ERR14986599	Plasmodium vivax	WGS
+ERR14986607	Plasmodium vivax	WGS
+ERR14986614	Plasmodium vivax	WGS
+ERR14986619	Plasmodium vivax	WGS
+ERR14986633	Plasmodium vivax	WGS
+ERR14986637	Plasmodium vivax	WGS
+ERR14986639	Plasmodium vivax	WGS
+ERR14986644	Plasmodium vivax	WGS
+ERR14986654	Plasmodium vivax	WGS
+ERR14766140	Plasmodium berghei	RNA-Seq
+ERR14906205	Plasmodium knowlesi strain H	AMPLICON
+ERR14906206	Plasmodium knowlesi strain H	AMPLICON
+ERR14906015	Plasmodium knowlesi strain H	AMPLICON
+ERR14906016	Plasmodium knowlesi strain H	AMPLICON
+ERR14906209	Plasmodium knowlesi strain H	AMPLICON
+ERR14906018	Plasmodium knowlesi strain H	AMPLICON
+ERR14906019	Plasmodium knowlesi strain H	AMPLICON
+ERR14906215	Plasmodium knowlesi strain H	AMPLICON
+ERR14906023	Plasmodium knowlesi strain H	AMPLICON
+ERR14906216	Plasmodium knowlesi strain H	AMPLICON
+ERR14906218	Plasmodium knowlesi strain H	AMPLICON
+ERR14906027	Plasmodium knowlesi strain H	AMPLICON
+ERR14906029	Plasmodium knowlesi strain H	AMPLICON
+ERR14906028	Plasmodium knowlesi strain H	AMPLICON
+ERR14906222	Plasmodium knowlesi strain H	AMPLICON
+ERR14906030	Plasmodium knowlesi strain H	AMPLICON
+ERR14906225	Plasmodium knowlesi strain H	AMPLICON
+ERR14906033	Plasmodium knowlesi strain H	AMPLICON
+ERR14906226	Plasmodium knowlesi strain H	AMPLICON
+ERR14906224	Plasmodium knowlesi strain H	AMPLICON
+ERR14906228	Plasmodium knowlesi strain H	AMPLICON
+ERR14906042	Plasmodium knowlesi strain H	AMPLICON
+ERR14906236	Plasmodium knowlesi strain H	AMPLICON
+ERR14906048	Plasmodium knowlesi strain H	AMPLICON
+ERR14906049	Plasmodium knowlesi strain H	AMPLICON
+ERR14906050	Plasmodium knowlesi strain H	AMPLICON
+ERR14906241	Plasmodium knowlesi strain H	AMPLICON
+ERR14906242	Plasmodium knowlesi strain H	AMPLICON
+ERR14906243	Plasmodium knowlesi strain H	AMPLICON
+ERR14906055	Plasmodium knowlesi strain H	AMPLICON
+ERR14906054	Plasmodium knowlesi strain H	AMPLICON
+ERR14906056	Plasmodium knowlesi strain H	AMPLICON
+ERR14906059	Plasmodium knowlesi strain H	AMPLICON
+ERR14906060	Plasmodium knowlesi strain H	AMPLICON
+ERR14906246	Plasmodium knowlesi strain H	AMPLICON
+ERR14906064	Plasmodium knowlesi strain H	AMPLICON
+ERR14906066	Plasmodium knowlesi strain H	AMPLICON
+ERR14906250	Plasmodium knowlesi strain H	AMPLICON
+ERR14906071	Plasmodium knowlesi strain H	AMPLICON
+ERR14906074	Plasmodium knowlesi strain H	AMPLICON
+ERR14906078	Plasmodium knowlesi strain H	AMPLICON
+ERR14906079	Plasmodium knowlesi strain H	AMPLICON
+ERR14906081	Plasmodium knowlesi strain H	AMPLICON
+ERR14906080	Plasmodium knowlesi strain H	AMPLICON
+ERR14906083	Plasmodium knowlesi strain H	AMPLICON
+ERR14906084	Plasmodium knowlesi strain H	AMPLICON
+ERR14906086	Plasmodium knowlesi strain H	AMPLICON
+ERR14906087	Plasmodium knowlesi strain H	AMPLICON
+ERR14906089	Plasmodium knowlesi strain H	AMPLICON
+ERR14906090	Plasmodium knowlesi strain H	AMPLICON
+ERR14906092	Plasmodium knowlesi strain H	AMPLICON
+ERR14906097	Plasmodium knowlesi strain H	AMPLICON
+ERR14906098	Plasmodium knowlesi strain H	AMPLICON
+ERR14906099	Plasmodium knowlesi strain H	AMPLICON
+ERR14906103	Plasmodium knowlesi strain H	AMPLICON
+ERR14906105	Plasmodium knowlesi strain H	AMPLICON
+ERR14906108	Plasmodium knowlesi strain H	AMPLICON
+ERR14766139	Plasmodium berghei	RNA-Seq
+ERR14766141	Plasmodium berghei	RNA-Seq
+ERR14766142	Plasmodium berghei	RNA-Seq
+ERR14906013	Plasmodium knowlesi strain H	AMPLICON
+ERR14906017	Plasmodium knowlesi strain H	AMPLICON
+ERR14906210	Plasmodium knowlesi strain H	AMPLICON
+ERR14906211	Plasmodium knowlesi strain H	AMPLICON
+ERR14906212	Plasmodium knowlesi strain H	AMPLICON
+ERR14906213	Plasmodium knowlesi strain H	AMPLICON
+ERR14906021	Plasmodium knowlesi strain H	AMPLICON
+ERR14906214	Plasmodium knowlesi strain H	AMPLICON
+ERR14906024	Plasmodium knowlesi strain H	AMPLICON
+ERR14906026	Plasmodium knowlesi strain H	AMPLICON
+ERR14906219	Plasmodium knowlesi strain H	AMPLICON
+ERR14906221	Plasmodium knowlesi strain H	AMPLICON
+ERR14906031	Plasmodium knowlesi strain H	AMPLICON
+ERR14906223	Plasmodium knowlesi strain H	AMPLICON
+ERR14906035	Plasmodium knowlesi strain H	AMPLICON
+ERR14906227	Plasmodium knowlesi strain H	AMPLICON
+ERR14906034	Plasmodium knowlesi strain H	AMPLICON
+ERR14906036	Plasmodium knowlesi strain H	AMPLICON
+ERR14906038	Plasmodium knowlesi strain H	AMPLICON
+ERR14906037	Plasmodium knowlesi strain H	AMPLICON
+ERR14906229	Plasmodium knowlesi strain H	AMPLICON
+ERR14906039	Plasmodium knowlesi strain H	AMPLICON
+ERR14906231	Plasmodium knowlesi strain H	AMPLICON
+ERR14906041	Plasmodium knowlesi strain H	AMPLICON
+ERR14906234	Plasmodium knowlesi strain H	AMPLICON
+ERR14906043	Plasmodium knowlesi strain H	AMPLICON
+ERR14906295	Plasmodium knowlesi strain H	AMPLICON
+ERR14906044	Plasmodium knowlesi strain H	AMPLICON
+ERR14906047	Plasmodium knowlesi strain H	AMPLICON
+ERR14906238	Plasmodium knowlesi strain H	AMPLICON
+ERR14906239	Plasmodium knowlesi strain H	AMPLICON
+ERR14906240	Plasmodium knowlesi strain H	AMPLICON
+ERR14906051	Plasmodium knowlesi strain H	AMPLICON
+ERR14906052	Plasmodium knowlesi strain H	AMPLICON
+ERR14906053	Plasmodium knowlesi strain H	AMPLICON
+ERR14906057	Plasmodium knowlesi strain H	AMPLICON
+ERR14906058	Plasmodium knowlesi strain H	AMPLICON
+ERR14906062	Plasmodium knowlesi strain H	AMPLICON
+ERR14906245	Plasmodium knowlesi strain H	AMPLICON
+ERR14906061	Plasmodium knowlesi strain H	AMPLICON
+ERR14906247	Plasmodium knowlesi strain H	AMPLICON
+ERR14906248	Plasmodium knowlesi strain H	AMPLICON
+ERR14906249	Plasmodium knowlesi strain H	AMPLICON
+ERR14906067	Plasmodium knowlesi strain H	AMPLICON
+ERR14906251	Plasmodium knowlesi strain H	AMPLICON
+ERR14906068	Plasmodium knowlesi strain H	AMPLICON
+ERR14906069	Plasmodium knowlesi strain H	AMPLICON
+ERR14906070	Plasmodium knowlesi strain H	AMPLICON
+ERR14906076	Plasmodium knowlesi strain H	AMPLICON
+ERR14906085	Plasmodium knowlesi strain H	AMPLICON
+ERR14906091	Plasmodium knowlesi strain H	AMPLICON
+ERR14906095	Plasmodium knowlesi strain H	AMPLICON
+ERR14906096	Plasmodium knowlesi strain H	AMPLICON
+ERR14906101	Plasmodium knowlesi strain H	AMPLICON
+ERR14906104	Plasmodium knowlesi strain H	AMPLICON
+ERR14906106	Plasmodium knowlesi strain H	AMPLICON
+ERR14906107	Plasmodium knowlesi strain H	AMPLICON
+SRR33327607	Plasmodium vivax	WGS
+SRR33327606	Plasmodium vivax	WGS
+SRR33327605	Plasmodium vivax	WGS
+SRR33159100	Plasmodium homocircumflexum	RNA-Seq
+SRR33159107	Plasmodium homocircumflexum	RNA-Seq
+SRR33159103	Plasmodium homocircumflexum	RNA-Seq
+SRR33159102	Plasmodium homocircumflexum	RNA-Seq
+SRR33159106	Plasmodium homocircumflexum	RNA-Seq
+SRR33159099	Plasmodium homocircumflexum	RNA-Seq
+SRR33159105	Plasmodium homocircumflexum	RNA-Seq
+SRR33159104	Plasmodium homocircumflexum	RNA-Seq
+SRR33159101	Plasmodium homocircumflexum	RNA-Seq
+SRR33327626	Plasmodium vivax	WGS
+SRR33327625	Plasmodium vivax	WGS
+SRR33327623	Plasmodium vivax	WGS
+SRR33327622	Plasmodium vivax	WGS
+SRR33327621	Plasmodium vivax	WGS
+SRR33327620	Plasmodium vivax	WGS
+SRR33327627	Plasmodium vivax	WGS
+SRR33327619	Plasmodium vivax	WGS
+SRR33327618	Plasmodium vivax	WGS
+SRR33327615	Plasmodium vivax	WGS
+SRR33327616	Plasmodium vivax	WGS
+SRR33327617	Plasmodium vivax	WGS
+SRR33327614	Plasmodium vivax	WGS
+SRR33327612	Plasmodium vivax	WGS
+SRR33327611	Plasmodium vivax	WGS
+SRR33327610	Plasmodium vivax	WGS
+SRR33327609	Plasmodium vivax	WGS
+SRR33327658	Plasmodium vivax	WGS
+SRR33327635	Plasmodium vivax	WGS
+SRR33327624	Plasmodium vivax	WGS
+SRR33327613	Plasmodium vivax	WGS
+SRR33327657	Plasmodium vivax	WGS
+SRR33327646	Plasmodium vivax	WGS
+SRR33327608	Plasmodium vivax	WGS
+SRR33327656	Plasmodium vivax	WGS
+SRR33327655	Plasmodium vivax	WGS
+SRR33327654	Plasmodium vivax	WGS
+SRR33327653	Plasmodium vivax	WGS
+SRR33327652	Plasmodium vivax	WGS
+SRR33327651	Plasmodium vivax	WGS
+SRR33327650	Plasmodium vivax	WGS
+SRR33327649	Plasmodium vivax	WGS
+SRR33327648	Plasmodium vivax	WGS
+SRR33327647	Plasmodium vivax	WGS
+SRR33327645	Plasmodium vivax	WGS
+SRR33327643	Plasmodium vivax	WGS
+SRR33327644	Plasmodium vivax	WGS
+SRR33327642	Plasmodium vivax	WGS
+SRR33327641	Plasmodium vivax	WGS
+SRR33327640	Plasmodium vivax	WGS
+SRR33327639	Plasmodium vivax	WGS
+SRR33327638	Plasmodium vivax	WGS
+SRR33327637	Plasmodium vivax	WGS
+SRR33327636	Plasmodium vivax	WGS
+SRR33327634	Plasmodium vivax	WGS
+SRR33327633	Plasmodium vivax	WGS
+SRR33327632	Plasmodium vivax	WGS
+SRR33327631	Plasmodium vivax	WGS
+SRR33327630	Plasmodium vivax	WGS
+SRR33327629	Plasmodium vivax	WGS
+SRR33327628	Plasmodium vivax	WGS
+ERR14853256	Plasmodium knowlesi strain H	AMPLICON
+ERR14853259	Plasmodium knowlesi strain H	AMPLICON
+ERR14853262	Plasmodium knowlesi strain H	AMPLICON
+ERR14853266	Plasmodium knowlesi strain H	AMPLICON
+ERR14853268	Plasmodium knowlesi strain H	AMPLICON
+ERR14853272	Plasmodium knowlesi strain H	AMPLICON
+ERR14853280	Plasmodium knowlesi strain H	AMPLICON
+ERR14853291	Plasmodium knowlesi strain H	AMPLICON
+ERR14853295	Plasmodium knowlesi strain H	AMPLICON
+ERR14853296	Plasmodium knowlesi strain H	AMPLICON
+ERR14853299	Plasmodium knowlesi strain H	AMPLICON
+ERR14853313	Plasmodium knowlesi strain H	AMPLICON
+ERR14853314	Plasmodium knowlesi strain H	AMPLICON
+ERR14853316	Plasmodium knowlesi strain H	AMPLICON
+ERR14853317	Plasmodium knowlesi strain H	AMPLICON
+ERR14853323	Plasmodium knowlesi strain H	AMPLICON
+ERR14853330	Plasmodium knowlesi strain H	AMPLICON
+ERR14853332	Plasmodium knowlesi strain H	AMPLICON
+ERR14853336	Plasmodium knowlesi strain H	AMPLICON
+ERR14853339	Plasmodium knowlesi strain H	AMPLICON
+ERR14853341	Plasmodium knowlesi strain H	AMPLICON
+ERR14853343	Plasmodium knowlesi strain H	AMPLICON
+ERR14853346	Plasmodium knowlesi strain H	AMPLICON
+SRR33157737	Plasmodium berghei	RNA-Seq
+SRR33157736	Plasmodium berghei	RNA-Seq
+SRR33157735	Plasmodium yoelii	RNA-Seq
+SRR33157734	Plasmodium yoelii	RNA-Seq
+SRR33159124	Plasmodium homocircumflexum	RNA-Seq
+SRR33159133	Plasmodium homocircumflexum	RNA-Seq
+SRR33159119	Plasmodium homocircumflexum	RNA-Seq
+SRR33159127	Plasmodium homocircumflexum	RNA-Seq
+SRR33159126	Plasmodium homocircumflexum	RNA-Seq
+SRR33159132	Plasmodium homocircumflexum	RNA-Seq
+SRR33159118	Plasmodium homocircumflexum	RNA-Seq
+SRR33159113	Plasmodium homocircumflexum	RNA-Seq
+SRR33159112	Plasmodium homocircumflexum	RNA-Seq
+SRR33159123	Plasmodium homocircumflexum	RNA-Seq
+SRR33159109	Plasmodium homocircumflexum	RNA-Seq
+SRR33159108	Plasmodium homocircumflexum	RNA-Seq
+SRR33159136	Plasmodium homocircumflexum	RNA-Seq
+SRR33159135	Plasmodium homocircumflexum	RNA-Seq
+SRR33159130	Plasmodium homocircumflexum	RNA-Seq
+SRR33159139	Plasmodium homocircumflexum	RNA-Seq
+SRR33159131	Plasmodium homocircumflexum	RNA-Seq
+SRR33159116	Plasmodium homocircumflexum	RNA-Seq
+SRR33159122	Plasmodium homocircumflexum	RNA-Seq
+SRR33159121	Plasmodium homocircumflexum	RNA-Seq
+SRR33159120	Plasmodium homocircumflexum	RNA-Seq
+SRR33159128	Plasmodium homocircumflexum	RNA-Seq
+SRR33159117	Plasmodium homocircumflexum	RNA-Seq
+SRR33159115	Plasmodium homocircumflexum	RNA-Seq
+SRR33159129	Plasmodium homocircumflexum	RNA-Seq
+SRR33159111	Plasmodium homocircumflexum	RNA-Seq
+SRR33159138	Plasmodium homocircumflexum	RNA-Seq
+SRR33159125	Plasmodium homocircumflexum	RNA-Seq
+SRR33159110	Plasmodium homocircumflexum	RNA-Seq
+SRR33159137	Plasmodium homocircumflexum	RNA-Seq
+SRR33159140	Plasmodium homocircumflexum	RNA-Seq
+SRR33159134	Plasmodium homocircumflexum	RNA-Seq
+SRR33159114	Plasmodium homocircumflexum	RNA-Seq
+ERR14853253	Plasmodium knowlesi strain H	AMPLICON
+ERR14853254	Plasmodium knowlesi strain H	AMPLICON
+ERR14853255	Plasmodium knowlesi strain H	AMPLICON
+ERR14853257	Plasmodium knowlesi strain H	AMPLICON
+ERR14853258	Plasmodium knowlesi strain H	AMPLICON
+ERR14853263	Plasmodium knowlesi strain H	AMPLICON
+ERR14853260	Plasmodium knowlesi strain H	AMPLICON
+ERR14853261	Plasmodium knowlesi strain H	AMPLICON
+ERR14853265	Plasmodium knowlesi strain H	AMPLICON
+ERR14853269	Plasmodium knowlesi strain H	AMPLICON
+ERR14853270	Plasmodium knowlesi strain H	AMPLICON
+ERR14853271	Plasmodium knowlesi strain H	AMPLICON
+ERR14853273	Plasmodium knowlesi strain H	AMPLICON
+ERR14853275	Plasmodium knowlesi strain H	AMPLICON
+ERR14853274	Plasmodium knowlesi strain H	AMPLICON
+ERR14853276	Plasmodium knowlesi strain H	AMPLICON
+ERR14853278	Plasmodium knowlesi strain H	AMPLICON
+ERR14853277	Plasmodium knowlesi strain H	AMPLICON
+ERR14853279	Plasmodium knowlesi strain H	AMPLICON
+ERR14853281	Plasmodium knowlesi strain H	AMPLICON
+ERR14853282	Plasmodium knowlesi strain H	AMPLICON
+ERR14853283	Plasmodium knowlesi strain H	AMPLICON
+ERR14853284	Plasmodium knowlesi strain H	AMPLICON
+ERR14853285	Plasmodium knowlesi strain H	AMPLICON
+ERR14853286	Plasmodium knowlesi strain H	AMPLICON
+ERR14853287	Plasmodium knowlesi strain H	AMPLICON
+ERR14853288	Plasmodium knowlesi strain H	AMPLICON
+ERR14853289	Plasmodium knowlesi strain H	AMPLICON
+ERR14853290	Plasmodium knowlesi strain H	AMPLICON
+ERR14853292	Plasmodium knowlesi strain H	AMPLICON
+ERR14853293	Plasmodium knowlesi strain H	AMPLICON
+ERR14853297	Plasmodium knowlesi strain H	AMPLICON
+ERR14853298	Plasmodium knowlesi strain H	AMPLICON
+ERR14853300	Plasmodium knowlesi strain H	AMPLICON
+ERR14853302	Plasmodium knowlesi strain H	AMPLICON
+ERR14853303	Plasmodium knowlesi strain H	AMPLICON
+ERR14853304	Plasmodium knowlesi strain H	AMPLICON
+ERR14853305	Plasmodium knowlesi strain H	AMPLICON
+ERR14853306	Plasmodium knowlesi strain H	AMPLICON
+ERR14853307	Plasmodium knowlesi strain H	AMPLICON
+ERR14853308	Plasmodium knowlesi strain H	AMPLICON
+ERR14853309	Plasmodium knowlesi strain H	AMPLICON
+ERR14853310	Plasmodium knowlesi strain H	AMPLICON
+ERR14853311	Plasmodium knowlesi strain H	AMPLICON
+ERR14853319	Plasmodium knowlesi strain H	AMPLICON
+ERR14853321	Plasmodium knowlesi strain H	AMPLICON
+ERR14853320	Plasmodium knowlesi strain H	AMPLICON
+ERR14853322	Plasmodium knowlesi strain H	AMPLICON
+ERR14853324	Plasmodium knowlesi strain H	AMPLICON
+ERR14853326	Plasmodium knowlesi strain H	AMPLICON
+ERR14853328	Plasmodium knowlesi strain H	AMPLICON
+ERR14853331	Plasmodium knowlesi strain H	AMPLICON
+ERR14853335	Plasmodium knowlesi strain H	AMPLICON
+ERR14853337	Plasmodium knowlesi strain H	AMPLICON
+ERR14853338	Plasmodium knowlesi strain H	AMPLICON
+ERR14853340	Plasmodium knowlesi strain H	AMPLICON
+ERR14853342	Plasmodium knowlesi strain H	AMPLICON
+ERR14853344	Plasmodium knowlesi strain H	AMPLICON
+ERR14853347	Plasmodium knowlesi strain H	AMPLICON
+ERR14853348	Plasmodium knowlesi strain H	AMPLICON
+ERR14853264	Plasmodium knowlesi strain H	AMPLICON
+ERR14853267	Plasmodium knowlesi strain H	AMPLICON
+ERR14853294	Plasmodium knowlesi strain H	AMPLICON
+ERR14853301	Plasmodium knowlesi strain H	AMPLICON
+ERR14853312	Plasmodium knowlesi strain H	AMPLICON
+ERR14853315	Plasmodium knowlesi strain H	AMPLICON
+ERR14853318	Plasmodium knowlesi strain H	AMPLICON
+ERR14853325	Plasmodium knowlesi strain H	AMPLICON
+ERR14853327	Plasmodium knowlesi strain H	AMPLICON
+ERR14853329	Plasmodium knowlesi strain H	AMPLICON
+ERR14853333	Plasmodium knowlesi strain H	AMPLICON
+ERR14853334	Plasmodium knowlesi strain H	AMPLICON
+ERR14853345	Plasmodium knowlesi strain H	AMPLICON
+SRR32867100	Plasmodium vivax	WGS
+SRR32867099	Plasmodium vivax	WGS
+SRR32867098	Plasmodium vivax	WGS
+SRR32867097	Plasmodium vivax	WGS
+SRR32867096	Plasmodium vivax	WGS
+SRR32867095	Plasmodium vivax	WGS
+SRR32966633	Plasmodium berghei	RNA-Seq
+SRR32966634	Plasmodium berghei	RNA-Seq
+SRR32966635	Plasmodium berghei	RNA-Seq
+SRR32966638	Plasmodium berghei	RNA-Seq
+SRR32966641	Plasmodium berghei	RNA-Seq
+SRR32966628	Plasmodium berghei	RNA-Seq
+SRR32966629	Plasmodium berghei	RNA-Seq
+SRR32966630	Plasmodium berghei	RNA-Seq
+SRR32966631	Plasmodium berghei	RNA-Seq
+SRR32966640	Plasmodium berghei	RNA-Seq
+SRR32966661	Plasmodium berghei	ChIP-Seq
+SRR32966660	Plasmodium berghei	ChIP-Seq
+SRR32966657	Plasmodium berghei	ChIP-Seq
+SRR32966656	Plasmodium berghei	ChIP-Seq
+SRR32966653	Plasmodium berghei	ChIP-Seq
+SRR32966652	Plasmodium berghei	ChIP-Seq
+SRR32966650	Plasmodium berghei	ChIP-Seq
+SRR32966663	Plasmodium berghei	RNA-Seq
+SRR32966651	Plasmodium berghei	RNA-Seq
+SRR32966662	Plasmodium berghei	RNA-Seq
+SRR32966643	Plasmodium berghei	RNA-Seq
+SRR32966644	Plasmodium berghei	RNA-Seq
+SRR32966645	Plasmodium berghei	RNA-Seq
+SRR32966647	Plasmodium berghei	RNA-Seq
+SRR32966648	Plasmodium berghei	RNA-Seq
+SRR33148414	Plasmodium knowlesi	RNA-Seq
+SRR33148415	Plasmodium knowlesi	RNA-Seq
+SRR33148416	Plasmodium knowlesi	RNA-Seq
+SRR33148417	Plasmodium knowlesi	RNA-Seq
+SRR33148418	Plasmodium knowlesi	RNA-Seq
+SRR33148420	Plasmodium knowlesi	RNA-Seq
+SRR33148421	Plasmodium knowlesi	RNA-Seq
+SRR33148422	Plasmodium knowlesi	RNA-Seq
+SRR33148409	Plasmodium knowlesi	RNA-Seq
+SRR33148410	Plasmodium knowlesi	RNA-Seq
+SRR33148411	Plasmodium knowlesi	RNA-Seq
+SRR33148412	Plasmodium knowlesi	RNA-Seq
+SRR33148413	Plasmodium knowlesi	RNA-Seq
+SRR33148408	Plasmodium knowlesi	RNA-Seq
+SRR33148407	Plasmodium knowlesi	RNA-Seq
+SRR33148419	Plasmodium knowlesi	RNA-Seq
+ERR14365957	Plasmodium knowlesi strain H	AMPLICON
+ERR14365958	Plasmodium knowlesi strain H	AMPLICON
+ERR14365962	Plasmodium knowlesi strain H	AMPLICON
+ERR14365964	Plasmodium knowlesi strain H	AMPLICON
+ERR14365967	Plasmodium knowlesi strain H	AMPLICON
+ERR14365969	Plasmodium knowlesi strain H	AMPLICON
+ERR14365936	Plasmodium knowlesi strain H	AMPLICON
+ERR14365976	Plasmodium knowlesi strain H	AMPLICON
+ERR14365981	Plasmodium knowlesi strain H	AMPLICON
+ERR14365953	Plasmodium knowlesi strain H	AMPLICON
+ERR14365984	Plasmodium knowlesi strain H	AMPLICON
+ERR14365949	Plasmodium knowlesi strain H	AMPLICON
+ERR14365985	Plasmodium knowlesi strain H	AMPLICON
+ERR14365986	Plasmodium knowlesi strain H	AMPLICON
+ERR14366002	Plasmodium knowlesi strain H	AMPLICON
+ERR14365941	Plasmodium knowlesi strain H	AMPLICON
+ERR14365939	Plasmodium knowlesi strain H	AMPLICON
+ERR14365932	Plasmodium knowlesi strain H	AMPLICON
+ERR14365994	Plasmodium knowlesi strain H	AMPLICON
+SRR32497040	Plasmodium berghei ANKA	RNA-Seq
+SRR32497041	Plasmodium berghei ANKA	RNA-Seq
+SRR32497042	Plasmodium berghei ANKA	RNA-Seq
+SRR32497037	Plasmodium berghei ANKA	RNA-Seq
+SRR32497038	Plasmodium berghei ANKA	RNA-Seq
+SRR32497039	Plasmodium berghei ANKA	RNA-Seq
+SRR32497034	Plasmodium berghei ANKA	RNA-Seq
+SRR32497035	Plasmodium berghei ANKA	RNA-Seq
+SRR32497036	Plasmodium berghei ANKA	RNA-Seq
+SRR32501593	Plasmodium berghei ANKA	ChIP-Seq
+SRR32501594	Plasmodium berghei ANKA	ChIP-Seq
+SRR32501591	Plasmodium berghei ANKA	ChIP-Seq
+SRR32501592	Plasmodium berghei ANKA	ChIP-Seq
+SRR32501589	Plasmodium berghei ANKA	ChIP-Seq
+SRR32501590	Plasmodium berghei ANKA	ChIP-Seq
+SRR32501587	Plasmodium berghei ANKA	ChIP-Seq
+SRR32501588	Plasmodium berghei ANKA	ChIP-Seq
+SRR32501596	Plasmodium berghei ANKA	OTHER
+SRR32501595	Plasmodium berghei ANKA	OTHER
+SRR32501762	Plasmodium berghei ANKA	RNA-Seq
+SRR32501763	Plasmodium berghei ANKA	RNA-Seq
+SRR32501764	Plasmodium berghei ANKA	RNA-Seq
+SRR32501759	Plasmodium berghei ANKA	RNA-Seq
+SRR32501760	Plasmodium berghei ANKA	RNA-Seq
+SRR32501761	Plasmodium berghei ANKA	RNA-Seq
+SRR32867105	Plasmodium vivax	WGS
+SRR32867104	Plasmodium vivax	WGS
+SRR32867130	Plasmodium vivax	WGS
+SRR32867129	Plasmodium vivax	WGS
+SRR32867118	Plasmodium vivax	WGS
+SRR32867107	Plasmodium vivax	WGS
+SRR32867103	Plasmodium vivax	WGS
+SRR32867128	Plasmodium vivax	WGS
+SRR32867127	Plasmodium vivax	WGS
+SRR32867126	Plasmodium vivax	WGS
+SRR32867125	Plasmodium vivax	WGS
+SRR32867124	Plasmodium vivax	WGS
+SRR32867123	Plasmodium vivax	WGS
+SRR32867122	Plasmodium vivax	WGS
+SRR32867121	Plasmodium vivax	WGS
+SRR32867120	Plasmodium vivax	WGS
+SRR32867102	Plasmodium vivax	WGS
+SRR32867119	Plasmodium vivax	WGS
+SRR32867117	Plasmodium vivax	WGS
+SRR32867116	Plasmodium vivax	WGS
+SRR32867115	Plasmodium vivax	WGS
+SRR32867114	Plasmodium vivax	WGS
+SRR32867113	Plasmodium vivax	WGS
+SRR32867112	Plasmodium vivax	WGS
+SRR32867111	Plasmodium vivax	WGS
+SRR32867110	Plasmodium vivax	WGS
+SRR32867109	Plasmodium vivax	WGS
+SRR32867101	Plasmodium vivax	WGS
+SRR32867108	Plasmodium vivax	WGS
+SRR32867106	Plasmodium vivax	WGS
+ERR14365959	Plasmodium knowlesi strain H	AMPLICON
+ERR14365960	Plasmodium knowlesi strain H	AMPLICON
+ERR14365961	Plasmodium knowlesi strain H	AMPLICON
+ERR14365963	Plasmodium knowlesi strain H	AMPLICON
+ERR14365965	Plasmodium knowlesi strain H	AMPLICON
+ERR14365966	Plasmodium knowlesi strain H	AMPLICON
+ERR14365968	Plasmodium knowlesi strain H	AMPLICON
+ERR14365970	Plasmodium knowlesi strain H	AMPLICON
+ERR14365951	Plasmodium knowlesi strain H	AMPLICON
+ERR14365971	Plasmodium knowlesi strain H	AMPLICON
+ERR14365972	Plasmodium knowlesi strain H	AMPLICON
+ERR14365973	Plasmodium knowlesi strain H	AMPLICON
+ERR14365974	Plasmodium knowlesi strain H	AMPLICON
+ERR14365975	Plasmodium knowlesi strain H	AMPLICON
+ERR14365977	Plasmodium knowlesi strain H	AMPLICON
+ERR14365978	Plasmodium knowlesi strain H	AMPLICON
+ERR14365979	Plasmodium knowlesi strain H	AMPLICON
+ERR14365980	Plasmodium knowlesi strain H	AMPLICON
+ERR14365982	Plasmodium knowlesi strain H	AMPLICON
+ERR14365955	Plasmodium knowlesi strain H	AMPLICON
+ERR14365983	Plasmodium knowlesi strain H	AMPLICON
+ERR14365956	Plasmodium knowlesi strain H	AMPLICON
+ERR14365950	Plasmodium knowlesi strain H	AMPLICON
+ERR14365946	Plasmodium knowlesi strain H	AMPLICON
+ERR14365945	Plasmodium knowlesi strain H	AMPLICON
+ERR14365948	Plasmodium knowlesi strain H	AMPLICON
+ERR14365954	Plasmodium knowlesi strain H	AMPLICON
+ERR14365987	Plasmodium knowlesi strain H	AMPLICON
+ERR14365930	Plasmodium knowlesi strain H	AMPLICON
+ERR14365929	Plasmodium knowlesi strain H	AMPLICON
+ERR14365988	Plasmodium knowlesi strain H	AMPLICON
+ERR14365989	Plasmodium knowlesi strain H	AMPLICON
+ERR14366003	Plasmodium knowlesi strain H	AMPLICON
+ERR14365944	Plasmodium knowlesi strain H	AMPLICON
+ERR14365947	Plasmodium knowlesi strain H	AMPLICON
+ERR14365990	Plasmodium knowlesi strain H	AMPLICON
+ERR14365991	Plasmodium knowlesi strain H	AMPLICON
+ERR14365992	Plasmodium knowlesi strain H	AMPLICON
+ERR14365993	Plasmodium knowlesi strain H	AMPLICON
+ERR14365940	Plasmodium knowlesi strain H	AMPLICON
+ERR14365942	Plasmodium knowlesi strain H	AMPLICON
+ERR14365928	Plasmodium knowlesi strain H	AMPLICON
+ERR14365938	Plasmodium knowlesi strain H	AMPLICON
+ERR14365931	Plasmodium knowlesi strain H	AMPLICON
+ERR14365952	Plasmodium knowlesi strain H	AMPLICON
+ERR14365935	Plasmodium knowlesi strain H	AMPLICON
+ERR14365933	Plasmodium knowlesi strain H	AMPLICON
+ERR14365934	Plasmodium knowlesi strain H	AMPLICON
+ERR14365943	Plasmodium knowlesi strain H	AMPLICON
+ERR14365995	Plasmodium knowlesi strain H	AMPLICON
+ERR14365937	Plasmodium knowlesi strain H	AMPLICON
+ERR14365996	Plasmodium knowlesi strain H	AMPLICON
+ERR14365997	Plasmodium knowlesi strain H	AMPLICON
+ERR14365998	Plasmodium knowlesi strain H	AMPLICON
+ERR14365999	Plasmodium knowlesi strain H	AMPLICON
+ERR14366000	Plasmodium knowlesi strain H	AMPLICON
+ERR14366001	Plasmodium knowlesi strain H	AMPLICON
+SRR32257491	Plasmodium vivax	WGA
+SRR32257490	Plasmodium vivax	WGA
+SRR32257488	Plasmodium vivax	WGA
+SRR32257517	Plasmodium vivax	WGA
+SRR32257539	Plasmodium vivax	WGA
+SRR32257528	Plasmodium vivax	WGA
+SRR32257512	Plasmodium vivax	WGA
+SRR32257501	Plasmodium vivax	WGA
+SRR32257551	Plasmodium vivax	WGA
+SRR32257550	Plasmodium vivax	WGA
+SRR32257549	Plasmodium vivax	WGA
+SRR32257548	Plasmodium vivax	WGA
+SRR32257547	Plasmodium vivax	WGA
+SRR32257546	Plasmodium vivax	WGA
+SRR32257545	Plasmodium vivax	WGA
+SRR32257544	Plasmodium vivax	WGA
+SRR32257543	Plasmodium vivax	WGA
+SRR32257542	Plasmodium vivax	WGA
+SRR32257541	Plasmodium vivax	WGA
+SRR32257540	Plasmodium vivax	WGA
+SRR32257538	Plasmodium vivax	WGA
+SRR32257537	Plasmodium vivax	WGA
+SRR32257536	Plasmodium vivax	WGA
+SRR32257535	Plasmodium vivax	WGA
+SRR32257534	Plasmodium vivax	WGA
+SRR32257533	Plasmodium vivax	WGA
+SRR32257532	Plasmodium vivax	WGA
+SRR32257531	Plasmodium vivax	WGA
+SRR32257530	Plasmodium vivax	WGA
+SRR32257529	Plasmodium vivax	WGA
+SRR32257527	Plasmodium vivax	WGA
+SRR32257526	Plasmodium vivax	WGA
+SRR32257525	Plasmodium vivax	WGA
+SRR32257524	Plasmodium vivax	WGA
+SRR32257523	Plasmodium vivax	WGA
+SRR32257522	Plasmodium vivax	WGA
+SRR32257521	Plasmodium vivax	WGA
+SRR32257520	Plasmodium vivax	WGA
+SRR32257519	Plasmodium vivax	WGA
+SRR32257518	Plasmodium vivax	WGA
+SRR32257516	Plasmodium vivax	WGA
+SRR32257515	Plasmodium vivax	WGA
+SRR32257514	Plasmodium vivax	WGA
+SRR32257513	Plasmodium vivax	WGA
+SRR32257511	Plasmodium vivax	WGA
+SRR32257510	Plasmodium vivax	WGA
+SRR32257509	Plasmodium vivax	WGA
+SRR32257508	Plasmodium vivax	WGA
+SRR32257507	Plasmodium vivax	WGA
+SRR32257506	Plasmodium vivax	WGA
+SRR32257505	Plasmodium vivax	WGA
+SRR32257504	Plasmodium vivax	WGA
+SRR32257503	Plasmodium vivax	WGA
+SRR32257502	Plasmodium vivax	WGA
+SRR32257500	Plasmodium vivax	WGA
+SRR32257499	Plasmodium vivax	WGA
+SRR32257498	Plasmodium vivax	WGA
+SRR32257497	Plasmodium vivax	WGA
+SRR32257496	Plasmodium vivax	WGA
+SRR32257495	Plasmodium vivax	WGA
+SRR32257494	Plasmodium vivax	WGA
+SRR32257493	Plasmodium vivax	WGA
+SRR32257492	Plasmodium vivax	WGA
+SRR32257583	Plasmodium vivax	WGA
+SRR32257566	Plasmodium vivax	WGA
+SRR32257555	Plasmodium vivax	WGA
+SRR32257197	Plasmodium vivax	WGA
+SRR32257598	Plasmodium vivax	WGA
+SRR32257591	Plasmodium vivax	WGA
+SRR32257590	Plasmodium vivax	WGA
+SRR32257589	Plasmodium vivax	WGA
+SRR32257588	Plasmodium vivax	WGA
+SRR32257587	Plasmodium vivax	WGA
+SRR32257586	Plasmodium vivax	WGA
+SRR32257585	Plasmodium vivax	WGA
+SRR32257584	Plasmodium vivax	WGA
+SRR32257582	Plasmodium vivax	WGA
+SRR32257581	Plasmodium vivax	WGA
+SRR32257580	Plasmodium vivax	WGA
+SRR32257579	Plasmodium vivax	WGA
+SRR32257578	Plasmodium vivax	WGA
+SRR32257577	Plasmodium vivax	WGA
+SRR32257576	Plasmodium vivax	WGA
+SRR32257575	Plasmodium vivax	WGA
+SRR32257574	Plasmodium vivax	WGA
+SRR32257573	Plasmodium vivax	WGA
+SRR32257572	Plasmodium vivax	WGA
+SRR32257571	Plasmodium vivax	WGA
+SRR32257570	Plasmodium vivax	WGA
+SRR32257569	Plasmodium vivax	WGA
+SRR32257568	Plasmodium vivax	WGA
+SRR32257567	Plasmodium vivax	WGA
+SRR32257565	Plasmodium vivax	WGA
+SRR32257564	Plasmodium vivax	WGA
+SRR32257563	Plasmodium vivax	WGA
+SRR32257562	Plasmodium vivax	WGA
+SRR32257561	Plasmodium vivax	WGA
+SRR32257560	Plasmodium vivax	WGA
+SRR32257559	Plasmodium vivax	WGA
+SRR32257558	Plasmodium vivax	WGA
+SRR32257557	Plasmodium vivax	WGA
+SRR32257556	Plasmodium vivax	WGA
+SRR32257554	Plasmodium vivax	WGA
+SRR32257553	Plasmodium vivax	WGA
+SRR32257552	Plasmodium vivax	WGA
+SRR32257199	Plasmodium vivax	WGA
+SRR32257198	Plasmodium vivax	WGA
+SRR32257196	Plasmodium vivax	WGA
+SRR32257195	Plasmodium vivax	WGA
+SRR32257194	Plasmodium vivax	WGA
+SRR32257193	Plasmodium vivax	WGA
+SRR32257489	Plasmodium vivax	WGA
+SRR32257603	Plasmodium vivax	WGA
+SRR32257602	Plasmodium vivax	WGA
+SRR32257601	Plasmodium vivax	WGA
+SRR32257600	Plasmodium vivax	WGA
+SRR32257599	Plasmodium vivax	WGA
+SRR32257597	Plasmodium vivax	WGA
+SRR32257596	Plasmodium vivax	WGA
+SRR32257595	Plasmodium vivax	WGA
+SRR32257594	Plasmodium vivax	WGA
+SRR32257593	Plasmodium vivax	WGA
+SRR32257592	Plasmodium vivax	WGA
+SRR32257251	Plasmodium vivax	WGA
+SRR32257240	Plasmodium vivax	WGA
+SRR32257235	Plasmodium vivax	WGA
+SRR32257224	Plasmodium vivax	WGA
+SRR32257213	Plasmodium vivax	WGA
+SRR32257259	Plasmodium vivax	WGA
+SRR32257258	Plasmodium vivax	WGA
+SRR32257257	Plasmodium vivax	WGA
+SRR32257256	Plasmodium vivax	WGA
+SRR32257255	Plasmodium vivax	WGA
+SRR32257254	Plasmodium vivax	WGA
+SRR32257253	Plasmodium vivax	WGA
+SRR32257252	Plasmodium vivax	WGA
+SRR32257250	Plasmodium vivax	WGA
+SRR32257249	Plasmodium vivax	WGA
+SRR32257248	Plasmodium vivax	WGA
+SRR32257247	Plasmodium vivax	WGA
+SRR32257246	Plasmodium vivax	WGA
+SRR32257245	Plasmodium vivax	WGA
+SRR32257244	Plasmodium vivax	WGA
+SRR32257243	Plasmodium vivax	WGA
+SRR32257242	Plasmodium vivax	WGA
+SRR32257241	Plasmodium vivax	WGA
+SRR32257239	Plasmodium vivax	WGA
+SRR32257238	Plasmodium vivax	WGA
+SRR32257237	Plasmodium vivax	WGA
+SRR32257236	Plasmodium vivax	WGA
+SRR32257234	Plasmodium vivax	WGA
+SRR32257233	Plasmodium vivax	WGA
+SRR32257232	Plasmodium vivax	WGA
+SRR32257231	Plasmodium vivax	WGA
+SRR32257230	Plasmodium vivax	WGA
+SRR32257229	Plasmodium vivax	WGA
+SRR32257228	Plasmodium vivax	WGA
+SRR32257227	Plasmodium vivax	WGA
+SRR32257226	Plasmodium vivax	WGA
+SRR32257225	Plasmodium vivax	WGA
+SRR32257223	Plasmodium vivax	WGA
+SRR32257222	Plasmodium vivax	WGA
+SRR32257221	Plasmodium vivax	WGA
+SRR32257220	Plasmodium vivax	WGA
+SRR32257219	Plasmodium vivax	WGA
+SRR32257218	Plasmodium vivax	WGA
+SRR32257217	Plasmodium vivax	WGA
+SRR32257216	Plasmodium vivax	WGA
+SRR32257215	Plasmodium vivax	WGA
+SRR32257214	Plasmodium vivax	WGA
+SRR32257212	Plasmodium vivax	WGA
+SRR32257211	Plasmodium vivax	WGA
+SRR32257210	Plasmodium vivax	WGA
+SRR32257209	Plasmodium vivax	WGA
+SRR32257208	Plasmodium vivax	WGA
+SRR32257207	Plasmodium vivax	WGA
+SRR32257206	Plasmodium vivax	WGA
+SRR32257205	Plasmodium vivax	WGA
+SRR32257204	Plasmodium vivax	WGA
+SRR32257203	Plasmodium vivax	WGA
+SRR32257202	Plasmodium vivax	WGA
+SRR32257201	Plasmodium vivax	WGA
+SRR32257200	Plasmodium vivax	WGA
+SRR32257288	Plasmodium vivax	WGA
+SRR32257277	Plasmodium vivax	WGA
+SRR32257266	Plasmodium vivax	WGA
+SRR32257262	Plasmodium vivax	WGA
+SRR32257314	Plasmodium vivax	WGA
+SRR32257303	Plasmodium vivax	WGA
+SRR32257292	Plasmodium vivax	WGA
+SRR32257291	Plasmodium vivax	WGA
+SRR32257290	Plasmodium vivax	WGA
+SRR32257289	Plasmodium vivax	WGA
+SRR32257287	Plasmodium vivax	WGA
+SRR32257286	Plasmodium vivax	WGA
+SRR32257285	Plasmodium vivax	WGA
+SRR32257284	Plasmodium vivax	WGA
+SRR32257283	Plasmodium vivax	WGA
+SRR32257282	Plasmodium vivax	WGA
+SRR32257281	Plasmodium vivax	WGA
+SRR32257280	Plasmodium vivax	WGA
+SRR32257279	Plasmodium vivax	WGA
+SRR32257278	Plasmodium vivax	WGA
+SRR32257276	Plasmodium vivax	WGA
+SRR32257275	Plasmodium vivax	WGA
+SRR32257274	Plasmodium vivax	WGA
+SRR32257273	Plasmodium vivax	WGA
+SRR32257272	Plasmodium vivax	WGA
+SRR32257271	Plasmodium vivax	WGA
+SRR32257270	Plasmodium vivax	WGA
+SRR32257269	Plasmodium vivax	WGA
+SRR32257268	Plasmodium vivax	WGA
+SRR32257267	Plasmodium vivax	WGA
+SRR32257265	Plasmodium vivax	WGA
+SRR32257264	Plasmodium vivax	WGA
+SRR32257263	Plasmodium vivax	WGA
+SRR32257261	Plasmodium vivax	WGA
+SRR32257260	Plasmodium vivax	WGA
+SRR32257319	Plasmodium vivax	WGA
+SRR32257318	Plasmodium vivax	WGA
+SRR32257317	Plasmodium vivax	WGA
+SRR32257316	Plasmodium vivax	WGA
+SRR32257315	Plasmodium vivax	WGA
+SRR32257313	Plasmodium vivax	WGA
+SRR32257312	Plasmodium vivax	WGA
+SRR32257311	Plasmodium vivax	WGA
+SRR32257310	Plasmodium vivax	WGA
+SRR32257309	Plasmodium vivax	WGA
+SRR32257308	Plasmodium vivax	WGA
+SRR32257307	Plasmodium vivax	WGA
+SRR32257306	Plasmodium vivax	WGA
+SRR32257305	Plasmodium vivax	WGA
+SRR32257304	Plasmodium vivax	WGA
+SRR32257302	Plasmodium vivax	WGA
+SRR32257301	Plasmodium vivax	WGA
+SRR32257300	Plasmodium vivax	WGA
+SRR32257299	Plasmodium vivax	WGA
+SRR32257298	Plasmodium vivax	WGA
+SRR32257297	Plasmodium vivax	WGA
+SRR32257296	Plasmodium vivax	WGA
+SRR32257295	Plasmodium vivax	WGA
+SRR32257294	Plasmodium vivax	WGA
+SRR32257293	Plasmodium vivax	WGA
+SRR32257357	Plasmodium vivax	WGA
+SRR32257341	Plasmodium vivax	WGA
+SRR32257330	Plasmodium vivax	WGA
+SRR32257359	Plasmodium vivax	WGA
+SRR32257358	Plasmodium vivax	WGA
+SRR32257356	Plasmodium vivax	WGA
+SRR32257355	Plasmodium vivax	WGA
+SRR32257354	Plasmodium vivax	WGA
+SRR32257353	Plasmodium vivax	WGA
+SRR32257352	Plasmodium vivax	WGA
+SRR32257351	Plasmodium vivax	WGA
+SRR32257350	Plasmodium vivax	WGA
+SRR32257349	Plasmodium vivax	WGA
+SRR32257348	Plasmodium vivax	WGA
+SRR32257347	Plasmodium vivax	WGA
+SRR32257346	Plasmodium vivax	WGA
+SRR32257345	Plasmodium vivax	WGA
+SRR32257344	Plasmodium vivax	WGA
+SRR32257343	Plasmodium vivax	WGA
+SRR32257342	Plasmodium vivax	WGA
+SRR32257340	Plasmodium vivax	WGA
+SRR32257339	Plasmodium vivax	WGA
+SRR32257338	Plasmodium vivax	WGA
+SRR32257337	Plasmodium vivax	WGA
+SRR32257336	Plasmodium vivax	WGA
+SRR32257335	Plasmodium vivax	WGA
+SRR32257334	Plasmodium vivax	WGA
+SRR32257333	Plasmodium vivax	WGA
+SRR32257332	Plasmodium vivax	WGA
+SRR32257331	Plasmodium vivax	WGA
+SRR32257329	Plasmodium vivax	WGA
+SRR32257328	Plasmodium vivax	WGA
+SRR32257327	Plasmodium vivax	WGA
+SRR32257326	Plasmodium vivax	WGA
+SRR32257325	Plasmodium vivax	WGA
+SRR32257324	Plasmodium vivax	WGA
+SRR32257323	Plasmodium vivax	WGA
+SRR32257322	Plasmodium vivax	WGA
+SRR32257321	Plasmodium vivax	WGA
+SRR32257320	Plasmodium vivax	WGA
+SRR32257383	Plasmodium vivax	WGA
+SRR32257368	Plasmodium vivax	WGA
+SRR32257409	Plasmodium vivax	WGA
+SRR32257393	Plasmodium vivax	WGA
+SRR32257391	Plasmodium vivax	WGA
+SRR32257390	Plasmodium vivax	WGA
+SRR32257389	Plasmodium vivax	WGA
+SRR32257388	Plasmodium vivax	WGA
+SRR32257387	Plasmodium vivax	WGA
+SRR32257386	Plasmodium vivax	WGA
+SRR32257385	Plasmodium vivax	WGA
+SRR32257384	Plasmodium vivax	WGA
+SRR32257382	Plasmodium vivax	WGA
+SRR32257381	Plasmodium vivax	WGA
+SRR32257380	Plasmodium vivax	WGA
+SRR32257379	Plasmodium vivax	WGA
+SRR32257378	Plasmodium vivax	WGA
+SRR32257377	Plasmodium vivax	WGA
+SRR32257376	Plasmodium vivax	WGA
+SRR32257375	Plasmodium vivax	WGA
+SRR32257374	Plasmodium vivax	WGA
+SRR32257373	Plasmodium vivax	WGA
+SRR32257372	Plasmodium vivax	WGA
+SRR32257371	Plasmodium vivax	WGA
+SRR32257370	Plasmodium vivax	WGA
+SRR32257369	Plasmodium vivax	WGA
+SRR32257367	Plasmodium vivax	WGA
+SRR32257366	Plasmodium vivax	WGA
+SRR32257365	Plasmodium vivax	WGA
+SRR32257364	Plasmodium vivax	WGA
+SRR32257363	Plasmodium vivax	WGA
+SRR32257362	Plasmodium vivax	WGA
+SRR32257361	Plasmodium vivax	WGA
+SRR32257360	Plasmodium vivax	WGA
+SRR32257419	Plasmodium vivax	WGA
+SRR32257418	Plasmodium vivax	WGA
+SRR32257417	Plasmodium vivax	WGA
+SRR32257416	Plasmodium vivax	WGA
+SRR32257415	Plasmodium vivax	WGA
+SRR32257414	Plasmodium vivax	WGA
+SRR32257413	Plasmodium vivax	WGA
+SRR32257412	Plasmodium vivax	WGA
+SRR32257411	Plasmodium vivax	WGA
+SRR32257410	Plasmodium vivax	WGA
+SRR32257408	Plasmodium vivax	WGA
+SRR32257407	Plasmodium vivax	WGA
+SRR32257406	Plasmodium vivax	WGA
+SRR32257405	Plasmodium vivax	WGA
+SRR32257404	Plasmodium vivax	WGA
+SRR32257403	Plasmodium vivax	WGA
+SRR32257402	Plasmodium vivax	WGA
+SRR32257401	Plasmodium vivax	WGA
+SRR32257400	Plasmodium vivax	WGA
+SRR32257399	Plasmodium vivax	WGA
+SRR32257398	Plasmodium vivax	WGA
+SRR32257397	Plasmodium vivax	WGA
+SRR32257396	Plasmodium vivax	WGA
+SRR32257395	Plasmodium vivax	WGA
+SRR32257394	Plasmodium vivax	WGA
+SRR32257392	Plasmodium vivax	WGA
+SRR32257459	Plasmodium vivax	WGA
+SRR32257474	Plasmodium vivax	WGA
+SRR32257463	Plasmodium vivax	WGA
+SRR32257458	Plasmodium vivax	WGA
+SRR32257447	Plasmodium vivax	WGA
+SRR32257436	Plasmodium vivax	WGA
+SRR32257431	Plasmodium vivax	WGA
+SRR32257420	Plasmodium vivax	WGA
+SRR32257479	Plasmodium vivax	WGA
+SRR32257478	Plasmodium vivax	WGA
+SRR32257477	Plasmodium vivax	WGA
+SRR32257476	Plasmodium vivax	WGA
+SRR32257475	Plasmodium vivax	WGA
+SRR32257473	Plasmodium vivax	WGA
+SRR32257472	Plasmodium vivax	WGA
+SRR32257471	Plasmodium vivax	WGA
+SRR32257470	Plasmodium vivax	WGA
+SRR32257469	Plasmodium vivax	WGA
+SRR32257468	Plasmodium vivax	WGA
+SRR32257467	Plasmodium vivax	WGA
+SRR32257466	Plasmodium vivax	WGA
+SRR32257465	Plasmodium vivax	WGA
+SRR32257464	Plasmodium vivax	WGA
+SRR32257462	Plasmodium vivax	WGA
+SRR32257461	Plasmodium vivax	WGA
+SRR32257460	Plasmodium vivax	WGA
+SRR32257457	Plasmodium vivax	WGA
+SRR32257456	Plasmodium vivax	WGA
+SRR32257455	Plasmodium vivax	WGA
+SRR32257454	Plasmodium vivax	WGA
+SRR32257453	Plasmodium vivax	WGA
+SRR32257452	Plasmodium vivax	WGA
+SRR32257451	Plasmodium vivax	WGA
+SRR32257450	Plasmodium vivax	WGA
+SRR32257449	Plasmodium vivax	WGA
+SRR32257448	Plasmodium vivax	WGA
+SRR32257446	Plasmodium vivax	WGA
+SRR32257445	Plasmodium vivax	WGA
+SRR32257444	Plasmodium vivax	WGA
+SRR32257443	Plasmodium vivax	WGA
+SRR32257442	Plasmodium vivax	WGA
+SRR32257441	Plasmodium vivax	WGA
+SRR32257440	Plasmodium vivax	WGA
+SRR32257439	Plasmodium vivax	WGA
+SRR32257438	Plasmodium vivax	WGA
+SRR32257437	Plasmodium vivax	WGA
+SRR32257435	Plasmodium vivax	WGA
+SRR32257434	Plasmodium vivax	WGA
+SRR32257433	Plasmodium vivax	WGA
+SRR32257432	Plasmodium vivax	WGA
+SRR32257430	Plasmodium vivax	WGA
+SRR32257429	Plasmodium vivax	WGA
+SRR32257428	Plasmodium vivax	WGA
+SRR32257427	Plasmodium vivax	WGA
+SRR32257426	Plasmodium vivax	WGA
+SRR32257425	Plasmodium vivax	WGA
+SRR32257424	Plasmodium vivax	WGA
+SRR32257423	Plasmodium vivax	WGA
+SRR32257422	Plasmodium vivax	WGA
+SRR32257421	Plasmodium vivax	WGA
+ERR14245933	Plasmodium knowlesi strain H	AMPLICON
+ERR14245934	Plasmodium knowlesi strain H	AMPLICON
+ERR14245935	Plasmodium knowlesi strain H	AMPLICON
+ERR14245936	Plasmodium knowlesi strain H	AMPLICON
+ERR14245937	Plasmodium knowlesi strain H	AMPLICON
+ERR14245939	Plasmodium knowlesi strain H	AMPLICON
+ERR14245941	Plasmodium knowlesi strain H	AMPLICON
+ERR14245942	Plasmodium knowlesi strain H	AMPLICON
+ERR14245944	Plasmodium knowlesi strain H	AMPLICON
+ERR14245943	Plasmodium knowlesi strain H	AMPLICON
+ERR14245945	Plasmodium knowlesi strain H	AMPLICON
+ERR14245946	Plasmodium knowlesi strain H	AMPLICON
+ERR14245912	Plasmodium knowlesi strain H	AMPLICON
+ERR14245927	Plasmodium knowlesi strain H	AMPLICON
+ERR14245948	Plasmodium knowlesi strain H	AMPLICON
+ERR14245949	Plasmodium knowlesi strain H	AMPLICON
+ERR14245951	Plasmodium knowlesi strain H	AMPLICON
+ERR14245952	Plasmodium knowlesi strain H	AMPLICON
+ERR14245953	Plasmodium knowlesi strain H	AMPLICON
+ERR14245955	Plasmodium knowlesi strain H	AMPLICON
+ERR14245956	Plasmodium knowlesi strain H	AMPLICON
+ERR14245958	Plasmodium knowlesi strain H	AMPLICON
+ERR14245931	Plasmodium knowlesi strain H	AMPLICON
+ERR14245959	Plasmodium knowlesi strain H	AMPLICON
+ERR14245960	Plasmodium knowlesi strain H	AMPLICON
+ERR14245922	Plasmodium knowlesi strain H	AMPLICON
+ERR14245921	Plasmodium knowlesi strain H	AMPLICON
+ERR14245930	Plasmodium knowlesi strain H	AMPLICON
+ERR14245962	Plasmodium knowlesi strain H	AMPLICON
+ERR14245963	Plasmodium knowlesi strain H	AMPLICON
+ERR14245906	Plasmodium knowlesi strain H	AMPLICON
+ERR14245905	Plasmodium knowlesi strain H	AMPLICON
+ERR14245979	Plasmodium knowlesi strain H	AMPLICON
+ERR14245917	Plasmodium knowlesi strain H	AMPLICON
+ERR14245966	Plasmodium knowlesi strain H	AMPLICON
+ERR14245967	Plasmodium knowlesi strain H	AMPLICON
+ERR14245968	Plasmodium knowlesi strain H	AMPLICON
+ERR14245918	Plasmodium knowlesi strain H	AMPLICON
+ERR14245904	Plasmodium knowlesi strain H	AMPLICON
+ERR14245914	Plasmodium knowlesi strain H	AMPLICON
+ERR14245928	Plasmodium knowlesi strain H	AMPLICON
+ERR14245911	Plasmodium knowlesi strain H	AMPLICON
+ERR14245909	Plasmodium knowlesi strain H	AMPLICON
+ERR14245910	Plasmodium knowlesi strain H	AMPLICON
+ERR14245908	Plasmodium knowlesi strain H	AMPLICON
+ERR14245971	Plasmodium knowlesi strain H	AMPLICON
+ERR14245913	Plasmodium knowlesi strain H	AMPLICON
+ERR14245970	Plasmodium knowlesi strain H	AMPLICON
+ERR14245972	Plasmodium knowlesi strain H	AMPLICON
+ERR14245973	Plasmodium knowlesi strain H	AMPLICON
+ERR14245975	Plasmodium knowlesi strain H	AMPLICON
+ERR14245977	Plasmodium knowlesi strain H	AMPLICON
+SRR32257487	Plasmodium vivax	WGA
+SRR32257486	Plasmodium vivax	WGA
+SRR32257485	Plasmodium vivax	WGA
+SRR32257484	Plasmodium vivax	WGA
+SRR32257483	Plasmodium vivax	WGA
+SRR32257482	Plasmodium vivax	WGA
+SRR32257481	Plasmodium vivax	WGA
+SRR32257480	Plasmodium vivax	WGA
+ERR14245938	Plasmodium knowlesi strain H	AMPLICON
+ERR14245940	Plasmodium knowlesi strain H	AMPLICON
+ERR14245947	Plasmodium knowlesi strain H	AMPLICON
+ERR14245950	Plasmodium knowlesi strain H	AMPLICON
+ERR14245954	Plasmodium knowlesi strain H	AMPLICON
+ERR14245957	Plasmodium knowlesi strain H	AMPLICON
+ERR14245929	Plasmodium knowlesi strain H	AMPLICON
+ERR14245932	Plasmodium knowlesi strain H	AMPLICON
+ERR14245925	Plasmodium knowlesi strain H	AMPLICON
+ERR14245926	Plasmodium knowlesi strain H	AMPLICON
+ERR14245961	Plasmodium knowlesi strain H	AMPLICON
+ERR14245924	Plasmodium knowlesi strain H	AMPLICON
+ERR14245964	Plasmodium knowlesi strain H	AMPLICON
+ERR14245965	Plasmodium knowlesi strain H	AMPLICON
+ERR14245978	Plasmodium knowlesi strain H	AMPLICON
+ERR14245915	Plasmodium knowlesi strain H	AMPLICON
+ERR14245920	Plasmodium knowlesi strain H	AMPLICON
+ERR14245923	Plasmodium knowlesi strain H	AMPLICON
+ERR14245969	Plasmodium knowlesi strain H	AMPLICON
+ERR14245916	Plasmodium knowlesi strain H	AMPLICON
+ERR14245907	Plasmodium knowlesi strain H	AMPLICON
+ERR14245919	Plasmodium knowlesi strain H	AMPLICON
+ERR14245974	Plasmodium knowlesi strain H	AMPLICON
+ERR14245976	Plasmodium knowlesi strain H	AMPLICON
+SRR32012251	Plasmodium vivax	AMPLICON
+SRR32012250	Plasmodium vivax	AMPLICON
+SRR32012239	Plasmodium vivax	AMPLICON
+SRR32012237	Plasmodium vivax	AMPLICON
+SRR32012236	Plasmodium vivax	AMPLICON
+SRR32012235	Plasmodium vivax	AMPLICON
+SRR32012234	Plasmodium vivax	AMPLICON
+SRR32012233	Plasmodium vivax	AMPLICON
+SRR32012232	Plasmodium vivax	AMPLICON
+SRR32012231	Plasmodium vivax	AMPLICON
+SRR32012249	Plasmodium vivax	AMPLICON
+SRR32012248	Plasmodium vivax	AMPLICON
+SRR32012247	Plasmodium vivax	AMPLICON
+SRR32012246	Plasmodium vivax	AMPLICON
+SRR32012245	Plasmodium vivax	AMPLICON
+SRR32012244	Plasmodium vivax	AMPLICON
+SRR32012243	Plasmodium vivax	AMPLICON
+SRR32012242	Plasmodium vivax	AMPLICON
+SRR32012241	Plasmodium vivax	AMPLICON
+SRR32012240	Plasmodium vivax	AMPLICON
+SRR32012238	Plasmodium vivax	AMPLICON
+SRR31983719	Plasmodium vivax	WGA
+SRR31983723	Plasmodium vivax	WGA
+SRR31983722	Plasmodium vivax	WGA
+SRR31983721	Plasmodium vivax	WGA
+SRR31983720	Plasmodium vivax	WGA
+SRR31983718	Plasmodium vivax	WGA
+SRR31983717	Plasmodium vivax	WGA
+SRR31983716	Plasmodium vivax	WGA
+SRR31983715	Plasmodium vivax	WGA
+SRR31983714	Plasmodium vivax	WGA
+SRR31983713	Plasmodium vivax	WGA
+SRR31983712	Plasmodium vivax	WGA
+SRR31983711	Plasmodium vivax	WGA
+SRR31983710	Plasmodium vivax	WGA
+SRR31983709	Plasmodium vivax	WGA
+SRR31983730	Plasmodium vivax	WGA
+SRR31983776	Plasmodium vivax	WGA
+SRR31983765	Plasmodium vivax	WGA
+SRR31983754	Plasmodium vivax	WGA
+SRR31983743	Plasmodium vivax	WGA
+SRR31983734	Plasmodium vivax	WGA
+SRR31983733	Plasmodium vivax	WGA
+SRR31983732	Plasmodium vivax	WGA
+SRR31983731	Plasmodium vivax	WGA
+SRR31983729	Plasmodium vivax	WGA
+SRR31983728	Plasmodium vivax	WGA
+SRR31983727	Plasmodium vivax	WGA
+SRR31983726	Plasmodium vivax	WGA
+SRR31983725	Plasmodium vivax	WGA
+SRR31983724	Plasmodium vivax	WGA
+SRR31983783	Plasmodium vivax	WGA
+SRR31983782	Plasmodium vivax	WGA
+SRR31983781	Plasmodium vivax	WGA
+SRR31983780	Plasmodium vivax	WGA
+SRR31983779	Plasmodium vivax	WGA
+SRR31983778	Plasmodium vivax	WGA
+SRR31983777	Plasmodium vivax	WGA
+SRR31983775	Plasmodium vivax	WGA
+SRR31983774	Plasmodium vivax	WGA
+SRR31983773	Plasmodium vivax	WGA
+SRR31983772	Plasmodium vivax	WGA
+SRR31983771	Plasmodium vivax	WGA
+SRR31983770	Plasmodium vivax	WGA
+SRR31983769	Plasmodium vivax	WGA
+SRR31983768	Plasmodium vivax	WGA
+SRR31983767	Plasmodium vivax	WGA
+SRR31983766	Plasmodium vivax	WGA
+SRR31983764	Plasmodium vivax	WGA
+SRR31983763	Plasmodium vivax	WGA
+SRR31983762	Plasmodium vivax	WGA
+SRR31983761	Plasmodium vivax	WGA
+SRR31983760	Plasmodium vivax	WGA
+SRR31983759	Plasmodium vivax	WGA
+SRR31983758	Plasmodium vivax	WGA
+SRR31983757	Plasmodium vivax	WGA
+SRR31983756	Plasmodium vivax	WGA
+SRR31983755	Plasmodium vivax	WGA
+SRR31983753	Plasmodium vivax	WGA
+SRR31983752	Plasmodium vivax	WGA
+SRR31983751	Plasmodium vivax	WGA
+SRR31983750	Plasmodium vivax	WGA
+SRR31983749	Plasmodium vivax	WGA
+SRR31983748	Plasmodium vivax	WGA
+SRR31983747	Plasmodium vivax	WGA
+SRR31983746	Plasmodium vivax	WGA
+SRR31983745	Plasmodium vivax	WGA
+SRR31983744	Plasmodium vivax	WGA
+SRR31983742	Plasmodium vivax	WGA
+SRR31983741	Plasmodium vivax	WGA
+SRR31983740	Plasmodium vivax	WGA
+SRR31983739	Plasmodium vivax	WGA
+SRR31983738	Plasmodium vivax	WGA
+SRR31983737	Plasmodium vivax	WGA
+SRR31983736	Plasmodium vivax	WGA
+SRR31983875	Plasmodium vivax	WGA
+SRR31983841	Plasmodium vivax	WGA
+SRR31983830	Plasmodium vivax	WGA
+SRR31983819	Plasmodium vivax	WGA
+SRR31983808	Plasmodium vivax	WGA
+SRR31983797	Plasmodium vivax	WGA
+SRR31983787	Plasmodium vivax	WGA
+SRR31983843	Plasmodium vivax	WGA
+SRR31983842	Plasmodium vivax	WGA
+SRR31983840	Plasmodium vivax	WGA
+SRR31983839	Plasmodium vivax	WGA
+SRR31983838	Plasmodium vivax	WGA
+SRR31983837	Plasmodium vivax	WGA
+SRR31983836	Plasmodium vivax	WGA
+SRR31983835	Plasmodium vivax	WGA
+SRR31983834	Plasmodium vivax	WGA
+SRR31983833	Plasmodium vivax	WGA
+SRR31983832	Plasmodium vivax	WGA
+SRR31983831	Plasmodium vivax	WGA
+SRR31983829	Plasmodium vivax	WGA
+SRR31983828	Plasmodium vivax	WGA
+SRR31983827	Plasmodium vivax	WGA
+SRR31983826	Plasmodium vivax	WGA
+SRR31983825	Plasmodium vivax	WGA
+SRR31983824	Plasmodium vivax	WGA
+SRR31983823	Plasmodium vivax	WGA
+SRR31983822	Plasmodium vivax	WGA
+SRR31983821	Plasmodium vivax	WGA
+SRR31983820	Plasmodium vivax	WGA
+SRR31983818	Plasmodium vivax	WGA
+SRR31983817	Plasmodium vivax	WGA
+SRR31983816	Plasmodium vivax	WGA
+SRR31983815	Plasmodium vivax	WGA
+SRR31983814	Plasmodium vivax	WGA
+SRR31983813	Plasmodium vivax	WGA
+SRR31983812	Plasmodium vivax	WGA
+SRR31983811	Plasmodium vivax	WGA
+SRR31983810	Plasmodium vivax	WGA
+SRR31983809	Plasmodium vivax	WGA
+SRR31983807	Plasmodium vivax	WGA
+SRR31983806	Plasmodium vivax	WGA
+SRR31983805	Plasmodium vivax	WGA
+SRR31983804	Plasmodium vivax	WGA
+SRR31983803	Plasmodium vivax	WGA
+SRR31983802	Plasmodium vivax	WGA
+SRR31983801	Plasmodium vivax	WGA
+SRR31983800	Plasmodium vivax	WGA
+SRR31983799	Plasmodium vivax	WGA
+SRR31983798	Plasmodium vivax	WGA
+SRR31983796	Plasmodium vivax	WGA
+SRR31983795	Plasmodium vivax	WGA
+SRR31983794	Plasmodium vivax	WGA
+SRR31983793	Plasmodium vivax	WGA
+SRR31983792	Plasmodium vivax	WGA
+SRR31983735	Plasmodium vivax	WGA
+SRR31983790	Plasmodium vivax	WGA
+SRR31983789	Plasmodium vivax	WGA
+SRR31983788	Plasmodium vivax	WGA
+SRR31983786	Plasmodium vivax	WGA
+SRR31983785	Plasmodium vivax	WGA
+SRR31983784	Plasmodium vivax	WGA
+SRR31983867	Plasmodium vivax	WGA
+SRR31983866	Plasmodium vivax	WGA
+SRR31983852	Plasmodium vivax	WGA
+SRR31983893	Plasmodium vivax	WGA
+SRR31983882	Plasmodium vivax	WGA
+SRR31983872	Plasmodium vivax	WGA
+SRR31983861	Plasmodium vivax	WGA
+SRR31983851	Plasmodium vivax	WGA
+SRR31983850	Plasmodium vivax	WGA
+SRR31983849	Plasmodium vivax	WGA
+SRR31983848	Plasmodium vivax	WGA
+SRR31983847	Plasmodium vivax	WGA
+SRR31983846	Plasmodium vivax	WGA
+SRR31983845	Plasmodium vivax	WGA
+SRR31983844	Plasmodium vivax	WGA
+SRR31983865	Plasmodium vivax	WGA
+SRR31983864	Plasmodium vivax	WGA
+SRR31983863	Plasmodium vivax	WGA
+SRR31983862	Plasmodium vivax	WGA
+SRR31983860	Plasmodium vivax	WGA
+SRR31983859	Plasmodium vivax	WGA
+SRR31983858	Plasmodium vivax	WGA
+SRR31983857	Plasmodium vivax	WGA
+SRR31983856	Plasmodium vivax	WGA
+SRR31983903	Plasmodium vivax	WGA
+SRR31983902	Plasmodium vivax	WGA
+SRR31983901	Plasmodium vivax	WGA
+SRR31983900	Plasmodium vivax	WGA
+SRR31983899	Plasmodium vivax	WGA
+SRR31983898	Plasmodium vivax	WGA
+SRR31983897	Plasmodium vivax	WGA
+SRR31983896	Plasmodium vivax	WGA
+SRR31983895	Plasmodium vivax	WGA
+SRR31983894	Plasmodium vivax	WGA
+SRR31983892	Plasmodium vivax	WGA
+SRR31983891	Plasmodium vivax	WGA
+SRR31983890	Plasmodium vivax	WGA
+SRR31983889	Plasmodium vivax	WGA
+SRR31983888	Plasmodium vivax	WGA
+SRR31983887	Plasmodium vivax	WGA
+SRR31983886	Plasmodium vivax	WGA
+SRR31983885	Plasmodium vivax	WGA
+SRR31983884	Plasmodium vivax	WGA
+SRR31983883	Plasmodium vivax	WGA
+SRR31983881	Plasmodium vivax	WGA
+SRR31983880	Plasmodium vivax	WGA
+SRR31983879	Plasmodium vivax	WGA
+SRR31983878	Plasmodium vivax	WGA
+SRR31983877	Plasmodium vivax	WGA
+SRR31983876	Plasmodium vivax	WGA
+SRR31983791	Plasmodium vivax	WGA
+SRR31983874	Plasmodium vivax	WGA
+SRR31983873	Plasmodium vivax	WGA
+SRR31983871	Plasmodium vivax	WGA
+SRR31983870	Plasmodium vivax	WGA
+SRR31983855	Plasmodium vivax	WGA
+SRR31983854	Plasmodium vivax	WGA
+SRR31983853	Plasmodium vivax	WGA
+SRR31983869	Plasmodium vivax	WGA
+SRR31983868	Plasmodium vivax	WGA
+SRR31983905	Plasmodium vivax	WGA
+SRR31983904	Plasmodium vivax	WGA
+SRR31983906	Plasmodium vivax	WGA
+SRR31942821	Plasmodium vivax	WGA
+SRR31942866	Plasmodium vivax	WGA
+SRR31942855	Plasmodium vivax	WGA
+SRR31942838	Plasmodium vivax	WGA
+SRR31942837	Plasmodium vivax	WGA
+SRR31942844	Plasmodium vivax	WGA
+SRR31942836	Plasmodium vivax	WGA
+SRR31942835	Plasmodium vivax	WGA
+SRR31942834	Plasmodium vivax	WGA
+SRR31942833	Plasmodium vivax	WGA
+SRR31942810	Plasmodium vivax	WGA
+SRR31942831	Plasmodium vivax	WGA
+SRR31942830	Plasmodium vivax	WGA
+SRR31942829	Plasmodium vivax	WGA
+SRR31942828	Plasmodium vivax	WGA
+SRR31942827	Plasmodium vivax	WGA
+SRR31942826	Plasmodium vivax	WGA
+SRR31942825	Plasmodium vivax	WGA
+SRR31942824	Plasmodium vivax	WGA
+SRR31942823	Plasmodium vivax	WGA
+SRR31942822	Plasmodium vivax	WGA
+SRR31942820	Plasmodium vivax	WGA
+SRR31942819	Plasmodium vivax	WGA
+SRR31942818	Plasmodium vivax	WGA
+SRR31942817	Plasmodium vivax	WGA
+SRR31942816	Plasmodium vivax	WGA
+SRR31942815	Plasmodium vivax	WGA
+SRR31942814	Plasmodium vivax	WGA
+SRR31942813	Plasmodium vivax	WGA
+SRR31942812	Plasmodium vivax	WGA
+SRR31942811	Plasmodium vivax	WGA
+SRR31942865	Plasmodium vivax	WGA
+SRR31942864	Plasmodium vivax	WGA
+SRR31942832	Plasmodium vivax	WGA
+SRR31942863	Plasmodium vivax	WGA
+SRR31942862	Plasmodium vivax	WGA
+SRR31942861	Plasmodium vivax	WGA
+SRR31942860	Plasmodium vivax	WGA
+SRR31942859	Plasmodium vivax	WGA
+SRR31942858	Plasmodium vivax	WGA
+SRR31942857	Plasmodium vivax	WGA
+SRR31942856	Plasmodium vivax	WGA
+SRR31942854	Plasmodium vivax	WGA
+SRR31942853	Plasmodium vivax	WGA
+SRR31942852	Plasmodium vivax	WGA
+SRR31942851	Plasmodium vivax	WGA
+SRR31942850	Plasmodium vivax	WGA
+SRR31942849	Plasmodium vivax	WGA
+SRR31942848	Plasmodium vivax	WGA
+SRR31942847	Plasmodium vivax	WGA
+SRR31942846	Plasmodium vivax	WGA
+SRR31942845	Plasmodium vivax	WGA
+SRR31942843	Plasmodium vivax	WGA
+SRR31942842	Plasmodium vivax	WGA
+SRR31942841	Plasmodium vivax	WGA
+SRR31942840	Plasmodium vivax	WGA
+SRR31942839	Plasmodium vivax	WGA
+ERR14079177	Plasmodium knowlesi strain H	AMPLICON
+ERR14079179	Plasmodium knowlesi strain H	AMPLICON
+ERR14079181	Plasmodium knowlesi strain H	AMPLICON
+ERR14079184	Plasmodium knowlesi strain H	AMPLICON
+ERR14079186	Plasmodium knowlesi strain H	AMPLICON
+ERR14079155	Plasmodium knowlesi strain H	AMPLICON
+ERR14079170	Plasmodium knowlesi strain H	AMPLICON
+ERR14079193	Plasmodium knowlesi strain H	AMPLICON
+ERR14079201	Plasmodium knowlesi strain H	AMPLICON
+ERR14079202	Plasmodium knowlesi strain H	AMPLICON
+ERR14079169	Plasmodium knowlesi strain H	AMPLICON
+ERR14079165	Plasmodium knowlesi strain H	AMPLICON
+ERR14079204	Plasmodium knowlesi strain H	AMPLICON
+ERR14079205	Plasmodium knowlesi strain H	AMPLICON
+ERR14079207	Plasmodium knowlesi strain H	AMPLICON
+ERR14079160	Plasmodium knowlesi strain H	AMPLICON
+ERR14079211	Plasmodium knowlesi strain H	AMPLICON
+ERR14079159	Plasmodium knowlesi strain H	AMPLICON
+ERR14079147	Plasmodium knowlesi strain H	AMPLICON
+ERR14079150	Plasmodium knowlesi strain H	AMPLICON
+ERR14079171	Plasmodium knowlesi strain H	AMPLICON
+ERR14079154	Plasmodium knowlesi strain H	AMPLICON
+ERR14079214	Plasmodium knowlesi strain H	AMPLICON
+ERR14079216	Plasmodium knowlesi strain H	AMPLICON
+ERR14079219	Plasmodium knowlesi strain H	AMPLICON
+ERR14084335	Plasmodium malariae	AMPLICON
+ERR14084336	Plasmodium ovale	AMPLICON
+ERR14084337	Plasmodium vivax	AMPLICON
+ERR14084338	Plasmodium vivax Sal-1	AMPLICON
+ERR14084340	Plasmodium simium	AMPLICON
+ERR14084339	Plasmodium malariae	AMPLICON
+ERR14084341	Plasmodium vinckei	AMPLICON
+SRR31942884	Plasmodium vivax	WGA
+SRR31942883	Plasmodium vivax	WGA
+SRR31942881	Plasmodium vivax	WGA
+SRR31942880	Plasmodium vivax	WGA
+SRR31942879	Plasmodium vivax	WGA
+SRR31942878	Plasmodium vivax	WGA
+SRR31942877	Plasmodium vivax	WGA
+SRR31942876	Plasmodium vivax	WGA
+SRR31942875	Plasmodium vivax	WGA
+SRR31942874	Plasmodium vivax	WGA
+SRR31942873	Plasmodium vivax	WGA
+SRR31942872	Plasmodium vivax	WGA
+SRR31942870	Plasmodium vivax	WGA
+SRR31942869	Plasmodium vivax	WGA
+SRR31942868	Plasmodium vivax	WGA
+SRR31942867	Plasmodium vivax	WGA
+SRR31942892	Plasmodium vivax	WGA
+SRR31942891	Plasmodium vivax	WGA
+SRR31942890	Plasmodium vivax	WGA
+SRR31942889	Plasmodium vivax	WGA
+SRR31942888	Plasmodium vivax	WGA
+SRR31942887	Plasmodium vivax	WGA
+SRR31942886	Plasmodium vivax	WGA
+SRR31942885	Plasmodium vivax	WGA
+SRR31942894	Plasmodium vivax	WGA
+SRR31942893	Plasmodium vivax	WGA
+SRR31942882	Plasmodium vivax	WGA
+SRR31942871	Plasmodium vivax	WGA
+ERR14079176	Plasmodium knowlesi strain H	AMPLICON
+ERR14079178	Plasmodium knowlesi strain H	AMPLICON
+ERR14079180	Plasmodium knowlesi strain H	AMPLICON
+ERR14079182	Plasmodium knowlesi strain H	AMPLICON
+ERR14079183	Plasmodium knowlesi strain H	AMPLICON
+ERR14079185	Plasmodium knowlesi strain H	AMPLICON
+ERR14079187	Plasmodium knowlesi strain H	AMPLICON
+ERR14079188	Plasmodium knowlesi strain H	AMPLICON
+ERR14079189	Plasmodium knowlesi strain H	AMPLICON
+ERR14079190	Plasmodium knowlesi strain H	AMPLICON
+ERR14079191	Plasmodium knowlesi strain H	AMPLICON
+ERR14079192	Plasmodium knowlesi strain H	AMPLICON
+ERR14079194	Plasmodium knowlesi strain H	AMPLICON
+ERR14079195	Plasmodium knowlesi strain H	AMPLICON
+ERR14079196	Plasmodium knowlesi strain H	AMPLICON
+ERR14079197	Plasmodium knowlesi strain H	AMPLICON
+ERR14079198	Plasmodium knowlesi strain H	AMPLICON
+ERR14079199	Plasmodium knowlesi strain H	AMPLICON
+ERR14079200	Plasmodium knowlesi strain H	AMPLICON
+ERR14079174	Plasmodium knowlesi strain H	AMPLICON
+ERR14079172	Plasmodium knowlesi strain H	AMPLICON
+ERR14079203	Plasmodium knowlesi strain H	AMPLICON
+ERR14079175	Plasmodium knowlesi strain H	AMPLICON
+ERR14079168	Plasmodium knowlesi strain H	AMPLICON
+ERR14079164	Plasmodium knowlesi strain H	AMPLICON
+ERR14079167	Plasmodium knowlesi strain H	AMPLICON
+ERR14079173	Plasmodium knowlesi strain H	AMPLICON
+ERR14079206	Plasmodium knowlesi strain H	AMPLICON
+ERR14079149	Plasmodium knowlesi strain H	AMPLICON
+ERR14079148	Plasmodium knowlesi strain H	AMPLICON
+ERR14079208	Plasmodium knowlesi strain H	AMPLICON
+ERR14079221	Plasmodium knowlesi strain H	AMPLICON
+ERR14079222	Plasmodium knowlesi strain H	AMPLICON
+ERR14079158	Plasmodium knowlesi strain H	AMPLICON
+ERR14079163	Plasmodium knowlesi strain H	AMPLICON
+ERR14079166	Plasmodium knowlesi strain H	AMPLICON
+ERR14079209	Plasmodium knowlesi strain H	AMPLICON
+ERR14079210	Plasmodium knowlesi strain H	AMPLICON
+ERR14079212	Plasmodium knowlesi strain H	AMPLICON
+ERR14079161	Plasmodium knowlesi strain H	AMPLICON
+ERR14079157	Plasmodium knowlesi strain H	AMPLICON
+ERR14079152	Plasmodium knowlesi strain H	AMPLICON
+ERR14079153	Plasmodium knowlesi strain H	AMPLICON
+ERR14079151	Plasmodium knowlesi strain H	AMPLICON
+ERR14079162	Plasmodium knowlesi strain H	AMPLICON
+ERR14079156	Plasmodium knowlesi strain H	AMPLICON
+ERR14079213	Plasmodium knowlesi strain H	AMPLICON
+ERR14079215	Plasmodium knowlesi strain H	AMPLICON
+ERR14079217	Plasmodium knowlesi strain H	AMPLICON
+ERR14079218	Plasmodium knowlesi strain H	AMPLICON
+ERR14079220	Plasmodium knowlesi strain H	AMPLICON
+SRR31738531	Plasmodium berghei	RNA-Seq
+SRR31738530	Plasmodium berghei	RNA-Seq
+SRR31738529	Plasmodium berghei	RNA-Seq
+SRR31738528	Plasmodium berghei	RNA-Seq
+SRR31738527	Plasmodium berghei	RNA-Seq
+SRR31738526	Plasmodium berghei	RNA-Seq
+SRR31738525	Plasmodium berghei	RNA-Seq
+SRR31738524	Plasmodium berghei	RNA-Seq
+SRR31738523	Plasmodium berghei	RNA-Seq
+SRR31574622	Plasmodium vivax	WGS
+SRR31574623	Plasmodium vivax	WGS
+SRR31574621	Plasmodium vivax	WGS
+SRR31574620	Plasmodium vivax	WGS
+SRR31574619	Plasmodium vivax	WGS
+SRR31574618	Plasmodium vivax	WGS
+SRR31574617	Plasmodium vivax	WGS
+SRR31738584	Plasmodium berghei	RNA-Seq
+SRR31738583	Plasmodium berghei	RNA-Seq
+SRR31738582	Plasmodium berghei	RNA-Seq
+SRR31738581	Plasmodium berghei	RNA-Seq
+SRR31738580	Plasmodium berghei	RNA-Seq
+SRR31738579	Plasmodium berghei	RNA-Seq
+SRR31738578	Plasmodium berghei	RNA-Seq
+SRR31738577	Plasmodium berghei	RNA-Seq
+SRR31738576	Plasmodium berghei	RNA-Seq
+SRR31738575	Plasmodium berghei	RNA-Seq
+SRR31738574	Plasmodium berghei	RNA-Seq
+SRR31738573	Plasmodium berghei	RNA-Seq
+SRR31738572	Plasmodium berghei	RNA-Seq
+SRR31738571	Plasmodium berghei	RNA-Seq
+SRR31738570	Plasmodium berghei	RNA-Seq
+SRR31738569	Plasmodium berghei	RNA-Seq
+SRR31738568	Plasmodium berghei	RNA-Seq
+SRR31738567	Plasmodium berghei	RNA-Seq
+SRR31738566	Plasmodium berghei	RNA-Seq
+SRR31738565	Plasmodium berghei	RNA-Seq
+SRR31738564	Plasmodium berghei	RNA-Seq
+SRR31738563	Plasmodium berghei	RNA-Seq
+SRR31738562	Plasmodium berghei	RNA-Seq
+SRR31738561	Plasmodium berghei	RNA-Seq
+SRR31738560	Plasmodium berghei	RNA-Seq
+SRR31738559	Plasmodium berghei	RNA-Seq
+SRR31738558	Plasmodium berghei	RNA-Seq
+SRR31738557	Plasmodium berghei	RNA-Seq
+SRR31738556	Plasmodium berghei	RNA-Seq
+SRR31738555	Plasmodium berghei	RNA-Seq
+SRR31738554	Plasmodium berghei	RNA-Seq
+SRR31738553	Plasmodium berghei	RNA-Seq
+SRR31738552	Plasmodium berghei	RNA-Seq
+SRR31738551	Plasmodium berghei	RNA-Seq
+SRR31738550	Plasmodium berghei	RNA-Seq
+SRR31738549	Plasmodium berghei	RNA-Seq
+SRR31738548	Plasmodium berghei	RNA-Seq
+SRR31738547	Plasmodium berghei	RNA-Seq
+SRR31738546	Plasmodium berghei	RNA-Seq
+SRR31738545	Plasmodium berghei	RNA-Seq
+SRR31738544	Plasmodium berghei	RNA-Seq
+SRR31738543	Plasmodium berghei	RNA-Seq
+SRR31738542	Plasmodium berghei	RNA-Seq
+SRR31738541	Plasmodium berghei	RNA-Seq
+SRR31738540	Plasmodium berghei	RNA-Seq
+SRR31738539	Plasmodium berghei	RNA-Seq
+SRR31738538	Plasmodium berghei	RNA-Seq
+SRR31738537	Plasmodium berghei	RNA-Seq
+SRR31738536	Plasmodium berghei	RNA-Seq
+SRR31738535	Plasmodium berghei	RNA-Seq
+SRR31738534	Plasmodium berghei	RNA-Seq
+SRR31738533	Plasmodium berghei	RNA-Seq
+SRR31738532	Plasmodium berghei	RNA-Seq
+SRR31574670	Plasmodium vivax	WGS
+SRR31574682	Plasmodium vivax	WGS
+SRR31574671	Plasmodium vivax	WGS
+SRR31574660	Plasmodium vivax	WGS
+SRR31574649	Plasmodium vivax	WGS
+SRR31574638	Plasmodium vivax	WGS
+SRR31574627	Plasmodium vivax	WGS
+SRR31574678	Plasmodium vivax	WGS
+SRR31574683	Plasmodium vivax	WGS
+SRR31574681	Plasmodium vivax	WGS
+SRR31574680	Plasmodium vivax	WGS
+SRR31574679	Plasmodium vivax	WGS
+SRR31574677	Plasmodium vivax	WGS
+SRR31574676	Plasmodium vivax	WGS
+SRR31574675	Plasmodium vivax	WGS
+SRR31574674	Plasmodium vivax	WGS
+SRR31574673	Plasmodium vivax	WGS
+SRR31574672	Plasmodium vivax	WGS
+SRR31574658	Plasmodium vivax	WGS
+SRR31574669	Plasmodium vivax	WGS
+SRR31574668	Plasmodium vivax	WGS
+SRR31574667	Plasmodium vivax	WGS
+SRR31574666	Plasmodium vivax	WGS
+SRR31574665	Plasmodium vivax	WGS
+SRR31574664	Plasmodium vivax	WGS
+SRR31574663	Plasmodium vivax	WGS
+SRR31574662	Plasmodium vivax	WGS
+SRR31574661	Plasmodium vivax	WGS
+SRR31574659	Plasmodium vivax	WGS
+SRR31574646	Plasmodium vivax	WGS
+SRR31574657	Plasmodium vivax	WGS
+SRR31574656	Plasmodium vivax	WGS
+SRR31574655	Plasmodium vivax	WGS
+SRR31574654	Plasmodium vivax	WGS
+SRR31574653	Plasmodium vivax	WGS
+SRR31574652	Plasmodium vivax	WGS
+SRR31574651	Plasmodium vivax	WGS
+SRR31574650	Plasmodium vivax	WGS
+SRR31574648	Plasmodium vivax	WGS
+SRR31574647	Plasmodium vivax	WGS
+SRR31574634	Plasmodium vivax	WGS
+SRR31574645	Plasmodium vivax	WGS
+SRR31574644	Plasmodium vivax	WGS
+SRR31574643	Plasmodium vivax	WGS
+SRR31574642	Plasmodium vivax	WGS
+SRR31574641	Plasmodium vivax	WGS
+SRR31574640	Plasmodium vivax	WGS
+SRR31574639	Plasmodium vivax	WGS
+SRR31574637	Plasmodium vivax	WGS
+SRR31574636	Plasmodium vivax	WGS
+SRR31574635	Plasmodium vivax	WGS
+SRR31574633	Plasmodium vivax	WGS
+SRR31574632	Plasmodium vivax	WGS
+SRR31574631	Plasmodium vivax	WGS
+SRR31574630	Plasmodium vivax	WGS
+SRR31574629	Plasmodium vivax	WGS
+SRR31574628	Plasmodium vivax	WGS
+SRR31574626	Plasmodium vivax	WGS
+SRR31574625	Plasmodium vivax	WGS
+SRR31574624	Plasmodium vivax	WGS
+SRR31574704	Plasmodium vivax	WGS
+SRR31574693	Plasmodium vivax	WGS
+SRR31574702	Plasmodium vivax	WGS
+SRR31574742	Plasmodium vivax	WGS
+SRR31574731	Plasmodium vivax	WGS
+SRR31574720	Plasmodium vivax	WGS
+SRR31574710	Plasmodium vivax	WGS
+SRR31574709	Plasmodium vivax	WGS
+SRR31574708	Plasmodium vivax	WGS
+SRR31574707	Plasmodium vivax	WGS
+SRR31574706	Plasmodium vivax	WGS
+SRR31574705	Plasmodium vivax	WGS
+SRR31574703	Plasmodium vivax	WGS
+SRR31574690	Plasmodium vivax	WGS
+SRR31574701	Plasmodium vivax	WGS
+SRR31574700	Plasmodium vivax	WGS
+SRR31574699	Plasmodium vivax	WGS
+SRR31574698	Plasmodium vivax	WGS
+SRR31574697	Plasmodium vivax	WGS
+SRR31574696	Plasmodium vivax	WGS
+SRR31574695	Plasmodium vivax	WGS
+SRR31574694	Plasmodium vivax	WGS
+SRR31574692	Plasmodium vivax	WGS
+SRR31574691	Plasmodium vivax	WGS
+SRR31574689	Plasmodium vivax	WGS
+SRR31574688	Plasmodium vivax	WGS
+SRR31574687	Plasmodium vivax	WGS
+SRR31574686	Plasmodium vivax	WGS
+SRR31574685	Plasmodium vivax	WGS
+SRR31574684	Plasmodium vivax	WGS
+SRR31574735	Plasmodium vivax	WGS
+SRR31574743	Plasmodium vivax	WGS
+SRR31574741	Plasmodium vivax	WGS
+SRR31574740	Plasmodium vivax	WGS
+SRR31574739	Plasmodium vivax	WGS
+SRR31574738	Plasmodium vivax	WGS
+SRR31574737	Plasmodium vivax	WGS
+SRR31574736	Plasmodium vivax	WGS
+SRR31574723	Plasmodium vivax	WGS
+SRR31574734	Plasmodium vivax	WGS
+SRR31574733	Plasmodium vivax	WGS
+SRR31574732	Plasmodium vivax	WGS
+SRR31574730	Plasmodium vivax	WGS
+SRR31574729	Plasmodium vivax	WGS
+SRR31574728	Plasmodium vivax	WGS
+SRR31574727	Plasmodium vivax	WGS
+SRR31574726	Plasmodium vivax	WGS
+SRR31574725	Plasmodium vivax	WGS
+SRR31574724	Plasmodium vivax	WGS
+SRR31574711	Plasmodium vivax	WGS
+SRR31574722	Plasmodium vivax	WGS
+SRR31574721	Plasmodium vivax	WGS
+SRR31574719	Plasmodium vivax	WGS
+SRR31574718	Plasmodium vivax	WGS
+SRR31574717	Plasmodium vivax	WGS
+SRR31574716	Plasmodium vivax	WGS
+SRR31574715	Plasmodium vivax	WGS
+SRR31574714	Plasmodium vivax	WGS
+SRR31574713	Plasmodium vivax	WGS
+SRR31574712	Plasmodium vivax	WGS
+DRR423782	Plasmodium berghei ANKA	WGS
+DRR423783	Plasmodium berghei ANKA	WGS
+DRR423784	Plasmodium berghei ANKA	WGS
+DRR423785	Plasmodium berghei ANKA	WGS
+DRR423786	Plasmodium berghei ANKA	WGS
+DRR423787	Plasmodium berghei ANKA	WGS
+DRR423788	Plasmodium berghei ANKA	WGS
+SRR31344988	Plasmodium brasilianum	WGA
+SRR31344987	Plasmodium brasilianum	WGA
+SRR31344986	Plasmodium brasilianum	WGA
+SRR31344985	Plasmodium malariae	WGA
+SRR31344984	Plasmodium malariae	WGA
+SRR31344983	Plasmodium malariae	WGA
+SRR31344982	Plasmodium malariae	WGA
+SRR31345001	Plasmodium brasilianum	WGA
+SRR31345014	Plasmodium brasilianum	WGA
+SRR31344981	Plasmodium brasilianum	WGA
+SRR31344990	Plasmodium brasilianum	WGA
+SRR31345008	Plasmodium brasilianum	WGA
+SRR31345019	Plasmodium malariae	WGA
+SRR31345018	Plasmodium malariae	WGA
+SRR31345017	Plasmodium malariae	WGA
+SRR31345020	Plasmodium malariae	WGA
+SRR31345016	Plasmodium malariae	WGA
+SRR31345015	Plasmodium malariae	WGA
+SRR31345013	Plasmodium malariae	WGA
+SRR31345012	Plasmodium malariae	WGA
+SRR31345011	Plasmodium malariae	WGA
+SRR31345010	Plasmodium malariae	WGA
+SRR31345002	Plasmodium malariae	WGA
+SRR31344980	Plasmodium malariae	WGA
+SRR31345000	Plasmodium malariae	WGA
+SRR31344999	Plasmodium malariae	WGA
+SRR31345007	Plasmodium malariae	WGA
+SRR31345006	Plasmodium malariae	WGA
+SRR31345005	Plasmodium malariae	WGA
+SRR31345004	Plasmodium malariae	WGA
+SRR31345003	Plasmodium malariae	WGA
+SRR31345009	Plasmodium malariae	WGA
+SRR31344998	Plasmodium malariae	WGA
+SRR31344997	Plasmodium malariae	WGA
+SRR31344996	Plasmodium malariae	WGA
+SRR31344995	Plasmodium malariae	WGA
+SRR31344994	Plasmodium malariae	WGA
+SRR31344993	Plasmodium malariae	WGA
+SRR31344992	Plasmodium malariae	WGA
+SRR31344991	Plasmodium malariae	WGA
+SRR31344989	Plasmodium malariae	WGA
+SRR31574753	Plasmodium vivax	WGS
+SRR31574755	Plasmodium vivax	WGS
+SRR31574754	Plasmodium vivax	WGS
+SRR31574747	Plasmodium vivax	WGS
+SRR31574752	Plasmodium vivax	WGS
+SRR31574751	Plasmodium vivax	WGS
+SRR31574750	Plasmodium vivax	WGS
+SRR31574749	Plasmodium vivax	WGS
+SRR31574748	Plasmodium vivax	WGS
+SRR31574746	Plasmodium vivax	WGS
+SRR31574745	Plasmodium vivax	WGS
+SRR31574744	Plasmodium vivax	WGS
+SRR31137347	Plasmodium vivax	AMPLICON
+SRR31137350	Plasmodium vivax	AMPLICON
+SRR31137349	Plasmodium vivax	AMPLICON
+SRR31137348	Plasmodium vivax	AMPLICON
+SRR31137346	Plasmodium vivax	AMPLICON
+SRR31137345	Plasmodium vivax	AMPLICON
+SRR31137344	Plasmodium vivax	AMPLICON
+SRR31237999	Plasmodium berghei ANKA	WGS
+SRR31238003	Plasmodium berghei ANKA	WGS
+SRR31238002	Plasmodium berghei ANKA	WGS
+SRR31238001	Plasmodium berghei ANKA	WGS
+SRR31238000	Plasmodium berghei ANKA	WGS
+SRR31238004	Plasmodium berghei ANKA	WGS
+SRR31345054	Plasmodium brasilianum	WGA
+SRR31345055	Plasmodium brasilianum	WGA
+SRR31345056	Plasmodium malariae	WGA
+SRR31345058	Plasmodium malariae	WGA
+SRR31345059	Plasmodium malariae	WGA
+SRR31345060	Plasmodium malariae	WGA
+SRR31345036	Plasmodium malariae	WGA
+SRR31345061	Plasmodium malariae	WGA
+SRR31345062	Plasmodium malariae	WGA
+SRR31345063	Plasmodium malariae	WGA
+SRR31345040	Plasmodium malariae	WGA
+SRR31345041	Plasmodium malariae	WGA
+SRR31345042	Plasmodium malariae	WGA
+SRR31345067	Plasmodium malariae	WGA
+SRR31345066	Plasmodium malariae	WGA
+SRR31345065	Plasmodium malariae	WGA
+SRR31345044	Plasmodium malariae	WGA
+SRR31345043	Plasmodium malariae	WGA
+SRR31345039	Plasmodium malariae	WGA
+SRR31345038	Plasmodium malariae	WGA
+SRR31345037	Plasmodium malariae	WGA
+SRR31345035	Plasmodium malariae	WGA
+SRR31345034	Plasmodium malariae	WGA
+SRR31345032	Plasmodium malariae	WGA
+SRR31345031	Plasmodium malariae	WGA
+SRR31345030	Plasmodium malariae	WGA
+SRR31345029	Plasmodium malariae	WGA
+SRR31345028	Plasmodium malariae	WGA
+SRR31345027	Plasmodium malariae	WGA
+SRR31345025	Plasmodium malariae	WGA
+SRR31345024	Plasmodium malariae	WGA
+SRR31345026	Plasmodium malariae	WGA
+SRR31345023	Plasmodium malariae	WGA
+SRR31345022	Plasmodium malariae	WGA
+SRR31345021	Plasmodium malariae	WGA
+SRR31345045	Plasmodium brasilianum	WGA
+SRR31345046	Plasmodium brasilianum	WGA
+SRR31345057	Plasmodium brasilianum	WGA
+SRR31345064	Plasmodium brasilianum	WGA
+SRR31345033	Plasmodium brasilianum	WGA
+SRR31345047	Plasmodium brasilianum	WGA
+SRR31345048	Plasmodium brasilianum	WGA
+SRR31345049	Plasmodium brasilianum	WGA
+SRR31345050	Plasmodium brasilianum	WGA
+SRR31345051	Plasmodium brasilianum	WGA
+SRR31345052	Plasmodium malariae	WGA
+SRR31345053	Plasmodium malariae	WGA
+SRR31137402	Plasmodium vivax	AMPLICON
+SRR31137391	Plasmodium vivax	AMPLICON
+SRR31137380	Plasmodium vivax	AMPLICON
+SRR31137369	Plasmodium vivax	AMPLICON
+SRR31137358	Plasmodium vivax	AMPLICON
+SRR31137407	Plasmodium vivax	AMPLICON
+SRR31137406	Plasmodium vivax	AMPLICON
+SRR31137405	Plasmodium vivax	AMPLICON
+SRR31137404	Plasmodium vivax	AMPLICON
+SRR31137403	Plasmodium vivax	AMPLICON
+SRR31137401	Plasmodium vivax	AMPLICON
+SRR31137400	Plasmodium vivax	AMPLICON
+SRR31137399	Plasmodium vivax	AMPLICON
+SRR31137398	Plasmodium vivax	AMPLICON
+SRR31137397	Plasmodium vivax	AMPLICON
+SRR31137396	Plasmodium vivax	AMPLICON
+SRR31137395	Plasmodium vivax	AMPLICON
+SRR31137394	Plasmodium vivax	AMPLICON
+SRR31137393	Plasmodium vivax	AMPLICON
+SRR31137392	Plasmodium vivax	AMPLICON
+SRR31137390	Plasmodium vivax	AMPLICON
+SRR31137389	Plasmodium vivax	AMPLICON
+SRR31137388	Plasmodium vivax	AMPLICON
+SRR31137387	Plasmodium vivax	AMPLICON
+SRR31137386	Plasmodium vivax	AMPLICON
+SRR31137385	Plasmodium vivax	AMPLICON
+SRR31137384	Plasmodium vivax	AMPLICON
+SRR31137383	Plasmodium vivax	AMPLICON
+SRR31137382	Plasmodium vivax	AMPLICON
+SRR31137381	Plasmodium vivax	AMPLICON
+SRR31137379	Plasmodium vivax	AMPLICON
+SRR31137378	Plasmodium vivax	AMPLICON
+SRR31137377	Plasmodium vivax	AMPLICON
+SRR31137376	Plasmodium vivax	AMPLICON
+SRR31137375	Plasmodium vivax	AMPLICON
+SRR31137374	Plasmodium vivax	AMPLICON
+SRR31137373	Plasmodium vivax	AMPLICON
+SRR31137372	Plasmodium vivax	AMPLICON
+SRR31137371	Plasmodium vivax	AMPLICON
+SRR31137370	Plasmodium vivax	AMPLICON
+SRR31137368	Plasmodium vivax	AMPLICON
+SRR31137367	Plasmodium vivax	AMPLICON
+SRR31137366	Plasmodium vivax	AMPLICON
+SRR31137365	Plasmodium vivax	AMPLICON
+SRR31137364	Plasmodium vivax	AMPLICON
+SRR31137363	Plasmodium vivax	AMPLICON
+SRR31137362	Plasmodium vivax	AMPLICON
+SRR31137361	Plasmodium vivax	AMPLICON
+SRR31137360	Plasmodium vivax	AMPLICON
+SRR31137359	Plasmodium vivax	AMPLICON
+SRR31137357	Plasmodium vivax	AMPLICON
+SRR31137356	Plasmodium vivax	AMPLICON
+SRR31137355	Plasmodium vivax	AMPLICON
+SRR31137354	Plasmodium vivax	AMPLICON
+SRR31137353	Plasmodium vivax	AMPLICON
+SRR31137352	Plasmodium vivax	AMPLICON
+SRR31137351	Plasmodium vivax	AMPLICON
+SRR31137410	Plasmodium vivax	AMPLICON
+SRR31137409	Plasmodium vivax	AMPLICON
+SRR31137408	Plasmodium vivax	AMPLICON
+SRR31137429	Plasmodium vivax	AMPLICON
+SRR31137418	Plasmodium vivax	AMPLICON
+SRR31137444	Plasmodium vivax	AMPLICON
+SRR31137438	Plasmodium vivax	AMPLICON
+SRR31137437	Plasmodium vivax	AMPLICON
+SRR31137436	Plasmodium vivax	AMPLICON
+SRR31137435	Plasmodium vivax	AMPLICON
+SRR31137434	Plasmodium vivax	AMPLICON
+SRR31137433	Plasmodium vivax	AMPLICON
+SRR31137422	Plasmodium vivax	AMPLICON
+SRR31137421	Plasmodium vivax	AMPLICON
+SRR31137420	Plasmodium vivax	AMPLICON
+SRR31137432	Plasmodium vivax	AMPLICON
+SRR31137431	Plasmodium vivax	AMPLICON
+SRR31137430	Plasmodium vivax	AMPLICON
+SRR31137428	Plasmodium vivax	AMPLICON
+SRR31137427	Plasmodium vivax	AMPLICON
+SRR31137426	Plasmodium vivax	AMPLICON
+SRR31137425	Plasmodium vivax	AMPLICON
+SRR31137424	Plasmodium vivax	AMPLICON
+SRR31137423	Plasmodium vivax	AMPLICON
+SRR31137419	Plasmodium vivax	AMPLICON
+SRR31137417	Plasmodium vivax	AMPLICON
+SRR31137416	Plasmodium vivax	AMPLICON
+SRR31137415	Plasmodium vivax	AMPLICON
+SRR31137414	Plasmodium vivax	AMPLICON
+SRR31137413	Plasmodium vivax	AMPLICON
+SRR31137412	Plasmodium vivax	AMPLICON
+SRR31137411	Plasmodium vivax	AMPLICON
+SRR31137450	Plasmodium vivax	AMPLICON
+SRR31137449	Plasmodium vivax	AMPLICON
+SRR31137448	Plasmodium vivax	AMPLICON
+SRR31137447	Plasmodium vivax	AMPLICON
+SRR31137446	Plasmodium vivax	AMPLICON
+SRR31137445	Plasmodium vivax	AMPLICON
+SRR31137443	Plasmodium vivax	AMPLICON
+SRR31137442	Plasmodium vivax	AMPLICON
+SRR31137441	Plasmodium vivax	AMPLICON
+SRR31137440	Plasmodium vivax	AMPLICON
+SRR31137439	Plasmodium vivax	AMPLICON
