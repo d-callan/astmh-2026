@@ -1,0 +1,79 @@
+class: GalaxyUserTool
+id: disassembler_reconstruct
+name: Disassembler reconstruct (Logan haplotypes -> codon MSA)
+version: 0.1.0
+description: >-
+  From a list of SRA accessions (e.g. kmindex hit accessions), stream each run's
+  Logan unitig graph, walk out the target gene's coding haplotypes, and build a
+  reference-guided codon MSA + FastTree. Composite of disassembler walker ->
+  (sieve) -> msa. Requires outbound network to logan-pub.s3.amazonaws.com.
+container: quay.io/biocontainers/disassembler:0.1.1--pyhdfd78af_0
+shell_command: |
+  ln -s '$(inputs.reference.path)' k13_ref.fasta && \
+  disassembler reconstruct \
+    -l '$(inputs.accessions.path)' \
+    -q k13_ref.fasta \
+    --msa-reference k13_ref.fasta \
+    -o out \
+    -w $(inputs.workers) \
+    --max-size-mb 512 \
+    --emit-snv-table \
+    --mafft-threads $(inputs.workers) \
+    -- --scratch-dir . -t 1 && \
+  touch out/reconstructed.fasta out/alt_haplotypes.fasta out/snvs.tsv \
+    out/k13_ref_codon_msa.fasta out/k13_ref_fasttree.nwk out/summary.json
+inputs:
+  - name: accessions
+    type: data
+    format:
+      - txt
+  - name: reference
+    type: data
+    format:
+      - fasta
+  - name: workers
+    type: integer
+    value: 4
+    min: 1
+    max: 8
+outputs:
+  - name: haplotypes
+    type: data
+    format: fasta
+    from_work_dir: out/reconstructed.fasta
+    label: Reconstructed k13 haplotypes (primary)
+  - name: alt_haplotypes
+    type: data
+    format: fasta
+    from_work_dir: out/alt_haplotypes.fasta
+    label: Alternative intra-host haplotypes
+  - name: codon_msa
+    type: data
+    format: fasta
+    from_work_dir: out/k13_ref_codon_msa.fasta
+    label: Codon MSA
+  - name: tree
+    type: data
+    format: nhx
+    from_work_dir: out/k13_ref_fasttree.nwk
+    label: FastTree
+  - name: snv_table
+    type: data
+    format: tsv
+    from_work_dir: out/snvs.tsv
+    label: Cohort SNV table
+  - name: summary
+    type: data
+    format: json
+    from_work_dir: out/summary.json
+    label: Walker summary
+help:
+  format: markdown
+  content: |
+    Accessions file: one SRA run accession per line (ERR/SRR/DRR). Reference:
+    in-frame coding-sequence FASTA used both as the walker anchor and the MSA
+    reference. The `--scratch-dir .` override is required because /dev/shm is
+    only ~64 MB inside a default job container; `-t 1` pins GraphAligner to a
+    single thread for reproducibility (see disassembler docs/walker.md).
+    NOTE: each accession streams a ~10-50 MB compressed unitig object over the
+    network - run hundreds of accessions per job, not tens of thousands.

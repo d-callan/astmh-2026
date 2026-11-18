@@ -1,0 +1,290 @@
+[{"stream_name":"stdout","time":1.000277992,"data":"[*] 299 accessions, 2238 bp reference\n"}
+,{"stream_name":"stdout","time":1.000411138,"data":"+ bash -c curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xj -C /root bin/micromamba\n"}
+,{"stream_name":"stdout","time":3.120193371,"data":"+ /root/bin/micromamba create -y -n dis -c conda-forge -c bioconda python=3.12 logan-walker graphaligner=1.0.17b mafft\u003e=7.526 fasttree zstd biopython requests pip git\n"}
+,{"stream_name":"stdout","time":3.244683561,"data":"Fetch Shard Index for conda-forge/linux-64                                                      ⧖ Starting\n"}
+,{"stream_name":"stdout","time":3.34885703,"data":"Fetch Shard Index for conda-forge/linux-64                                                ✔ Done (0.1 sec)\n"}
+,{"stream_name":"stdout","time":3.348891222,"data":"Fetch Shard Index for conda-forge/noarch                                                        ⧖ Starting\n"}
+,{"stream_name":"stdout","time":3.438524276,"data":"Fetch Shard Index for conda-forge/noarch                                                  ✔ Done (0.1 sec)\n"}
+,{"stream_name":"stdout","time":3.438558607,"data":"Fetching and Parsing Packages' Shards                                                           ⧖ Starting\n"}
+,{"stream_name":"stdout","time":6.669972252,"data":"Fetching and Parsing Packages' Shards                                                     ✔ Done (3.2 sec)\n"}
+,{"stream_name":"stdout","time":7.020417799,"data":"Fetch Shard Index for bioconda/linux-64                                                         ⧖ Starting\n"}
+,{"stream_name":"stdout","time":7.185871412,"data":"Fetch Shard Index for bioconda/linux-64                                                   ✔ Done (0.2 sec)\n"}
+,{"stream_name":"stdout","time":7.185915589,"data":"Fetch Shard Index for bioconda/noarch                                                           ⧖ Starting\n"}
+,{"stream_name":"stdout","time":7.262946374,"data":"Fetch Shard Index for bioconda/noarch                                                     ✔ Done (0.1 sec)\n"}
+,{"stream_name":"stdout","time":7.262988937,"data":"Fetching and Parsing Packages' Shards                                                           ⧖ Starting\n"}
+,{"stream_name":"stdout","time":7.5162819899999995,"data":"Fetching and Parsing Packages' Shards                                                     ✔ Done (0.3 sec)\n"}
+,{"stream_name":"stdout","time":7.527739259,"data":"Using Cached Shard Index for bioconda/noarch                                                        ✔ Done\n"}
+,{"stream_name":"stdout","time":7.531524905,"data":"Using Cached Shard Index for bioconda/linux-64                                                      ✔ Done\n"}
+,{"stream_name":"stdout","time":7.531580103,"data":"Fetching and Parsing Packages' Shards                                                           ⧖ Starting\n"}
+,{"stream_name":"stdout","time":7.534425603,"data":"Fetching and Parsing Packages' Shards                                                     ✔ Done (0.0 sec)\n"}
+,{"stream_name":"stdout","time":7.726631885,"data":"Using Flat Repodata for bioconda/noarch                                                         ✔ Starting\n"}
+,{"stream_name":"stdout","time":8.902350212,"data":"Using Flat Repodata for bioconda/noarch                                                   ✔ Done (1.2 sec)\n"}
+,{"stream_name":"stdout","time":8.910632676,"data":"Using Cached Shard Index for conda-forge/linux-64                                                   ✔ Done\n"}
+,{"stream_name":"stdout","time":8.924651336,"data":"Using Cached Shard Index for conda-forge/noarch                                                     ✔ Done\n"}
+,{"stream_name":"stdout","time":8.924716899,"data":"Fetching and Parsing Packages' Shards                                                           ⧖ Starting\n"}
+,{"stream_name":"stdout","time":9.553973662,"data":"Fetching and Parsing Packages' Shards                                                     ✔ Done (0.6 sec)\n"}
+,{"stream_name":"stdout","time":9.868430941,"data":"Using Cached Shard Index for bioconda/linux-64                                                      ✔ Done\n"}
+,{"stream_name":"stdout","time":9.873336155,"data":"Using Cached Shard Index for bioconda/noarch                                                        ✔ Done\n"}
+,{"stream_name":"stdout","time":9.873386277,"data":"Fetching and Parsing Packages' Shards                                                           ⧖ Starting\n"}
+,{"stream_name":"stdout","time":9.876318406,"data":"Fetching and Parsing Packages' Shards                                                     ✔ Done (0.0 sec)\n"}
+,{"stream_name":"stdout","time":9.88716719,"data":"Using Cached Shard Index for bioconda/noarch                                                        ✔ Done\n"}
+,{"stream_name":"stdout","time":9.890810042,"data":"Using Cached Shard Index for bioconda/linux-64                                                      ✔ Done\n"}
+,{"stream_name":"stdout","time":9.890853154,"data":"Fetching and Parsing Packages' Shards                                                           ⧖ Starting\n"}
+,{"stream_name":"stdout","time":9.893642888,"data":"Fetching and Parsing Packages' Shards                                                     ✔ Done (0.0 sec)\n"}
+,{"stream_name":"stdout","time":9.896977705,"data":"Using Flat Repodata for bioconda/noarch                                                         ✔ Starting\n"}
+,{"stream_name":"stdout","time":11.070672771,"data":"Using Flat Repodata for bioconda/noarch                                                   ✔ Done (1.2 sec)\n"}
+,{"stream_name":"stdout","time":11.070716108,"data":"Parsing Packages' Records                                                                 ✔ Done (3.3 sec)\n"}
+,{"stream_name":"stdout","time":11.090881779,"data":"\n"}
+,{"stream_name":"stdout","time":11.090928267,"data":"Resolving Environment                                                                           ⧖ Starting\n"}
+,{"stream_name":"stdout","time":11.819093884,"data":"Resolving Environment                                                                     ✔ Done (0.7 sec)\n"}
+,{"stream_name":"stdout","time":11.820822056,"data":"\n"}
+,{"stream_name":"stdout","time":11.820865895,"data":"Transaction\n"}
+,{"stream_name":"stdout","time":11.820871585,"data":"\n"}
+,{"stream_name":"stdout","time":11.820875759,"data":"  Prefix: /root/micromamba/envs/dis\n"}
+,{"stream_name":"stdout","time":11.820879372,"data":"\n"}
+,{"stream_name":"stdout","time":11.820882009,"data":"  Updating specs:\n"}
+,{"stream_name":"stdout","time":11.820884495,"data":"\n"}
+,{"stream_name":"stdout","time":11.820886952,"data":"   - python=3.12\n"}
+,{"stream_name":"stdout","time":11.8208895,"data":"   - logan-walker\n"}
+,{"stream_name":"stdout","time":11.820892118,"data":"   - graphaligner=1.0.17b\n"}
+,{"stream_name":"stdout","time":11.820894641,"data":"   - mafft\u003e=7.526\n"}
+,{"stream_name":"stdout","time":11.820897793,"data":"   - fasttree\n"}
+,{"stream_name":"stdout","time":11.820900156,"data":"   - zstd\n"}
+,{"stream_name":"stdout","time":11.820902794,"data":"   - biopython\n"}
+,{"stream_name":"stdout","time":11.82090512,"data":"   - requests\n"}
+,{"stream_name":"stdout","time":11.820907496,"data":"   - pip\n"}
+,{"stream_name":"stdout","time":11.820909899,"data":"   - git\n"}
+,{"stream_name":"stdout","time":11.820930914,"data":"\n"}
+,{"stream_name":"stdout","time":11.820935203,"data":"\n"}
+,{"stream_name":"stdout","time":11.923947208,"data":"  Package                      Version  Build                 Channel          Size\n"}
+,{"stream_name":"stdout","time":11.923987601,"data":"─────────────────────────────────────────────────────────────────────────────────────\n"}
+,{"stream_name":"stdout","time":11.923997935,"data":"  Install:\n"}
+,{"stream_name":"stdout","time":11.924002695,"data":"─────────────────────────────────────────────────────────────────────────────────────\n"}
+,{"stream_name":"stdout","time":11.924008032,"data":"\n"}
+,{"stream_name":"stdout","time":11.92401184,"data":"  + _openmp_mutex                  4.5  20_gnu                conda-forge      29kB\n"}
+,{"stream_name":"stdout","time":11.924016147,"data":"  + _python_abi3_support           1.0  hd8ed1ab_3            conda-forge       8kB\n"}
+,{"stream_name":"stdout","time":11.924020124,"data":"  + biopython                     1.88  py312h5cc1888_2       conda-forge       3MB\n"}
+,{"stream_name":"stdout","time":11.924024467,"data":"  + bzip2                        1.0.8  hda65f42_10           conda-forge     258kB\n"}
+,{"stream_name":"stdout","time":11.924028508,"data":"  + c-ares                      1.34.9  hebe6cf0_0            conda-forge     234kB\n"}
+,{"stream_name":"stdout","time":11.924032619,"data":"  + ca-certificates         2026.10.23  hbd8a1cb_0            conda-forge     130kB\n"}
+,{"stream_name":"stdout","time":11.924037071,"data":"  + certifi                 2026.10.23  pyhd8ed1ab_3          conda-forge      14kB\n"}
+,{"stream_name":"stdout","time":11.924041104,"data":"  + charset-normalizer           3.5.2  h1114479_0            conda-forge     217kB\n"}
+,{"stream_name":"stdout","time":11.924045648,"data":"  + cpython                    3.12.16  py312hd8ed1ab_0       conda-forge      47kB\n"}
+,{"stream_name":"stdout","time":11.924049728,"data":"  + fasttree                     2.2.0  h7b50bb2_1            bioconda        198kB\n"}
+,{"stream_name":"stdout","time":11.924054272,"data":"  + gawk                         5.4.1  h0a3468a_0            conda-forge       2MB\n"}
+,{"stream_name":"stdout","time":11.924058688,"data":"  + git                         2.45.1  pl5321hef9f9f3_0      conda-forge      10MB\n"}
+,{"stream_name":"stdout","time":11.924061927,"data":"  + gmp                          6.3.0  hfd2156b_3            conda-forge     493kB\n"}
+,{"stream_name":"stdout","time":11.92406438,"data":"  + graphaligner               1.0.17b  hdcf5f25_1            bioconda         10MB\n"}
+,{"stream_name":"stdout","time":11.924067005,"data":"  + idna                          3.20  pyh5ded981_0          conda-forge     179kB\n"}
+,{"stream_name":"stdout","time":11.924069635,"data":"  + keyutils                     1.6.3  h7cc23a3_1            conda-forge     135kB\n"}
+,{"stream_name":"stdout","time":11.924072117,"data":"  + krb5                        1.21.3  h659f571_0            conda-forge       1MB\n"}
+,{"stream_name":"stdout","time":11.924076346,"data":"  + ld_impl_linux-64            2.46.1  bootstrap_ha15bf96_3  conda-forge     745kB\n"}
+,{"stream_name":"stdout","time":11.924079019,"data":"  + libasprintf                 0.25.1  h0e23cf9_2            conda-forge      53kB\n"}
+,{"stream_name":"stdout","time":11.924095993,"data":"  + libblas                     3.11.0  12_h4a7cf45_openblas  conda-forge      18kB\n"}
+,{"stream_name":"stdout","time":11.924099948,"data":"  + libcblas                    3.11.0  12_h0358290_openblas  conda-forge      18kB\n"}
+,{"stream_name":"stdout","time":11.924104124,"data":"  + libcurl                      8.8.0  hca28451_1            conda-forge     410kB\n"}
+,{"stream_name":"stdout","time":11.924108068,"data":"  + libdivsufsort                2.0.2  h7b50bb2_10           bioconda         51kB\n"}
+,{"stream_name":"stdout","time":11.924112185,"data":"  + libedit               3.1.20260512  pl5321h373387f_0      conda-forge     136kB\n"}
+,{"stream_name":"stdout","time":11.924116185,"data":"  + libev                         4.33  h280c20c_3            conda-forge      43kB\n"}
+,{"stream_name":"stdout","time":11.924120341,"data":"  + libexpat                     2.9.0  hd2095e1_0            conda-forge      79kB\n"}
+,{"stream_name":"stdout","time":11.924124443,"data":"  + libffi                       3.7.0  h81df57d_1            conda-forge      68kB\n"}
+,{"stream_name":"stdout","time":11.924128562,"data":"  + libgcc                      16.2.0  ha9f2e26_7            conda-forge       1MB\n"}
+,{"stream_name":"stdout","time":11.924132581,"data":"  + libgcc-ng                   16.2.0  h69a702a_7            conda-forge      29kB\n"}
+,{"stream_name":"stdout","time":11.924136517,"data":"  + libgettextpo                0.25.1  h0e23cf9_2            conda-forge     187kB\n"}
+,{"stream_name":"stdout","time":11.924140811000001,"data":"  + libgfortran                 16.2.0  h69a702a_7            conda-forge      29kB\n"}
+,{"stream_name":"stdout","time":11.924144772,"data":"  + libgfortran5                16.2.0  h6b99dfc_7            conda-forge       3MB\n"}
+,{"stream_name":"stdout","time":11.924148882,"data":"  + libgomp                     16.2.0  he0feb66_7            conda-forge     641kB\n"}
+,{"stream_name":"stdout","time":11.924152883,"data":"  + libiconv                      1.18  h0cb94f2_3            conda-forge     789kB\n"}
+,{"stream_name":"stdout","time":11.924156896,"data":"  + liblapack                   3.11.0  12_h47877c9_openblas  conda-forge      18kB\n"}
+,{"stream_name":"stdout","time":11.924160916,"data":"  + liblzma                      5.8.3  hb03c661_1            conda-forge     113kB\n"}
+,{"stream_name":"stdout","time":11.924164936,"data":"  + liblzma-devel                5.8.3  hb03c661_1            conda-forge     492kB\n"}
+,{"stream_name":"stdout","time":11.924168783,"data":"  + libnghttp2                  1.58.0  h47da74e_1            conda-forge     632kB\n"}
+,{"stream_name":"stdout","time":11.924172976,"data":"  + libnsl                       2.0.1  hb9d3cd8_1            conda-forge      34kB\n"}
+,{"stream_name":"stdout","time":11.924175505000001,"data":"  + libopenblas                 0.3.34  pthreads_hf13c14d_2   conda-forge       7MB\n"}
+,{"stream_name":"stdout","time":11.924177991,"data":"  + libsqlite                   3.46.0  hde9e2c9_0            conda-forge     865kB\n"}
+,{"stream_name":"stdout","time":11.924180892,"data":"  + libssh2                     1.11.0  h0841786_0            conda-forge     271kB\n"}
+,{"stream_name":"stdout","time":11.924183424,"data":"  + libstdcxx                   16.2.0  h934c35e_7            conda-forge       7MB\n"}
+,{"stream_name":"stdout","time":11.924185885,"data":"  + libstdcxx-ng                16.2.0  hdf11a46_7            conda-forge      29kB\n"}
+,{"stream_name":"stdout","time":11.924189066,"data":"  + libuuid                     2.42.4  hcfc3c73_1            conda-forge      36kB\n"}
+,{"stream_name":"stdout","time":11.924192912,"data":"  + libxcrypt                   4.4.38  h280c20c_0            conda-forge     102kB\n"}
+,{"stream_name":"stdout","time":11.924202552,"data":"  + libzlib                     1.2.13  h4ab18f5_6            conda-forge      62kB\n"}
+,{"stream_name":"stdout","time":11.92420661,"data":"  + logan-walker                 0.1.1  hfa8f182_0            bioconda          1MB\n"}
+,{"stream_name":"stdout","time":11.924210691999999,"data":"  + mafft                        7.526  h4bc722e_0            conda-forge       3MB\n"}
+,{"stream_name":"stdout","time":11.924214741,"data":"  + mpfr                         4.2.2  ha2cb11d_1            conda-forge     730kB\n"}
+,{"stream_name":"stdout","time":11.924237973,"data":"  + ncurses                        6.6  hdb14827_1            conda-forge     911kB\n"}
+,{"stream_name":"stdout","time":11.924246305,"data":"  + numpy                        2.5.5  py312he827f4e_1       conda-forge       9MB\n"}
+,{"stream_name":"stdout","time":11.924250132,"data":"  + openssl                      3.6.5  h781a0a9_0            conda-forge       3MB\n"}
+,{"stream_name":"stdout","time":11.924254216,"data":"  + packaging                     26.3  pyhc364b38_0          conda-forge     116kB\n"}
+,{"stream_name":"stdout","time":11.924258232,"data":"  + pcre2                        10.43  hcad00b1_0            conda-forge     951kB\n"}
+,{"stream_name":"stdout","time":11.92426164,"data":"  + perl                        5.44.0  1_h7cc23a3_perl5      conda-forge      11MB\n"}
+,{"stream_name":"stdout","time":11.924265403,"data":"  + pip                         26.2.2  pyh8b19718_2          conda-forge       1MB\n"}
+,{"stream_name":"stdout","time":11.924269097,"data":"  + python                      3.12.3  hab00c5b_0_cpython    conda-forge      32MB\n"}
+,{"stream_name":"stdout","time":11.924272391,"data":"  + python-gil                 3.12.16  hd8ed1ab_0            conda-forge      47kB\n"}
+,{"stream_name":"stdout","time":11.924276849,"data":"  + python_abi                    3.12  9_cp312               conda-forge       7kB\n"}
+,{"stream_name":"stdout","time":11.924280286,"data":"  + readline                       8.3  hd6e31c0_1            conda-forge     349kB\n"}
+,{"stream_name":"stdout","time":11.924284111,"data":"  + requests                    2.34.2  pyhcf101f3_0          conda-forge      69kB\n"}
+,{"stream_name":"stdout","time":11.924287997,"data":"  + setuptools                  84.2.1  pyhe730653_0          conda-forge     567kB\n"}
+,{"stream_name":"stdout","time":11.924291966,"data":"  + tk                          8.6.13  noxft_h4845f30_101    conda-forge       3MB\n"}
+,{"stream_name":"stdout","time":11.924296405,"data":"  + tzdata                       2026e  h5d301ff_0            conda-forge     119kB\n"}
+,{"stream_name":"stdout","time":11.924301529,"data":"  + urllib3                      2.8.0  pyh5ded981_1          conda-forge     113kB\n"}
+,{"stream_name":"stdout","time":11.924305043,"data":"  + wheel                       0.48.0  pyhd8ed1ab_0          conda-forge      35kB\n"}
+,{"stream_name":"stdout","time":11.924308328,"data":"  + xz                           5.8.3  ha02ee65_1            conda-forge      24kB\n"}
+,{"stream_name":"stdout","time":11.924311848,"data":"  + xz-gpl-tools                 5.8.3  ha02ee65_1            conda-forge      40kB\n"}
+,{"stream_name":"stdout","time":11.924320761,"data":"  + xz-tools                     5.8.3  hb03c661_1            conda-forge      96kB\n"}
+,{"stream_name":"stdout","time":11.924324337,"data":"  + zstd                         1.5.6  ha6fb4c9_0            conda-forge     555kB\n"}
+,{"stream_name":"stdout","time":11.924327921,"data":"\n"}
+,{"stream_name":"stderr","time":11.924324242,"data":"warning  libmamba Security Warning: This transaction includes executing package scripts (pre/post-link/unlink) if present. These scripts can contain arbitrary code. Please ensure you trust the package sources.\n"}
+,{"stream_name":"stdout","time":11.9243311,"data":"  Summary:\n"}
+,{"stream_name":"stdout","time":11.92435718,"data":"\n"}
+,{"stream_name":"stdout","time":11.924361511,"data":"  Install: 71 packages\n"}
+,{"stream_name":"stdout","time":11.924365201,"data":"\n"}
+,{"stream_name":"stdout","time":11.924368942,"data":"  Total download: 120MB\n"}
+,{"stream_name":"stdout","time":11.924372361,"data":"\n"}
+,{"stream_name":"stdout","time":11.924376112000001,"data":"─────────────────────────────────────────────────────────────────────────────────────\n"}
+,{"stream_name":"stdout","time":11.924381545,"data":"\n"}
+,{"stream_name":"stdout","time":11.924385492,"data":"\n"}
+,{"stream_name":"stdout","time":11.924660509,"data":"\n"}
+,{"stream_name":"stdout","time":11.924669081,"data":"Transaction starting\n"}
+,{"stream_name":"stdout","time":16.462296036,"data":"Linking libgomp-16.2.0-he0feb66_7\n"}
+,{"stream_name":"stdout","time":16.463853105,"data":"Linking ld_impl_linux-64-2.46.1-bootstrap_ha15bf96_3\n"}
+,{"stream_name":"stdout","time":16.490719711,"data":"Linking _openmp_mutex-4.5-20_gnu\n"}
+,{"stream_name":"stdout","time":16.497335516,"data":"Linking libgcc-16.2.0-ha9f2e26_7\n"}
+,{"stream_name":"stdout","time":16.499706524,"data":"Linking c-ares-1.34.9-hebe6cf0_0\n"}
+,{"stream_name":"stdout","time":16.513405596,"data":"Linking libev-4.33-h280c20c_3\n"}
+,{"stream_name":"stdout","time":16.514867732,"data":"Linking keyutils-1.6.3-h7cc23a3_1\n"}
+,{"stream_name":"stdout","time":16.521174867,"data":"Linking libgfortran5-16.2.0-h6b99dfc_7\n"}
+,{"stream_name":"stdout","time":16.522713137,"data":"Linking bzip2-1.0.8-hda65f42_10\n"}
+,{"stream_name":"stdout","time":16.525507218,"data":"Linking libnsl-2.0.1-hb9d3cd8_1\n"}
+,{"stream_name":"stdout","time":16.527449589,"data":"Linking libuuid-2.42.4-hcfc3c73_1\n"}
+,{"stream_name":"stdout","time":16.529189829,"data":"Linking libffi-3.7.0-h81df57d_1\n"}
+,{"stream_name":"stdout","time":16.531088579,"data":"Linking liblzma-5.8.3-hb03c661_1\n"}
+,{"stream_name":"stdout","time":16.532072756,"data":"Linking ncurses-6.6-hdb14827_1\n"}
+,{"stream_name":"stdout","time":18.219332957,"data":"Linking libiconv-1.18-h0cb94f2_3\n"}
+,{"stream_name":"stdout","time":18.228942364,"data":"Linking libexpat-2.9.0-hd2095e1_0\n"}
+,{"stream_name":"stdout","time":18.230131511,"data":"Linking libxcrypt-4.4.38-h280c20c_0\n"}
+,{"stream_name":"stdout","time":18.232641639,"data":"Linking libstdcxx-16.2.0-h934c35e_7\n"}
+,{"stream_name":"stdout","time":18.234043842,"data":"Linking libgcc-ng-16.2.0-h69a702a_7\n"}
+,{"stream_name":"stdout","time":18.234978251,"data":"Linking libgfortran-16.2.0-h69a702a_7\n"}
+,{"stream_name":"stdout","time":18.235949948,"data":"Linking liblzma-devel-5.8.3-hb03c661_1\n"}
+,{"stream_name":"stdout","time":18.287717174,"data":"Linking xz-tools-5.8.3-hb03c661_1\n"}
+,{"stream_name":"stdout","time":18.291527093,"data":"Linking xz-gpl-tools-5.8.3-ha02ee65_1\n"}
+,{"stream_name":"stdout","time":18.29666989,"data":"Linking libedit-3.1.20260512-pl5321h373387f_0\n"}
+,{"stream_name":"stdout","time":18.303167756,"data":"Linking readline-8.3-hd6e31c0_1\n"}
+,{"stream_name":"stdout","time":18.307119189,"data":"Linking libgettextpo-0.25.1-h0e23cf9_2\n"}
+,{"stream_name":"stdout","time":18.308486225,"data":"Linking perl-5.44.0-1_h7cc23a3_perl5\n"}
+,{"stream_name":"stdout","time":18.605796606,"data":"Linking libasprintf-0.25.1-h0e23cf9_2\n"}
+,{"stream_name":"stdout","time":18.60843928,"data":"Linking gmp-6.3.0-hfd2156b_3\n"}
+,{"stream_name":"stdout","time":18.61160675,"data":"Linking libstdcxx-ng-16.2.0-hdf11a46_7\n"}
+,{"stream_name":"stdout","time":18.612608516,"data":"Linking libzlib-1.2.13-h4ab18f5_6\n"}
+,{"stream_name":"stdout","time":18.613714758,"data":"Linking libopenblas-0.3.34-pthreads_hf13c14d_2\n"}
+,{"stream_name":"stdout","time":18.61514277,"data":"Linking xz-5.8.3-ha02ee65_1\n"}
+,{"stream_name":"stdout","time":18.616015958,"data":"Linking mpfr-4.2.2-ha2cb11d_1\n"}
+,{"stream_name":"stdout","time":18.619042317,"data":"Linking libsqlite-3.46.0-hde9e2c9_0\n"}
+,{"stream_name":"stdout","time":18.620754744,"data":"Linking tk-8.6.13-noxft_h4845f30_101\n"}
+,{"stream_name":"stdout","time":18.679843602,"data":"Linking zstd-1.5.6-ha6fb4c9_0\n"}
+,{"stream_name":"stdout","time":18.683203265,"data":"Linking pcre2-10.43-hcad00b1_0\n"}
+,{"stream_name":"stdout","time":18.702526051,"data":"Linking libblas-3.11.0-12_h4a7cf45_openblas\n"}
+,{"stream_name":"stdout","time":18.973725639,"data":"Linking gawk-5.4.1-h0a3468a_0\n"}
+,{"stream_name":"stdout","time":18.995340869,"data":"Linking liblapack-3.11.0-12_h47877c9_openblas\n"}
+,{"stream_name":"stdout","time":19.262411532,"data":"Linking libcblas-3.11.0-12_h0358290_openblas\n"}
+,{"stream_name":"stdout","time":19.538246367,"data":"Linking mafft-7.526-h4bc722e_0\n"}
+,{"stream_name":"stdout","time":19.545006098,"data":"Linking ca-certificates-2026.10.23-hbd8a1cb_0\n"}
+,{"stream_name":"stdout","time":19.54637957,"data":"Linking python_abi-3.12-9_cp312\n"}
+,{"stream_name":"stdout","time":19.547174183,"data":"Linking tzdata-2026e-h5d301ff_0\n"}
+,{"stream_name":"stdout","time":19.590447059,"data":"Linking libdivsufsort-2.0.2-h7b50bb2_10\n"}
+,{"stream_name":"stdout","time":19.593050664,"data":"Linking fasttree-2.2.0-h7b50bb2_1\n"}
+,{"stream_name":"stdout","time":19.594385118,"data":"Linking graphaligner-1.0.17b-hdcf5f25_1\n"}
+,{"stream_name":"stdout","time":19.744182085,"data":"Linking logan-walker-0.1.1-hfa8f182_0\n"}
+,{"stream_name":"stdout","time":19.745457923,"data":"Linking openssl-3.6.5-h781a0a9_0\n"}
+,{"stream_name":"stdout","time":19.796731537,"data":"Linking libnghttp2-1.58.0-h47da74e_1\n"}
+,{"stream_name":"stdout","time":19.805240958,"data":"Linking libssh2-1.11.0-h0841786_0\n"}
+,{"stream_name":"stdout","time":19.821751297,"data":"Linking krb5-1.21.3-h659f571_0\n"}
+,{"stream_name":"stdout","time":19.851677738,"data":"Linking python-3.12.3-hab00c5b_0_cpython\n"}
+,{"stream_name":"stdout","time":20.318806523,"data":"Linking libcurl-8.8.0-hca28451_1\n"}
+,{"stream_name":"stdout","time":20.328550934,"data":"Linking numpy-2.5.5-py312he827f4e_1\n"}
+,{"stream_name":"stdout","time":20.446556475,"data":"Linking git-2.45.1-pl5321hef9f9f3_0\n"}
+,{"stream_name":"stdout","time":20.700625798,"data":"Linking biopython-1.88-py312h5cc1888_2\n"}
+,{"stream_name":"stdout","time":20.810902386,"data":"Linking packaging-26.3-pyhc364b38_0\n"}
+,{"stream_name":"stdout","time":20.837939214,"data":"Linking cpython-3.12.16-py312hd8ed1ab_0\n"}
+,{"stream_name":"stdout","time":20.839025175,"data":"Linking setuptools-84.2.1-pyhe730653_0\n"}
+,{"stream_name":"stdout","time":20.883956611,"data":"Linking urllib3-2.8.0-pyh5ded981_1\n"}
+,{"stream_name":"stdout","time":20.898447813,"data":"Linking idna-3.20-pyh5ded981_0\n"}
+,{"stream_name":"stdout","time":20.903107324,"data":"Linking certifi-2026.10.23-pyhd8ed1ab_3\n"}
+,{"stream_name":"stdout","time":20.909760619,"data":"Linking wheel-0.48.0-pyhd8ed1ab_0\n"}
+,{"stream_name":"stdout","time":20.916426548,"data":"Linking python-gil-3.12.16-hd8ed1ab_0\n"}
+,{"stream_name":"stdout","time":20.919133292,"data":"Linking pip-26.2.2-pyh8b19718_2\n"}
+,{"stream_name":"stdout","time":21.040439682,"data":"Linking _python_abi3_support-1.0-hd8ed1ab_3\n"}
+,{"stream_name":"stdout","time":21.044354234,"data":"Linking charset-normalizer-3.5.2-h1114479_0\n"}
+,{"stream_name":"stdout","time":21.054074123,"data":"Linking requests-2.34.2-pyhcf101f3_0\n"}
+,{"stream_name":"stdout","time":22.263493918,"data":"\n"}
+,{"stream_name":"stdout","time":22.263533783,"data":"Transaction finished\n"}
+,{"stream_name":"stdout","time":22.263543687,"data":"\n"}
+,{"stream_name":"stdout","time":22.264620105,"data":"\n"}
+,{"stream_name":"stdout","time":22.264663217,"data":"To activate this environment, use:\n"}
+,{"stream_name":"stdout","time":22.264669106,"data":"\n"}
+,{"stream_name":"stdout","time":22.264673174,"data":"    micromamba activate dis\n"}
+,{"stream_name":"stdout","time":22.26467707,"data":"\n"}
+,{"stream_name":"stdout","time":22.264680984,"data":"Or to execute a single command in this environment, use:\n"}
+,{"stream_name":"stdout","time":22.264685791,"data":"\n"}
+,{"stream_name":"stdout","time":22.264690104,"data":"    micromamba run -n dis mycommand\n"}
+,{"stream_name":"stdout","time":22.264694404,"data":"\n"}
+,{"stream_name":"stdout","time":22.282049957,"data":"+ /root/micromamba/envs/dis/bin/pip install --quiet git+https://github.com/d-callan/disassembler.git@25c27f2\n"}
+,{"stream_name":"stdout","time":32.291602227,"data":"+ disassembler --version\n"}
+,{"stream_name":"stdout","time":32.52375437,"data":"disassembler 0.1.1\n"}
+,{"stream_name":"stdout","time":32.572999695,"data":"+ logan-walker --version\n"}
+,{"stream_name":"stdout","time":32.575256706,"data":"logan-walker 0.1.1\n"}
+,{"stream_name":"stdout","time":32.576030524,"data":"+ mafft --version\n"}
+,{"stream_name":"stderr","time":32.622465744,"data":"v7.526 (2024/Apr/26)\n"}
+,{"stream_name":"stdout","time":32.622843424,"data":"+ disassembler reconstruct -l acc.txt -q k13_ref.fasta --msa-reference k13_ref.fasta -o out -w 4 --max-size-mb 512 --emit-snv-table --mafft-threads 4 -- --scratch-dir . -t 1\n"}
+,{"stream_name":"stdout","time":1115.263053863,"data":"[*] reconstruct rc=0 (full log: kernel_run.log)\n"}
+,{"stream_name":"stdout","time":1115.26380346,"data":"ng refused, 0 over the 30 nt indel cap, 1 frameshifting, 0 window not shiftable, 0 identical to primary)\n"}
+,{"stream_name":"stdout","time":1115.263833487,"data":"[295/299] SRR25640357: DONE in 43.1s (nodes=11570, cov=1.00, pid=100.0%, bubbles=4)\n"}
+,{"stream_name":"stdout","time":1115.263845089,"data":"[SRR7903648] WARNING: the 5-hop neighbourhood holds 3.3 unitigs per reference base (7207 unitigs over 2181 bases, 0.19% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.\n"}
+,{"stream_name":"stdout","time":1115.263852773,"data":"[SRR7590954] prune: depth 42x, floor 5.0x, 3319 of 5081 unitigs kept; realigned, min coverage on the route now 8.7x\n"}
+,{"stream_name":"stdout","time":1115.263858184,"data":"[SRR7590954] variants: depth 42.4x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -\u003e 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)\n"}
+,{"stream_name":"stdout","time":1115.263863667,"data":"[296/299] SRR7590954: DONE in 8.0s (nodes=5081, cov=1.00, pid=100.0%, bubbles=0)\n"}
+,{"stream_name":"stdout","time":1115.263868186,"data":"[SRR7903648] prune: depth 69x, floor 5.0x, 5169 of 7207 unitigs kept; realigned, min coverage on the route now 44.0x\n"}
+,{"stream_name":"stdout","time":1115.263887118,"data":"[SRR7903648] variants: depth 68.8x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -\u003e 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)\n"}
+,{"stream_name":"stdout","time":1115.263891859,"data":"[297/299] SRR7903648: DONE in 8.2s (nodes=7207, cov=1.00, pid=100.0%, bubbles=1)\n"}
+,{"stream_name":"stdout","time":1115.263895306,"data":"[SRR26218167] WARNING: the 5-hop neighbourhood holds 16.9 unitigs per reference base (36897 unitigs over 2181 bases, 0.20% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.\n"}
+,{"stream_name":"stdout","time":1115.263899742,"data":"[SRR26218167] prune: depth 25x, floor 5.0x, 23697 of 36897 unitigs kept; realigned, min coverage on the route now 8.9x\n"}
+,{"stream_name":"stdout","time":1115.263903547,"data":"[SRR26218167] variants: depth 25.0x, floor 5.0x; 6 on-path fork(s), 5 biallelic candidate(s) -\u003e 1 recovered (1 indel allele(s); 2 no rejoin within 100, 0 length-changing refused, 1 over the 30 nt indel cap, 1 frameshifting, 0 window not shiftable, 0 identical to primary)\n"}
+,{"stream_name":"stdout","time":1115.263909492,"data":"[298/299] SRR26218167: DONE in 35.0s (nodes=36897, cov=1.00, pid=99.7%, bubbles=0)\n"}
+,{"stream_name":"stdout","time":1115.263913512,"data":"[SRR7716411] WARNING: the 5-hop neighbourhood holds 8.4 unitigs per reference base (18295 unitigs over 2181 bases, 0.27% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.\n"}
+,{"stream_name":"stdout","time":1115.26391798,"data":"[SRR7716411] prune: depth 211x, floor 5.0x, 11810 of 18295 unitigs kept; realigned, min coverage on the route now 27.9x\n"}
+,{"stream_name":"stdout","time":1115.263922061,"data":"[SRR7716411] variants: depth 210.6x, floor 5.0x; 3 on-path fork(s), 1 biallelic candidate(s) -\u003e 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)\n"}
+,{"stream_name":"stdout","time":1115.263926513,"data":"[299/299] SRR7716411: DONE in 10.3s (nodes=18295, cov=1.00, pid=100.0%, bubbles=0)\n"}
+,{"stream_name":"stdout","time":1115.263930217,"data":"[logan-walker] 167/299 accessions reconstructed\n"}
+,{"stream_name":"stdout","time":1115.263933756,"data":"[logan-walker] prune: 154 applied, 4 refused (realignment spans less of the reference), 9 refused (realignment gave no haplotype)\n"}
+,{"stream_name":"stdout","time":1115.263938135,"data":"[logan-walker] 178 of 299 results provisional: neighbourhood above 3.0 unitigs per reference base\n"}
+,{"stream_name":"stdout","time":1115.26394225,"data":"[reconstruct] reconstructed 167 haplotype(s) -\u003e out/reconstructed.fasta\n"}
+,{"stream_name":"stdout","time":1115.263945997,"data":"[reconstruct] 2/2 codon MSA + tree: --input out/reconstructed.fasta --out-aln out/k13_ref_codon_msa.fasta --out-tree out/k13_ref_fasttree.nwk\n"}
+,{"stream_name":"stdout","time":1115.263949926,"data":"[*] Processing 167 reconstructed sequences against reference PF3D7_1343700 (2181 bp)...\n"}
+,{"stream_name":"stdout","time":1115.263953794,"data":"[*] 167/167 sequences passed coverage filter (\u003e= 70% of the reference in A/C/G/T bases)\n"}
+,{"stream_name":"stdout","time":1115.263957378,"data":"[*] Running MAFFT --keeplength --addfragments...\n"}
+,{"stream_name":"stdout","time":1115.263961046,"data":"[✓] MAFFT aligned 168 records. Validating codon lengths...\n"}
+,{"stream_name":"stdout","time":1115.263965385,"data":"[*] Identity to the reference: median 1.000, lowest 0.979\n"}
+,{"stream_name":"stdout","time":1115.26397357,"data":"[*] Generating FastTree GTR phylogeny -\u003e out/k13_ref_fasttree.nwk...\n"}
+,{"stream_name":"stdout","time":1115.264072266,"data":"\n"}
+,{"stream_name":"stdout","time":1115.264079831,"data":"[✓] Codon alignment complete: 168 taxa x 2181 nt (727 codons)\n"}
+,{"stream_name":"stdout","time":1115.264084146,"data":"    Alignment: out/k13_ref_codon_msa.fasta\n"}
+,{"stream_name":"stdout","time":1115.26408747,"data":"    Phylogeny: out/k13_ref_fasttree.nwk\n"}
+,{"stream_name":"stdout","time":1115.264091295,"data":"[reconstruct] done:\n"}
+,{"stream_name":"stdout","time":1115.264094812,"data":"  haplotypes : out/reconstructed.fasta\n"}
+,{"stream_name":"stdout","time":1115.264098458,"data":"  codon MSA  : out/k13_ref_codon_msa.fasta\n"}
+,{"stream_name":"stdout","time":1115.264102456,"data":"  phylogeny  : out/k13_ref_fasttree.nwk\n"}
+,{"stream_name":"stdout","time":1115.264106038,"data":"\n"}
+,{"stream_name":"stdout","time":1115.339707567,"data":"  out/alt_haplotypes.fasta  284800\n"}
+,{"stream_name":"stdout","time":1115.339753565,"data":"  out/bubbles.json  3710600\n"}
+,{"stream_name":"stdout","time":1115.339760065,"data":"  out/k13_ref_codon_msa.fasta  375975\n"}
+,{"stream_name":"stdout","time":1115.339764186,"data":"  out/k13_ref_fasttree.nwk  4656\n"}
+,{"stream_name":"stdout","time":1115.339775407,"data":"  out/k13_ref_walker_summary.json  593879\n"}
+,{"stream_name":"stdout","time":1115.339835414,"data":"  out/reconstructed.fasta  373744\n"}
+,{"stream_name":"stdout","time":1115.33986486,"data":"  out/snvs.tsv  1726\n"}
+,{"stream_name":"stderr","time":1118.499744163,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1118.499799385,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1119.035082437,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1119.035130441,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1121.507158397,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1122.95488859,"data":"[NbConvertApp] Writing 303782 bytes to __results__.html\n"}
+]

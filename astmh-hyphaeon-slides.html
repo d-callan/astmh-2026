@@ -625,7 +625,7 @@
 
         <ul class="clean" style="margin-bottom: 24px;">
           <li><strong>Trained supervised</strong> on genes where the classical likelihood answer was already computed — it learns to <em>predict</em> the statistical answer.</li>
-          <li><strong>Validated</strong> on canonical benchmarks where the classical answer is known (HIV-1, influenza, mammalian genes) — <strong>100×–1,100× faster</strong> than the numerical optimizer.</li>
+          <li><strong>Validated against the classical answer</strong> — rank concordance with MEME up to <strong>ρ&nbsp;=&nbsp;0.983</strong>, ROC-AUC up to <strong>0.94</strong> — at <strong>&gt;1,000×</strong> speed per locus, <strong>&gt;10,000×</strong> at proteome scale.</li>
         </ul>
 
         <div class="callout-light">
@@ -636,7 +636,7 @@
         <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
         <div class="slide-footer">Mechanism</div>
       </div>
-      <aside class="notes">The anti-magic slide. Input is just a codon alignment + TN93 distances. The axial transformer attends down the sites within each sequence, then across taxa at each site, with distances acting as positional encoding. Trained supervised on genes with precomputed classical (MEME-style) answers; validated on canonical benchmarks — 100×–1,100× faster than numerical MLE. Scope: protein-coding alignments — any pathogen or host gene within the ~200 My divergence window; viral-tuned variant; not for non-coding DNA.</aside>
+      <aside class="notes">The anti-magic slide. Input is just a codon alignment + TN93 distances. The axial transformer attends down the sites within each sequence, then across taxa at each site, with distances acting as positional encoding. Trained supervised on genes with precomputed classical (MEME-style) answers; validated against MEME — preprint reports rank concordance up to rho=0.983, ROC-AUC up to 0.94 (mean 0.66), >1,000x faster per locus and >10,000x at proteome scale. Scope: protein-coding alignments — any pathogen or host gene within the ~200 My divergence window; viral-tuned variant; not for non-coding DNA.</aside>
     </section>
 
     <!-- ============ 6. Two instruments, one model ============ -->
@@ -703,7 +703,7 @@
         <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
         <div class="slide-footer">Speed → scope</div>
       </div>
-      <aside class="notes">Two-tier honesty on runtimes: a typical study's analysis drops from hours/days to seconds/minutes; a whole-archive run goes from impossible to hours/days — don't quote numbers beyond that framing. And say the cadence caveat before they do: Logan's index is a snapshot rebuilt every couple of years, so this unlocks retrospective/historical studies — real-time surveillance would take the same machinery fed by a continuously-updated source (e.g. Pathoplexus).</aside>
+      <aside class="notes">Two-tier honesty on runtimes: a typical study's analysis drops from hours/days to seconds/minutes; a whole-archive run goes from impossible to hours/days — don't quote numbers beyond that framing. (Preprint framing if pressed: <1 ms per codon site, >1,000x faster per locus than numerical CTMC likelihood, >10,000x at proteome scale.) And say the cadence caveat before they do: Logan's index is a snapshot rebuilt every couple of years, so this unlocks retrospective/historical studies — real-time surveillance would take the same machinery fed by a continuously-updated source (e.g. Pathoplexus).</aside>
     </section>
 
     <!-- ============ 8. The pipeline, end to end ============ -->

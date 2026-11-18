@@ -1,0 +1,837 @@
+[reconstruct] 1/2 walker: -q k13_ref.fasta -o out -f out/reconstructed.fasta -w 4 -l acc.txt --emit-snv-table --max-size-mb 512 --scratch-dir . -t 1
+[logan-walker] memory bound: 16 compressed buffers (4 queued + 8 fetching + 4 parsing) x 512 MB cap = 8.0 GB, plus 4 parsed graphs at up to 1.7x their compressed size = 3.4 GB; 11.4 GB worst case
+[logan-walker] GraphAligner: GraphAligner bioconda 1.0.17b- (/root/micromamba/envs/dis/bin/GraphAligner)
+[DRR088036] WARNING: the 5-hop neighbourhood holds 15.9 unitigs per reference base (34779 unitigs over 2181 bases, 76.57% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[1/299] ERR10160140: too_large, skipped by --max-size-mb (compressed size 616319961 exceeds max_compressed_bytes 536870912)
+[2/299] ERR012786: no_path
+[3/299] ERR012335: no_path
+[4/299] ERR012726: no_path
+[DRR088036] prune: depth 900x, floor 9.0x, 11800 of 34779 unitigs kept; realigned, min coverage on the route now 11.2x
+[DRR088036] variants: depth 900.0x, floor 5.0x; 683 on-path fork(s), 67 biallelic candidate(s) -> 14 recovered (7 indel allele(s); 9 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 44 frameshifting, 0 window not shiftable, 0 identical to primary)
+[5/299] DRR088036: DONE in 4.1s (nodes=34779, cov=0.99, pid=99.0%, bubbles=0)
+[6/299] ERR069565: no_path
+[ERR039879] prune: depth 41x, floor 5.0x, 3944 of 5229 unitigs kept; realigned, min coverage on the route now 19.5x
+[ERR039879] variants: depth 40.7x, floor 5.0x; 2 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[7/299] ERR039879: DONE in 6.6s (nodes=5229, cov=1.00, pid=99.7%, bubbles=3)
+[ERR063537] prune: depth 28x, floor 5.0x, 5184 of 6151 unitigs kept; realigned, min coverage on the route now 27.4x
+[ERR063537] variants: depth 28.1x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[8/299] ERR063537: DONE in 6.2s (nodes=6151, cov=1.00, pid=99.9%, bubbles=2)
+[ERR043325] WARNING: the 5-hop neighbourhood holds 3.5 unitigs per reference base (7567 unitigs over 2181 bases, 0.34% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[9/299] ERR043325: no_path
+[ERR018915] prune: depth 98x, floor 5.0x, 4802 of 6541 unitigs kept; realigned, min coverage on the route now 70.0x
+[ERR018915] variants: depth 98.3x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[10/299] ERR018915: DONE in 9.4s (nodes=6541, cov=1.00, pid=100.0%, bubbles=1)
+[ERR045621] WARNING: the 5-hop neighbourhood holds 3.7 unitigs per reference base (8138 unitigs over 2181 bases, 0.22% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR1106518] prune: depth 22x, floor 5.0x, 4062 of 4659 unitigs kept; realigned, min coverage on the route now 21.6x
+[11/299] ERR1106518: DONE in 3.3s (nodes=4659, cov=1.00, pid=100.0%, bubbles=1)
+[ERR045621] prune: depth 89x, floor 5.0x, 5697 of 8138 unitigs kept; realigned, min coverage on the route now 58.8x
+[ERR045621] variants: depth 91.2x, floor 5.0x; 3 on-path fork(s), 2 biallelic candidate(s) -> 2 recovered (2 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[12/299] ERR045621: DONE in 9.0s (nodes=8138, cov=1.00, pid=99.7%, bubbles=0)
+[ERR1008804] prune: depth 38x, floor 5.0x, 4457 of 6250 unitigs kept; realigned, min coverage on the route now 26.5x
+[ERR1008804] variants: depth 37.5x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[13/299] ERR1008804: DONE in 8.3s (nodes=6250, cov=1.00, pid=100.0%, bubbles=3)
+[ERR037226] prune: depth 64x, floor 5.0x, 4194 of 6253 unitigs kept; realigned, min coverage on the route now 35.6x
+[ERR037226] variants: depth 63.8x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[14/299] ERR037226: DONE in 11.0s (nodes=6253, cov=1.00, pid=100.0%, bubbles=0)
+[ERR114394] prune: depth 35x, floor 5.0x, 4867 of 6065 unitigs kept; realigned, min coverage on the route now 27.8x
+[ERR114394] variants: depth 35.2x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[15/299] ERR114394: DONE in 5.2s (nodes=6065, cov=1.00, pid=100.0%, bubbles=2)
+[ERR1106612] prune: depth 252x, floor 5.0x, 4246 of 5656 unitigs kept; realigned, min coverage on the route now 95.8x
+[ERR1106612] variants: depth 252.1x, floor 5.0x; 3 on-path fork(s), 2 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 1 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[16/299] ERR1106612: DONE in 9.3s (nodes=5656, cov=1.00, pid=99.7%, bubbles=0)
+[ERR1172558] prune: depth 160x, floor 5.0x, 4354 of 5450 unitigs kept; realigned, min coverage on the route now 87.2x
+[ERR1172558] variants: depth 160.0x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 1 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[17/299] ERR1172558: DONE in 5.8s (nodes=5450, cov=1.00, pid=99.7%, bubbles=2)
+[ERR10764092] WARNING: the 5-hop neighbourhood holds 20.0 unitigs per reference base (43571 unitigs over 2181 bases, 0.39% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR10685559] WARNING: the 5-hop neighbourhood holds 20.6 unitigs per reference base (44903 unitigs over 2181 bases, 0.37% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR10764092] prune: depth 240x, floor 5.0x, 25974 of 43571 unitigs kept; realigned, min coverage on the route now 19.0x
+[ERR10764092] variants: depth 47.0x, floor 5.0x; 2 on-path fork(s), 2 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 2 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[18/299] ERR10764092: DONE in 30.2s (nodes=43571, cov=1.00, pid=100.0%, bubbles=3)
+[19/299] ERR10685559: no_path
+[20/299] ERR1172596: no_path
+[ERR11767309] prune: depth 33x, floor 5.0x, 4515 of 5443 unitigs kept; realigned, min coverage on the route now 17.2x
+[ERR11767309] variants: depth 32.9x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[21/299] ERR11767309: DONE in 3.7s (nodes=5443, cov=1.00, pid=100.0%, bubbles=2)
+[ERR10764279] WARNING: the 5-hop neighbourhood holds 17.3 unitigs per reference base (37838 unitigs over 2181 bases, 0.27% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR10764279] prune: depth 105x, floor 5.0x, 22862 of 37838 unitigs kept; realigned, min coverage on the route now 15.0x
+[ERR10764279] variants: depth 49.3x, floor 5.0x; 2 on-path fork(s), 2 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 1 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[22/299] ERR10764279: DONE in 35.7s (nodes=37838, cov=1.00, pid=100.0%, bubbles=9)
+[ERR10892924] WARNING: the 5-hop neighbourhood holds 23.0 unitigs per reference base (50068 unitigs over 2181 bases, 0.31% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[23/299] ERR10892924: no_path
+[ERR123893] prune: depth 68x, floor 5.0x, 5104 of 6130 unitigs kept; realigned, min coverage on the route now 47.4x
+[ERR123893] variants: depth 67.5x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[24/299] ERR123893: DONE in 5.2s (nodes=6130, cov=1.00, pid=100.0%, bubbles=34)
+[ERR10914863] WARNING: the 5-hop neighbourhood holds 37.2 unitigs per reference base (81136 unitigs over 2181 bases, 0.56% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR11840507] WARNING: the 5-hop neighbourhood holds 14.6 unitigs per reference base (31830 unitigs over 2181 bases, 0.23% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[25/299] ERR10914863: no_path
+[ERR11840507] prune: depth 49x, floor 5.0x, 19044 of 31830 unitigs kept; realigned, min coverage on the route now 31.7x
+[ERR11840507] variants: depth 48.7x, floor 5.0x; 2 on-path fork(s), 2 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 1 frameshifting, 0 window not shiftable, 0 identical to primary)
+[26/299] ERR11840507: DONE in 31.3s (nodes=31830, cov=1.00, pid=100.0%, bubbles=12)
+[ERR11840877] WARNING: the 5-hop neighbourhood holds 13.7 unitigs per reference base (29898 unitigs over 2181 bases, 0.20% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR11840877] prune: depth 83x, floor 5.0x, 18273 of 29898 unitigs kept; realigned, min coverage on the route now 19.9x
+[ERR11840877] variants: depth 91.3x, floor 5.0x; 2 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[ERR11871800] WARNING: the 5-hop neighbourhood holds 25.6 unitigs per reference base (55741 unitigs over 2181 bases, 0.48% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[27/299] ERR11840877: DONE in 33.7s (nodes=29898, cov=1.00, pid=100.0%, bubbles=7)
+[28/299] ERR11871800: no_path
+[ERR123896] prune: depth 50x, floor 5.0x, 5124 of 6233 unitigs kept; realigned, min coverage on the route now 43.8x
+[ERR123896] variants: depth 50.0x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[29/299] ERR123896: DONE in 5.1s (nodes=6233, cov=1.00, pid=100.0%, bubbles=14)
+[ERR126405] WARNING: the 5-hop neighbourhood holds 3.1 unitigs per reference base (6838 unitigs over 2181 bases, 0.27% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR126405] prune: depth 65x, floor 5.0x, 5491 of 6838 unitigs kept; realigned, min coverage on the route now 12.3x
+[ERR126405] variants: depth 65.3x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[30/299] ERR126405: DONE in 6.6s (nodes=6838, cov=1.00, pid=100.0%, bubbles=34)
+[31/299] ERR1514595: no_path
+[ERR11871817] WARNING: the 5-hop neighbourhood holds 26.4 unitigs per reference base (57501 unitigs over 2181 bases, 0.42% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR175535] prune: depth 26x, floor 5.0x, 4606 of 5509 unitigs kept; realigned, min coverage on the route now 23.9x
+[ERR175535] variants: depth 26.5x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[32/299] ERR175535: DONE in 3.5s (nodes=5509, cov=1.00, pid=100.0%, bubbles=1)
+[ERR11840915] WARNING: the 5-hop neighbourhood holds 15.4 unitigs per reference base (33673 unitigs over 2181 bases, 0.22% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[33/299] ERR11871817: no_path
+[34/299] ERR11840915: no_path
+[ERR180059] prune: depth 75x, floor 5.0x, 4565 of 5519 unitigs kept; realigned, min coverage on the route now 46.9x
+[ERR180059] variants: depth 74.7x, floor 5.0x; 2 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 1 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[35/299] ERR180059: DONE in 4.9s (nodes=5519, cov=1.00, pid=99.7%, bubbles=4)
+[ERR1818179] prune: depth 6x, floor 5.0x cost the alignment; keeping the unpruned result
+[ERR1818179] variants: depth 5.7x, floor 5.0x; 3 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[36/299] ERR1818179: DONE in 4.0s (nodes=3506, cov=0.96, pid=100.0%, bubbles=4)
+[ERR1939327] prune: depth 120x, floor 5.0x, 4511 of 5744 unitigs kept; realigned, min coverage on the route now 23.4x
+[ERR1939327] variants: depth 40.9x, floor 5.0x; 3 on-path fork(s), 2 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 1 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[37/299] ERR1939327: DONE in 5.8s (nodes=5744, cov=1.00, pid=99.7%, bubbles=22)
+[ERR1658011] WARNING: the 5-hop neighbourhood holds 12.2 unitigs per reference base (26640 unitigs over 2181 bases, 0.34% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR1818222] WARNING: the 5-hop neighbourhood holds 6.0 unitigs per reference base (13176 unitigs over 2181 bases, 0.24% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR1658011] prune: depth 150x, floor 5.0x, 16923 of 26640 unitigs kept; realigned, min coverage on the route now 16.4x
+[ERR1658011] variants: depth 24.9x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[38/299] ERR1658011: DONE in 21.0s (nodes=26640, cov=1.00, pid=100.0%, bubbles=29)
+[ERR1818222] prune: depth 188x, floor 5.0x, 8651 of 13176 unitigs kept; realigned, min coverage on the route now 69.3x
+[ERR1818222] variants: depth 188.3x, floor 5.0x; 1 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[39/299] ERR1818222: DONE in 13.7s (nodes=13176, cov=1.00, pid=100.0%, bubbles=0)
+[ERR2028831] prune: depth 550x, floor 5.5x cost the alignment; keeping the unpruned result
+[ERR2028831] variants: depth 550.0x, floor 5.0x; 369 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 1 frameshifting, 0 window not shiftable, 0 identical to primary)
+[40/299] ERR2028831: DONE in 3.4s (nodes=2047, cov=1.00, pid=100.0%, bubbles=2)
+[41/299] ERR2028852: no_path
+[ERR11871877] WARNING: the 5-hop neighbourhood holds 28.8 unitigs per reference base (62717 unitigs over 2181 bases, 0.32% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR11871877] prune: depth 20x, floor 5.0x, 37262 of 62717 unitigs kept; realigned, min coverage on the route now 11.0x
+[ERR11871877] variants: depth 19.7x, floor 5.0x; 4 on-path fork(s), 3 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 2 no rejoin within 100, 0 length-changing refused, 1 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[42/299] ERR11871877: DONE in 46.8s (nodes=62717, cov=1.00, pid=100.0%, bubbles=12)
+[43/299] ERR211477: no_path
+[ERR1939342] WARNING: the 5-hop neighbourhood holds 6.0 unitigs per reference base (13033 unitigs over 2181 bases, 0.12% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR1939342] prune: depth 46x, floor 5.0x, 8252 of 13033 unitigs kept; realigned, min coverage on the route now 18.7x
+[ERR1939342] variants: depth 46.3x, floor 5.0x; 3 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[44/299] ERR1939342: DONE in 25.9s (nodes=13033, cov=1.00, pid=99.7%, bubbles=11)
+[ERR1952459] WARNING: the 5-hop neighbourhood holds 6.4 unitigs per reference base (14033 unitigs over 2181 bases, 0.13% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR1952459] prune: depth 260x, floor 5.0x, 8291 of 14033 unitigs kept; realigned, min coverage on the route now 70.7x
+[ERR1952459] variants: depth 260.0x, floor 5.0x; 5 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[45/299] ERR1952459: DONE in 24.1s (nodes=14033, cov=1.00, pid=100.0%, bubbles=0)
+[ERR216591] WARNING: the 5-hop neighbourhood holds 3.1 unitigs per reference base (6856 unitigs over 2181 bases, 0.19% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR216591] prune: depth 146x, floor 5.0x, 5167 of 6856 unitigs kept; realigned, min coverage on the route now 76.3x
+[ERR216591] variants: depth 145.8x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[46/299] ERR216591: DONE in 9.4s (nodes=6856, cov=1.00, pid=100.0%, bubbles=0)
+[ERR2193381] WARNING: the 5-hop neighbourhood holds 10.5 unitigs per reference base (22937 unitigs over 2181 bases, 0.23% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2020760] WARNING: the 5-hop neighbourhood holds 30.1 unitigs per reference base (65677 unitigs over 2181 bases, 0.44% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2193381] prune: depth 180x, floor 5.0x, 12885 of 22937 unitigs kept; realigned, min coverage on the route now 121.0x
+[ERR2193381] variants: depth 175.0x, floor 5.0x; 3 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[47/299] ERR2193381: DONE in 22.3s (nodes=22937, cov=1.00, pid=99.7%, bubbles=0)
+[48/299] ERR2193418: no_path
+[ERR2193396] WARNING: the 5-hop neighbourhood holds 12.5 unitigs per reference base (27302 unitigs over 2181 bases, 0.27% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2020760] prune: depth 90x, floor 5.0x, 35178 of 65677 unitigs kept; realigned, min coverage on the route now 65.0x
+[ERR2020760] variants: depth 90.0x, floor 5.0x; 2 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[49/299] ERR2020760: DONE in 40.5s (nodes=65677, cov=1.00, pid=100.0%, bubbles=143)
+[ERR2193396] prune: depth 175x, floor 5.0x, 15090 of 27302 unitigs kept; realigned, min coverage on the route now 97.4x
+[ERR2193396] variants: depth 175.0x, floor 5.0x; 1 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[50/299] ERR2193396: DONE in 23.4s (nodes=27302, cov=1.00, pid=100.0%, bubbles=0)
+[ERR2234573] prune: depth 94x, floor 5.0x, 2929 of 4360 unitigs kept; realigned, min coverage on the route now 35.0x
+[ERR2234573] variants: depth 93.8x, floor 5.0x; 2 on-path fork(s), 2 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 1 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[51/299] ERR2234573: DONE in 9.5s (nodes=4360, cov=1.00, pid=99.7%, bubbles=0)
+[ERR2299442] WARNING: the 5-hop neighbourhood holds 7.4 unitigs per reference base (16049 unitigs over 2181 bases, 0.19% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2299442] prune: depth 280x, floor 5.0x, 10349 of 16049 unitigs kept; realigned, min coverage on the route now 105.5x
+[ERR2299442] variants: depth 280.0x, floor 5.0x; 2 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[52/299] ERR2299442: DONE in 18.5s (nodes=16049, cov=1.00, pid=100.0%, bubbles=2)
+[ERR2363130] WARNING: the 5-hop neighbourhood holds 11.4 unitigs per reference base (24922 unitigs over 2181 bases, 0.31% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[53/299] ERR2363130: no_path
+[ERR2363063] WARNING: the 5-hop neighbourhood holds 17.0 unitigs per reference base (37179 unitigs over 2181 bases, 0.39% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2363063] prune: depth 143x, floor 5.0x, 21686 of 37179 unitigs kept; realigned, min coverage on the route now 90.0x
+[ERR2363063] variants: depth 135.0x, floor 5.0x; 1 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[54/299] ERR2363063: DONE in 23.4s (nodes=37179, cov=1.00, pid=100.0%, bubbles=10)
+[ERR2364090] WARNING: the 5-hop neighbourhood holds 14.0 unitigs per reference base (30506 unitigs over 2181 bases, 0.37% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2363322] WARNING: the 5-hop neighbourhood holds 21.9 unitigs per reference base (47831 unitigs over 2181 bases, 0.37% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2364090] prune: depth 85x, floor 5.0x, 16929 of 30506 unitigs kept; realigned, min coverage on the route now 47.1x
+[ERR2364090] variants: depth 85.3x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[55/299] ERR2364090: DONE in 19.5s (nodes=30506, cov=1.00, pid=100.0%, bubbles=0)
+[ERR2364192] WARNING: the 5-hop neighbourhood holds 3.5 unitigs per reference base (7588 unitigs over 2181 bases, 0.13% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[56/299] ERR2364192: no_path
+[ERR2363322] prune: depth 145x, floor 5.0x, 26398 of 47831 unitigs kept; realigned, min coverage on the route now 57.7x
+[ERR2363322] variants: depth 138.8x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[57/299] ERR2363322: DONE in 32.1s (nodes=47831, cov=1.00, pid=100.0%, bubbles=0)
+[ERR2363612] WARNING: the 5-hop neighbourhood holds 16.7 unitigs per reference base (36322 unitigs over 2181 bases, 0.32% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[58/299] ERR2363612: no_path
+[ERR2364453] WARNING: the 5-hop neighbourhood holds 13.8 unitigs per reference base (30194 unitigs over 2181 bases, 0.29% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2364453] prune: depth 180x, floor 5.0x, 17162 of 30194 unitigs kept; realigned, min coverage on the route now 77.7x
+[ERR2364453] variants: depth 170.0x, floor 5.0x; 1 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[59/299] ERR2364453: DONE in 24.8s (nodes=30194, cov=1.00, pid=100.0%, bubbles=0)
+[ERR2364200] WARNING: the 5-hop neighbourhood holds 17.8 unitigs per reference base (38864 unitigs over 2181 bases, 0.31% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2365940] WARNING: the 5-hop neighbourhood holds 11.8 unitigs per reference base (25819 unitigs over 2181 bases, 0.30% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[60/299] ERR2364200: no_path
+[61/299] ERR2365940: no_path
+[ERR2365759] WARNING: the 5-hop neighbourhood holds 26.7 unitigs per reference base (58225 unitigs over 2181 bases, 0.40% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2366278] WARNING: the 5-hop neighbourhood holds 4.5 unitigs per reference base (9762 unitigs over 2181 bases, 0.34% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2366278] prune: depth 78x, floor 5.0x, 6487 of 9762 unitigs kept; realigned, min coverage on the route now 51.2x
+[ERR2366278] variants: depth 77.6x, floor 5.0x; 3 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[62/299] ERR2366278: DONE in 7.6s (nodes=9762, cov=1.00, pid=99.7%, bubbles=4)
+[ERR2366300] WARNING: the 5-hop neighbourhood holds 3.3 unitigs per reference base (7133 unitigs over 2181 bases, 0.40% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[63/299] ERR2366300: no_path
+[ERR2365759] prune: depth 94x, floor 5.0x, 31527 of 58225 unitigs kept; realigned, min coverage on the route now 38.5x
+[ERR2365759] variants: depth 90.0x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 1 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[64/299] ERR2365759: DONE in 36.3s (nodes=58225, cov=1.00, pid=100.0%, bubbles=36)
+[ERR2366577] WARNING: the 5-hop neighbourhood holds 5.9 unitigs per reference base (12874 unitigs over 2181 bases, 0.26% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2366577] prune: depth 160x, floor 5.0x, 8042 of 12874 unitigs kept; realigned, min coverage on the route now 70.0x
+[ERR2366577] variants: depth 150.0x, floor 5.0x; 1 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[65/299] ERR2366577: DONE in 11.5s (nodes=12874, cov=1.00, pid=100.0%, bubbles=2)
+[ERR2366521] WARNING: the 5-hop neighbourhood holds 13.7 unitigs per reference base (29864 unitigs over 2181 bases, 0.40% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2366521] prune: depth 47x, floor 5.0x, 17550 of 29864 unitigs kept; realigned, min coverage on the route now 9.0x
+[ERR2366521] variants: depth 48.3x, floor 5.0x; 3 on-path fork(s), 2 biallelic candidate(s) -> 1 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 1 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[66/299] ERR2366521: DONE in 18.4s (nodes=29864, cov=1.00, pid=100.0%, bubbles=13)
+[ERR2366166] WARNING: the 5-hop neighbourhood holds 25.4 unitigs per reference base (55475 unitigs over 2181 bases, 0.43% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2366428] WARNING: the 5-hop neighbourhood holds 20.9 unitigs per reference base (45476 unitigs over 2181 bases, 0.37% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2366166] prune: depth 115x, floor 5.0x, 30083 of 55475 unitigs kept; realigned, min coverage on the route now 31.1x
+[ERR2366166] variants: depth 112.5x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[ERR2366428] prune: depth 119x, floor 5.0x, 25260 of 45476 unitigs kept; realigned, min coverage on the route now 77.7x
+[67/299] ERR2366166: DONE in 33.7s (nodes=55475, cov=1.00, pid=100.0%, bubbles=31)
+[ERR2366428] variants: depth 111.7x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 1 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[68/299] ERR2366428: DONE in 30.9s (nodes=45476, cov=1.00, pid=100.0%, bubbles=4)
+[ERR2366702] WARNING: the 5-hop neighbourhood holds 23.6 unitigs per reference base (51468 unitigs over 2181 bases, 0.48% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2433795] WARNING: the 5-hop neighbourhood holds 24.7 unitigs per reference base (53776 unitigs over 2181 bases, 0.57% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[69/299] ERR2366702: no_path
+[ERR2433795] prune: depth 55x, floor 5.0x, 29668 of 53776 unitigs kept; realigned, min coverage on the route now 13.5x
+[ERR2433795] variants: depth 55.0x, floor 5.0x; 4 on-path fork(s), 4 biallelic candidate(s) -> 2 recovered (0 indel allele(s); 2 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[70/299] ERR2433795: DONE in 24.7s (nodes=53776, cov=1.00, pid=100.0%, bubbles=105)
+[ERR2435363] WARNING: the 5-hop neighbourhood holds 17.0 unitigs per reference base (37012 unitigs over 2181 bases, 0.35% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2435363] prune: depth 125x, floor 5.0x, 20550 of 37012 unitigs kept; realigned, min coverage on the route now 70.8x
+[ERR2435363] variants: depth 124.6x, floor 5.0x; 1 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[71/299] ERR2435363: DONE in 25.7s (nodes=37012, cov=1.00, pid=100.0%, bubbles=0)
+[ERR2435847] WARNING: the 5-hop neighbourhood holds 18.0 unitigs per reference base (39174 unitigs over 2181 bases, 0.37% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2435843] WARNING: the 5-hop neighbourhood holds 26.8 unitigs per reference base (58545 unitigs over 2181 bases, 0.67% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[72/299] ERR2435847: no_path
+[ERR2435843] prune: depth 79x, floor 5.0x, 33350 of 58545 unitigs kept; realigned, min coverage on the route now 19.1x
+[ERR2435843] variants: depth 69.4x, floor 5.0x; 6 on-path fork(s), 3 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 2 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[73/299] ERR2435843: DONE in 24.6s (nodes=58545, cov=1.00, pid=100.0%, bubbles=49)
+[ERR2434369] WARNING: the 5-hop neighbourhood holds 34.5 unitigs per reference base (75234 unitigs over 2181 bases, 0.37% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2434369] prune: depth 62x, floor 5.0x, 41849 of 75234 unitigs kept; realigned, min coverage on the route now 42.9x
+[ERR2434369] variants: depth 61.9x, floor 5.0x; 3 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[74/299] ERR2434369: DONE in 47.7s (nodes=75234, cov=1.00, pid=99.8%, bubbles=25)
+[ERR2525691] WARNING: the 5-hop neighbourhood holds 7.3 unitigs per reference base (15889 unitigs over 2181 bases, 0.22% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2436017] WARNING: the 5-hop neighbourhood holds 29.9 unitigs per reference base (65252 unitigs over 2181 bases, 0.45% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2525627] WARNING: the 5-hop neighbourhood holds 11.0 unitigs per reference base (23942 unitigs over 2181 bases, 0.26% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2525691] prune: depth 64x, floor 5.0x, 9718 of 15889 unitigs kept; realigned, min coverage on the route now 41.1x
+[ERR2525691] variants: depth 63.5x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[75/299] ERR2525691: DONE in 17.0s (nodes=15889, cov=1.00, pid=100.0%, bubbles=0)
+[ERR2525627] prune: depth 195x, floor 5.0x, 13641 of 23942 unitigs kept; realigned, min coverage on the route now 28.5x
+[ERR2525627] variants: depth 44.6x, floor 5.0x; 4 on-path fork(s), 2 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[76/299] ERR2525627: DONE in 22.8s (nodes=23942, cov=1.00, pid=99.7%, bubbles=0)
+[ERR2436017] prune: depth 39x, floor 5.0x, 36418 of 65252 unitigs kept; realigned, min coverage on the route now 19.6x
+[ERR2436017] variants: depth 44.5x, floor 5.0x; 3 on-path fork(s), 3 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 2 no rejoin within 100, 0 length-changing refused, 1 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[77/299] ERR2436017: DONE in 35.6s (nodes=65252, cov=1.00, pid=100.0%, bubbles=117)
+[ERR2525884] WARNING: the 5-hop neighbourhood holds 5.4 unitigs per reference base (11852 unitigs over 2181 bases, 0.23% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[78/299] ERR2525884: no_path
+[ERR2525763] WARNING: the 5-hop neighbourhood holds 11.9 unitigs per reference base (25863 unitigs over 2181 bases, 0.27% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2506107] WARNING: the 5-hop neighbourhood holds 27.8 unitigs per reference base (60524 unitigs over 2181 bases, 0.44% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[79/299] ERR2525763: no_path
+[80/299] ERR2506107: no_path
+[ERR2532501] WARNING: the 5-hop neighbourhood holds 21.1 unitigs per reference base (46061 unitigs over 2181 bases, 0.28% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2542369] WARNING: the 5-hop neighbourhood holds 11.5 unitigs per reference base (25155 unitigs over 2181 bases, 0.27% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[81/299] ERR2532501: no_path
+[ERR2542369] prune: depth 110x, floor 5.0x, 14663 of 25155 unitigs kept; realigned, min coverage on the route now 68.1x
+[ERR2542369] variants: depth 110.5x, floor 5.0x; 5 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[82/299] ERR2542369: DONE in 21.1s (nodes=25155, cov=1.00, pid=99.7%, bubbles=0)
+[ERR2542396] WARNING: the 5-hop neighbourhood holds 13.8 unitigs per reference base (30086 unitigs over 2181 bases, 0.34% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2542071] WARNING: the 5-hop neighbourhood holds 25.0 unitigs per reference base (54529 unitigs over 2181 bases, 0.35% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[83/299] ERR2542396: no_path
+[ERR2542071] prune: depth 350x, floor 5.0x, 32300 of 54529 unitigs kept; realigned, min coverage on the route now 5.0x
+[ERR2542071] variants: depth 240.0x, floor 5.0x; 32 on-path fork(s), 43 biallelic candidate(s) -> 32 recovered (30 indel allele(s); 3 no rejoin within 100, 0 length-changing refused, 8 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[84/299] ERR2542071: DONE in 37.5s (nodes=54529, cov=0.86, pid=98.6%, bubbles=66)
+[ERR2542454] WARNING: the 5-hop neighbourhood holds 17.5 unitigs per reference base (38091 unitigs over 2181 bases, 0.36% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2542724] WARNING: the 5-hop neighbourhood holds 10.6 unitigs per reference base (23140 unitigs over 2181 bases, 0.25% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[85/299] ERR2542454: no_path
+[86/299] ERR2542724: no_path
+[ERR2542471] WARNING: the 5-hop neighbourhood holds 13.9 unitigs per reference base (30397 unitigs over 2181 bases, 0.27% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[87/299] ERR2891120: too_large, skipped by --max-size-mb (compressed size 696270346 exceeds max_compressed_bytes 536870912)
+[ERR2542471] prune: depth 43x, floor 5.0x, 17810 of 30397 unitigs kept; realigned, min coverage on the route now 25.0x
+[ERR2542471] variants: depth 43.2x, floor 5.0x; 3 on-path fork(s), 2 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[88/299] ERR2542471: DONE in 27.0s (nodes=30397, cov=1.00, pid=99.7%, bubbles=32)
+[ERR2590987] WARNING: the 5-hop neighbourhood holds 13.3 unitigs per reference base (29010 unitigs over 2181 bases, 0.29% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[89/299] ERR2590987: no_path
+[ERR2591386] WARNING: the 5-hop neighbourhood holds 3.8 unitigs per reference base (8201 unitigs over 2181 bases, 0.23% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2591218] WARNING: the 5-hop neighbourhood holds 9.3 unitigs per reference base (20297 unitigs over 2181 bases, 0.34% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2591386] prune: depth 450x, floor 5.0x, 6278 of 8201 unitigs kept; realigned, min coverage on the route now 18.8x
+[ERR2591386] variants: depth 450.0x, floor 5.0x; 3 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[90/299] ERR2591386: DONE in 9.6s (nodes=8201, cov=1.00, pid=100.0%, bubbles=9)
+[91/299] ERR2591218: no_path
+[92/299] ERR2591653: no_path
+[ERR2886485] prune: depth 42x, floor 5.0x, 3854 of 5164 unitigs kept; realigned, min coverage on the route now 10.0x
+[ERR2886485] variants: depth 41.8x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[93/299] ERR2886485: DONE in 4.4s (nodes=5164, cov=1.00, pid=100.0%, bubbles=10)
+[ERR2591678] WARNING: the 5-hop neighbourhood holds 10.6 unitigs per reference base (23135 unitigs over 2181 bases, 0.31% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[94/299] ERR2591678: no_path
+[ERR2591303] WARNING: the 5-hop neighbourhood holds 62.7 unitigs per reference base (136653 unitigs over 2181 bases, 0.70% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2591310] WARNING: the 5-hop neighbourhood holds 50.4 unitigs per reference base (109902 unitigs over 2181 bases, 0.67% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[95/299] ERR2591303: no_path
+[ERR2889743] WARNING: the 5-hop neighbourhood holds 11.9 unitigs per reference base (25880 unitigs over 2181 bases, 0.21% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2591310] prune: depth 850x, floor 8.5x cost the alignment; keeping the unpruned result
+[ERR2591310] variants: depth 850.0x, floor 5.0x; 55 on-path fork(s), 30 biallelic candidate(s) -> 7 recovered (7 indel allele(s); 6 no rejoin within 100, 0 length-changing refused, 7 over the 30 nt indel cap, 10 frameshifting, 0 window not shiftable, 0 identical to primary)
+[96/299] ERR2591310: DONE in 43.6s (nodes=109902, cov=0.86, pid=98.4%, bubbles=141)
+[ERR2889743] prune: depth 2700x, floor 27.0x cost the alignment; keeping the unpruned result
+[ERR2889743] variants: depth 2700.0x, floor 5.0x; 53 on-path fork(s), 24 biallelic candidate(s) -> 11 recovered (11 indel allele(s); 6 no rejoin within 100, 0 length-changing refused, 5 over the 30 nt indel cap, 1 frameshifting, 0 window not shiftable, 0 identical to primary)
+[97/299] ERR2889743: DONE in 26.9s (nodes=25880, cov=0.86, pid=98.0%, bubbles=79)
+[ERR2889627] WARNING: the 5-hop neighbourhood holds 34.3 unitigs per reference base (74766 unitigs over 2181 bases, 0.35% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2889627] prune: depth 45x, floor 5.0x, 40841 of 74766 unitigs kept; realigned, min coverage on the route now 33.0x
+[ERR2889627] variants: depth 45.2x, floor 5.0x; 4 on-path fork(s), 4 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 3 no rejoin within 100, 0 length-changing refused, 1 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[98/299] ERR2889627: DONE in 50.9s (nodes=74766, cov=1.00, pid=100.0%, bubbles=54)
+[ERR2890850] WARNING: the 5-hop neighbourhood holds 10.9 unitigs per reference base (23818 unitigs over 2181 bases, 0.31% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2890850] prune: depth 39x, floor 5.0x, 14582 of 23818 unitigs kept; realigned, min coverage on the route now 23.2x
+[ERR2890850] variants: depth 39.4x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[99/299] ERR2890850: DONE in 17.9s (nodes=23818, cov=1.00, pid=100.0%, bubbles=18)
+[ERR2890671] WARNING: the 5-hop neighbourhood holds 27.3 unitigs per reference base (59586 unitigs over 2181 bases, 0.41% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2890842] WARNING: the 5-hop neighbourhood holds 19.2 unitigs per reference base (41796 unitigs over 2181 bases, 0.32% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2891320] WARNING: the 5-hop neighbourhood holds 10.7 unitigs per reference base (23284 unitigs over 2181 bases, 0.33% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2890671] prune: depth 56x, floor 5.0x, 34113 of 59586 unitigs kept; realigned, min coverage on the route now 10.0x
+[ERR2890671] variants: depth 60.0x, floor 5.0x; 38 on-path fork(s), 52 biallelic candidate(s) -> 6 recovered (6 indel allele(s); 9 no rejoin within 100, 0 length-changing refused, 35 over the 30 nt indel cap, 2 frameshifting, 0 window not shiftable, 0 identical to primary)
+[ERR2890842] prune: depth 44x, floor 5.0x, 25069 of 41796 unitigs kept; realigned, min coverage on the route now 27.2x
+[100/299] ERR2890671: DONE in 35.6s (nodes=59586, cov=0.86, pid=98.6%, bubbles=80)
+[ERR2890842] variants: depth 42.2x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[101/299] ERR2890842: DONE in 30.0s (nodes=41796, cov=1.00, pid=100.0%, bubbles=189)
+[102/299] ERR2891320: no_path
+[ERR2891688] WARNING: the 5-hop neighbourhood holds 10.2 unitigs per reference base (22305 unitigs over 2181 bases, 0.26% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2891688] prune: depth 170x, floor 5.0x, 13480 of 22305 unitigs kept; realigned, min coverage on the route now 85.9x
+[ERR2891688] variants: depth 167.1x, floor 5.0x; 1 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[103/299] ERR2891688: DONE in 20.2s (nodes=22305, cov=1.00, pid=100.0%, bubbles=3)
+[ERR2892935] WARNING: the 5-hop neighbourhood holds 6.7 unitigs per reference base (14707 unitigs over 2181 bases, 0.25% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2892935] prune: depth 46x, floor 5.0x, 8874 of 14707 unitigs kept; realigned, min coverage on the route now 24.8x
+[ERR2892935] variants: depth 45.6x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[104/299] ERR2892935: DONE in 13.9s (nodes=14707, cov=1.00, pid=100.0%, bubbles=110)
+[ERR2892831] WARNING: the 5-hop neighbourhood holds 11.8 unitigs per reference base (25653 unitigs over 2181 bases, 0.37% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2892831] prune: depth 91x, floor 5.0x, 15515 of 25653 unitigs kept; realigned, min coverage on the route now 49.1x
+[ERR2892831] variants: depth 88.6x, floor 5.0x; 2 on-path fork(s), 2 biallelic candidate(s) -> 1 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[105/299] ERR2892831: DONE in 18.6s (nodes=25653, cov=1.00, pid=100.0%, bubbles=2)
+[ERR2892775] WARNING: the 5-hop neighbourhood holds 20.3 unitigs per reference base (44246 unitigs over 2181 bases, 0.37% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2892775] prune: depth 65x, floor 5.0x, 24694 of 44246 unitigs kept; realigned, min coverage on the route now 45.0x
+[ERR2892775] variants: depth 70.0x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[106/299] ERR2892775: DONE in 28.7s (nodes=44246, cov=1.00, pid=100.0%, bubbles=98)
+[ERR2892989] WARNING: the 5-hop neighbourhood holds 11.5 unitigs per reference base (24987 unitigs over 2181 bases, 0.30% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2892967] WARNING: the 5-hop neighbourhood holds 20.5 unitigs per reference base (44641 unitigs over 2181 bases, 0.38% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2892989] prune: depth 126x, floor 5.0x, 14409 of 24987 unitigs kept; realigned, min coverage on the route now 70.8x
+[ERR2892989] variants: depth 120.0x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[107/299] ERR2892989: DONE in 20.3s (nodes=24987, cov=1.00, pid=100.0%, bubbles=0)
+[108/299] ERR2892967: no_path
+[ERR2893164] WARNING: the 5-hop neighbourhood holds 18.5 unitigs per reference base (40381 unitigs over 2181 bases, 0.38% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2893164] prune: depth 53x, floor 5.0x, 22779 of 40381 unitigs kept; realigned, min coverage on the route now 18.5x
+[ERR2893164] variants: depth 53.3x, floor 5.0x; 3 on-path fork(s), 3 biallelic candidate(s) -> 2 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 1 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[109/299] ERR2893164: DONE in 26.1s (nodes=40381, cov=1.00, pid=100.0%, bubbles=62)
+[ERR2894056] WARNING: the 5-hop neighbourhood holds 8.2 unitigs per reference base (17847 unitigs over 2181 bases, 0.25% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2893994] WARNING: the 5-hop neighbourhood holds 13.2 unitigs per reference base (28747 unitigs over 2181 bases, 0.26% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2894056] prune: depth 150x, floor 5.0x, 10522 of 17847 unitigs kept; realigned, min coverage on the route now 90.0x
+[ERR2894056] variants: depth 150.0x, floor 5.0x; 1 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[110/299] ERR2894056: DONE in 16.4s (nodes=17847, cov=1.00, pid=100.0%, bubbles=0)
+[111/299] ERR2893994: no_path
+[ERR2894265] WARNING: the 5-hop neighbourhood holds 9.5 unitigs per reference base (20755 unitigs over 2181 bases, 0.19% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[112/299] ERR2894265: no_path
+[ERR2894888] WARNING: the 5-hop neighbourhood holds 10.2 unitigs per reference base (22214 unitigs over 2181 bases, 0.19% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2899157] WARNING: the 5-hop neighbourhood holds 9.4 unitigs per reference base (20505 unitigs over 2181 bases, 0.25% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2894888] prune: depth 53x, floor 5.0x, 13117 of 22214 unitigs kept; realigned, min coverage on the route now 35.9x
+[ERR2894888] variants: depth 54.7x, floor 5.0x; 4 on-path fork(s), 2 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[113/299] ERR2894888: DONE in 26.4s (nodes=22214, cov=1.00, pid=99.7%, bubbles=0)
+[ERR2899150] WARNING: the 5-hop neighbourhood holds 12.0 unitigs per reference base (26160 unitigs over 2181 bases, 0.27% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2899157] prune: depth 156x, floor 5.0x, 12059 of 20505 unitigs kept; realigned, min coverage on the route now 100.0x
+[ERR2899157] variants: depth 156.5x, floor 5.0x; 2 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[114/299] ERR2899157: DONE in 19.5s (nodes=20505, cov=1.00, pid=100.0%, bubbles=0)
+[ERR2899150] prune: depth 145x, floor 5.0x, 15206 of 26160 unitigs kept; realigned, min coverage on the route now 89.6x
+[ERR2899150] variants: depth 132.5x, floor 5.0x; 2 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[115/299] ERR2899150: DONE in 22.3s (nodes=26160, cov=1.00, pid=99.9%, bubbles=0)
+[ERR2899190] WARNING: the 5-hop neighbourhood holds 18.6 unitigs per reference base (40509 unitigs over 2181 bases, 0.36% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2899190] prune: depth 63x, floor 5.0x, 23710 of 40509 unitigs kept; realigned, min coverage on the route now 8.1x
+[ERR2899190] variants: depth 63.1x, floor 5.0x; 3 on-path fork(s), 3 biallelic candidate(s) -> 1 recovered (0 indel allele(s); 2 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[116/299] ERR2899190: DONE in 27.3s (nodes=40509, cov=1.00, pid=100.0%, bubbles=43)
+[ERR3409275] WARNING: the 5-hop neighbourhood holds 16.9 unitigs per reference base (36845 unitigs over 2181 bases, 0.36% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[117/299] ERR3409275: no_path
+[ERR2899171] WARNING: the 5-hop neighbourhood holds 13.2 unitigs per reference base (28700 unitigs over 2181 bases, 0.27% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR2899171] prune: depth 171x, floor 5.0x, 16227 of 28700 unitigs kept; realigned, min coverage on the route now 72.3x
+[ERR2899171] variants: depth 170.6x, floor 5.0x; 3 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[118/299] ERR2899171: DONE in 25.4s (nodes=28700, cov=1.00, pid=100.0%, bubbles=0)
+[ERR3424854] WARNING: the 5-hop neighbourhood holds 20.7 unitigs per reference base (45247 unitigs over 2181 bases, 0.32% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR3424854] prune: depth 101x, floor 5.0x, 24465 of 45247 unitigs kept; realigned, min coverage on the route now 57.5x
+[ERR3424854] variants: depth 89.2x, floor 5.0x; 4 on-path fork(s), 2 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[119/299] ERR3424854: DONE in 33.2s (nodes=45247, cov=1.00, pid=99.7%, bubbles=16)
+[ERR3467358] WARNING: the 5-hop neighbourhood holds 4.9 unitigs per reference base (10715 unitigs over 2181 bases, 0.25% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR3467358] prune: depth 297x, floor 5.0x, 7586 of 10715 unitigs kept; realigned, min coverage on the route now 75.5x
+[ERR3467358] variants: depth 296.6x, floor 5.0x; 1 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[120/299] ERR3467358: DONE in 10.6s (nodes=10715, cov=1.00, pid=100.0%, bubbles=13)
+[ERR3424882] WARNING: the 5-hop neighbourhood holds 19.4 unitigs per reference base (42241 unitigs over 2181 bases, 0.34% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR3448706] WARNING: the 5-hop neighbourhood holds 13.1 unitigs per reference base (28522 unitigs over 2181 bases, 0.31% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR3424882] prune: depth 62x, floor 5.0x, 24110 of 42241 unitigs kept; realigned, min coverage on the route now 34.9x
+[ERR3424882] variants: depth 62.1x, floor 5.0x; 2 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[121/299] ERR3424882: DONE in 29.3s (nodes=42241, cov=1.00, pid=100.0%, bubbles=0)
+[ERR3448706] prune: depth 41x, floor 5.0x, 16503 of 28522 unitigs kept; realigned, min coverage on the route now 21.2x
+[ERR3448706] variants: depth 38.0x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[122/299] ERR3448706: DONE in 21.5s (nodes=28522, cov=1.00, pid=100.0%, bubbles=23)
+[ERR3486243] WARNING: the 5-hop neighbourhood holds 11.4 unitigs per reference base (24869 unitigs over 2181 bases, 0.38% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR3486243] prune: depth 70x, floor 5.0x, 15124 of 24869 unitigs kept; realigned, min coverage on the route now 11.0x
+[ERR3486243] variants: depth 33.5x, floor 5.0x; 2 on-path fork(s), 2 biallelic candidate(s) -> 1 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[123/299] ERR3486243: DONE in 16.2s (nodes=24869, cov=1.00, pid=100.0%, bubbles=18)
+[ERR3486315] WARNING: the 5-hop neighbourhood holds 4.2 unitigs per reference base (9095 unitigs over 2181 bases, 0.20% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR3486315] prune: depth 254x, floor 5.0x, 6374 of 9095 unitigs kept; realigned, min coverage on the route now 22.3x
+[ERR3486315] variants: depth 254.4x, floor 5.0x; 3 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[124/299] ERR3486315: DONE in 10.2s (nodes=9095, cov=1.00, pid=100.0%, bubbles=9)
+[ERR3523602] WARNING: the 5-hop neighbourhood holds 11.0 unitigs per reference base (24050 unitigs over 2181 bases, 0.28% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR3523602] prune: depth 49x, floor 5.0x, 14829 of 24050 unitigs kept; realigned, min coverage on the route now 18.9x
+[ERR3523602] variants: depth 49.1x, floor 5.0x; 2 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[125/299] ERR3523602: DONE in 20.7s (nodes=24050, cov=1.00, pid=100.0%, bubbles=44)
+[ERR3470513] WARNING: the 5-hop neighbourhood holds 6.3 unitigs per reference base (13713 unitigs over 2181 bases, 0.11% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR3470513] prune: depth 1400x, floor 14.0x, 5314 of 13713 unitigs kept; realigned, min coverage on the route now 60.0x
+[ERR3470513] variants: depth 1400.0x, floor 5.0x; 121 on-path fork(s), 7 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 6 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 1 frameshifting, 0 window not shiftable, 0 identical to primary)
+[126/299] ERR3470513: DONE in 30.4s (nodes=13713, cov=1.00, pid=100.0%, bubbles=0)
+[ERR3609275] WARNING: the 5-hop neighbourhood holds 8.6 unitigs per reference base (18730 unitigs over 2181 bases, 0.40% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR3523613] WARNING: the 5-hop neighbourhood holds 14.1 unitigs per reference base (30690 unitigs over 2181 bases, 0.25% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR3609275] prune: depth 115x, floor 5.0x, 11080 of 18730 unitigs kept; realigned, min coverage on the route now 10.6x
+[ERR3609275] variants: depth 35.3x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[127/299] ERR3609275: DONE in 12.4s (nodes=18730, cov=1.00, pid=100.0%, bubbles=1)
+[ERR3523613] prune: depth 250x, floor 5.0x, 19522 of 30690 unitigs kept; realigned, min coverage on the route now 11.9x
+[ERR3523613] variants: depth 21.0x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[128/299] ERR3523613: DONE in 28.4s (nodes=30690, cov=1.00, pid=100.0%, bubbles=132)
+[ERR3608415] WARNING: the 5-hop neighbourhood holds 19.7 unitigs per reference base (42885 unitigs over 2181 bases, 0.27% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[129/299] ERR3608415: no_path
+[130/299] ERR4025902: too_large, skipped by --max-size-mb (compressed size 4090026773 exceeds max_compressed_bytes 536870912)
+[ERR3641844] WARNING: the 5-hop neighbourhood holds 15.7 unitigs per reference base (34211 unitigs over 2181 bases, 0.40% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR3609137] WARNING: the 5-hop neighbourhood holds 20.2 unitigs per reference base (44088 unitigs over 2181 bases, 0.32% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[131/299] ERR3641844: no_path
+[ERR3609137] prune: depth 63x, floor 5.0x, 24888 of 44088 unitigs kept; realigned, min coverage on the route now 31.4x
+[ERR3609137] variants: depth 60.7x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[132/299] ERR3609137: DONE in 32.6s (nodes=44088, cov=1.00, pid=100.0%, bubbles=0)
+[ERR3641850] WARNING: the 5-hop neighbourhood holds 12.9 unitigs per reference base (28053 unitigs over 2181 bases, 0.26% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR377611] WARNING: the 5-hop neighbourhood holds 3.1 unitigs per reference base (6845 unitigs over 2181 bases, 0.80% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR377611] prune: depth 34x, floor 5.0x, 6038 of 6845 unitigs kept; realigned, min coverage on the route now 25.6x
+[ERR377611] variants: depth 33.9x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[133/299] ERR377611: DONE in 3.7s (nodes=6845, cov=1.00, pid=100.0%, bubbles=74)
+[ERR3641850] prune: depth 35x, floor 5.0x, 17584 of 28053 unitigs kept; realigned, min coverage on the route now 11.5x
+[ERR3641850] variants: depth 22.3x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 1 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[134/299] ERR3641850: DONE in 24.6s (nodes=28053, cov=1.00, pid=100.0%, bubbles=120)
+[ERR3654857] WARNING: the 5-hop neighbourhood holds 13.5 unitigs per reference base (29496 unitigs over 2181 bases, 0.27% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR369784] WARNING: the 5-hop neighbourhood holds 3.1 unitigs per reference base (6792 unitigs over 2181 bases, 0.27% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR369784] prune: depth 102x, floor 5.0x, 5359 of 6792 unitigs kept; realigned, min coverage on the route now 69.2x
+[ERR369784] variants: depth 101.9x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[135/299] ERR369784: DONE in 7.0s (nodes=6792, cov=1.00, pid=100.0%, bubbles=22)
+[136/299] ERR3861795: no_path
+[ERR3654857] prune: depth 12x, floor 5.0x, 18483 of 29496 unitigs kept; realigned, min coverage on the route now 7.3x
+[ERR3654857] variants: depth 12.5x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[137/299] ERR3654857: DONE in 25.1s (nodes=29496, cov=1.00, pid=100.0%, bubbles=152)
+[ERR3905313] WARNING: the 5-hop neighbourhood holds 3.5 unitigs per reference base (7603 unitigs over 2181 bases, 0.16% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[138/299] ERR3905313: no_path
+[ERR3843217] WARNING: the 5-hop neighbourhood holds 12.4 unitigs per reference base (27119 unitigs over 2181 bases, 0.31% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR3682365] WARNING: the 5-hop neighbourhood holds 33.1 unitigs per reference base (72298 unitigs over 2181 bases, 0.43% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR3843217] prune: depth 210x, floor 5.0x, 15922 of 27119 unitigs kept; realigned, min coverage on the route now 48.2x
+[ERR3843217] variants: depth 63.3x, floor 5.0x; 3 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[139/299] ERR3843217: DONE in 22.1s (nodes=27119, cov=1.00, pid=99.7%, bubbles=0)
+[140/299] ERR3682365: no_path
+[ERR3864277] WARNING: the 5-hop neighbourhood holds 16.1 unitigs per reference base (35053 unitigs over 2181 bases, 0.30% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR3864277] prune: depth 65x, floor 5.0x, 20302 of 35053 unitigs kept; realigned, min coverage on the route now 44.9x
+[ERR3864277] variants: depth 65.0x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[141/299] ERR3864277: DONE in 26.9s (nodes=35053, cov=1.00, pid=100.0%, bubbles=0)
+[ERR4020793] WARNING: the 5-hop neighbourhood holds 15.5 unitigs per reference base (33700 unitigs over 2181 bases, 0.35% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR4020793] prune: depth 89x, floor 5.0x, 18586 of 33700 unitigs kept; realigned, min coverage on the route now 55.3x
+[ERR4020793] variants: depth 85.0x, floor 5.0x; 5 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[142/299] ERR4020793: DONE in 23.8s (nodes=33700, cov=1.00, pid=99.7%, bubbles=0)
+[ERR4021023] WARNING: the 5-hop neighbourhood holds 12.2 unitigs per reference base (26707 unitigs over 2181 bases, 0.35% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR404156] prune: depth 119x, floor 5.0x, 3957 of 4977 unitigs kept; realigned, min coverage on the route now 41.1x
+[ERR404156] variants: depth 119.1x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[143/299] ERR404156: DONE in 4.5s (nodes=4977, cov=1.00, pid=100.0%, bubbles=0)
+[144/299] ERR4021023: no_path
+[145/299] ERR404174: no_path
+[ERR4021057] WARNING: the 5-hop neighbourhood holds 10.4 unitigs per reference base (22709 unitigs over 2181 bases, 0.28% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR405250] prune: depth 16x, floor 5.0x, 4959 of 5791 unitigs kept; realigned, min coverage on the route now 11.7x
+[ERR405250] variants: depth 15.8x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[146/299] ERR405250: DONE in 4.8s (nodes=5791, cov=1.00, pid=100.0%, bubbles=2)
+[ERR4021057] prune: depth 49x, floor 5.0x, 14146 of 22709 unitigs kept; realigned, min coverage on the route now 31.5x
+[ERR4021057] variants: depth 49.3x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[147/299] ERR4021057: DONE in 20.5s (nodes=22709, cov=1.00, pid=100.0%, bubbles=4)
+[ERR426011] prune: depth 52x, floor 5.0x, 3896 of 4615 unitigs kept; realigned, min coverage on the route now 29.2x
+[ERR426011] variants: depth 51.8x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[148/299] ERR426011: DONE in 4.1s (nodes=4615, cov=1.00, pid=100.0%, bubbles=3)
+[ERR4021388] WARNING: the 5-hop neighbourhood holds 18.2 unitigs per reference base (39630 unitigs over 2181 bases, 0.41% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[149/299] ERR4021388: no_path
+[ERR4593996] WARNING: the 5-hop neighbourhood holds 20.4 unitigs per reference base (44579 unitigs over 2181 bases, 0.50% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR4594596] WARNING: the 5-hop neighbourhood holds 12.8 unitigs per reference base (27880 unitigs over 2181 bases, 0.31% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR4594596] prune: depth 103x, floor 5.0x, 17005 of 27880 unitigs kept; realigned, min coverage on the route now 35.1x
+[ERR4594596] variants: depth 94.3x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[150/299] ERR4593996: no_path
+[151/299] ERR4594596: DONE in 21.4s (nodes=27880, cov=1.00, pid=100.0%, bubbles=5)
+[ERR4594308] WARNING: the 5-hop neighbourhood holds 35.1 unitigs per reference base (76459 unitigs over 2181 bases, 0.52% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[152/299] ERR4594308: no_path
+[ERR4609787] WARNING: the 5-hop neighbourhood holds 13.1 unitigs per reference base (28659 unitigs over 2181 bases, 0.39% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR4609787] prune: depth 76x, floor 5.0x, 16120 of 28659 unitigs kept; realigned, min coverage on the route now 47.6x
+[ERR4609787] variants: depth 70.0x, floor 5.0x; 6 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[153/299] ERR4609787: DONE in 18.6s (nodes=28659, cov=1.00, pid=99.7%, bubbles=0)
+[ERR4594403] WARNING: the 5-hop neighbourhood holds 43.8 unitigs per reference base (95463 unitigs over 2181 bases, 0.56% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR4594698] WARNING: the 5-hop neighbourhood holds 12.7 unitigs per reference base (27741 unitigs over 2181 bases, 0.28% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR4594698] prune: depth 218x, floor 5.0x, 16056 of 27741 unitigs kept; realigned, min coverage on the route now 74.1x
+[ERR4594698] variants: depth 198.3x, floor 5.0x; 2 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[154/299] ERR4594698: DONE in 23.1s (nodes=27741, cov=1.00, pid=100.0%, bubbles=0)
+[ERR466816] prune: depth 114x, floor 5.0x, 4229 of 5474 unitigs kept; realigned, min coverage on the route now 58.0x
+[ERR466816] variants: depth 113.7x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[155/299] ERR466816: DONE in 5.6s (nodes=5474, cov=1.00, pid=100.0%, bubbles=1)
+[156/299] ERR4594403: no_path
+[ERR4610067] WARNING: the 5-hop neighbourhood holds 13.2 unitigs per reference base (28685 unitigs over 2181 bases, 0.36% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR4610067] prune: depth 130x, floor 5.0x, 15866 of 28685 unitigs kept; realigned, min coverage on the route now 60.2x
+[ERR4610067] variants: depth 120.0x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 1 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[157/299] ERR4610067: DONE in 19.2s (nodes=28685, cov=1.00, pid=100.0%, bubbles=4)
+[ERR4696038] WARNING: the 5-hop neighbourhood holds 6.5 unitigs per reference base (14225 unitigs over 2181 bases, 0.29% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR4696038] prune: depth 130x, floor 5.0x, 9585 of 14225 unitigs kept; realigned, min coverage on the route now 50.9x
+[ERR4696038] variants: depth 130.3x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[158/299] ERR4696038: DONE in 12.4s (nodes=14225, cov=1.00, pid=100.0%, bubbles=10)
+[ERR4695999] WARNING: the 5-hop neighbourhood holds 16.6 unitigs per reference base (36304 unitigs over 2181 bases, 0.32% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR4677789] WARNING: the 5-hop neighbourhood holds 19.6 unitigs per reference base (42734 unitigs over 2181 bases, 0.33% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[159/299] ERR4695999: no_path
+[ERR4677789] prune: depth 46x, floor 5.0x, 24967 of 42734 unitigs kept; realigned, min coverage on the route now 11.1x
+[ERR4677789] variants: depth 43.0x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 1 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[160/299] ERR4677789: DONE in 30.6s (nodes=42734, cov=1.00, pid=100.0%, bubbles=50)
+[ERR5375630] WARNING: the 5-hop neighbourhood holds 10.4 unitigs per reference base (22726 unitigs over 2181 bases, 0.22% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR4677825] WARNING: the 5-hop neighbourhood holds 40.8 unitigs per reference base (88902 unitigs over 2181 bases, 0.64% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[161/299] ERR5375630: no_path
+[162/299] ERR4677825: no_path
+[163/299] ERR596120: no_path
+[ERR568392] WARNING: the 5-hop neighbourhood holds 3.0 unitigs per reference base (6639 unitigs over 2181 bases, 0.16% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR568392] prune: depth 159x, floor 5.0x, 4697 of 6639 unitigs kept; realigned, min coverage on the route now 7.0x
+[ERR568392] variants: depth 158.6x, floor 5.0x; 2 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[164/299] ERR568392: DONE in 9.5s (nodes=6639, cov=1.00, pid=100.0%, bubbles=0)
+[ERR580497] WARNING: the 5-hop neighbourhood holds 3.2 unitigs per reference base (6914 unitigs over 2181 bases, 0.18% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR580497] prune: depth 149x, floor 5.0x, 4949 of 6914 unitigs kept; realigned, min coverage on the route now 51.8x
+[ERR580497] variants: depth 148.8x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[165/299] ERR580497: DONE in 9.4s (nodes=6914, cov=1.00, pid=100.0%, bubbles=0)
+[ERR4822839] WARNING: the 5-hop neighbourhood holds 17.2 unitigs per reference base (37418 unitigs over 2181 bases, 0.27% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR5481269] WARNING: the 5-hop neighbourhood holds 7.5 unitigs per reference base (16421 unitigs over 2181 bases, 0.12% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[166/299] ERR4822839: no_path
+[167/299] ERR5481269: no_path
+[ERR6226896] WARNING: the 5-hop neighbourhood holds 4.5 unitigs per reference base (9740 unitigs over 2181 bases, 0.37% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR6226863] WARNING: the 5-hop neighbourhood holds 5.9 unitigs per reference base (12803 unitigs over 2181 bases, 0.23% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR6226896] prune: depth 95x, floor 5.0x, 6338 of 9740 unitigs kept; realigned, min coverage on the route now 33.3x
+[ERR6226896] variants: depth 94.6x, floor 5.0x; 1 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[168/299] ERR6226896: DONE in 7.1s (nodes=9740, cov=1.00, pid=100.0%, bubbles=0)
+[ERR6197137] WARNING: the 5-hop neighbourhood holds 14.1 unitigs per reference base (30782 unitigs over 2181 bases, 0.31% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR6226863] prune: depth 193x, floor 5.0x, 8045 of 12803 unitigs kept; realigned, min coverage on the route now 58.8x
+[ERR6226863] variants: depth 193.1x, floor 5.0x; 2 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[169/299] ERR6226863: DONE in 12.5s (nodes=12803, cov=1.00, pid=100.0%, bubbles=0)
+[170/299] ERR6197137: no_path
+[ERR6227373] WARNING: the 5-hop neighbourhood holds 5.1 unitigs per reference base (11113 unitigs over 2181 bases, 0.23% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR6227373] prune: depth 150x, floor 5.0x, 7501 of 11113 unitigs kept; realigned, min coverage on the route now 38.7x
+[ERR6227373] variants: depth 150.0x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[171/299] ERR6227373: DONE in 11.4s (nodes=11113, cov=1.00, pid=100.0%, bubbles=2)
+[ERR6227977] WARNING: the 5-hop neighbourhood holds 4.1 unitigs per reference base (8872 unitigs over 2181 bases, 0.26% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR6227977] prune: depth 71x, floor 5.0x, 5905 of 8872 unitigs kept; realigned, min coverage on the route now 32.8x
+[ERR6227977] variants: depth 71.3x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[172/299] ERR6227977: DONE in 8.4s (nodes=8872, cov=1.00, pid=100.0%, bubbles=0)
+[ERR636278] prune: depth 130x, floor 5.0x, 4967 of 6097 unitigs kept; realigned, min coverage on the route now 62.7x
+[ERR636278] variants: depth 130.0x, floor 5.0x; 2 on-path fork(s), 2 biallelic candidate(s) -> 2 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[173/299] ERR636278: DONE in 5.9s (nodes=6097, cov=1.00, pid=100.0%, bubbles=33)
+[ERR6227416] WARNING: the 5-hop neighbourhood holds 7.9 unitigs per reference base (17258 unitigs over 2181 bases, 0.25% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR6227416] prune: depth 290x, floor 5.0x, 11184 of 17258 unitigs kept; realigned, min coverage on the route now 62.7x
+[ERR6227416] variants: depth 290.0x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[174/299] ERR6227416: DONE in 16.3s (nodes=17258, cov=1.00, pid=100.0%, bubbles=5)
+[ERR636299] WARNING: the 5-hop neighbourhood holds 3.4 unitigs per reference base (7523 unitigs over 2181 bases, 0.27% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR636299] prune: depth 124x, floor 5.0x, 5880 of 7523 unitigs kept; realigned, min coverage on the route now 59.7x
+[ERR636299] variants: depth 124.2x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[175/299] ERR636299: DONE in 7.7s (nodes=7523, cov=1.00, pid=100.0%, bubbles=16)
+[176/299] ERR636543: no_path
+[ERR663845] prune: depth 94x, floor 5.0x, 4313 of 5409 unitigs kept; realigned, min coverage on the route now 41.4x
+[ERR663845] variants: depth 94.5x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[177/299] ERR663845: DONE in 3.5s (nodes=5409, cov=1.00, pid=100.0%, bubbles=1)
+[ERR663806] prune: depth 71x, floor 5.0x, 4627 of 5861 unitigs kept; realigned, min coverage on the route now 33.0x
+[ERR663806] variants: depth 70.7x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[178/299] ERR663806: DONE in 4.1s (nodes=5861, cov=1.00, pid=100.0%, bubbles=0)
+[ERR689374] prune: depth 115x, floor 5.0x, 4637 of 5285 unitigs kept; realigned, min coverage on the route now 5.5x
+[ERR689374] variants: depth 115.0x, floor 5.0x; 32 on-path fork(s), 20 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 11 no rejoin within 100, 0 length-changing refused, 8 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[179/299] ERR689374: DONE in 4.8s (nodes=5285, cov=0.86, pid=98.5%, bubbles=0)
+[ERR6279739] WARNING: the 5-hop neighbourhood holds 18.0 unitigs per reference base (39209 unitigs over 2181 bases, 0.44% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[ERR676469] prune: depth 130x, floor 5.0x, 3942 of 5214 unitigs kept; realigned, min coverage on the route now 67.2x
+[ERR676469] variants: depth 129.5x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[180/299] ERR676469: DONE in 6.1s (nodes=5214, cov=1.00, pid=100.0%, bubbles=0)
+[181/299] ERR6279739: no_path
+[ERR976720] prune: depth 57x, floor 5.0x, 2716 of 3504 unitigs kept; realigned, min coverage on the route now 22.8x
+[ERR976720] variants: depth 57.2x, floor 5.0x; 2 on-path fork(s), 2 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 2 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[182/299] ERR976720: DONE in 3.0s (nodes=3504, cov=1.00, pid=99.7%, bubbles=0)
+[SRR065668] prune: depth 29x, floor 5.0x, 3415 of 4637 unitigs kept; realigned, min coverage on the route now 11.1x
+[SRR065668] variants: depth 29.4x, floor 5.0x; 3 on-path fork(s), 3 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 3 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[183/299] SRR065668: DONE in 5.3s (nodes=4637, cov=1.00, pid=100.0%, bubbles=0)
+[ERR6227624] WARNING: the 5-hop neighbourhood holds 13.4 unitigs per reference base (29321 unitigs over 2181 bases, 0.16% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR066754] prune: depth 63x, floor 5.0x, 3627 of 5330 unitigs kept; realigned, min coverage on the route now 11.1x
+[SRR066754] variants: depth 63.2x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[184/299] SRR066754: DONE in 6.1s (nodes=5330, cov=1.00, pid=100.0%, bubbles=2)
+[ERR6227624] prune: depth 358x, floor 5.0x, 17415 of 29321 unitigs kept; realigned, min coverage on the route now 143.6x
+[ERR6227624] variants: depth 345.0x, floor 5.0x; 16 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[185/299] ERR6227624: DONE in 39.9s (nodes=29321, cov=1.00, pid=100.0%, bubbles=0)
+[186/299] SRR071574: no_path
+[187/299] SRR10611380: no_path
+[SRR11867667] prune: depth 5500x, floor 55.0x; the realigned route spans reference bases 36-2140 of 2181, 12 short of the unpruned 27-2143 and past the 3-base tolerance; keeping the unpruned result
+[SRR11867667] variants: depth 5500.0x, floor 5.0x; 1001 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[188/299] SRR11867667: DONE in 0.7s (nodes=4489, cov=0.97, pid=99.7%, bubbles=254)
+[SRR11867764] prune: depth 8000x, floor 80.0x; the realigned route spans reference bases 36-2140 of 2181, 11 short of the unpruned 27-2142 and past the 3-base tolerance; keeping the unpruned result
+[SRR11867764] variants: depth 8000.0x, floor 5.0x; 1166 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[189/299] SRR11867764: DONE in 0.7s (nodes=4384, cov=0.97, pid=99.8%, bubbles=364)
+[ERR8048104] WARNING: the 5-hop neighbourhood holds 16.6 unitigs per reference base (36200 unitigs over 2181 bases, 0.35% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[190/299] SRR12025844: no_path
+[SRR11141867] WARNING: the 5-hop neighbourhood holds 3.7 unitigs per reference base (8060 unitigs over 2181 bases, 0.21% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[191/299] SRR11141867: no_path
+[192/299] SRR12405334: no_path
+[ERR8048104] prune: depth 31x, floor 5.0x, 21735 of 36200 unitigs kept; realigned, min coverage on the route now 14.8x
+[ERR8048104] variants: depth 31.1x, floor 5.0x; 2 on-path fork(s), 2 biallelic candidate(s) -> 1 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[193/299] ERR8048104: DONE in 24.9s (nodes=36200, cov=1.00, pid=100.0%, bubbles=15)
+[194/299] SRR12405787: no_path
+[195/299] SRR12406130: no_path
+[196/299] SRR12406156: no_path
+[ERR8573271] WARNING: the 5-hop neighbourhood holds 24.7 unitigs per reference base (53914 unitigs over 2181 bases, 0.48% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[197/299] SRR12406166: no_path
+[SRR12406180] WARNING: the 5-hop neighbourhood holds 5.4 unitigs per reference base (11732 unitigs over 2181 bases, 2.46% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR12405672] WARNING: the 5-hop neighbourhood holds 17.4 unitigs per reference base (37910 unitigs over 2181 bases, 2.45% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[198/299] SRR12406180: no_path
+[SRR12413624] WARNING: the 5-hop neighbourhood holds 5.7 unitigs per reference base (12406 unitigs over 2181 bases, 1.77% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[199/299] ERR8573271: no_path
+[200/299] SRR12413624: no_path
+[SRR12566782] WARNING: the 5-hop neighbourhood holds 46.4 unitigs per reference base (101123 unitigs over 2181 bases, 95.47% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[201/299] SRR12405672: no_path
+[202/299] SRR12413657: no_path
+[SRR13045542] WARNING: the 5-hop neighbourhood holds 3.4 unitigs per reference base (7500 unitigs over 2181 bases, 17.52% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR13045542] prune: depth 2100x, floor 21.0x, 2262 of 7500 unitigs kept; realigned, min coverage on the route now 26.0x
+[SRR13045542] variants: depth 2100.0x, floor 5.0x; 36 on-path fork(s), 17 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 17 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[203/299] SRR13045542: DONE in 0.6s (nodes=7500, cov=0.87, pid=99.9%, bubbles=9)
+[204/299] SRR12566782: no_path
+[SRR14652374] prune: depth 39x, floor 5.0x, 128 of 303 unitigs kept; realigned, min coverage on the route now 5.4x
+[SRR14652374] variants: depth 38.6x, floor 5.0x; 7 on-path fork(s), 11 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 11 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[205/299] SRR14652374: DONE in 0.1s (nodes=303, cov=1.00, pid=100.0%, bubbles=0)
+[206/299] SRR16020954: too_large, skipped by --max-size-mb (compressed size 562220847 exceeds max_compressed_bytes 536870912)
+[207/299] SRR12405180: no_path
+[SRR13197323] WARNING: the 5-hop neighbourhood holds 4.0 unitigs per reference base (8765 unitigs over 2181 bases, 0.18% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR13197323] prune: depth 1400x, floor 14.0x, 4222 of 8765 unitigs kept; realigned, min coverage on the route now 109.2x
+[SRR13197323] variants: depth 1400.0x, floor 5.0x; 12 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[208/299] SRR12633327: no_path
+[209/299] SRR13197323: DONE in 11.7s (nodes=8765, cov=1.00, pid=100.0%, bubbles=0)
+[SRR14654527] prune: depth 27x, floor 5.0x cost the alignment; keeping the unpruned result
+[SRR14654527] variants: depth 27.0x, floor 5.0x; 30 on-path fork(s), 10 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 10 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[210/299] SRR14654527: DONE in 0.1s (nodes=222, cov=0.98, pid=99.9%, bubbles=0)
+[SRR14652506] prune: depth 912x, floor 9.1x, 1289 of 4668 unitigs kept; realigned, min coverage on the route now 100.0x
+[SRR14652506] variants: depth 912.5x, floor 5.0x; 86 on-path fork(s), 23 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 23 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[211/299] SRR14652506: DONE in 0.3s (nodes=4668, cov=1.00, pid=100.0%, bubbles=0)
+[SRR14060517] WARNING: the 5-hop neighbourhood holds 3.0 unitigs per reference base (6554 unitigs over 2181 bases, 0.13% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR14060517] prune: depth 424x, floor 5.0x, 4314 of 6554 unitigs kept; realigned, min coverage on the route now 6.8x
+[SRR14060517] variants: depth 424.2x, floor 5.0x; 14 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[212/299] SRR14060517: DONE in 11.3s (nodes=6554, cov=1.00, pid=99.9%, bubbles=0)
+[213/299] SRR19611538: too_large, skipped by --max-size-mb (compressed size 2621250071 exceeds max_compressed_bytes 536870912)
+[214/299] SRR14793986: no_path
+[SRR14060768] prune: depth 215x, floor 5.0x, 3429 of 5107 unitigs kept; realigned, min coverage on the route now 8.0x
+[SRR14060768] variants: depth 215.0x, floor 5.0x; 6 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[215/299] SRR14060768: DONE in 14.7s (nodes=5107, cov=1.00, pid=99.9%, bubbles=1)
+[SRR14060505] WARNING: the 5-hop neighbourhood holds 10.7 unitigs per reference base (23232 unitigs over 2181 bases, 0.25% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[warn] SRR14060505: reconstructed span is 1.029x the query (2244 nt from a 2181 nt query "PF3D7_1343700"); a coverage this far above 1.0 means the wrong alignment row was used
+[warn] SRR14060505: reconstructed span is 1.029x the query (2244 nt from a 2181 nt query "PF3D7_1343700"); a coverage this far above 1.0 means the wrong alignment row was used
+[SRR14060505] prune: depth 825x, floor 8.2x, 12994 of 23232 unitigs kept; realigned, min coverage on the route now 104.1x
+[warn] SRR14060505: reconstructed span is 1.029x the query (2244 nt from a 2181 nt query "PF3D7_1343700"); a coverage this far above 1.0 means the wrong alignment row was used
+[SRR14060505] variants: depth 825.0x, floor 5.0x; 22 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 1 frameshifting, 0 window not shiftable, 0 identical to primary)
+[216/299] SRR14060505: DONE in 20.1s (nodes=23232, cov=1.03, pid=97.2%, bubbles=92)
+[SRR15670487] WARNING: the 5-hop neighbourhood holds 9.6 unitigs per reference base (20886 unitigs over 2181 bases, 0.66% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[217/299] SRR15670487: no_path
+[SRR13250765] WARNING: the 5-hop neighbourhood holds 8.6 unitigs per reference base (18789 unitigs over 2181 bases, 0.16% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR13250765] prune: depth 500x, floor 5.0x, 11543 of 18789 unitigs kept; realigned, min coverage on the route now 85.2x
+[SRR13250765] variants: depth 500.0x, floor 5.0x; 18 on-path fork(s), 3 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 3 frameshifting, 0 window not shiftable, 0 identical to primary)
+[218/299] SRR13250765: DONE in 26.1s (nodes=18789, cov=1.00, pid=100.0%, bubbles=13)
+[SRR12781764] WARNING: the 5-hop neighbourhood holds 16.6 unitigs per reference base (36108 unitigs over 2181 bases, 0.21% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR1605796] prune: depth 40x, floor 5.0x, 4273 of 5784 unitigs kept; realigned, min coverage on the route now 23.6x
+[SRR1605796] variants: depth 40.8x, floor 5.0x; 2 on-path fork(s), 3 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 1 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[219/299] SRR1605796: DONE in 4.0s (nodes=5784, cov=1.00, pid=99.7%, bubbles=1)
+[SRR12781764] prune: depth 500x, floor 5.0x, 23269 of 36108 unitigs kept; realigned, min coverage on the route now 97.5x
+[SRR12781764] variants: depth 500.0x, floor 5.0x; 50 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[220/299] SRR12781764: DONE in 35.7s (nodes=36108, cov=1.00, pid=100.0%, bubbles=0)
+[SRR13250775] WARNING: the 5-hop neighbourhood holds 9.4 unitigs per reference base (20467 unitigs over 2181 bases, 0.16% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR15710680] prune: depth 113x, floor 5.0x, 4395 of 6152 unitigs kept; realigned, min coverage on the route now 71.5x
+[SRR15710680] variants: depth 112.9x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[221/299] SRR15710680: DONE in 9.4s (nodes=6152, cov=1.00, pid=100.0%, bubbles=0)
+[SRR13250775] prune: depth 370x, floor 5.0x, 12903 of 20467 unitigs kept; realigned, min coverage on the route now 34.2x
+[SRR13250775] variants: depth 370.0x, floor 5.0x; 15 on-path fork(s), 3 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 2 frameshifting, 0 window not shiftable, 0 identical to primary)
+[222/299] SRR13250775: DONE in 26.3s (nodes=20467, cov=1.00, pid=100.0%, bubbles=11)
+[SRR16904397] prune: depth 196x, floor 5.0x cost the alignment; keeping the unpruned result
+[SRR16904397] variants: depth 195.8x, floor 5.0x; 66 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[223/299] SRR16904397: DONE in 2.0s (nodes=845, cov=1.00, pid=100.0%, bubbles=0)
+[224/299] SRR20012429: no_path
+[SRR1645639] prune: depth 32x, floor 5.0x, 3655 of 4765 unitigs kept; realigned, min coverage on the route now 20.7x
+[SRR1645639] variants: depth 31.5x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[225/299] SRR1645639: DONE in 4.3s (nodes=4765, cov=1.00, pid=100.0%, bubbles=2)
+[SRR18289950] WARNING: the 5-hop neighbourhood holds 3.4 unitigs per reference base (7403 unitigs over 2181 bases, 0.28% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[226/299] SRR18289950: no_path
+[227/299] SRR19792696: no_path
+[SRR16019173] WARNING: the 5-hop neighbourhood holds 11.6 unitigs per reference base (25270 unitigs over 2181 bases, 0.26% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR21137618] WARNING: the 5-hop neighbourhood holds 3.5 unitigs per reference base (7623 unitigs over 2181 bases, 1.70% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[228/299] SRR21137618: no_path
+[SRR17873515] WARNING: the 5-hop neighbourhood holds 4.5 unitigs per reference base (9902 unitigs over 2181 bases, 0.15% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[229/299] SRR21137812: no_path
+[SRR21137930] WARNING: the 5-hop neighbourhood holds 59.9 unitigs per reference base (130655 unitigs over 2181 bases, 62.92% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[230/299] SRR17873515: no_path
+[SRR16019173] prune: depth 700x, floor 7.0x, 15241 of 25270 unitigs kept; realigned, min coverage on the route now 43.3x
+[SRR16019173] variants: depth 700.0x, floor 5.0x; 34 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[231/299] SRR16019173: DONE in 20.2s (nodes=25270, cov=1.00, pid=100.0%, bubbles=32)
+[SRR21138164] WARNING: the 5-hop neighbourhood holds 3.2 unitigs per reference base (6984 unitigs over 2181 bases, 1.38% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[232/299] SRR21138164: no_path
+[233/299] SRR21629546: no_path
+[234/299] SRR21629674: no_path
+[235/299] SRR21633039: no_path
+[236/299] SRR22671666: too_large, skipped by --max-size-mb (compressed size 728712913 exceeds max_compressed_bytes 536870912)
+[237/299] SRR21633117: no_path
+[238/299] SRR21633180: no_path
+[239/299] SRR22671848: too_large, skipped by --max-size-mb (compressed size 608304667 exceeds max_compressed_bytes 536870912)
+[240/299] SRR22671965: too_large, skipped by --max-size-mb (compressed size 570531383 exceeds max_compressed_bytes 536870912)
+[241/299] SRR21633426: no_path
+[242/299] SRR21633584: no_path
+[243/299] SRR21633930: no_path
+[244/299] SRR22030335: no_path
+[245/299] SRR21634105: no_path
+[246/299] SRR22030511: no_path
+[247/299] SRR22030867: no_path
+[248/299] SRR22089619: no_path
+[249/299] SRR21137930: no_path
+[250/299] SRR21634304: no_path
+[251/299] SRR23186139: no_path
+[252/299] SRR23186161: no_path
+[253/299] SRR23186309: no_path
+[SRR22823217] prune: depth 78x, floor 5.0x, 1494 of 2018 unitigs kept; realigned, min coverage on the route now 9.5x
+[SRR22823217] variants: depth 77.5x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[254/299] SRR22823217: DONE in 1.8s (nodes=2018, cov=1.00, pid=100.0%, bubbles=1)
+[SRR23569472] WARNING: the 5-hop neighbourhood holds 3.8 unitigs per reference base (8371 unitigs over 2181 bases, 35.13% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR22089771] WARNING: the 5-hop neighbourhood holds 9.2 unitigs per reference base (20142 unitigs over 2181 bases, 1.13% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR23569472] prune: depth 5500x, floor 55.0x; the realigned route spans reference bases 56-2140 of 2181, 4 short of the unpruned 54-2142 and past the 3-base tolerance; keeping the unpruned result
+[SRR23569472] variants: depth 5500.0x, floor 5.0x; 1832 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[255/299] SRR23569472: DONE in 0.9s (nodes=8371, cov=0.96, pid=100.0%, bubbles=831)
+[256/299] SRR23186532: no_path
+[SRR23569588] WARNING: the 5-hop neighbourhood holds 3.5 unitigs per reference base (7648 unitigs over 2181 bases, 32.57% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR23570157] WARNING: the 5-hop neighbourhood holds 4.3 unitigs per reference base (9451 unitigs over 2181 bases, 29.68% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[257/299] SRR22089771: no_path
+[258/299] SRR24208665: no_path
+[SRR23569588] prune: depth 6500x, floor 65.0x, 2081 of 7648 unitigs kept; realigned, min coverage on the route now 170.0x
+[SRR23569588] consensus: 1 site(s) where the route carried the minority allele, corrected
+[SRR23569588] variants: depth 6500.0x, floor 5.0x; 4 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[259/299] SRR23569588: DONE in 1.0s (nodes=7648, cov=0.96, pid=100.0%, bubbles=952)
+[260/299] SRR24208924: no_path
+[SRR23570157] prune: depth 10000x, floor 100.0x; the realigned route spans reference bases 54-2140 of 2181, 4 short of the unpruned 53-2143 and past the 3-base tolerance; keeping the unpruned result
+[SRR23570157] variants: depth 10000.0x, floor 5.0x; 1580 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[261/299] SRR23570157: DONE in 1.3s (nodes=9451, cov=0.96, pid=99.4%, bubbles=1871)
+[262/299] SRR24209209: no_path
+[SRR24182676] WARNING: the 5-hop neighbourhood holds 28.5 unitigs per reference base (62100 unitigs over 2181 bases, 9.00% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[263/299] SRR24828098: no_path
+[SRR24182676] prune: depth 3400x, floor 34.0x, 10164 of 62100 unitigs kept; realigned, min coverage on the route now 242.5x
+[SRR24182676] variants: depth 3400.0x, floor 5.0x; 639 on-path fork(s), 39 biallelic candidate(s) -> 6 recovered (3 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 32 frameshifting, 0 window not shiftable, 0 identical to primary)
+[264/299] SRR24182676: DONE in 6.8s (nodes=62100, cov=1.00, pid=100.0%, bubbles=1)
+[265/299] SRR5807906: too_large, skipped by --max-size-mb (compressed size 1223929996 exceeds max_compressed_bytes 536870912)
+[SRR23186665] WARNING: the 5-hop neighbourhood holds 5.4 unitigs per reference base (11739 unitigs over 2181 bases, 0.30% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[266/299] SRR23186665: no_path
+[SRR26218052] WARNING: the 5-hop neighbourhood holds 5.2 unitigs per reference base (11349 unitigs over 2181 bases, 0.37% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[267/299] SRR26218052: no_path
+[SRR26273105] prune: depth 20x, floor 5.0x, 4175 of 5722 unitigs kept; realigned, min coverage on the route now 13.9x
+[SRR26273105] variants: depth 20.5x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[268/299] SRR26273105: DONE in 5.3s (nodes=5722, cov=1.00, pid=100.0%, bubbles=1)
+[SRR404084] prune: depth 33x, floor 5.0x, 3228 of 4131 unitigs kept; realigned, min coverage on the route now 9.8x
+[SRR404084] variants: depth 32.9x, floor 5.0x; 1 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[269/299] SRR404084: DONE in 2.9s (nodes=4131, cov=1.00, pid=99.7%, bubbles=2)
+[SRR25814381] WARNING: the 5-hop neighbourhood holds 7.5 unitigs per reference base (16322 unitigs over 2181 bases, 0.27% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR25814381] prune: depth 171x, floor 5.0x, 10607 of 16322 unitigs kept; realigned, min coverage on the route now 87.9x
+[SRR25814381] variants: depth 171.7x, floor 5.0x; 7 on-path fork(s), 3 biallelic candidate(s) -> 2 recovered (1 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 1 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[270/299] SRR25814381: DONE in 13.3s (nodes=16322, cov=1.00, pid=99.7%, bubbles=2)
+[SRR1605883] WARNING: the 5-hop neighbourhood holds 8.2 unitigs per reference base (17985 unitigs over 2181 bases, 0.09% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR1605883] prune: depth 1500x, floor 15.0x cost the alignment; keeping the unpruned result
+[SRR1605883] variants: depth 1500.0x, floor 5.0x; 748 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[271/299] SRR1605883: DONE in 45.2s (nodes=17985, cov=1.00, pid=100.0%, bubbles=33)
+[272/299] SRR4302528: no_path
+[273/299] SRR5360232: no_path
+[274/299] SRR5146216: no_path
+[SRR4006979] WARNING: the 5-hop neighbourhood holds 9.0 unitigs per reference base (19699 unitigs over 2181 bases, 0.26% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[275/299] SRR4006979: no_path
+[276/299] SRR6055333: no_path
+[SRR4007093] WARNING: the 5-hop neighbourhood holds 14.8 unitigs per reference base (32212 unitigs over 2181 bases, 0.30% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR4007093] prune: depth 195x, floor 5.0x cost the alignment; keeping the unpruned result
+[SRR4007093] variants: depth 195.0x, floor 5.0x; 303 on-path fork(s), 5 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 5 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[277/299] SRR4007093: DONE in 22.8s (nodes=32212, cov=1.00, pid=99.7%, bubbles=0)
+[SRR22671746] WARNING: the 5-hop neighbourhood holds 50.2 unitigs per reference base (109555 unitigs over 2181 bases, 0.58% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR646206] WARNING: the 5-hop neighbourhood holds 3.3 unitigs per reference base (7299 unitigs over 2181 bases, 0.11% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR22671746] prune: depth 307x, floor 5.0x, 62045 of 109555 unitigs kept; realigned, min coverage on the route now 27.8x
+[SRR22671746] variants: depth 310.0x, floor 5.0x; 39 on-path fork(s), 7 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 4 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 2 frameshifting, 0 window not shiftable, 0 identical to primary)
+[278/299] SRR22671746: DONE in 49.3s (nodes=109555, cov=1.00, pid=99.9%, bubbles=48)
+[SRR646206] prune: depth 110x, floor 5.0x, 4851 of 7299 unitigs kept; realigned, min coverage on the route now 5.0x
+[SRR646206] variants: depth 110.0x, floor 5.0x; 2 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[279/299] SRR646206: DONE in 12.3s (nodes=7299, cov=1.00, pid=99.9%, bubbles=0)
+[SRR6463664] prune: depth 500x, floor 5.0x, 210 of 383 unitigs kept; realigned, min coverage on the route now 15.1x
+[SRR6463664] consensus: 1 site(s) where the route carried the minority allele, corrected
+[SRR6463664] variants: depth 500.0x, floor 5.0x; 1 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[280/299] SRR6463664: DONE in 0.3s (nodes=383, cov=0.97, pid=99.9%, bubbles=1)
+[SRR6841233] prune: depth 36x, floor 5.0x, 18 of 30 unitigs kept; realigned, min coverage on the route now 5.5x
+[SRR6841233] variants: depth 36.5x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[281/299] SRR6841233: DONE in 0.1s (nodes=30, cov=0.97, pid=99.9%, bubbles=0)
+[SRR7102228] prune: depth 450x, floor 5.0x, 1045 of 1762 unitigs kept; realigned, min coverage on the route now 18.0x
+[SRR7102228] variants: depth 450.0x, floor 5.0x; 65 on-path fork(s), 27 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 27 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[282/299] SRR7102228: DONE in 0.2s (nodes=1762, cov=0.99, pid=99.8%, bubbles=0)
+[283/299] SRR7102276: no_path
+[SRR7102641] prune: depth 30x, floor 5.0x cost the alignment; keeping the unpruned result
+[SRR7102641] variants: depth 30.2x, floor 5.0x; 35 on-path fork(s), 10 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 10 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[284/299] SRR7102641: DONE in 0.1s (nodes=231, cov=1.00, pid=100.0%, bubbles=0)
+[285/299] SRR713128: no_path
+[286/299] SRR7265698: no_path
+[287/299] SRR26266314: no_path
+[SRR7450662] WARNING: the 5-hop neighbourhood holds 5.6 unitigs per reference base (12311 unitigs over 2181 bases, 0.43% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR7456516] WARNING: the 5-hop neighbourhood holds 4.7 unitigs per reference base (10161 unitigs over 2181 bases, 0.41% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR7450662] prune: depth 80x, floor 5.0x, 9140 of 12311 unitigs kept; realigned, min coverage on the route now 21.5x
+[SRR7450662] variants: depth 80.0x, floor 5.0x; 6 on-path fork(s), 2 biallelic candidate(s) -> 2 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[288/299] SRR7450662: DONE in 7.2s (nodes=12311, cov=1.00, pid=100.0%, bubbles=12)
+[SRR7456516] prune: depth 59x, floor 5.0x, 6947 of 10161 unitigs kept; realigned, min coverage on the route now 39.0x
+[SRR7456516] variants: depth 58.9x, floor 5.0x; 2 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[289/299] SRR7456516: DONE in 6.1s (nodes=10161, cov=1.00, pid=100.0%, bubbles=0)
+[SRR7464829] WARNING: the 5-hop neighbourhood holds 4.8 unitigs per reference base (10407 unitigs over 2181 bases, 0.34% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR7590557] prune: depth 41x, floor 5.0x, 4560 of 6280 unitigs kept; realigned, min coverage on the route now 6.5x
+[SRR7590557] variants: depth 41.3x, floor 5.0x; 9 on-path fork(s), 8 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 5 no rejoin within 100, 0 length-changing refused, 3 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[290/299] SRR7590557: DONE in 6.3s (nodes=6280, cov=1.01, pid=99.5%, bubbles=0)
+[291/299] SRR9173630: no_path
+[SRR7464829] prune: depth 50x, floor 5.0x, 7205 of 10407 unitigs kept; realigned, min coverage on the route now 31.1x
+[SRR7464829] variants: depth 50.5x, floor 5.0x; 4 on-path fork(s), 1 biallelic candidate(s) -> 1 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[292/299] SRR7464829: DONE in 7.3s (nodes=10407, cov=1.00, pid=100.0%, bubbles=2)
+[SRR8860262] prune: depth 131x, floor 5.0x, 4475 of 5978 unitigs kept; realigned, min coverage on the route now 15.5x
+[SRR8860262] variants: depth 130.7x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[293/299] SRR8860262: DONE in 5.4s (nodes=5978, cov=1.00, pid=100.0%, bubbles=0)
+[SRR7590577] prune: depth 48x, floor 5.0x, 4047 of 6032 unitigs kept; realigned, min coverage on the route now 10.9x
+[SRR7590577] variants: depth 47.5x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[294/299] SRR7590577: DONE in 6.4s (nodes=6032, cov=1.00, pid=100.0%, bubbles=0)
+[SRR25640357] WARNING: the 5-hop neighbourhood holds 5.3 unitigs per reference base (11570 unitigs over 2181 bases, 0.06% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR25640357] prune: depth 800x, floor 8.0x, 6281 of 11570 unitigs kept; realigned, min coverage on the route now 19.8x
+[SRR25640357] variants: depth 800.0x, floor 5.0x; 41 on-path fork(s), 3 biallelic candidate(s) -> 2 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 1 frameshifting, 0 window not shiftable, 0 identical to primary)
+[295/299] SRR25640357: DONE in 43.1s (nodes=11570, cov=1.00, pid=100.0%, bubbles=4)
+[SRR7903648] WARNING: the 5-hop neighbourhood holds 3.3 unitigs per reference base (7207 unitigs over 2181 bases, 0.19% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR7590954] prune: depth 42x, floor 5.0x, 3319 of 5081 unitigs kept; realigned, min coverage on the route now 8.7x
+[SRR7590954] variants: depth 42.4x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[296/299] SRR7590954: DONE in 8.0s (nodes=5081, cov=1.00, pid=100.0%, bubbles=0)
+[SRR7903648] prune: depth 69x, floor 5.0x, 5169 of 7207 unitigs kept; realigned, min coverage on the route now 44.0x
+[SRR7903648] variants: depth 68.8x, floor 5.0x; 0 on-path fork(s), 0 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 0 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[297/299] SRR7903648: DONE in 8.2s (nodes=7207, cov=1.00, pid=100.0%, bubbles=1)
+[SRR26218167] WARNING: the 5-hop neighbourhood holds 16.9 unitigs per reference base (36897 unitigs over 2181 bases, 0.20% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR26218167] prune: depth 25x, floor 5.0x, 23697 of 36897 unitigs kept; realigned, min coverage on the route now 8.9x
+[SRR26218167] variants: depth 25.0x, floor 5.0x; 6 on-path fork(s), 5 biallelic candidate(s) -> 1 recovered (1 indel allele(s); 2 no rejoin within 100, 0 length-changing refused, 1 over the 30 nt indel cap, 1 frameshifting, 0 window not shiftable, 0 identical to primary)
+[298/299] SRR26218167: DONE in 35.0s (nodes=36897, cov=1.00, pid=99.7%, bubbles=0)
+[SRR7716411] WARNING: the 5-hop neighbourhood holds 8.4 unitigs per reference base (18295 unitigs over 2181 bases, 0.27% of the graph), above the 3.0 guard. The haplotype is likely under-determined; treat this accession's result as provisional.
+[SRR7716411] prune: depth 211x, floor 5.0x, 11810 of 18295 unitigs kept; realigned, min coverage on the route now 27.9x
+[SRR7716411] variants: depth 210.6x, floor 5.0x; 3 on-path fork(s), 1 biallelic candidate(s) -> 0 recovered (0 indel allele(s); 1 no rejoin within 100, 0 length-changing refused, 0 over the 30 nt indel cap, 0 frameshifting, 0 window not shiftable, 0 identical to primary)
+[299/299] SRR7716411: DONE in 10.3s (nodes=18295, cov=1.00, pid=100.0%, bubbles=0)
+[logan-walker] 167/299 accessions reconstructed
+[logan-walker] prune: 154 applied, 4 refused (realignment spans less of the reference), 9 refused (realignment gave no haplotype)
+[logan-walker] 178 of 299 results provisional: neighbourhood above 3.0 unitigs per reference base
+[reconstruct] reconstructed 167 haplotype(s) -> out/reconstructed.fasta
+[reconstruct] 2/2 codon MSA + tree: --input out/reconstructed.fasta --out-aln out/k13_ref_codon_msa.fasta --out-tree out/k13_ref_fasttree.nwk
+[*] Processing 167 reconstructed sequences against reference PF3D7_1343700 (2181 bp)...
+[*] 167/167 sequences passed coverage filter (>= 70% of the reference in A/C/G/T bases)
+[*] Running MAFFT --keeplength --addfragments...
+[✓] MAFFT aligned 168 records. Validating codon lengths...
+[*] Identity to the reference: median 1.000, lowest 0.979
+[*] Generating FastTree GTR phylogeny -> out/k13_ref_fasttree.nwk...
+
+[✓] Codon alignment complete: 168 taxa x 2181 nt (727 codons)
+    Alignment: out/k13_ref_codon_msa.fasta
+    Phylogeny: out/k13_ref_fasttree.nwk
+[reconstruct] done:
+  haplotypes : out/reconstructed.fasta
+  codon MSA  : out/k13_ref_codon_msa.fasta
+  phylogeny  : out/k13_ref_fasttree.nwk

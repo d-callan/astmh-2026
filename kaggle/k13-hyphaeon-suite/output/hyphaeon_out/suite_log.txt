@@ -1,0 +1,239 @@
+
+===== list-models =====
++ hyphaeon list-models
+Available model variants (datamonkey/hyphaeon):
+
+  general          General model (trained on diverse alignments) (default)
+  viral            viral variant
+
+Use with:  hyphaeon <subcommand> --model-variant <variant>
+Default variant: general
+[list-models] rc=0
+
+===== meme =====
++ hyphaeon meme -a /kaggle/input/datasets/daniellecallan/k13-kmi300-msa/k13_ref_codon_msa.fasta --use-tn93 -o /kaggle/working/hyphaeon_out/meme.json -c /kaggle/working/hyphaeon_out/meme.csv
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[*] Hardware device selected: CUDA
+[*] Downloading HyphAeon weights (general variant) from Hugging Face...
+[✓] Weights cached at: /root/.cache/huggingface/hub/models--datamonkey--hyphaeon/snapshots/0df779de77381ebbe5a3eebfc63b332c4398340b/model.safetensors
+[*] Loading HyphAeon model from: /root/.cache/huggingface/hub/models--datamonkey--hyphaeon/snapshots/0df779de77381ebbe5a3eebfc63b332c4398340b/model.safetensors
+[*] Parsing Alignment: /kaggle/input/datasets/daniellecallan/k13-kmi300-msa/k13_ref_codon_msa.fasta
+[*] Tree argument skipped; estimating pairwise distances directly via TN93...
+[*] Tree skipped: Estimating pairwise sequence distances directly via TN93...
+[*] Duplicate Taxon Pruning: Collapsed 137 identical duplicate sequence(s) (168 -> 31 unique haplotypes).
+[!] Warning: 3 internal stop codon(s) found in 'SRR23570157_primary'. This may indicate a frameshift or pseudogene. Verify that the alignment is in-frame (codon-aligned).
+[!] Notice: Found 24 in-frame stop codon(s) across alignment matrix.
+[*] Site Batch Sizing (hardware adaptive): 58 sites/chunk (1 chunk for 58/727 variable codons)
+[Predict] codon    58/   58 (100.0%) |  190.7 codon/s | Elapsed:   0.3s | ETA:   0.0s
+
+==============================================================================
+🎉 HyphAeon Selection Inference Complete in 1.035 seconds!
+   Taxa: 31 | Codon Sites: 727 | Total Invariable: 669
+   Nominal Significance: (p <= 0.05): 4 | (p <= 0.10): 5
+   FDR Significance:     (q <= 0.05): 0 | (q <= 0.10): 0
+==============================================================================
+
+Top Candidate Sites for Episodic Positive Selection:
+Codon    LRT Score    p-value      FDR q-val    Status         
+--------------------------------------------------------------
+119      9.798        3.2571e-03   6.6667e-01   p <= 0.05      
+116      8.553        6.1278e-03   6.6667e-01   p <= 0.05      
+120      7.450        1.0742e-02   6.6667e-01   p <= 0.05      
+95       7.104        1.2815e-02   6.6667e-01   p <= 0.05      
+169      3.312        9.0625e-02   6.6667e-01   p <= 0.10      
+100      3.044        1.0435e-01   6.6667e-01   not significant
+107      3.024        1.0543e-01   6.6667e-01   not significant
+101      2.639        1.2929e-01   6.6667e-01   not significant
+134      2.627        1.3012e-01   6.6667e-01   not significant
+716      2.570        1.3411e-01   6.6667e-01   not significant
+
+[✓] JSON results written to: /kaggle/working/hyphaeon_out/meme.json
+[✓] CSV results written to: /kaggle/working/hyphaeon_out/meme.csv
+[meme] rc=0
+
+===== dms =====
++ hyphaeon dms -a /kaggle/input/datasets/daniellecallan/k13-kmi300-msa/k13_ref_codon_msa.fasta --use-tn93 --focal-taxon Reference -o /kaggle/working/hyphaeon_out/dms.json -c /kaggle/working/hyphaeon_out/dms.csv
+[*] Executing in silico Selection Deep Mutational Scanning (Digital DMS / ESSM)...
+[*] Alignment: /kaggle/input/datasets/daniellecallan/k13-kmi300-msa/k13_ref_codon_msa.fasta
+[*] Tree:      (skipped; estimating pairwise distances via TN93)
+[*] Tree skipped: Estimating pairwise sequence distances directly via TN93...
+[*] Duplicate Taxon Pruning: Collapsed 137 identical duplicate sequence(s) (168 -> 31 unique haplotypes).
+[!] Warning: 3 internal stop codon(s) found in 'SRR23570157_primary'. This may indicate a frameshift or pseudogene. Verify that the alignment is in-frame (codon-aligned).
+[!] Notice: Found 24 in-frame stop codon(s) across alignment matrix.
+[*] Starting Selection Deep Mutational Scanning (ESSM / Digital DMS)...
+    Target Taxon: Reference (index 0) | Scope: 727 codons | Total Mutants: 13813 | Batch Size: 64 (3 sites/pass)
+[ESSM DMS] Codon  159/727 ( 21.9%) | Mutants:  3021/13813 | 6007.0 mut/s | Mean Φ: 1.299 | Elapsed:  0.5s | ETA:  1.8s
+[ESSM DMS] Codon  318/727 ( 43.7%) | Mutants:  6042/13813 | 6015.9 mut/s | Mean Φ: 1.988 | Elapsed:  1.0s | ETA:  1.3s
+[ESSM DMS] Codon  477/727 ( 65.6%) | Mutants:  9063/13813 | 5990.3 mut/s | Mean Φ: 2.225 | Elapsed:  1.5s | ETA:  0.8s
+[ESSM DMS] Codon  636/727 ( 87.5%) | Mutants: 12084/13813 | 5997.4 mut/s | Mean Φ: 2.276 | Elapsed:  2.0s | ETA:  0.3s
+[ESSM DMS] Codon  727/727 (100.0%) | Mutants: 13813/13813 | 5964.8 mut/s | Mean Φ: 2.272 | Elapsed:  2.3s | ETA:  0.0s
+[✓] Selection DMS Complete: 727 codons (13813 point mutations) in 2.32s (5964.2 mut/s). Mean Plasticity Φ = 2.272, Max Φ = 5.014
+
+==================================================================================
+🎉 Digital DMS / ESSM Analysis Complete in 3.152 seconds!
+   Taxa: 31 | Codons: 727 | Total Evaluated Single Mutants: 13813
+==================================================================================
+
+Top Permissive / Evolvable Sites (High Plasticity Φ):
+Site   WT    Plasticity Φ    Baseline LRT    p-value      Max ΔLRT  
+-----------------------------------------------------------------
+469    C     5.0142          0.10            0.374        9.46      
+688    E     4.9161          0.15            0.350        13.68     
+691    E     4.9161          0.15            0.350        13.68     
+433    E     4.9161          0.15            0.350        13.68     
+431    E     4.9161          0.15            0.350        13.68     
+424    E     4.9161          0.15            0.350        13.68     
+426    E     4.9161          0.15            0.350        13.68     
+620    E     4.9161          0.15            0.350        13.68     
+
+Top Rigid / Catalytic Backbone Sites (Low Plasticity Φ):
+Site   WT    Plasticity Φ    Baseline LRT    p-value      Max ΔLRT  
+-----------------------------------------------------------------
+106    M     0.2460          0.65            0.210        0.77      
+111    I     0.3222          0.91            0.170        1.12      
+112    G     0.4621          2.03            0.077        2.66      
+118    K     0.5288          1.46            0.113        2.61      
+727    A     0.5411          0.07            0.399        2.55      
+110    N     0.6280          0.30            0.291        2.19      
+38     S     0.6346          2.01            0.078        1.91      
+28     S     0.6346          2.01            0.078        1.91      
+
+[✓] JSON results written to: /kaggle/working/hyphaeon_out/dms.json
+[✓] CSV results written to: /kaggle/working/hyphaeon_out/dms.csv
+[dms] rc=0
+
+===== epistasis =====
++ hyphaeon epistasis -a /kaggle/input/datasets/daniellecallan/k13-kmi300-msa/k13_ref_codon_msa.fasta --use-tn93 --focal-taxon Reference -o /kaggle/working/hyphaeon_out/epistasis.json
+[*] Executing Phylogenetic Branch Attribution, Co-Selection Networks & Selection DMS (ESSM)...
+[*] Alignment: /kaggle/input/datasets/daniellecallan/k13-kmi300-msa/k13_ref_codon_msa.fasta
+[*] Tree:      (skipped; estimating pairwise distances via TN93)
+[*] Tree skipped: Estimating pairwise sequence distances directly via TN93...
+[*] Duplicate Taxon Pruning: Collapsed 137 identical duplicate sequence(s) (168 -> 31 unique haplotypes).
+[!] Warning: 3 internal stop codon(s) found in 'SRR23570157_primary'. This may indicate a frameshift or pseudogene. Verify that the alignment is in-frame (codon-aligned).
+[!] Notice: Found 24 in-frame stop codon(s) across alignment matrix.
+[*] Computing Transformer Attributions across 727 codons...
+[Attribution] codon    64/  727 (  8.8%) |  533.9 codon/s | Elapsed:   0.1s | ETA:   1.2s
+[Attribution] codon   727/  727 (100.0%) | 2936.5 codon/s | Elapsed:   0.2s | ETA:   0.0s
+[*] Starting Selection Deep Mutational Scanning (ESSM / Digital DMS)...
+    Target Taxon: Reference (index 0) | Scope: 12 epistatic codons | Total Mutants: 228 | Batch Size: 64 (3 sites/pass)
+[ESSM DMS] Codon   12/12 (100.0%) | Mutants:   228/228 | 5088.2 mut/s | Mean Φ: 0.831 | Elapsed:  0.0s | ETA:  0.0s
+[✓] Selection DMS Complete: 12 codons (228 point mutations) in 0.04s (5079.7 mut/s). Mean Plasticity Φ = 0.831, Max Φ = 1.672
+
+==================================================================================
+🎉 Epistatic Analysis Complete in 1.314 seconds!
+   Taxa: 31 | Codons: 727 | Evaluated Branches: 0
+   Co-Selection Edges (FDR q <= 0.05): 31 | Discovered Sectors: 2
+==================================================================================
+
+Top Phylogenetic Branch Co-Selection Pairs (Ranked by CESI):
+Rank  Residue Pair     LRT 1/2      Co-Sel    Shared   CESI       FDR q-val   
+----------------------------------------------------------------------------
+#1    L119 <-> L120    9.8 / 7.5    0.9872    3        8.435      1.48e-23    
+#2    L116 <-> L119    8.6 / 9.8    0.8867    3        8.117      2.06e-10    
+#3    L116 <-> L120    8.6 / 7.5    0.9452    3        7.545      1.24e-14    
+#4    L119 <-> D125    9.8 / 2.1    0.8147    3        3.703      1.18e-07    
+#5    S107 <-> L116    3.0 / 8.6    0.7105    3        3.614      2.86e-05    
+#6    L116 <-> D125    8.6 / 2.1    0.8116    3        3.447      1.46e-07    
+#7    L116 <-> E130    8.6 / 2.1    0.8026    3        3.402      2.62e-07    
+#8    L120 <-> D125    7.5 / 2.1    0.8335    3        3.304      2.93e-08    
+#9    S107 <-> L119    3.0 / 9.8    0.5776    3        3.144      1.95e-03    
+#10   K108 <-> L116    1.5 / 8.6    0.8810    3        3.131      3.96e-10    
+#11   L119 <-> E130    9.8 / 2.1    0.6801    3        3.085      8.99e-05    
+#12   S107 <-> L120    3.0 / 7.5    0.6247    3        2.965      5.32e-04    
+
+Discovered Epistatic Sectors (Two-Stage Seed-and-Extend):
+
+Sector #2 (Size K = 4 residues): Sites [107, 112, 125, 130]
+  • Spectral Coherence C(S): 0.9174 (p_perm = 0.0034 *, null mean: 0.529) | Mean LRT: 2.32
+  • Consensus Signature: [ S107 - G112 - D125 - E130 ]
+  • Focal Species (Reference) Signature: [ S107 - G112 - D125 - E130 ]
+    - Focal State: Invariant with consensus
+
+Sector #1 (Size K = 8 residues): Sites [108, 109, 111, 116, 118, 119, 120, 127]
+  • Spectral Coherence C(S): 0.8280 (p_perm = 0.0004 **, null mean: 0.444) | Mean LRT: 3.97
+  • Consensus Signature: [ K108 - D109 - I111 - L116 - K118 - L119 - L120 - I127 ]
+  • Focal Species (Reference) Signature: [ K108 - D109 - I111 - L116 - K118 - L119 - L120 - I127 ]
+    - Focal State: Invariant with consensus
+
+Selection Deep Mutational Scanning (ESSM Intrinsic Plasticity):
+  Top Permissive / Evolvable Sites (High Plasticity):
+    • Site 109  (D): Plasticity = 1.672 | Baseline LRT = 1.28 (p = 1.288e-01)
+    • Site 125  (D): Plasticity = 1.299 | Baseline LRT = 2.11 (p = 7.323e-02)
+    • Site 116  (L): Plasticity = 1.049 | Baseline LRT = 8.55 (p = 1.725e-03)
+    • Site 130  (E): Plasticity = 0.841 | Baseline LRT = 2.10 (p = 7.362e-02)
+    • Site 119  (L): Plasticity = 0.832 | Baseline LRT = 9.80 (p = 8.735e-04)
+  Top Rigid / Catalytic Backbone Sites (Low Plasticity):
+    • Site 111  (I): Plasticity = 0.322 | Baseline LRT = 0.91 (p = 1.703e-01)
+    • Site 112  (G): Plasticity = 0.462 | Baseline LRT = 2.03 (p = 7.725e-02)
+    • Site 118  (K): Plasticity = 0.529 | Baseline LRT = 1.46 (p = 1.132e-01)
+    • Site 107  (S): Plasticity = 0.675 | Baseline LRT = 3.02 (p = 4.101e-02)
+    • Site 120  (L): Plasticity = 0.719 | Baseline LRT = 7.45 (p = 3.171e-03)
+
+[✓] JSON results written to: /kaggle/working/hyphaeon_out/epistasis.json
+[epistasis] rc=0
+
+===== splits =====
++ hyphaeon splits -a /kaggle/input/datasets/daniellecallan/k13-kmi300-msa/k13_ref_codon_msa.fasta --use-tn93 -o /kaggle/working/hyphaeon_out/splits.json -c /kaggle/working/hyphaeon_out/splits.csv
+[*] Tree skipped: Estimating pairwise sequence distances directly via TN93...
+[!] Warning: 3 internal stop codon(s) found in 'SRR23570157_primary'. This may indicate a frameshift or pseudogene. Verify that the alignment is in-frame (codon-aligned).
+[!] Notice: Found 161 in-frame stop codon(s) across alignment matrix.
+================================================================================
+🌿 HyphAeon Spectral Graph Bisection Complete!
+   Taxa: 168 | Alignment Codon Length: 727
+   Primary Root Split Eigengap: 0.6709 | Fiedler Value: 0.0000
+================================================================================
+
+Primary Macro-Clade Split:
+  • Left Clade (3 taxa): ERR2542071_primary, ERR2591310_primary, ERR689374_primary
+  • Right Clade (165 taxa): ERR11840877_primary, ERR4696038_primary, ERR2365759_primary, DRR088036_primary, SRR6463664_primary, ERR2889743_primary, ERR2890671_primary, ERR1172558_primary...
+
+Derived Hierarchical Newick Tree:
+((ERR2542071_primary,(ERR2591310_primary,ERR689374_primary)):1.0000,(((((((ERR11840877_primary,ERR4696038_primary),ERR2365759_primary):0.0634,(DRR088036_primary,SRR6463664_primary)):0.2636,((ERR2889743_primary,ERR2890671_primary),(ERR1172558_primary,ERR2899157_primary)):2.0000):0.8974,((((ERR2894888_primary,ERR3424882_primary),ERR3424854_primary):0.0023,(ERR1106612_primary,SRR14060768_primary)):0.0746,ERR4609787_primary):0.1335):0.6819,((SRR23570157_primary,(ERR1939327_primary,SRR1605796_primary)):1.0000,((ERR2899150_primary,SRR13045542_primary),(((ERR8048104_primary,(ERR976720_primary,SRR16904397_primary)):0.0009,((ERR4020793_primary,(Reference,(ERR018915_primary,ERR11840507_primary,ERR11871877_primary,ERR6227373_primary)):0.0000):0.0000,(ERR045621_primary,(ERR568392_primary,(ERR6227416_primary,SRR14060505_primary,SRR22671746_primary)):0.0000):0.0000):0.0000):0.0000,(ERR180059_primary,(ERR2434369_primary,ERR426011_primary)):0.0014):0.0351):0.1423):0.0953):0.6598,(((ERR063537_primary,((ERR039879_primary,ERR2366278_primary),ERR1939342_primary):0.0000):0.3981,(ERR3654857_primary,(SRR23569472_primary,(((((ERR126405_primary,SRR14652374_primary),ERR175535_primary):0.0000,((ERR114394_primary,ERR636278_primary),(ERR11767309_primary,ERR123896_primary)):0.0000):0.0000,(((ERR1818222_primary,ERR216591_primary,ERR2193381_primary,ERR2193396_primary,ERR2436017_primary),(ERR2366521_primary,ERR2433795_primary)):0.0000,((ERR037226_primary,ERR10764279_primary,ERR2234573_primary,ERR2435843_primary,ERR2591386_primary,ERR2894056_primary,ERR4594698_primary,SRR13197323_primary),(ERR1106518_primary,ERR123893_primary,ERR2893164_primary,ERR636299_primary,SRR065668_primary,SRR12781764_primary)):0.0000):0.0000):0.0000,((((ERR2899171_primary,ERR2899190_primary,ERR3864277_primary,ERR4610067_primary,ERR6226863_primary,ERR6226896_primary,SRR14060517_primary,SRR16019173_primary),(ERR2889627_primary,ERR2891688_primary,ERR4677789_primary)):0.0000,((ERR2525627_primary,ERR2525691_primary,SRR13250765_primary,SRR13250775_primary,SRR14652506_primary),(ERR2542369_primary,ERR2542471_primary,ERR2892989_primary,ERR3843217_primary,ERR466816_primary,SRR15710680_primary,SRR1605883_primary,SRR22823217_primary,SRR24182676_primary,SRR25640357_primary,SRR25814381_primary,SRR26218167_primary,SRR26273105_primary,SRR4007093_primary,SRR646206_primary,SRR7102641_primary,SRR7450662_primary,SRR7456516_primary)):0.0000):0.0000,(((ERR2363063_primary,ERR2892831_primary,ERR676469_primary,SRR7590557_primary),(ERR2028831_primary,ERR3448706_primary,ERR4021057_primary,ERR404156_primary,ERR4594596_primary,SRR7590954_primary)):0.0000,((ERR3486243_primary,ERR3486315_primary,ERR3641850_primary,ERR369784_primary,ERR377611_primary,SRR7903648_primary),(ERR2892935_primary,ERR3467358_primary,ERR3523613_primary,ERR3609275_primary,SRR404084_primary,SRR7590577_primary,SRR7716411_primary,SRR8860262_primary)):0.0000):0.0000):0.0000):0.0000):0.0007):0.0032):0.1003,(((SRR14654527_primary,((ERR1818179_primary,SRR6841233_primary),SRR23569588_primary):0.0710):0.2751,(SRR11867667_primary,(SRR11867764_primary,SRR7102228_primary)):0.9636):0.1457,((((((ERR2366577_primary,ERR2892775_primary),ERR2890842_primary):0.0000,(ERR2890850_primary,ERR580497_primary)):0.0000,((ERR1952459_primary,ERR663806_primary),ERR6227624_primary):0.0000):0.0000,(((ERR2364453_primary,ERR6227977_primary),ERR3470513_primary):0.0000,((ERR2366166_primary,SRR1645639_primary),ERR3523602_primary):0.0000):0.0000):0.0000,((((ERR2363322_primary,ERR3609137_primary),ERR2366428_primary):0.0000,((ERR1008804_primary,ERR2435363_primary),(ERR2886485_primary,ERR663845_primary)):0.0000):0.0000,(((ERR2020760_primary,ERR2299442_primary),(ERR2364090_primary,SRR066754_primary)):0.0000,((ERR10764092_primary,ERR1658011_primary),(ERR405250_primary,SRR7464829_primary)):0.0000):0.0000):0.0000):0.0000):0.1997):0.1862):0.6709):0.6709;
+
+[✓] Newick tree saved to: /kaggle/working/hyphaeon_out/splits.json
+[✓] Split assignments saved to: /kaggle/working/hyphaeon_out/splits.csv
+[splits] rc=0
+
+===== filter =====
++ hyphaeon filter -a /kaggle/input/datasets/daniellecallan/k13-kmi300-msa/k13_ref_codon_msa.fasta --use-tn93 -o /kaggle/working/hyphaeon_out/filter.json -c /kaggle/working/hyphaeon_out/filter_audit.csv
+[*] Executing Automated Alignment Error Detection & Surgical Masking...
+[*] Alignment: /kaggle/input/datasets/daniellecallan/k13-kmi300-msa/k13_ref_codon_msa.fasta
+[*] Tree:      (skipped; estimating pairwise distances via TN93)
+[*] Tree skipped: Estimating pairwise sequence distances directly via TN93...
+[*] Duplicate Taxon Pruning: Collapsed 137 identical duplicate sequence(s) (168 -> 31 unique haplotypes).
+[!] Warning: 3 internal stop codon(s) found in 'SRR23570157_primary'. This may indicate a frameshift or pseudogene. Verify that the alignment is in-frame (codon-aligned).
+[!] Notice: Found 24 in-frame stop codon(s) across alignment matrix.
+[*] Step 1/4: Running Baseline Neural Inference across 727 codons (58 variable, batch_size=512)...
+[Filter: Baseline] Codon    58/   58 (100.0%) |  591.5 cod/s | Elapsed:   0.1s | ETA:   0.0s
+[*] Step 2/4: Spatial Hypergeometric Cluster Scanning (d <= 35, k >= 3)...
+    • Candidate Spatial Clusters Identified: 1
+[*] Step 3/4: Evaluating Outlier Contamination Index (OCI) across 1 patches...
+[Filter: OCI Audit] Patch   1/  1 | Top Outlier: ERR2889743_prima (Run= 7, OCI=0.26) | Artifacts:   1
+[*] Step 4/4: Re-Evaluating Cleaned Alignment after Surgically Masking 26 codons...
+[*] Tree skipped: Estimating pairwise sequence distances directly via TN93...
+[*] Duplicate Taxon Pruning: Collapsed 137 identical duplicate sequence(s) (168 -> 31 unique haplotypes).
+[!] Warning: 3 internal stop codon(s) found in 'SRR23570157_primary'. This may indicate a frameshift or pseudogene. Verify that the alignment is in-frame (codon-aligned).
+[!] Notice: Found 24 in-frame stop codon(s) across alignment matrix.
+[Filter: Re-eval]  Codon    56/   56 (100.0%) | 4651.6 cod/s | Elapsed:   0.0s | ETA:   0.0s
+
+================================================================================
+🎉 Alignment Filtering Complete in 1.051 seconds!
+   Taxa: 31 | Codons: 727
+   Candidate Patches Detected: 1 | Offender Artifacts Masked: 1
+   Total Codons Surgically Masked (NNN): 26
+================================================================================
+
+Metric Comparison (Raw -> Cleaned):
+  • Cauchy Omnibus p-value (CCT): 5.6172e-01 -> 5.8395e-01
+  • Significant Sites (p <= 0.05): 4 -> 4 (Suppressed: 0)
+  • Significant Sites (FDR q <= 0.10): 0 -> 0
+  • Mean Likelihood Ratio (LRT): 0.123 -> 0.122
+
+Surgically Masked Frameshift / Sequencing Artifacts:
+Patch (1-idx)   Span   k (p<=.05)   p_hypergeom    Outlier Taxon        Run   OCI   
+--------------------------------------------------------------------------------
+95-120          26     4            6.26e-07       ERR2889743_primary   7     0.26  
+
+[✓] Cleaned alignment saved to: /kaggle/working/hyphaeon_out/filter.json
+[✓] Artifact audit log written to: /kaggle/working/hyphaeon_out/filter_audit.csv
+[filter] rc=0

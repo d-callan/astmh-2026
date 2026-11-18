@@ -1,0 +1,52 @@
+[{"stream_name":"stdout","time":2.597586132,"data":"[*] alignment: /kaggle/input/datasets/daniellecallan/k13-kmi300-msa/k13_ref_codon_msa.fasta\n"}
+,{"stream_name":"stderr","time":4.943590425,"data":"WARNING: hyphaeon-core 0.4.0 does not provide the extra 'tn93'\n"}
+,{"stream_name":"stdout","time":22.756989649,"data":"[*] torch 2.11.0+cu130, cuda=True, device=Tesla T4\n"}
+,{"stream_name":"stdout","time":22.757208082,"data":"\n"}
+,{"stream_name":"stdout","time":22.757220172,"data":"===== list-models =====\n"}
+,{"stream_name":"stdout","time":22.757225126,"data":"+ hyphaeon list-models\n"}
+,{"stream_name":"stdout","time":35.834572779,"data":"[list-models] rc=0\n"}
+,{"stream_name":"stdout","time":35.83462311,"data":"\n"}
+,{"stream_name":"stdout","time":35.834630624,"data":"===== meme =====\n"}
+,{"stream_name":"stdout","time":35.834635445,"data":"+ hyphaeon meme -a /kaggle/input/datasets/daniellecallan/k13-kmi300-msa/k13_ref_codon_msa.fasta --use-tn93 -o /kaggle/working/hyphaeon_out/meme.json -c /kaggle/working/hyphaeon_out/meme.csv\n"}
+,{"stream_name":"stdout","time":44.400833154,"data":"[meme] rc=0\n"}
+,{"stream_name":"stdout","time":44.401193323,"data":"\n"}
+,{"stream_name":"stdout","time":44.401230891,"data":"===== dms =====\n"}
+,{"stream_name":"stdout","time":44.401235828,"data":"+ hyphaeon dms -a /kaggle/input/datasets/daniellecallan/k13-kmi300-msa/k13_ref_codon_msa.fasta --use-tn93 --focal-taxon Reference -o /kaggle/working/hyphaeon_out/dms.json -c /kaggle/working/hyphaeon_out/dms.csv\n"}
+,{"stream_name":"stdout","time":51.26111394,"data":"[dms] rc=0\n"}
+,{"stream_name":"stdout","time":51.261151721,"data":"\n"}
+,{"stream_name":"stdout","time":51.261157865,"data":"===== epistasis =====\n"}
+,{"stream_name":"stdout","time":51.261162666,"data":"+ hyphaeon epistasis -a /kaggle/input/datasets/daniellecallan/k13-kmi300-msa/k13_ref_codon_msa.fasta --use-tn93 --focal-taxon Reference -o /kaggle/working/hyphaeon_out/epistasis.json\n"}
+,{"stream_name":"stdout","time":56.213117337,"data":"[epistasis] rc=0\n"}
+,{"stream_name":"stdout","time":56.213158726,"data":"\n"}
+,{"stream_name":"stdout","time":56.213168713,"data":"===== splits =====\n"}
+,{"stream_name":"stdout","time":56.213172894,"data":"+ hyphaeon splits -a /kaggle/input/datasets/daniellecallan/k13-kmi300-msa/k13_ref_codon_msa.fasta --use-tn93 -o /kaggle/working/hyphaeon_out/splits.json -c /kaggle/working/hyphaeon_out/splits.csv\n"}
+,{"stream_name":"stdout","time":70.273205657,"data":"[splits] rc=0\n"}
+,{"stream_name":"stdout","time":70.273269795,"data":"\n"}
+,{"stream_name":"stdout","time":70.273276894,"data":"===== filter =====\n"}
+,{"stream_name":"stdout","time":70.27328149,"data":"+ hyphaeon filter -a /kaggle/input/datasets/daniellecallan/k13-kmi300-msa/k13_ref_codon_msa.fasta --use-tn93 -o /kaggle/working/hyphaeon_out/filter.json -c /kaggle/working/hyphaeon_out/filter_audit.csv\n"}
+,{"stream_name":"stdout","time":75.231426773,"data":"[filter] rc=0\n"}
+,{"stream_name":"stdout","time":75.231469801,"data":"\n"}
+,{"stream_name":"stdout","time":75.231476407,"data":"===== suite summary =====\n"}
+,{"stream_name":"stdout","time":75.231481644,"data":"  list-models: rc=0\n"}
+,{"stream_name":"stdout","time":75.231486625,"data":"  meme: rc=0\n"}
+,{"stream_name":"stdout","time":75.231490775,"data":"  dms: rc=0\n"}
+,{"stream_name":"stdout","time":75.23149485,"data":"  epistasis: rc=0\n"}
+,{"stream_name":"stdout","time":75.231499187,"data":"  splits: rc=0\n"}
+,{"stream_name":"stdout","time":75.231503455,"data":"  filter: rc=0\n"}
+,{"stream_name":"stdout","time":75.314550994,"data":"  dms.csv  87848\n"}
+,{"stream_name":"stdout","time":75.314586516,"data":"  dms.json  1410691\n"}
+,{"stream_name":"stdout","time":75.314602929,"data":"  epistasis.json  52393\n"}
+,{"stream_name":"stdout","time":75.314607154,"data":"  filter.json  369927\n"}
+,{"stream_name":"stdout","time":75.314610162,"data":"  filter_audit.csv  349\n"}
+,{"stream_name":"stdout","time":75.31465379,"data":"  meme.csv  37972\n"}
+,{"stream_name":"stdout","time":75.314733006,"data":"  meme.json  118227\n"}
+,{"stream_name":"stdout","time":75.314741412,"data":"  splits.csv  7584\n"}
+,{"stream_name":"stdout","time":75.314744988,"data":"  splits.json  3864\n"}
+,{"stream_name":"stdout","time":75.314748451,"data":"  suite_log.txt  20157\n"}
+,{"stream_name":"stderr","time":78.106634453,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":78.106667649,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":78.505704777,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":78.505734267,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":79.365080592,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":80.683254296,"data":"[NbConvertApp] Writing 293607 bytes to __results__.html\n"}
+]
