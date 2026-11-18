@@ -110,13 +110,24 @@
 
     .slide-logo {
       position: absolute;
-      bottom: 18px;
+      bottom: 16px;
       left: 30px;
-      height: 22px;
+      height: 60px;
       width: auto;
       opacity: 0.75;
     }
 
+    /* Secondary mark (BRC Analytics), set beside the GTN logo in the bottom-left cluster.
+       GTN logo: left 30px, 60px tall (~126px wide) -> right edge ~156px.
+       BRC wordmark is 163x26, so 24px tall is ~150px wide; vertically centred on the GTN mark. */
+    .slide-logo-secondary {
+      position: absolute;
+      bottom: 34px;
+      left: 180px;
+      height: 24px;
+      width: auto;
+      opacity: 0.75;
+    }
     .slide-footer {
       position: absolute;
       bottom: 22px;
@@ -554,11 +565,12 @@
         <div class="subtitle">Grounding AI agents in the Galaxy Training Network — and running them on usegalaxy.org</div>
         <div class="kicker-divider"></div>
         <div class="author">Scott Cain</div>
-        <div class="affiliation">Pennsylvania State University &middot; Galaxy Project &middot; ASTMH 2026</div>
-        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="affiliation">Galaxy Project, Penn State &middot; ASTMH 2026</div>
+        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="brc-logo.svg" class="slide-logo-secondary" alt="BRC Analytics" />
         <div class="slide-footer">November 2026</div>
       </div>
-      <aside class="notes">Frame up front: this talk is not "use AI for genomics." It's about what you point the AI at. The GTN is 550+ human-written, human-reviewed tutorials — and it happens to be exactly the corpus an agent needs. Humans write it; machines read it. That asymmetry is the whole talk.</aside>
+      <aside class="notes">Frame up front: this talk is not "use AI for genomics." It's about what you point the AI at. The GTN is 536 human-written, human-reviewed tutorials — and it happens to be exactly the corpus an agent needs. Humans write it; machines read it. That asymmetry is the whole talk.</aside>
     </section>
 
     <!-- ============ 2. The method gap ============ -->
@@ -592,7 +604,8 @@
           <p class="body">An agent with no curriculum <em>improvises</em>. <strong style="color:var(--highlight);">The GTN is a curriculum.</strong></p>
         </div>
 
-        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="brc-logo.svg" class="slide-logo-secondary" alt="BRC Analytics" />
         <div class="slide-footer">Motivation</div>
       </div>
       <aside class="notes">Say out loud that the room contains both AI enthusiasts and AI skeptics, and that this talk is aimed at both. The failure mode isn't that the model refuses — it's that it answers confidently. The concrete example to speak, not read: an invented TB pipeline that skips the low-coverage/repeat-region masking step produces transmission clusters that look fine and are wrong.</aside>
@@ -608,11 +621,11 @@
           <div class="col">
             <div style="display: flex; gap: 14px; margin-bottom: 20px;">
               <div class="stat" style="padding: 16px 20px; flex: 1;">
-                <div class="stat-num" style="font-size: 40px;">557</div>
+                <div class="stat-num" style="font-size: 40px;">536</div>
                 <div class="stat-label" style="font-size: 11px;">tutorials</div>
               </div>
               <div class="stat" style="padding: 16px 20px; flex: 1;">
-                <div class="stat-num" style="font-size: 40px;">368</div>
+                <div class="stat-num" style="font-size: 40px;">370</div>
                 <div class="stat-label" style="font-size: 11px;">workflows</div>
               </div>
               <div class="stat" style="padding: 16px 20px; flex: 1;">
@@ -620,7 +633,7 @@
                 <div class="stat-label" style="font-size: 11px;">topics</div>
               </div>
               <div class="stat" style="padding: 16px 20px; flex: 1;">
-                <div class="stat-num" style="font-size: 40px;">~700</div>
+                <div class="stat-num" style="font-size: 40px;">560</div>
                 <div class="stat-label" style="font-size: 11px;">contributors</div>
               </div>
             </div>
@@ -651,12 +664,13 @@
           </div>
         </div>
 
-        <p class="small" style="margin: 0;">Counts from <span class="mono" style="font-size:13px;">galaxyproject/training-material</span>, main branch, November 2026. Also in there: 140 tested workflows, 290 reusable FAQ snippets, 37 learning pathways.</p>
+        <p class="small" style="margin: 0;">Counts from the GTN <span class="mono" style="font-size:13px;">/stats/</span> page, 16 November 2026. Also in there: 549 FAQ snippets, 28 learning paths, 214 videos &mdash; and 190 of those workflows ship automated tests.</p>
 
-        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="brc-logo.svg" class="slide-logo-secondary" alt="BRC Analytics" />
         <div class="slide-footer">The GTN</div>
       </div>
-      <aside class="notes">Lead with the One Health list, not the numbers — this audience recognizes those titles. TB transmission clustering, AMR gene identification, pox virus tiled-amplicon: these are ASTMH problems, already written up, already with workflows. Then the numbers for scale. Note the fourth bullet: a Nextflow pipeline gives you the steps; a GTN tutorial tells you why the steps.</aside>
+      <aside class="notes">Lead with the One Health list, not the numbers — this audience recognizes those titles. TB transmission clustering, AMR gene identification, pox virus tiled-amplicon: these are ASTMH problems, already written up, already with workflows. Then the numbers for scale. Note the fourth bullet: a Nextflow pipeline gives you the steps; a GTN tutorial tells you why the steps. If asked about the name: "One Health" is the WHO/FAO/WOAH/UNEP framing, not a Galaxy coinage &mdash; human, animal and ecosystem health as one interlinked system. And it's a different kind of topic than the rest of the GTN: internally it's a <em>synthetic</em>, tag-based topic, with no directory of its own. Nothing was written for it. It's a re-indexing of tutorials that already lived under variant-analysis, evolution, genome-annotation and computational-chemistry, pulled together by what you're trying to find out instead of by technique. Helena Rasche built the mechanism in May 2023 and handed the curation to Wolfgang Maier, Peter van Heusden and Tomas Klingstr&ouml;m &mdash; Galaxy variant analysis, SANBI, and SLU veterinary informatics. Human, animal, environment, staffed that way. That's this talk's argument in miniature: the material was already there, it just needed to be findable. (Count check: the topic carries 9 materials today; the card shows 7 &mdash; a third SARS-CoV-2 tutorial and a molecular-docking one are left off on purpose.)</aside>
     </section>
 
     <!-- ============ 4. Already machine-readable ============ -->
@@ -705,10 +719,11 @@
           <p class="body">No scraping. No RAG pipeline to build. <strong style="color:var(--highlight);">The curriculum is already a corpus.</strong></p>
         </div>
 
-        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="brc-logo.svg" class="slide-logo-secondary" alt="BRC Analytics" />
         <div class="slide-footer">The GTN</div>
       </div>
-      <aside class="notes">This is the pivot of the talk. Nobody designed the GTN as AI infrastructure — it's Markdown, YAML and JSON because that's how you maintain 557 tutorials with 700 volunteers across a dozen countries. The accident is that those are exactly the formats an agent ingests without help. Live-demo option: run that curl and show the JSON.</aside>
+      <aside class="notes">This is the pivot of the talk. Nobody designed the GTN as AI infrastructure — it's Markdown, YAML and JSON because that's how you maintain 536 tutorials with 700 volunteers across a dozen countries. The accident is that those are exactly the formats an agent ingests without help. Live-demo option: run that curl and show the JSON.</aside>
     </section>
 
     <!-- ============ 5. The GTN's own rules for agents ============ -->
@@ -753,7 +768,8 @@
           </div>
         </div>
 
-        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="brc-logo.svg" class="slide-logo-secondary" alt="BRC Analytics" />
         <div class="slide-footer">Policy</div>
       </div>
       <aside class="notes">This is the slide that earns trust with the skeptics — and it isn't my policy, it's the community's, written down in AGENTS.md and AI-policy.md in the repo. Worth saying plainly: the GTN also states it can't offer support on anything referencing AI output. Agents get told, in the repository, to point users at the human chat channels instead of answering for them.</aside>
@@ -808,7 +824,8 @@
           <p class="body">Tutorial for the method. <strong>Galaxy for the compute. History for the proof.</strong></p>
         </div>
 
-        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="brc-logo.svg" class="slide-logo-secondary" alt="BRC Analytics" />
         <div class="slide-footer">How</div>
       </div>
       <aside class="notes">All three are available now and none require you to pick a model. Galaxy MCP works with any MCP client — Claude Code, Codex, your own script, a local model on university HPC. The Job Error Wizard is the one people underrate: it reads the real stderr, so it is grounded in the same way the GTN grounds the method.</aside>
@@ -817,39 +834,39 @@
     <!-- ============ 7. Vignette ============ -->
     <section>
       <div class="slide">
-        <h2 class="slide-title">What a Grounded Session Looks Like</h2>
-        <div class="title-divider"></div>
+        <h2 class="slide-title" style="margin-bottom:8px;">Same Question, With and Without the GTN</h2>
+        <div class="title-divider" style="margin-bottom:16px;"></div>
 
-        <div class="cols">
-          <div class="col" style="flex: 0 0 600px;">
-            <div class="chat-window">
-              <div class="chat-msg user"><span class="who">You</span>I have 48 <em>M. tuberculosis</em> isolates and I need transmission clusters. Where do I start?</div>
-              <div class="chat-tool">gtn &middot; GET /api/topics/one-health.json</div>
-              <div class="chat-msg agent"><span class="who">Agent</span>There's a tutorial for exactly this: <strong>"Identifying tuberculosis transmission links: from SNPs to transmission clusters"</strong> — it ships three workflows. Reading it before I suggest anything.</div>
-              <div class="chat-tool">galaxy-mcp &middot; import_workflow(...) &middot; invoke_workflow(history="TB_transmission_2026")</div>
-              <div class="chat-msg agent"><span class="who">Agent</span>Imported and launched on usegalaxy.org. Note: the tutorial demonstrates on a smaller isolate set — I've flagged the two parameters you'll likely need to revisit at 48.</div>
+        <div class="chat-msg user" style="max-width: none; margin: 0 0 10px;"><span class="who">You</span>I have 48 <em>M. tuberculosis</em> isolates and I need transmission clusters. Where do I start?</div>
+
+        <div class="cols" style="gap: 22px; align-items: stretch;">
+          <div class="col">
+            <div style="font-size:12px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); margin-bottom:8px;">Agent on its own</div>
+            <div class="chat-window" style="padding:14px 16px;">
+              <div class="chat-msg agent" style="max-width:100%; font-size:13.5px; padding:8px 12px; margin-bottom:8px;"><span class="who">Agent</span>Standard approach is a core-SNP pipeline: <strong>fastp</strong> &rarr; <strong>BWA-MEM</strong> to <strong>H37Rv</strong> &rarr; mask PE/PPE and phage &rarr; <strong>Snippy</strong> &rarr; <strong>snippy-core</strong> &rarr; pairwise SNP distances &rarr; <strong>IQ-TREE</strong>.</div>
+              <div class="chat-msg agent" style="max-width:100%; font-size:13.5px; padding:8px 12px; margin-bottom:8px;">Thresholds: <strong>&le;5 SNPs</strong> for recent direct transmission, <strong>&le;12 SNPs</strong> for a broader cluster.</div>
+              <div class="chat-msg agent" style="max-width:100%; font-size:13.5px; padding:8px 12px; margin-bottom:8px; margin-bottom:0;">Are your 48 isolates Illumina paired-end FASTQs? And do you want the Snippy suite or explicit BED-masking?</div>
             </div>
           </div>
-          <div class="col" style="display: flex; flex-direction: column; justify-content: center; gap: 16px;">
-            <div class="callout-dark" style="width: 100%;">
-              <div class="label">The move that matters</div>
-              <p class="body" style="font-size: 19px;">The agent's first act is <strong style="color:var(--highlight);">a citation</strong>, not a plan.</p>
-            </div>
-            <div class="callout-light">
-              <div class="label">And you can check it</div>
-              <p class="body" style="font-size: 16px;">The tutorial is a public page. Open it, read what the agent read, and see whether it followed.</p>
-            </div>
-            <div class="placeholder" style="padding: 16px; font-size: 13px; font-style: normal; text-align: left; line-height: 1.5;">
-              <strong style="color: var(--accent); display: block; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 6px;">TODO — Scott</strong>
-              <span style="color: var(--muted);">This dialogue is <strong>mocked up</strong>. Before the talk: attach <span style="font-family:'Courier New',monospace;">galaxy-mcp</span> to your own client, ask it the TB transmission question for real, and screen-record it. Capture the moment it cites the tutorial and the moment the run lands in a usegalaxy.org history — those are the two beats this slide is selling. Then swap these frames in and delete this box.</span>
+          <div class="col">
+            <div style="font-size:12px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--accent); margin-bottom:8px;">Agent with the GTN</div>
+            <div class="chat-window" style="padding:14px 16px;">
+              <div class="chat-tool" style="margin:4px 0 8px;">gtn &middot; tutorial.json &rarr; requirements[] &rarr; resolve chain</div>
+              <div class="chat-msg agent" style="max-width:100%; font-size:13.5px; padding:8px 12px; margin-bottom:8px;"><span class="who">Agent</span>The goal tutorial is <strong>&ldquo;Identifying tuberculosis transmission links.&rdquo;</strong> But the GTN declares a <strong style="color:var(--accent);">three-step path</strong> in front of it &mdash; about <strong>4h&nbsp;30m</strong>.</div>
+              <div style="background:var(--white); border:1px solid var(--border); border-radius:8px; padding:9px 12px; margin-bottom:8px;"><div style="display:flex; gap:10px; margin-bottom:6px;"><span style="flex:0 0 14px; font-family:'Courier New',monospace; font-size:13px; font-weight:700; color:var(--accent);">1</span><div style="font-size:13.5px; line-height:1.35; color:var(--navy-soft);"><strong>Using dataset collections</strong> <span style="opacity:0.6;">&middot; 30m</span><br/><span style="opacity:0.72;">48 isolates as one object, not 48 histories</span></div></div><div style="display:flex; gap:10px; margin-bottom:6px;"><span style="flex:0 0 14px; font-family:'Courier New',monospace; font-size:13px; font-weight:700; color:var(--accent);">2</span><div style="font-size:13.5px; line-height:1.35; color:var(--navy-soft);"><strong>M. tuberculosis Variant Analysis</strong> <span style="opacity:0.6;">&middot; 2h</span><br/><span style="opacity:0.72;">maps to the inferred MTB <em>ancestor</em> genome &mdash; not H37Rv</span></div></div><div style="display:flex; gap:10px; margin-bottom:0px;"><span style="flex:0 0 14px; font-family:'Courier New',monospace; font-size:13px; font-weight:700; color:var(--accent);">3</span><div style="font-size:13.5px; line-height:1.35; color:var(--navy-soft);"><strong>SNPs &rarr; transmission clusters</strong> <span style="opacity:0.6;">&middot; 2h</span><br/><span style="opacity:0.72;">snp-dists &rarr; clustering_from_distmat, UPGMA at 12 SNPs</span></div></div></div>
+              <div class="chat-msg agent" style="max-width:100%; font-size:13.5px; padding:8px 12px; margin-bottom:8px; margin-bottom:0;">From the tutorial itself: clustering <strong>can&rsquo;t tell you who infected whom</strong>, and the earliest isolate is <strong>not</strong> the index case.</div>
             </div>
           </div>
         </div>
 
-        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="callout-dark" style="margin-top: 8px; padding: 14px 26px 14px 32px;">
+          <div class="label" style="margin-bottom:10px;">The difference isn&rsquo;t the pipeline</div>
+          <p class="body" style="font-size: 17.5px;">One maps to H37Rv because that is what everyone says. The other maps to the <strong style="color:var(--highlight);">ancestor genome because that is what the tutorial does</strong> &mdash; and starts you two tutorials earlier.</p>
+        </div>
+
         <div class="slide-footer">Walkthrough</div>
       </div>
-      <aside class="notes">*** REMINDER: this session is still a mock-up — replace it with a real captured run before presenting. *** Walk the four beats: question, lookup, citation, execution. Dwell on the last agent message — it volunteers that the tutorial's demo data is smaller than the real dataset. That honesty is only possible because it read a real tutorial written by a human who said so. An ungrounded agent has nothing to be honest about.</aside>
+      <aside class="notes">Both halves are real Orbit output, same question, captured 2026-11-17. LEFT is Orbit asked cold: a textbook core-SNP pipeline, confident and basically correct, no source. RIGHT is the same question after the GTN functions were wired up to resolve the prerequisite graph. Three beats worth landing, in order. ONE: it returns a path, not a link &mdash; collections first, because 48 isolates is a collections problem before it is a phylogenetics problem, and that is the half of the question the cold answer ignored. TWO: H37Rv versus the ancestor genome. The cold answer gives the textbook reference; the GTN tutorial actually uses the inferred most-recent-common-ancestor genome of the MTB complex, which differs from H37Rv by SNPs inserted to model the ancestor of all lineages. That is a better choice for transmission work and you do not get it from general knowledge &mdash; you get it from a person who wrote it down. THREE: the index-case caveat is not in the tutorial metadata at all; it is prose inside a question-and-answer box in the tutorial body. The agent read the page. Honest framing if asked: this took three rounds of adding functionality, and it still does not surface the importable CI-tested workflow IDs or ask whether you are starting from FASTQs or VCFs. The curation was already there. The plumbing to reach it is what we had to build.</aside>
     </section>
 
     <!-- ============ 8. Why a tutorial beats a prompt ============ -->
@@ -894,7 +911,8 @@
           <p class="body">You don't have to trust the agent. <strong style="color:var(--highlight);">You can check its homework against a page anyone can read.</strong></p>
         </div>
 
-        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="brc-logo.svg" class="slide-logo-secondary" alt="BRC Analytics" />
         <div class="slide-footer">Why it works</div>
       </div>
       <aside class="notes">Payoff slide. The fourth card is the one that can't be automated and is the reason the GTN bans AI-written tutorials — a stated rationale is only worth something if a person actually held the opinion. Tie back: Galaxy records what ran, the GTN records why it should have.</aside>
@@ -941,7 +959,8 @@
           <p class="body">These are the questions to ask of <strong>any</strong> AI-assisted result — including the ones in this talk.</p>
         </div>
 
-        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="brc-logo.svg" class="slide-logo-secondary" alt="BRC Analytics" />
         <div class="slide-footer">Limits</div>
       </div>
       <aside class="notes">Do not skip this slide for time. In a room with real skeptics, naming the limits yourself is what makes the rest credible. The subsampled-data point is the most practically important one — it is the single most common way a tutorial-derived analysis goes wrong at real scale.</aside>
@@ -954,7 +973,7 @@
         <div class="title-divider"></div>
 
         <p class="emph" style="margin-bottom: 24px;">
-          I queried every topic in the GTN API. <span class="hl">689 materials.</span> Here is what this audience will find.
+          I queried every topic in the GTN API. <span class="hl">629 materials.</span> Here is what this audience will find.
         </p>
 
         <div class="cols" style="margin-bottom: 24px;">
@@ -987,10 +1006,9 @@
           <p class="body">A hole in the curriculum used to mean <em>no workshop for your pathogen</em>. Now it also means an agent grounding on the GTN <strong style="color:var(--highlight);">finds nothing to ground on &mdash; and improvises instead.</strong></p>
         </div>
 
-        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
         <div class="slide-footer">The gap</div>
       </div>
-      <aside class="notes">This number is checkable and you should invite them to check it: every topic from the GTN JSON API, 689 materials, searching titles and tags. TB is genuinely excellent &mdash; three tutorials and real depth, because a community decided to build it. Nothing structural stopped anyone writing the malaria equivalent; nobody has. Then land the closing line, which is the hinge of the whole talk: grounding only protects you where the curriculum exists, so the coverage gap is now also an AI-reliability gap for exactly the diseases in this room.</aside>
+      <aside class="notes">This number is checkable and you should invite them to check it: every topic from the GTN JSON API, 629 unique materials, searching titles and tags. TB is genuinely excellent &mdash; three tutorials and real depth, because a community decided to build it. Nothing structural stopped anyone writing the malaria equivalent; nobody has. Then land the closing line, which is the hinge of the whole talk: grounding only protects you where the curriculum exists, so the coverage gap is now also an AI-reliability gap for exactly the diseases in this room.</aside>
     </section>
 
     <!-- ============ 11. Where to start ============ -->
@@ -1031,7 +1049,8 @@
           <p class="body">Write the tutorial your field is missing. It teaches a student today &mdash; and <strong style="color:var(--highlight);">grounds every agent that reads it tomorrow.</strong></p>
         </div>
 
-        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="brc-logo.svg" class="slide-logo-secondary" alt="BRC Analytics" />
         <div class="slide-footer">Getting started</div>
       </div>
       <aside class="notes">Four doors, and the fourth is the real ask — it follows straight from the previous slide. The dual return is the argument: a tutorial you write is a lesson for a student AND grounding for every agent that reads it afterwards. Nobody outside this field is going to write the malaria tutorial. If someone asks how hard it is: a tutorial is Markdown plus a workflow you have already run, and the GTN has a tutorial on writing tutorials.</aside>
@@ -1047,7 +1066,7 @@
           <div class="col">
             <ul class="clean" style="margin-bottom: 26px;">
               <li>The question isn't whether to use AI — it's <strong>what you point it at</strong>.</li>
-              <li>The GTN is <strong>557 human-written, human-reviewed tutorials</strong> in formats agents already read. Grounding, not guessing.</li>
+              <li>The GTN is <strong>536 human-written, human-reviewed tutorials</strong> in formats agents already read. Grounding, not guessing.</li>
               <li>Galaxy runs it and keeps the record; <strong>the tutorial is the part you can check</strong>.</li>
               <li>Written by humans, read by machines — <strong>and the community wrote that rule down</strong>.</li>
             </ul>
@@ -1068,7 +1087,8 @@
           </div>
         </div>
 
-        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <img src="gtn-logo.png" class="slide-logo" alt="Galaxy Training Network" />
+        <img src="brc-logo.svg" class="slide-logo-secondary" alt="BRC Analytics" />
         <div class="slide-footer">Thank you</div>
       </div>
       <aside class="notes">Land on the thesis line and leave both QRs up for questions. If there's time for one more sentence: the GTN didn't change anything to become AI infrastructure — it just kept being well-structured, human-written, and public, which turns out to be the same thing.</aside>
