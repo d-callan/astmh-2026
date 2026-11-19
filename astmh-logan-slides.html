@@ -842,6 +842,51 @@
       <aside class="notes">The walkthrough the room can map onto their own work: take the k13 propeller-domain CDS, search the archive, rebuild coding haplotypes from every run that carries it — then hand the cohort to the next talk, which asks whether the WHO-validated resistance sites are the ones under selection. Real numbers: kmindex found 56,303 accessions (52,738 at >0.75 k-mer score); LexicMap found 107,253 — nearly double, recovering partial/lower-k-mer hits — with 98% of all kmindex hits confirmed by alignment and median 100% identity among the shared high-scoring set. The disassembler step is live in Galaxy right now as a user-defined tool on a 300-accession pilot; full cohort needs the scattered workflow.</aside>
     </section>
 
+    <!-- ============ 8c. Worked example: ama1 (full pipeline) ============ -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">Same Cohort, Second Gene: ama1 <span class="status-pill indev" style="font-size: 13px;">end to end, overnight</span></h2>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="margin-bottom: 20px;">
+          <div class="col">
+            <div class="section-label" style="margin-top:0;">The query</div>
+            <ul class="clean">
+              <li><strong>ama1</strong> — blood-stage antigen under host immune pressure; the <em>published</em> diversifying-selection gene.</li>
+              <li>1,869-bp CDS as search bait — the positive control: answers are already known.</li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="section-label" style="margin-top:0;">Cohort, overnight — real numbers</div>
+            <ul class="clean">
+              <li><strong>45,879</strong> kmindex hits → 5,000-accession stratified sample → <strong>3,676 haplotypes</strong> reconstructed.</li>
+              <li><strong>1,579 unique sequences</strong> (vs. 107 for k13) — the diversity MEME needs, straight from reads.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cols" style="margin-bottom: 22px;">
+          <div class="stat" style="flex:1;">
+            <div class="stat-num" style="font-size: 34px;">16</div>
+            <div class="stat-label">FDR-significant selection sites — 11 in the published<br/>domain I–III immune-epitope block</div>
+          </div>
+          <div class="stat" style="flex:1;">
+            <div class="stat-num" style="font-size: 34px;">D242Y</div>
+            <div class="stat-label">dimorphic vaccine-immunotype split<br/>recovered from reads alone (2,025 / 1,630)</div>
+          </div>
+        </div>
+
+        <div class="callout-light">
+          <div class="label">The point</div>
+          <p class="body"><strong>None of this biology is new — that's the point.</strong> A question that once took dedicated field studies returns overnight: query → cohort → selection table, in a recorded, shareable history.</p>
+        </div>
+
+        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="slide-footer">Proof by reproduction</div>
+      </div>
+      <aside class="notes">The throughput slide, not a discovery slide. We deliberately picked a gene whose answer key exists: ama1's domain-I polymorphism block and the D242Y immunotype are published. kmindex returned 45,879 hits; we stratified a 5,000-accession sample to oversample divergent-allele carriers (3k from the 0.5–0.75 score band); reconstruction gave 3,676 haplotypes, coverage QC kept 3,655, and hyphaeon found 16 FDR-significant MEME sites — 11 in the ectodomain where they're supposed to be — plus the known 2-way immunotype split. The suite even flagged its own artifacts: four signal-peptide hits trace to ~179 sequences truncated at the 5' edge. Contrast with k13 on the same machinery: conserved gene, founder alleles only, zero FDR hits — the correct negative. Runtime honesty: ~9h for 5k accessions on 4 CPU cores; chunks are embarrassingly parallel in Galaxy, so this is the pessimistic case.</aside>
+    </section>
+
     <!-- ============ 9. What this unlocks ============ -->
     <section>
       <div class="slide">
