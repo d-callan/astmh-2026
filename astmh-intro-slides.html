@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>BRC Analytics — Symposium Introduction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- reveal.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css" id="theme" />
+
+  <!-- Fonts + Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+
+  <style>
+    :root {
+      /* BRC palette (from brochure/poster) */
+      --navy:        #28285B;
+      --navy-dark:   #1F1F47;
+      --navy-soft:   #3F3F6E;
+      --accent:      #956F00;   /* gold — the "red equivalent" for bars/markers */
+      --accent-soft: #B8881A;
+      --highlight:   #FFEB78;   /* soft yellow — for emphasis backgrounds */
+      --muted:       #637381;
+      --muted-light: #9AA2AE;
+      --panel:       #F7F7FB;
+      --border:      #E3E3ED;
+      --white:       #FFFFFF;
+    }
+
+    /* ===== Print PDF: match paper size to slide dimensions (1280x760) ===== */
+    @page {
+      size: 1280px 760px;
+      margin: 0;
+    }
+
+    html.print-pdf .pdf-page {
+      height: 760px !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      overflow: hidden !important;
+    }
+    html.print-pdf .pdf-page > section,
+    html.print-pdf .reveal .slides > section {
+      top: 0 !important;
+      left: 0 !important;
+      width: 1280px !important;
+      height: 760px !important;
+      min-height: 760px !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      transform: none !important;
+    }
+    html.print-pdf .slide {
+      height: 760px !important;
+    }
+
+    /* ===== Base reveal overrides ===== */
+    .reveal {
+      font-family: 'Inter', sans-serif;
+      color: var(--navy-soft);
+      font-size: 22px;
+    }
+    .reveal .slides { text-align: left; }
+
+    .reveal section {
+      padding: 0;
+      height: 100%;
+    }
+
+    .reveal h1, .reveal h2, .reveal h3 {
+      font-family: 'Merriweather', serif;
+      color: var(--navy);
+      text-transform: none;
+      letter-spacing: -0.5px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .reveal a { color: var(--navy); border-bottom: 2px solid var(--highlight); }
+    .reveal strong { color: var(--navy); font-weight: 600; }
+
+    /* ===== Slide frame (every slide) ===== */
+    .slide {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 70px 90px 60px;
+      box-sizing: border-box;
+      background: var(--white);
+    }
+
+    .slide::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 6px;
+      background: var(--navy);
+    }
+    .slide::after {
+      content: '';
+      position: absolute;
+      top: 6px; left: 0; right: 0;
+      height: 3px;
+      background: var(--accent);
+    }
+
+    .slide-logo {
+      position: absolute;
+      bottom: 18px;
+      left: 30px;
+      height: 22px;
+      width: auto;
+      opacity: 0.75;
+    }
+
+    .slide-footer {
+      position: absolute;
+      bottom: 22px;
+      right: 30px;
+      font-size: 12px;
+      color: var(--muted-light);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+    }
+
+    /* ===== Slide title + divider ===== */
+    .slide h2.slide-title {
+      font-size: 40px;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+    .slide .title-divider {
+      width: 60px;
+      height: 4px;
+      background: var(--accent);
+      margin-bottom: 36px;
+    }
+
+    /* ===== Bullet list (minimal, square marker) ===== */
+    .reveal ul.clean {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .reveal ul.clean li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 22px;
+      font-size: 22px;
+      color: var(--navy-soft);
+      line-height: 1.5;
+    }
+    .reveal ul.clean li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 10px;
+      width: 12px; height: 12px;
+      background: var(--accent);
+    }
+
+    /* ===== Two-column layout ===== */
+    .cols {
+      display: flex;
+      gap: 40px;
+      align-items: stretch;
+    }
+    .cols > .col { flex: 1; min-width: 0; }
+
+    /* ===== Dark callout (navy box, gold edge) ===== */
+    .callout-dark {
+      position: relative;
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 8px;
+      padding: 32px 32px 32px 40px;
+      box-shadow: 0 10px 25px rgba(40, 40, 91, 0.18);
+    }
+    .callout-dark::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 8px;
+      background: var(--accent);
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+    .callout-dark .label {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--highlight);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 14px;
+    }
+    .callout-dark .body {
+      font-family: 'Merriweather', serif;
+      font-size: 24px;
+      line-height: 1.45;
+      font-style: italic;
+      margin: 0;
+    }
+    .callout-dark .body.emphatic {
+      color: var(--highlight);
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    /* Light highlight callout variant */
+    .callout-light {
+      background: var(--highlight);
+      border-radius: 8px;
+      padding: 22px 26px;
+      border-left: 8px solid var(--accent);
+      color: var(--navy);
+    }
+    .callout-light .label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+    }
+    .callout-light .body {
+      font-family: 'Merriweather', serif;
+      font-size: 20px;
+      line-height: 1.45;
+      margin: 0;
+    }
+
+    /* ===== Card grid (icon + label) ===== */
+    .card-grid {
+      display: grid;
+      gap: 18px;
+    }
+    .card-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .card-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+    .card-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 22px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 130px;
+    }
+    .card .card-icon {
+      color: var(--navy);
+      font-size: 26px;
+      margin-bottom: 14px;
+    }
+    .card .card-label {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--navy-soft);
+      line-height: 1.3;
+    }
+    .card.accent {
+      background: var(--navy);
+      border-color: var(--navy);
+    }
+    .card.accent .card-icon { color: var(--highlight); }
+    .card.accent .card-label { color: var(--white); }
+    .card.accent strong { color: var(--highlight); }
+
+    /* Numbered card variant */
+    .card .card-num {
+      font-family: 'Merriweather', serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    /* ===== Title slide ===== */
+    .title-slide h1 {
+      font-size: 58px;
+      line-height: 1.1;
+      margin-bottom: 28px;
+    }
+    .title-slide .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 26px;
+      color: var(--muted);
+      font-weight: 400;
+      margin-bottom: 42px;
+    }
+    .title-slide .kicker-divider {
+      width: 80px;
+      height: 4px;
+      background: var(--accent);
+      margin-bottom: 36px;
+    }
+    .title-slide .author {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+    .title-slide .affiliation {
+      font-size: 18px;
+      color: var(--muted);
+    }
+
+    /* ===== Section divider slide ===== */
+    .section-slide {
+      background: var(--navy);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 70px 110px;
+    }
+    .section-slide::before { display: none; }
+    .section-slide::after { display: none; }
+    .section-slide .kicker {
+      color: var(--highlight);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .section-slide h2 {
+      color: var(--white);
+      font-size: 52px;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .section-slide .section-sub {
+      font-size: 22px;
+      color: var(--muted-light);
+      max-width: 760px;
+    }
+    .section-slide .kicker-divider {
+      width: 80px; height: 4px;
+      background: var(--accent);
+      margin: 24px 0 0;
+    }
+
+    /* ===== Inline arrow between columns ===== */
+    .between-arrow {
+      display: flex;
+      align-items: center;
+      color: var(--accent);
+      font-size: 32px;
+      padding: 0 4px;
+    }
+
+    /* ===== Misc ===== */
+    .small { font-size: 14px; color: var(--muted); }
+    .kicker {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted-light);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    .emph {
+      font-family: 'Merriweather', serif;
+      font-style: italic;
+      color: var(--navy);
+      font-size: 22px;
+    }
+    .section-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 20px 0 10px;
+    }
+    .mono {
+      font-family: 'Courier New', monospace;
+      font-size: 15px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2px 8px;
+      color: var(--navy);
+    }
+
+    /* Highlight inline span */
+    .hl {
+      background: linear-gradient(transparent 55%, var(--highlight) 55%);
+      padding: 0 2px;
+    }
+
+    /* Stat */
+    .stat {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 24px 28px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      border-top: 4px solid var(--accent);
+    }
+    .stat-num {
+      font-family: 'Merriweather', serif;
+      font-size: 56px;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-top: 8px;
+    }
+
+    /* Pipeline mini-diagram */
+    .pipeline {
+      display: flex;
+      align-items: stretch;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .pipe-stage {
+      flex: 1;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 14px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .pipe-stage.terminal {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: var(--white);
+    }
+    .pipe-stage.terminal .pipe-title { color: var(--white); }
+    .pipe-stage.terminal .pipe-sub { color: var(--highlight); }
+    .pipe-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+    }
+    .pipe-sub {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+    .pipe-arrow {
+      display: flex; align-items: center;
+      color: var(--accent); font-size: 18px;
+    }
+
+    /* ===== Comparison table ===== */
+    .cmp-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      line-height: 1.35;
+    }
+    .cmp-table th {
+      background: var(--navy);
+      color: var(--white);
+      text-align: left;
+      padding: 8px 12px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .cmp-table th:first-child { border-top-left-radius: 6px; }
+    .cmp-table th:last-child { border-top-right-radius: 6px; }
+    .cmp-table td {
+      padding: 5px 10px;
+      border-bottom: 1px solid var(--border);
+      color: var(--navy-soft);
+      vertical-align: top;
+    }
+    .cmp-table tr:nth-child(even) td { background: var(--panel); }
+    .cmp-table td.stage { font-weight: 600; color: var(--navy); white-space: nowrap; }
+
+    /* ===== Horizontal bar list (taxa counts) ===== */
+    .hbar-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .hbar-row .hbar-label {
+      width: 150px;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--navy);
+      text-align: right;
+      flex-shrink: 0;
+    }
+    .hbar-row .hbar-track {
+      flex: 1;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      height: 26px;
+      overflow: hidden;
+    }
+    .hbar-row .hbar-fill {
+      height: 100%;
+      background: var(--accent);
+    }
+    .hbar-row .hbar-val {
+      width: 70px;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      flex-shrink: 0;
+    }
+
+    /* ===== Vertical bar chart (variant counts) ===== */
+    .chart {
+      display: flex;
+      align-items: flex-end;
+      gap: 10px;
+      height: 330px;
+      padding: 34px 10px 0;
+    }
+    .chart .bar-wrap {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      height: 100%;
+      min-width: 0;
+    }
+    .chart .bar-val {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+    .chart .bar {
+      width: 100%;
+      background: var(--navy);
+      border-radius: 3px 3px 0 0;
+      min-height: 3px;
+    }
+    .chart .bar.gold { background: var(--accent); }
+    .chart .bar-x {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    /* ===== QR block ===== */
+    .qr-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      text-align: center;
+    }
+    .qr-block img {
+      width: 110px;
+      height: 110px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 4px;
+      background: var(--white);
+    }
+    .qr-block .qr-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 1.3;
+    }
+
+    /* Status pill */
+    .status-pill {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: var(--highlight);
+      color: var(--accent);
+      vertical-align: middle;
+    }
+    .status-pill.indev {
+      background: var(--panel);
+      color: var(--muted);
+      border: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<div class="reveal">
+  <div class="slides">
+    <!-- ============ 1. Title ============ -->
+    <section>
+      <div class="slide title-slide">
+        <div class="kicker" style="margin-bottom:24px;">ASTMH Symposium</div>
+        <h1>BRC Analytics</h1>
+        <div class="subtitle">Ask the questions that matter to you —<br/>including the ones you didn't know you could</div>
+        <div class="kicker-divider"></div>
+        <div class="author">Anton Nekrutenko</div>
+        <div class="affiliation">Pennsylvania State University · BRC Analytics · ASTMH 2026</div>
+        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="slide-footer">November 2026</div>
+      </div>
+      <aside class="notes">Welcome + housekeeping. Four slides: who BRC Analytics is, how the five talks fit together, and where we're headed. Keep it tight — this is an umbrella, not a talk.</aside>
+    </section>
+
+    <!-- ============ 2. Identity ============ -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">What Is BRC Analytics?</h2>
+        <div class="title-divider"></div>
+
+        <div class="callout-dark" style="margin-bottom: 26px;">
+          <div class="label">The premise</div>
+          <p class="body">Tools and workflows that let researchers of <strong style="color:var(--highlight);">any background, technical depth, or budget</strong> answer the questions that matter to them — and discover questions they never knew they could ask.</p>
+        </div>
+
+        <div class="cols">
+          <div class="col">
+            <div class="section-label" style="margin-top:0;">What that means in practice</div>
+            <ul class="clean">
+              <li><strong>Free, browser-based, open</strong> — curated pathogen data and analysis on BRC Analytics, running on Galaxy</li>
+              <li><strong>No install, no cluster, no code required to start</strong> — but nothing is hidden from those who want to look</li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="section-label" style="margin-top:0;">The non-negotiables</div>
+            <ul class="clean">
+              <li><strong>Every run recorded</strong> — shareable, inspectable histories, not screenshots</li>
+              <li><strong>Same tools for everyone</strong> — what we use internally is what you get</li>
+            </ul>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="slide-footer">Who we are</div>
+      </div>
+      <aside class="notes">The identity slide. Stress the audience spread on purpose: bench parasitologist with no cluster, computational person with no wet-lab context, student with a laptop — same tools, same data, same price (free). "Same tools for everyone" is the honest claim: what's built is built for public use — but be upfront that much of today is forward-looking; several workflows are still in development, and that's the point of showing them.</aside>
+    </section>
+
+    <!-- ============ 3. The map ============ -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">Five Talks, One Pipeline</h2>
+        <div class="title-divider"></div>
+
+        <div class="section-label" style="margin-top:0;">In order of presentation</div>
+        <div style="display:flex; gap:14px; margin-top:14px;">
+          <div class="card" style="flex:1; padding:18px;">
+            <div class="card-label" style="color:var(--accent); font-size:13px; margin-bottom:8px;">1 · The search</div>
+            <div style="font-weight:600; font-size:15px; line-height:1.3; margin-bottom:8px;">Query the Whole Archive</div>
+            <div style="font-size:13px; opacity:0.8; margin-bottom:6px;">Nekrutenko</div>
+            <div style="font-size:13px;">Search all of SRA by sequence; come back with a cohort.</div>
+          </div>
+          <div class="card" style="flex:1; padding:18px;">
+            <div class="card-label" style="color:var(--accent); font-size:13px; margin-bottom:8px;">2 · The analysis</div>
+            <div style="font-weight:600; font-size:15px; line-height:1.3; margin-bottom:8px;">Evolutionary Questions at Archive Scale</div>
+            <div style="font-size:13px; opacity:0.8; margin-bottom:6px;">Kosakovsky Pond</div>
+            <div style="font-size:13px;">HyphAeon + ChronAeon on the cohorts search produced.</div>
+          </div>
+          <div class="card" style="flex:1; padding:18px;">
+            <div class="card-label" style="color:var(--accent); font-size:13px; margin-bottom:8px;">3 · The teacher</div>
+            <div style="font-weight:600; font-size:15px; line-height:1.3; margin-bottom:8px;">Human-Written, Agent-Readable</div>
+            <div style="font-size:13px; opacity:0.8; margin-bottom:6px;">Cain</div>
+            <div style="font-size:13px;">GTN as the curriculum that grounds AI agents.</div>
+          </div>
+          <div class="card" style="flex:1; padding:18px;">
+            <div class="card-label" style="color:var(--accent); font-size:13px; margin-bottom:8px;">4 · The agent</div>
+            <div style="font-weight:600; font-size:15px; line-height:1.3; margin-bottom:8px;">Verifiable AI for Pathogen Genomics</div>
+            <div style="font-size:13px; opacity:0.8; margin-bottom:6px;">Callan</div>
+            <div style="font-size:13px;">The same work, driven by an AI agent you can audit.</div>
+          </div>
+          <div class="card" style="flex:1; padding:18px;">
+            <div class="card-label" style="color:var(--accent); font-size:13px; margin-bottom:8px;">5 · The platform</div>
+            <div style="font-weight:600; font-size:15px; line-height:1.3; margin-bottom:8px;">Your Pathogen Question. A Reproducible Analysis.</div>
+            <div style="font-size:13px; opacity:0.8; margin-bottom:6px;">Escalante</div>
+            <div style="font-size:13px;">What it all adds up to — a real question, end to end.</div>
+          </div>
+        </div>
+
+        <div class="callout-light" style="margin-top:22px;">
+          <p class="body"><strong>Honest caveat</strong> — much of what you'll see today is still in development; this symposium is as much about where we're going as where we are.</p>
+        </div>
+
+        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="slide-footer">Today's arc</div>
+      </div>
+      <aside class="notes">Orient, don't summarize. In order: Anton finds the data — sequence search over the whole archive; Sergei analyzes it — evolutionary questions on reconstructed cohorts; Scott grounds the agents — GTN as human-written, agent-readable curriculum; Danielle runs the same pipeline through verifiable agents; Ananias closes with what it all means for a real researcher's question. The thread: same pipeline, every layer inspectable.</aside>
+    </section>
+
+    <!-- ============ 4. Where it's going ============ -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">Where This Is Going</h2>
+        <div class="title-divider"></div>
+
+        <div class="callout-dark" style="margin-bottom: 26px;">
+          <div class="label">Next</div>
+          <p class="body">As the infrastructure builds out, we'll publish <strong style="color:var(--highlight);">curated data resources produced by the same workflows you can run</strong> — resources you can re-derive, not just download.</p>
+        </div>
+
+        <div class="section-label" style="margin-top:0;">Resources</div>
+        <ul class="clean" style="margin-bottom:0;">
+          <li><strong>brc-analytics.org</strong> — the catalog, the tools, the gene pages in progress</li>
+          <li><strong>usegalaxy.org</strong> — where the workflows run; several you'll see today are still in development</li>
+          <li><strong>gtn.galaxyproject.org</strong> — the training corpus (you'll hear why it matters)</li>
+        </ul>
+
+        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="slide-footer">BRC Analytics</div>
+      </div>
+      <aside class="notes">Land the forward look in one beat — curated resources made by public workflows is the reproducibility claim applied to data products, not just analyses. Then hand off: five talks, same argument at five layers.</aside>
+    </section>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    slideNumber: 'c/t',
+    transition: 'fade',
+    controls: true,
+    progress: true,
+    width: 1280,
+    height: 760,
+    margin: 0.04,
+    plugins: [ RevealNotes ]
+  });
+</script>
+</body>
+</html>
