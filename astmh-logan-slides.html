@@ -796,39 +796,28 @@
           <div class="col">
             <div class="section-label" style="margin-top:0;">The query</div>
             <ul class="clean">
-              <li><strong>ama1</strong> — <em>P. falciparum</em> blood-stage antigen under host immune pressure; the <em>published</em> diversifying-selection gene.</li>
-              <li>1,869-bp CDS as search bait — a positive control: the answers are already known.</li>
+              <li><strong>ama1</strong> — a <em>P. falciparum</em> blood-stage antigen, naturally variable: a good stress test for cohort reconstruction.</li>
+              <li>1,869-bp CDS query sequence.</li>
             </ul>
           </div>
           <div class="col">
-            <div class="section-label" style="margin-top:0;">Cohort, overnight — real numbers</div>
+            <div class="section-label" style="margin-top:0;">Cohort — real numbers</div>
             <ul class="clean">
               <li><strong>45,879</strong> kmindex hits → 5,000-accession stratified sample → <strong>3,676 haplotypes</strong> reconstructed.</li>
-              <li><strong>1,579 unique sequences</strong> (vs. 107 for k13) — the diversity MEME needs, straight from reads.</li>
+              <li><strong>1,579 unique sequences</strong> (vs. 107 for k13, the conserved artemisinin-resistance marker) — real within-species diversity, straight from reads.</li>
             </ul>
-          </div>
-        </div>
-
-        <div class="cols" style="margin-bottom: 22px;">
-          <div class="stat" style="flex:1;">
-            <div class="stat-num" style="font-size: 34px;">16</div>
-            <div class="stat-label">FDR-significant selection sites — 11 in the published<br/>domain I–III immune-epitope block</div>
-          </div>
-          <div class="stat" style="flex:1;">
-            <div class="stat-num" style="font-size: 34px;">D242Y</div>
-            <div class="stat-label">dimorphic vaccine-immunotype split<br/>recovered from reads alone (2,025 / 1,630)</div>
           </div>
         </div>
 
         <div class="callout-light">
-          <div class="label">The point</div>
-          <p class="body"><strong>None of this biology is new — that's the point.</strong> A question that once took dedicated field studies returns overnight: query → cohort → selection table, in a recorded, shareable history.</p>
+          <div class="label">The deliverable</div>
+          <p class="body"><strong>A cohort, not a plot.</strong> 3,600+ assembled coding haplotypes with a recorded, shareable history — ready for whatever question you want to ask next.</p>
         </div>
 
         <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
-        <div class="slide-footer">Proof by reproduction</div>
+        <div class="slide-footer">Worked example</div>
       </div>
-      <aside class="notes">The throughput slide, not a discovery slide. We deliberately picked a gene whose answer key exists: ama1's domain-I polymorphism block and the D242Y immunotype are published. kmindex returned 45,879 hits; we stratified a 5,000-accession sample to oversample divergent-allele carriers (3k from the 0.5–0.75 score band); reconstruction gave 3,676 haplotypes, coverage QC kept 3,655, and hyphaeon found 16 FDR-significant MEME sites — 11 in the ectodomain where they're supposed to be — plus the known 2-way immunotype split. The suite even flagged its own artifacts: four signal-peptide hits trace to ~179 sequences truncated at the 5' edge. Contrast with k13 on the same machinery: conserved gene, founder alleles only, zero FDR hits — the correct negative. Runtime honesty: ~9h for 5k accessions on 4 CPU cores; chunks are embarrassingly parallel in Galaxy, so this is the pessimistic case.</aside>
+      <aside class="notes">Cohort-building only — hold the biology for the next talk. Real numbers: kmindex returned 45,879 hits; we stratified 5,000 accessions to oversample divergent-allele carriers (3k from the 0.5–0.75 score band); reconstruction gave 3,676 haplotypes, coverage QC kept 3,655. The k13 contrast is the honest caveat about cohorts: same machinery on a conserved gene (the artemisinin marker) yields 107 unique sequences — the gene's diversity sets the ceiling, not the pipeline. Runtime honesty: ~9h for 5k on 4 cores serial; chunks parallelize trivially in Galaxy, so that's the pessimistic case. If pressed on 'what did you find': that's literally the next talk — the cohort is the deliverable here.</aside>
     </section>
 
     <!-- ============ 9. What this unlocks ============ -->
@@ -916,8 +905,9 @@
           <div class="col">
             <div class="section-label" style="margin-top:0;">What's on the page</div>
             <ul class="clean" style="margin-bottom: 0;">
-              <li><strong>UCSC Genome Browser</strong> links into the specific region around your gene</li>
+              <li><strong>UCSC Genome Browser</strong> links into the specific region around your gene — plus expression, orthology, and other browsable data</li>
               <li><strong>Configurable Galaxy workflows</strong> that consume the gene or protein sequence as input — launch straight from the page</li>
+              <li><strong>This pipeline, on any gene</strong> — launch it for your gene of interest: archive search → reconstructed haplotype cohort, ready for downstream analysis</li>
             </ul>
           </div>
           <div class="col">
@@ -939,7 +929,7 @@
         <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
         <div class="slide-footer">Future directions</div>
       </div>
-      <aside class="notes">Gene pages aren't landed yet — flag this as future directions. BioNym is our knowledge-graph pipeline (repo linked): the graph sits under the page and the page offers several doors into it — summary, ask-an-LLM, whole-graph view, and topic slices. Plus UCSC region links and workflow launchers wired to the gene's sequence.</aside>
+      <aside class="notes">Gene pages aren't landed yet — flag this as future directions. BioNym is our knowledge-graph pipeline (repo linked): the graph sits under the page and the page offers several doors into it — summary, ask-an-LLM, whole-graph view, and topic slices. Plus UCSC region links and workflow launchers wired to the gene's sequence — the ama1 run becomes a template: pick a gene, launch, get a haplotype cohort and a selection table back.</aside>
     </section>
 
     <!-- ============ 12. Bridge to next talk + resources ============ -->
