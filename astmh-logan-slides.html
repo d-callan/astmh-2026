@@ -786,6 +786,62 @@
       <aside class="notes">Mechanism in one breath: hit accession → stream its unitig graph from S3 → anchor the query gene by shared k-mers → walk with GraphAligner → full-length haplotype, including intra-host variants. GitHub: nekrut/disassembler — QR on the resources slide.</aside>
     </section>
 
+    <!-- ============ 8b. Worked example: k13 (real search data) ============ -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">A Concrete Example: kelch13 <span class="status-pill indev" style="font-size: 13px;">real search data</span></h2>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="margin-bottom: 20px;">
+          <div class="col">
+            <div class="section-label" style="margin-top:0;">The query</div>
+            <ul class="clean">
+              <li><strong>kelch13</strong> — the <em>P. falciparum</em> artemisinin-resistance marker. WHO-validated propeller-domain SNPs: <strong>C580Y, R561H, Y493H, R539T</strong>.</li>
+              <li>2,181-bp coding sequence as search bait.</li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="section-label" style="margin-top:0;">Two routes to the cohort — real hits</div>
+            <ul class="clean">
+              <li><strong>kmindex</strong> — exact k-mers → <strong>56,303 runs</strong> carry k13; <strong>52,738</strong> at score &gt;0.75.</li>
+              <li><strong>LexicMap</strong> — <strong>107,253 accessions</strong>; 44,422 cover ≥75% of the gene at ≥75% identity. Confirms <strong>98%</strong> of kmindex hits.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pipeline" style="margin-bottom: 22px;">
+          <div class="pipe-stage">
+            <div class="pipe-title">k13 CDS</div>
+            <div class="pipe-sub">Propeller-domain query</div>
+          </div>
+          <div class="pipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="pipe-stage">
+            <div class="pipe-title">Logan search</div>
+            <div class="pipe-sub">56k kmindex / 107k LexicMap</div>
+          </div>
+          <div class="pipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="pipe-stage">
+            <div class="pipe-title">disassembler</div>
+            <div class="pipe-sub">Coding haplotypes</div>
+          </div>
+          <div class="pipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="pipe-stage terminal">
+            <div class="pipe-title">Next talk</div>
+            <div class="pipe-sub">Does selection light up the WHO sites?</div>
+          </div>
+        </div>
+
+        <div class="callout-light">
+          <div class="label">Status honesty</div>
+          <p class="body"><strong>Search numbers are real</strong> — run on usegalaxy.org today. Haplotype reconstruction is running now via a user-defined Galaxy tool; still a prototype.</p>
+        </div>
+
+        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="slide-footer">Worked example</div>
+      </div>
+      <aside class="notes">The walkthrough the room can map onto their own work: take the k13 propeller-domain CDS, search the archive, rebuild coding haplotypes from every run that carries it — then hand the cohort to the next talk, which asks whether the WHO-validated resistance sites are the ones under selection. Real numbers: kmindex found 56,303 accessions (52,738 at >0.75 k-mer score); LexicMap found 107,253 — nearly double, recovering partial/lower-k-mer hits — with 98% of all kmindex hits confirmed by alignment and median 100% identity among the shared high-scoring set. The disassembler step is live in Galaxy right now as a user-defined tool on a 300-accession pilot; full cohort needs the scattered workflow.</aside>
+    </section>
+
     <!-- ============ 9. What this unlocks ============ -->
     <section>
       <div class="slide">
