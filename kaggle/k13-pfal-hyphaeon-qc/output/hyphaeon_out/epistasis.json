@@ -1,0 +1,15 @@
+{
+  "alignment": "/kaggle/input/k13-pfal-msa-qc/k13_ref_codon_msa.fasta",
+  "tree": null,
+  "taxa_count": 107,
+  "codon_count": 727,
+  "evaluated_taxa": 107,
+  "coselection_edges_count": 0,
+  "discovered_sectors_count": 0,
+  "edges": [],
+  "sectors": [],
+  "plasticity": [],
+  "coselection_edges": [],
+  "epistatic_sectors": [],
+  "selection_dms_plasticity": []
+}

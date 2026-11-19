@@ -1,0 +1,494 @@
+
+===== list-models =====
++ hyphaeon list-models
+Available model variants (datamonkey/hyphaeon):
+
+  general          General model (trained on diverse alignments) (default)
+  viral            viral variant
+
+Use with:  hyphaeon <subcommand> --model-variant <variant>
+Default variant: general
+[list-models] rc=0
+
+===== meme =====
++ hyphaeon meme -a /kaggle/input/datasets/daniellecallan/k13-mixed-msa-qc/k13_ref_codon_msa.fasta --use-tn93 -o /kaggle/working/hyphaeon_out/meme.json -c /kaggle/working/hyphaeon_out/meme.csv
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[*] Hardware device selected: CPU
+[*] Downloading HyphAeon weights (general variant) from Hugging Face...
+[✓] Weights cached at: /root/.cache/huggingface/hub/models--datamonkey--hyphaeon/snapshots/0df779de77381ebbe5a3eebfc63b332c4398340b/model.safetensors
+[*] Loading HyphAeon model from: /root/.cache/huggingface/hub/models--datamonkey--hyphaeon/snapshots/0df779de77381ebbe5a3eebfc63b332c4398340b/model.safetensors
+[*] Parsing Alignment: /kaggle/input/datasets/daniellecallan/k13-mixed-msa-qc/k13_ref_codon_msa.fasta
+[*] Tree argument skipped; estimating pairwise distances directly via TN93...
+[*] Tree skipped: Estimating pairwise sequence distances directly via TN93...
+[*] Duplicate Taxon Pruning: Collapsed 1573 identical duplicate sequence(s) (1683 -> 110 unique haplotypes).
+[!] Warning: 6 internal stop codon(s) found in 'ERR10109762_primary'. This may indicate a frameshift or pseudogene. Verify that the alignment is in-frame (codon-aligned).
+[!] Notice: Found 99 in-frame stop codon(s) across alignment matrix.
+[*] Site Batch Sizing (hardware adaptive): 133 sites/chunk (1 chunk for 133/727 variable codons)
+[Predict] codon   133/  133 (100.0%) |   54.4 codon/s | Elapsed:   2.4s | ETA:   0.0s
+
+==============================================================================
+🎉 HyphAeon Selection Inference Complete in 3.656 seconds!
+   Taxa: 110 | Codon Sites: 727 | Total Invariable: 594
+   Nominal Significance: (p <= 0.05): 23 | (p <= 0.10): 31
+   FDR Significance:     (q <= 0.05): 0 | (q <= 0.10): 0
+==============================================================================
+
+Top Candidate Sites for Episodic Positive Selection:
+Codon    LRT Score    p-value      FDR q-val    Status         
+--------------------------------------------------------------
+122      12.876       6.8627e-04   4.0893e-01   p <= 0.05      
+708      11.191       1.6088e-03   4.0893e-01   p <= 0.05      
+152      11.096       1.6875e-03   4.0893e-01   p <= 0.05      
+123      10.132       2.7494e-03   4.9971e-01   p <= 0.05      
+48       7.966        8.2626e-03   6.6667e-01   p <= 0.05      
+258      7.865        8.6977e-03   6.6667e-01   p <= 0.05      
+45       7.458        1.0699e-02   6.6667e-01   p <= 0.05      
+33       7.371        1.1186e-02   6.6667e-01   p <= 0.05      
+62       7.371        1.1187e-02   6.6667e-01   p <= 0.05      
+692      6.882        1.4355e-02   6.6667e-01   p <= 0.05      
+
+[✓] JSON results written to: /kaggle/working/hyphaeon_out/meme.json
+[✓] CSV results written to: /kaggle/working/hyphaeon_out/meme.csv
+[meme] rc=0
+
+===== dms =====
++ hyphaeon dms -a /kaggle/input/datasets/daniellecallan/k13-mixed-msa-qc/k13_ref_codon_msa.fasta --use-tn93 --focal-taxon Reference -o /kaggle/working/hyphaeon_out/dms.json -c /kaggle/working/hyphaeon_out/dms.csv
+[*] Executing in silico Selection Deep Mutational Scanning (Digital DMS / ESSM)...
+[*] Alignment: /kaggle/input/datasets/daniellecallan/k13-mixed-msa-qc/k13_ref_codon_msa.fasta
+[*] Tree:      (skipped; estimating pairwise distances via TN93)
+[*] Tree skipped: Estimating pairwise sequence distances directly via TN93...
+[*] Duplicate Taxon Pruning: Collapsed 1573 identical duplicate sequence(s) (1683 -> 110 unique haplotypes).
+[!] Warning: 6 internal stop codon(s) found in 'ERR10109762_primary'. This may indicate a frameshift or pseudogene. Verify that the alignment is in-frame (codon-aligned).
+[!] Notice: Found 99 in-frame stop codon(s) across alignment matrix.
+[*] Starting Selection Deep Mutational Scanning (ESSM / Digital DMS)...
+    Target Taxon: PF3D7_1343700 (index 0) | Scope: 727 codons | Total Mutants: 13813 | Batch Size: 64 (3 sites/pass)
+[ESSM DMS] Codon    3/727 (  0.4%) | Mutants:    57/13813 |  63.6 mut/s | Mean Φ: 2.276 | Elapsed:  0.9s | ETA: 216.2s
+[ESSM DMS] Codon    6/727 (  0.8%) | Mutants:   114/13813 |  64.1 mut/s | Mean Φ: 2.496 | Elapsed:  1.8s | ETA: 213.9s
+[ESSM DMS] Codon    9/727 (  1.2%) | Mutants:   171/13813 |  63.5 mut/s | Mean Φ: 2.464 | Elapsed:  2.7s | ETA: 214.8s
+[ESSM DMS] Codon   12/727 (  1.7%) | Mutants:   228/13813 |  63.5 mut/s | Mean Φ: 2.158 | Elapsed:  3.6s | ETA: 214.1s
+[ESSM DMS] Codon   15/727 (  2.1%) | Mutants:   285/13813 |  63.9 mut/s | Mean Φ: 1.953 | Elapsed:  4.5s | ETA: 211.8s
+[ESSM DMS] Codon   18/727 (  2.5%) | Mutants:   342/13813 |  63.6 mut/s | Mean Φ: 1.855 | Elapsed:  5.4s | ETA: 211.9s
+[ESSM DMS] Codon   21/727 (  2.9%) | Mutants:   399/13813 |  63.7 mut/s | Mean Φ: 1.894 | Elapsed:  6.3s | ETA: 210.5s
+[ESSM DMS] Codon   24/727 (  3.3%) | Mutants:   456/13813 |  63.4 mut/s | Mean Φ: 1.988 | Elapsed:  7.2s | ETA: 210.6s
+[ESSM DMS] Codon   27/727 (  3.7%) | Mutants:   513/13813 |  63.4 mut/s | Mean Φ: 1.905 | Elapsed:  8.1s | ETA: 209.8s
+[ESSM DMS] Codon   30/727 (  4.1%) | Mutants:   570/13813 |  63.7 mut/s | Mean Φ: 1.798 | Elapsed:  9.0s | ETA: 207.9s
+[ESSM DMS] Codon   33/727 (  4.5%) | Mutants:   627/13813 |  63.6 mut/s | Mean Φ: 1.827 | Elapsed:  9.9s | ETA: 207.2s
+[ESSM DMS] Codon   36/727 (  5.0%) | Mutants:   684/13813 |  63.7 mut/s | Mean Φ: 1.755 | Elapsed: 10.7s | ETA: 206.2s
+[ESSM DMS] Codon   39/727 (  5.4%) | Mutants:   741/13813 |  63.7 mut/s | Mean Φ: 1.764 | Elapsed: 11.6s | ETA: 205.3s
+[ESSM DMS] Codon   42/727 (  5.8%) | Mutants:   798/13813 |  63.3 mut/s | Mean Φ: 1.756 | Elapsed: 12.6s | ETA: 205.7s
+[ESSM DMS] Codon   45/727 (  6.2%) | Mutants:   855/13813 |  63.3 mut/s | Mean Φ: 1.746 | Elapsed: 13.5s | ETA: 204.7s
+[ESSM DMS] Codon   48/727 (  6.6%) | Mutants:   912/13813 |  63.1 mut/s | Mean Φ: 1.725 | Elapsed: 14.4s | ETA: 204.4s
+[ESSM DMS] Codon   51/727 (  7.0%) | Mutants:   969/13813 |  63.1 mut/s | Mean Φ: 1.727 | Elapsed: 15.4s | ETA: 203.6s
+[ESSM DMS] Codon   54/727 (  7.4%) | Mutants:  1026/13813 |  63.1 mut/s | Mean Φ: 1.801 | Elapsed: 16.3s | ETA: 202.6s
+[ESSM DMS] Codon   57/727 (  7.8%) | Mutants:  1083/13813 |  62.9 mut/s | Mean Φ: 1.917 | Elapsed: 17.2s | ETA: 202.3s
+[ESSM DMS] Codon   60/727 (  8.3%) | Mutants:  1140/13813 |  63.0 mut/s | Mean Φ: 1.886 | Elapsed: 18.1s | ETA: 201.1s
+[ESSM DMS] Codon   63/727 (  8.7%) | Mutants:  1197/13813 |  63.0 mut/s | Mean Φ: 1.943 | Elapsed: 19.0s | ETA: 200.1s
+[ESSM DMS] Codon   66/727 (  9.1%) | Mutants:  1254/13813 |  63.0 mut/s | Mean Φ: 1.950 | Elapsed: 19.9s | ETA: 199.3s
+[ESSM DMS] Codon   69/727 (  9.5%) | Mutants:  1311/13813 |  63.0 mut/s | Mean Φ: 1.978 | Elapsed: 20.8s | ETA: 198.6s
+[ESSM DMS] Codon   72/727 (  9.9%) | Mutants:  1368/13813 |  62.9 mut/s | Mean Φ: 2.031 | Elapsed: 21.7s | ETA: 197.7s
+[ESSM DMS] Codon   75/727 ( 10.3%) | Mutants:  1425/13813 |  62.8 mut/s | Mean Φ: 2.052 | Elapsed: 22.7s | ETA: 197.3s
+[ESSM DMS] Codon   78/727 ( 10.7%) | Mutants:  1482/13813 |  62.8 mut/s | Mean Φ: 2.172 | Elapsed: 23.6s | ETA: 196.3s
+[ESSM DMS] Codon   81/727 ( 11.1%) | Mutants:  1539/13813 |  62.8 mut/s | Mean Φ: 2.184 | Elapsed: 24.5s | ETA: 195.4s
+[ESSM DMS] Codon   84/727 ( 11.6%) | Mutants:  1596/13813 |  62.8 mut/s | Mean Φ: 2.243 | Elapsed: 25.4s | ETA: 194.4s
+[ESSM DMS] Codon   87/727 ( 12.0%) | Mutants:  1653/13813 |  62.8 mut/s | Mean Φ: 2.240 | Elapsed: 26.3s | ETA: 193.5s
+[ESSM DMS] Codon   90/727 ( 12.4%) | Mutants:  1710/13813 |  62.8 mut/s | Mean Φ: 2.269 | Elapsed: 27.2s | ETA: 192.6s
+[ESSM DMS] Codon   93/727 ( 12.8%) | Mutants:  1767/13813 |  62.8 mut/s | Mean Φ: 2.362 | Elapsed: 28.1s | ETA: 191.7s
+[ESSM DMS] Codon   96/727 ( 13.2%) | Mutants:  1824/13813 |  62.9 mut/s | Mean Φ: 2.425 | Elapsed: 29.0s | ETA: 190.7s
+[ESSM DMS] Codon   99/727 ( 13.6%) | Mutants:  1881/13813 |  62.9 mut/s | Mean Φ: 2.447 | Elapsed: 29.9s | ETA: 189.8s
+[ESSM DMS] Codon  102/727 ( 14.0%) | Mutants:  1938/13813 |  62.9 mut/s | Mean Φ: 2.432 | Elapsed: 30.8s | ETA: 188.9s
+[ESSM DMS] Codon  105/727 ( 14.4%) | Mutants:  1995/13813 |  62.7 mut/s | Mean Φ: 2.449 | Elapsed: 31.8s | ETA: 188.5s
+[ESSM DMS] Codon  108/727 ( 14.9%) | Mutants:  2052/13813 |  62.7 mut/s | Mean Φ: 2.485 | Elapsed: 32.7s | ETA: 187.4s
+[ESSM DMS] Codon  111/727 ( 15.3%) | Mutants:  2109/13813 |  62.7 mut/s | Mean Φ: 2.459 | Elapsed: 33.6s | ETA: 186.6s
+[ESSM DMS] Codon  114/727 ( 15.7%) | Mutants:  2166/13813 |  62.8 mut/s | Mean Φ: 2.465 | Elapsed: 34.5s | ETA: 185.4s
+[ESSM DMS] Codon  117/727 ( 16.1%) | Mutants:  2223/13813 |  62.8 mut/s | Mean Φ: 2.465 | Elapsed: 35.4s | ETA: 184.4s
+[ESSM DMS] Codon  120/727 ( 16.5%) | Mutants:  2280/13813 |  62.8 mut/s | Mean Φ: 2.503 | Elapsed: 36.3s | ETA: 183.5s
+[ESSM DMS] Codon  123/727 ( 16.9%) | Mutants:  2337/13813 |  62.9 mut/s | Mean Φ: 2.488 | Elapsed: 37.2s | ETA: 182.4s
+[ESSM DMS] Codon  126/727 ( 17.3%) | Mutants:  2394/13813 |  63.0 mut/s | Mean Φ: 2.452 | Elapsed: 38.0s | ETA: 181.3s
+[ESSM DMS] Codon  129/727 ( 17.7%) | Mutants:  2451/13813 |  63.0 mut/s | Mean Φ: 2.437 | Elapsed: 38.9s | ETA: 180.4s
+[ESSM DMS] Codon  132/727 ( 18.2%) | Mutants:  2508/13813 |  63.0 mut/s | Mean Φ: 2.434 | Elapsed: 39.8s | ETA: 179.6s
+[ESSM DMS] Codon  135/727 ( 18.6%) | Mutants:  2565/13813 |  63.0 mut/s | Mean Φ: 2.415 | Elapsed: 40.7s | ETA: 178.5s
+[ESSM DMS] Codon  138/727 ( 19.0%) | Mutants:  2622/13813 |  63.0 mut/s | Mean Φ: 2.377 | Elapsed: 41.6s | ETA: 177.6s
+[ESSM DMS] Codon  141/727 ( 19.4%) | Mutants:  2679/13813 |  63.0 mut/s | Mean Φ: 2.356 | Elapsed: 42.5s | ETA: 176.7s
+[ESSM DMS] Codon  144/727 ( 19.8%) | Mutants:  2736/13813 |  63.1 mut/s | Mean Φ: 2.343 | Elapsed: 43.4s | ETA: 175.6s
+[ESSM DMS] Codon  147/727 ( 20.2%) | Mutants:  2793/13813 |  63.2 mut/s | Mean Φ: 2.325 | Elapsed: 44.2s | ETA: 174.5s
+[ESSM DMS] Codon  150/727 ( 20.6%) | Mutants:  2850/13813 |  63.1 mut/s | Mean Φ: 2.296 | Elapsed: 45.1s | ETA: 173.6s
+[ESSM DMS] Codon  153/727 ( 21.0%) | Mutants:  2907/13813 |  63.2 mut/s | Mean Φ: 2.283 | Elapsed: 46.0s | ETA: 172.5s
+[ESSM DMS] Codon  156/727 ( 21.5%) | Mutants:  2964/13813 |  63.2 mut/s | Mean Φ: 2.265 | Elapsed: 46.9s | ETA: 171.7s
+[ESSM DMS] Codon  159/727 ( 21.9%) | Mutants:  3021/13813 |  63.2 mut/s | Mean Φ: 2.253 | Elapsed: 47.8s | ETA: 170.7s
+[ESSM DMS] Codon  162/727 ( 22.3%) | Mutants:  3078/13813 |  63.2 mut/s | Mean Φ: 2.241 | Elapsed: 48.7s | ETA: 169.8s
+[ESSM DMS] Codon  165/727 ( 22.7%) | Mutants:  3135/13813 |  63.2 mut/s | Mean Φ: 2.226 | Elapsed: 49.6s | ETA: 168.8s
+[ESSM DMS] Codon  168/727 ( 23.1%) | Mutants:  3192/13813 |  63.3 mut/s | Mean Φ: 2.278 | Elapsed: 50.5s | ETA: 167.9s
+[ESSM DMS] Codon  171/727 ( 23.5%) | Mutants:  3249/13813 |  63.2 mut/s | Mean Φ: 2.287 | Elapsed: 51.4s | ETA: 167.1s
+[ESSM DMS] Codon  174/727 ( 23.9%) | Mutants:  3306/13813 |  63.1 mut/s | Mean Φ: 2.304 | Elapsed: 52.4s | ETA: 166.5s
+[ESSM DMS] Codon  177/727 ( 24.3%) | Mutants:  3363/13813 |  63.2 mut/s | Mean Φ: 2.307 | Elapsed: 53.2s | ETA: 165.5s
+[ESSM DMS] Codon  180/727 ( 24.8%) | Mutants:  3420/13813 |  63.2 mut/s | Mean Φ: 2.291 | Elapsed: 54.1s | ETA: 164.5s
+[ESSM DMS] Codon  183/727 ( 25.2%) | Mutants:  3477/13813 |  63.2 mut/s | Mean Φ: 2.277 | Elapsed: 55.0s | ETA: 163.6s
+[ESSM DMS] Codon  186/727 ( 25.6%) | Mutants:  3534/13813 |  63.2 mut/s | Mean Φ: 2.282 | Elapsed: 55.9s | ETA: 162.7s
+[ESSM DMS] Codon  189/727 ( 26.0%) | Mutants:  3591/13813 |  63.2 mut/s | Mean Φ: 2.283 | Elapsed: 56.8s | ETA: 161.7s
+[ESSM DMS] Codon  192/727 ( 26.4%) | Mutants:  3648/13813 |  63.2 mut/s | Mean Φ: 2.296 | Elapsed: 57.7s | ETA: 160.9s
+[ESSM DMS] Codon  195/727 ( 26.8%) | Mutants:  3705/13813 |  63.2 mut/s | Mean Φ: 2.284 | Elapsed: 58.6s | ETA: 159.9s
+[ESSM DMS] Codon  198/727 ( 27.2%) | Mutants:  3762/13813 |  63.2 mut/s | Mean Φ: 2.278 | Elapsed: 59.5s | ETA: 159.0s
+[ESSM DMS] Codon  201/727 ( 27.6%) | Mutants:  3819/13813 |  63.2 mut/s | Mean Φ: 2.301 | Elapsed: 60.4s | ETA: 158.2s
+[ESSM DMS] Codon  204/727 ( 28.1%) | Mutants:  3876/13813 |  63.2 mut/s | Mean Φ: 2.328 | Elapsed: 61.3s | ETA: 157.3s
+[ESSM DMS] Codon  207/727 ( 28.5%) | Mutants:  3933/13813 |  63.1 mut/s | Mean Φ: 2.333 | Elapsed: 62.3s | ETA: 156.5s
+[ESSM DMS] Codon  210/727 ( 28.9%) | Mutants:  3990/13813 |  63.1 mut/s | Mean Φ: 2.370 | Elapsed: 63.2s | ETA: 155.6s
+[ESSM DMS] Codon  213/727 ( 29.3%) | Mutants:  4047/13813 |  63.1 mut/s | Mean Φ: 2.373 | Elapsed: 64.1s | ETA: 154.7s
+[ESSM DMS] Codon  216/727 ( 29.7%) | Mutants:  4104/13813 |  63.1 mut/s | Mean Φ: 2.406 | Elapsed: 65.0s | ETA: 153.8s
+[ESSM DMS] Codon  219/727 ( 30.1%) | Mutants:  4161/13813 |  63.1 mut/s | Mean Φ: 2.403 | Elapsed: 65.9s | ETA: 153.0s
+[ESSM DMS] Codon  222/727 ( 30.5%) | Mutants:  4218/13813 |  63.1 mut/s | Mean Φ: 2.420 | Elapsed: 66.8s | ETA: 152.0s
+[ESSM DMS] Codon  225/727 ( 30.9%) | Mutants:  4275/13813 |  63.1 mut/s | Mean Φ: 2.407 | Elapsed: 67.8s | ETA: 151.2s
+[ESSM DMS] Codon  228/727 ( 31.4%) | Mutants:  4332/13813 |  63.1 mut/s | Mean Φ: 2.418 | Elapsed: 68.7s | ETA: 150.3s
+[ESSM DMS] Codon  231/727 ( 31.8%) | Mutants:  4389/13813 |  63.1 mut/s | Mean Φ: 2.439 | Elapsed: 69.6s | ETA: 149.5s
+[ESSM DMS] Codon  234/727 ( 32.2%) | Mutants:  4446/13813 |  63.0 mut/s | Mean Φ: 2.449 | Elapsed: 70.5s | ETA: 148.6s
+[ESSM DMS] Codon  237/727 ( 32.6%) | Mutants:  4503/13813 |  63.0 mut/s | Mean Φ: 2.457 | Elapsed: 71.4s | ETA: 147.7s
+[ESSM DMS] Codon  240/727 ( 33.0%) | Mutants:  4560/13813 |  63.0 mut/s | Mean Φ: 2.474 | Elapsed: 72.4s | ETA: 146.9s
+[ESSM DMS] Codon  243/727 ( 33.4%) | Mutants:  4617/13813 |  63.0 mut/s | Mean Φ: 2.507 | Elapsed: 73.3s | ETA: 146.0s
+[ESSM DMS] Codon  246/727 ( 33.8%) | Mutants:  4674/13813 |  63.0 mut/s | Mean Φ: 2.538 | Elapsed: 74.2s | ETA: 145.1s
+[ESSM DMS] Codon  249/727 ( 34.3%) | Mutants:  4731/13813 |  62.9 mut/s | Mean Φ: 2.557 | Elapsed: 75.2s | ETA: 144.3s
+[ESSM DMS] Codon  252/727 ( 34.7%) | Mutants:  4788/13813 |  63.0 mut/s | Mean Φ: 2.583 | Elapsed: 76.0s | ETA: 143.3s
+[ESSM DMS] Codon  255/727 ( 35.1%) | Mutants:  4845/13813 |  63.0 mut/s | Mean Φ: 2.593 | Elapsed: 76.9s | ETA: 142.4s
+[ESSM DMS] Codon  258/727 ( 35.5%) | Mutants:  4902/13813 |  63.0 mut/s | Mean Φ: 2.580 | Elapsed: 77.9s | ETA: 141.5s
+[ESSM DMS] Codon  261/727 ( 35.9%) | Mutants:  4959/13813 |  62.9 mut/s | Mean Φ: 2.614 | Elapsed: 78.8s | ETA: 140.7s
+[ESSM DMS] Codon  264/727 ( 36.3%) | Mutants:  5016/13813 |  62.9 mut/s | Mean Φ: 2.629 | Elapsed: 79.8s | ETA: 139.9s
+[ESSM DMS] Codon  267/727 ( 36.7%) | Mutants:  5073/13813 |  62.9 mut/s | Mean Φ: 2.638 | Elapsed: 80.7s | ETA: 139.0s
+[ESSM DMS] Codon  270/727 ( 37.1%) | Mutants:  5130/13813 |  62.9 mut/s | Mean Φ: 2.666 | Elapsed: 81.6s | ETA: 138.1s
+[ESSM DMS] Codon  273/727 ( 37.6%) | Mutants:  5187/13813 |  62.9 mut/s | Mean Φ: 2.682 | Elapsed: 82.5s | ETA: 137.2s
+[ESSM DMS] Codon  276/727 ( 38.0%) | Mutants:  5244/13813 |  62.9 mut/s | Mean Φ: 2.693 | Elapsed: 83.4s | ETA: 136.3s
+[ESSM DMS] Codon  279/727 ( 38.4%) | Mutants:  5301/13813 |  62.9 mut/s | Mean Φ: 2.709 | Elapsed: 84.3s | ETA: 135.4s
+[ESSM DMS] Codon  282/727 ( 38.8%) | Mutants:  5358/13813 |  62.9 mut/s | Mean Φ: 2.710 | Elapsed: 85.2s | ETA: 134.5s
+[ESSM DMS] Codon  285/727 ( 39.2%) | Mutants:  5415/13813 |  62.9 mut/s | Mean Φ: 2.712 | Elapsed: 86.1s | ETA: 133.6s
+[ESSM DMS] Codon  288/727 ( 39.6%) | Mutants:  5472/13813 |  62.9 mut/s | Mean Φ: 2.710 | Elapsed: 87.1s | ETA: 132.7s
+[ESSM DMS] Codon  291/727 ( 40.0%) | Mutants:  5529/13813 |  62.9 mut/s | Mean Φ: 2.719 | Elapsed: 88.0s | ETA: 131.8s
+[ESSM DMS] Codon  294/727 ( 40.4%) | Mutants:  5586/13813 |  62.9 mut/s | Mean Φ: 2.749 | Elapsed: 88.9s | ETA: 130.9s
+[ESSM DMS] Codon  297/727 ( 40.9%) | Mutants:  5643/13813 |  62.9 mut/s | Mean Φ: 2.786 | Elapsed: 89.8s | ETA: 130.0s
+[ESSM DMS] Codon  300/727 ( 41.3%) | Mutants:  5700/13813 |  62.9 mut/s | Mean Φ: 2.792 | Elapsed: 90.7s | ETA: 129.0s
+[ESSM DMS] Codon  303/727 ( 41.7%) | Mutants:  5757/13813 |  62.9 mut/s | Mean Φ: 2.798 | Elapsed: 91.6s | ETA: 128.2s
+[ESSM DMS] Codon  306/727 ( 42.1%) | Mutants:  5814/13813 |  62.8 mut/s | Mean Φ: 2.818 | Elapsed: 92.5s | ETA: 127.3s
+[ESSM DMS] Codon  309/727 ( 42.5%) | Mutants:  5871/13813 |  62.8 mut/s | Mean Φ: 2.818 | Elapsed: 93.4s | ETA: 126.4s
+[ESSM DMS] Codon  312/727 ( 42.9%) | Mutants:  5928/13813 |  62.8 mut/s | Mean Φ: 2.842 | Elapsed: 94.3s | ETA: 125.5s
+[ESSM DMS] Codon  315/727 ( 43.3%) | Mutants:  5985/13813 |  62.8 mut/s | Mean Φ: 2.848 | Elapsed: 95.2s | ETA: 124.6s
+[ESSM DMS] Codon  318/727 ( 43.7%) | Mutants:  6042/13813 |  62.8 mut/s | Mean Φ: 2.865 | Elapsed: 96.1s | ETA: 123.7s
+[ESSM DMS] Codon  321/727 ( 44.2%) | Mutants:  6099/13813 |  62.8 mut/s | Mean Φ: 2.874 | Elapsed: 97.1s | ETA: 122.8s
+[ESSM DMS] Codon  324/727 ( 44.6%) | Mutants:  6156/13813 |  62.8 mut/s | Mean Φ: 2.897 | Elapsed: 98.0s | ETA: 121.9s
+[ESSM DMS] Codon  327/727 ( 45.0%) | Mutants:  6213/13813 |  62.8 mut/s | Mean Φ: 2.925 | Elapsed: 98.9s | ETA: 121.0s
+[ESSM DMS] Codon  330/727 ( 45.4%) | Mutants:  6270/13813 |  62.8 mut/s | Mean Φ: 2.941 | Elapsed: 99.8s | ETA: 120.0s
+[ESSM DMS] Codon  333/727 ( 45.8%) | Mutants:  6327/13813 |  62.8 mut/s | Mean Φ: 2.949 | Elapsed: 100.7s | ETA: 119.1s
+[ESSM DMS] Codon  336/727 ( 46.2%) | Mutants:  6384/13813 |  62.8 mut/s | Mean Φ: 2.959 | Elapsed: 101.6s | ETA: 118.3s
+[ESSM DMS] Codon  339/727 ( 46.6%) | Mutants:  6441/13813 |  62.8 mut/s | Mean Φ: 2.962 | Elapsed: 102.6s | ETA: 117.4s
+[ESSM DMS] Codon  342/727 ( 47.0%) | Mutants:  6498/13813 |  62.8 mut/s | Mean Φ: 2.976 | Elapsed: 103.4s | ETA: 116.4s
+[ESSM DMS] Codon  345/727 ( 47.5%) | Mutants:  6555/13813 |  62.9 mut/s | Mean Φ: 2.974 | Elapsed: 104.3s | ETA: 115.5s
+[ESSM DMS] Codon  348/727 ( 47.9%) | Mutants:  6612/13813 |  62.9 mut/s | Mean Φ: 2.968 | Elapsed: 105.2s | ETA: 114.6s
+[ESSM DMS] Codon  351/727 ( 48.3%) | Mutants:  6669/13813 |  62.9 mut/s | Mean Φ: 2.971 | Elapsed: 106.1s | ETA: 113.6s
+[ESSM DMS] Codon  354/727 ( 48.7%) | Mutants:  6726/13813 |  62.9 mut/s | Mean Φ: 2.969 | Elapsed: 107.0s | ETA: 112.7s
+[ESSM DMS] Codon  357/727 ( 49.1%) | Mutants:  6783/13813 |  62.9 mut/s | Mean Φ: 2.966 | Elapsed: 107.9s | ETA: 111.8s
+[ESSM DMS] Codon  360/727 ( 49.5%) | Mutants:  6840/13813 |  62.9 mut/s | Mean Φ: 2.965 | Elapsed: 108.8s | ETA: 110.9s
+[ESSM DMS] Codon  363/727 ( 49.9%) | Mutants:  6897/13813 |  62.9 mut/s | Mean Φ: 2.977 | Elapsed: 109.7s | ETA: 110.0s
+[ESSM DMS] Codon  366/727 ( 50.3%) | Mutants:  6954/13813 |  62.9 mut/s | Mean Φ: 2.969 | Elapsed: 110.6s | ETA: 109.1s
+[ESSM DMS] Codon  369/727 ( 50.8%) | Mutants:  7011/13813 |  62.9 mut/s | Mean Φ: 2.966 | Elapsed: 111.5s | ETA: 108.2s
+[ESSM DMS] Codon  372/727 ( 51.2%) | Mutants:  7068/13813 |  62.9 mut/s | Mean Φ: 2.982 | Elapsed: 112.4s | ETA: 107.3s
+[ESSM DMS] Codon  375/727 ( 51.6%) | Mutants:  7125/13813 |  62.9 mut/s | Mean Φ: 2.985 | Elapsed: 113.3s | ETA: 106.4s
+[ESSM DMS] Codon  378/727 ( 52.0%) | Mutants:  7182/13813 |  62.9 mut/s | Mean Φ: 2.999 | Elapsed: 114.2s | ETA: 105.4s
+[ESSM DMS] Codon  381/727 ( 52.4%) | Mutants:  7239/13813 |  62.9 mut/s | Mean Φ: 3.011 | Elapsed: 115.1s | ETA: 104.5s
+[ESSM DMS] Codon  384/727 ( 52.8%) | Mutants:  7296/13813 |  62.9 mut/s | Mean Φ: 3.000 | Elapsed: 116.0s | ETA: 103.6s
+[ESSM DMS] Codon  387/727 ( 53.2%) | Mutants:  7353/13813 |  62.9 mut/s | Mean Φ: 2.992 | Elapsed: 116.9s | ETA: 102.7s
+[ESSM DMS] Codon  390/727 ( 53.6%) | Mutants:  7410/13813 |  62.9 mut/s | Mean Φ: 2.996 | Elapsed: 117.7s | ETA: 101.7s
+[ESSM DMS] Codon  393/727 ( 54.1%) | Mutants:  7467/13813 |  63.0 mut/s | Mean Φ: 2.993 | Elapsed: 118.6s | ETA: 100.8s
+[ESSM DMS] Codon  396/727 ( 54.5%) | Mutants:  7524/13813 |  63.0 mut/s | Mean Φ: 2.998 | Elapsed: 119.5s | ETA: 99.9s
+[ESSM DMS] Codon  399/727 ( 54.9%) | Mutants:  7581/13813 |  63.0 mut/s | Mean Φ: 2.991 | Elapsed: 120.3s | ETA: 98.9s
+[ESSM DMS] Codon  402/727 ( 55.3%) | Mutants:  7638/13813 |  63.0 mut/s | Mean Φ: 3.002 | Elapsed: 121.2s | ETA: 98.0s
+[ESSM DMS] Codon  405/727 ( 55.7%) | Mutants:  7695/13813 |  63.0 mut/s | Mean Φ: 3.004 | Elapsed: 122.2s | ETA: 97.1s
+[ESSM DMS] Codon  408/727 ( 56.1%) | Mutants:  7752/13813 |  63.0 mut/s | Mean Φ: 3.007 | Elapsed: 123.0s | ETA: 96.2s
+[ESSM DMS] Codon  411/727 ( 56.5%) | Mutants:  7809/13813 |  63.0 mut/s | Mean Φ: 3.012 | Elapsed: 123.9s | ETA: 95.3s
+[ESSM DMS] Codon  414/727 ( 56.9%) | Mutants:  7866/13813 |  63.0 mut/s | Mean Φ: 3.013 | Elapsed: 124.8s | ETA: 94.4s
+[ESSM DMS] Codon  417/727 ( 57.4%) | Mutants:  7923/13813 |  63.0 mut/s | Mean Φ: 3.004 | Elapsed: 125.7s | ETA: 93.4s
+[ESSM DMS] Codon  420/727 ( 57.8%) | Mutants:  7980/13813 |  63.0 mut/s | Mean Φ: 3.008 | Elapsed: 126.6s | ETA: 92.5s
+[ESSM DMS] Codon  423/727 ( 58.2%) | Mutants:  8037/13813 |  63.0 mut/s | Mean Φ: 3.008 | Elapsed: 127.5s | ETA: 91.6s
+[ESSM DMS] Codon  426/727 ( 58.6%) | Mutants:  8094/13813 |  63.1 mut/s | Mean Φ: 3.023 | Elapsed: 128.3s | ETA: 90.7s
+[ESSM DMS] Codon  429/727 ( 59.0%) | Mutants:  8151/13813 |  63.1 mut/s | Mean Φ: 3.027 | Elapsed: 129.2s | ETA: 89.7s
+[ESSM DMS] Codon  432/727 ( 59.4%) | Mutants:  8208/13813 |  63.1 mut/s | Mean Φ: 3.044 | Elapsed: 130.1s | ETA: 88.8s
+[ESSM DMS] Codon  435/727 ( 59.8%) | Mutants:  8265/13813 |  63.1 mut/s | Mean Φ: 3.057 | Elapsed: 131.0s | ETA: 87.9s
+[ESSM DMS] Codon  438/727 ( 60.2%) | Mutants:  8322/13813 |  63.1 mut/s | Mean Φ: 3.064 | Elapsed: 131.9s | ETA: 87.1s
+[ESSM DMS] Codon  441/727 ( 60.7%) | Mutants:  8379/13813 |  63.1 mut/s | Mean Φ: 3.072 | Elapsed: 132.8s | ETA: 86.1s
+[ESSM DMS] Codon  444/727 ( 61.1%) | Mutants:  8436/13813 |  63.1 mut/s | Mean Φ: 3.078 | Elapsed: 133.7s | ETA: 85.2s
+[ESSM DMS] Codon  447/727 ( 61.5%) | Mutants:  8493/13813 |  63.1 mut/s | Mean Φ: 3.076 | Elapsed: 134.6s | ETA: 84.3s
+[ESSM DMS] Codon  450/727 ( 61.9%) | Mutants:  8550/13813 |  63.1 mut/s | Mean Φ: 3.072 | Elapsed: 135.5s | ETA: 83.4s
+[ESSM DMS] Codon  453/727 ( 62.3%) | Mutants:  8607/13813 |  63.1 mut/s | Mean Φ: 3.074 | Elapsed: 136.4s | ETA: 82.5s
+[ESSM DMS] Codon  456/727 ( 62.7%) | Mutants:  8664/13813 |  63.1 mut/s | Mean Φ: 3.082 | Elapsed: 137.3s | ETA: 81.6s
+[ESSM DMS] Codon  459/727 ( 63.1%) | Mutants:  8721/13813 |  63.1 mut/s | Mean Φ: 3.082 | Elapsed: 138.3s | ETA: 80.7s
+[ESSM DMS] Codon  462/727 ( 63.5%) | Mutants:  8778/13813 |  63.1 mut/s | Mean Φ: 3.088 | Elapsed: 139.2s | ETA: 79.8s
+[ESSM DMS] Codon  465/727 ( 64.0%) | Mutants:  8835/13813 |  63.1 mut/s | Mean Φ: 3.093 | Elapsed: 140.1s | ETA: 79.0s
+[ESSM DMS] Codon  468/727 ( 64.4%) | Mutants:  8892/13813 |  63.0 mut/s | Mean Φ: 3.097 | Elapsed: 141.1s | ETA: 78.1s
+[ESSM DMS] Codon  471/727 ( 64.8%) | Mutants:  8949/13813 |  63.0 mut/s | Mean Φ: 3.098 | Elapsed: 142.0s | ETA: 77.2s
+[ESSM DMS] Codon  474/727 ( 65.2%) | Mutants:  9006/13813 |  63.0 mut/s | Mean Φ: 3.090 | Elapsed: 142.9s | ETA: 76.3s
+[ESSM DMS] Codon  477/727 ( 65.6%) | Mutants:  9063/13813 |  63.0 mut/s | Mean Φ: 3.085 | Elapsed: 143.9s | ETA: 75.4s
+[ESSM DMS] Codon  480/727 ( 66.0%) | Mutants:  9120/13813 |  63.0 mut/s | Mean Φ: 3.091 | Elapsed: 144.8s | ETA: 74.5s
+[ESSM DMS] Codon  483/727 ( 66.4%) | Mutants:  9177/13813 |  63.0 mut/s | Mean Φ: 3.089 | Elapsed: 145.6s | ETA: 73.6s
+[ESSM DMS] Codon  486/727 ( 66.9%) | Mutants:  9234/13813 |  63.0 mut/s | Mean Φ: 3.082 | Elapsed: 146.5s | ETA: 72.7s
+[ESSM DMS] Codon  489/727 ( 67.3%) | Mutants:  9291/13813 |  63.0 mut/s | Mean Φ: 3.080 | Elapsed: 147.4s | ETA: 71.8s
+[ESSM DMS] Codon  492/727 ( 67.7%) | Mutants:  9348/13813 |  63.0 mut/s | Mean Φ: 3.082 | Elapsed: 148.3s | ETA: 70.8s
+[ESSM DMS] Codon  495/727 ( 68.1%) | Mutants:  9405/13813 |  63.0 mut/s | Mean Φ: 3.080 | Elapsed: 149.2s | ETA: 69.9s
+[ESSM DMS] Codon  498/727 ( 68.5%) | Mutants:  9462/13813 |  63.1 mut/s | Mean Φ: 3.074 | Elapsed: 150.0s | ETA: 69.0s
+[ESSM DMS] Codon  501/727 ( 68.9%) | Mutants:  9519/13813 |  63.1 mut/s | Mean Φ: 3.071 | Elapsed: 150.9s | ETA: 68.1s
+[ESSM DMS] Codon  504/727 ( 69.3%) | Mutants:  9576/13813 |  63.0 mut/s | Mean Φ: 3.071 | Elapsed: 151.9s | ETA: 67.2s
+[ESSM DMS] Codon  507/727 ( 69.7%) | Mutants:  9633/13813 |  63.0 mut/s | Mean Φ: 3.084 | Elapsed: 152.8s | ETA: 66.3s
+[ESSM DMS] Codon  510/727 ( 70.2%) | Mutants:  9690/13813 |  63.0 mut/s | Mean Φ: 3.085 | Elapsed: 153.7s | ETA: 65.4s
+[ESSM DMS] Codon  513/727 ( 70.6%) | Mutants:  9747/13813 |  63.1 mut/s | Mean Φ: 3.084 | Elapsed: 154.6s | ETA: 64.5s
+[ESSM DMS] Codon  516/727 ( 71.0%) | Mutants:  9804/13813 |  63.1 mut/s | Mean Φ: 3.081 | Elapsed: 155.5s | ETA: 63.6s
+[ESSM DMS] Codon  519/727 ( 71.4%) | Mutants:  9861/13813 |  63.1 mut/s | Mean Φ: 3.078 | Elapsed: 156.4s | ETA: 62.7s
+[ESSM DMS] Codon  522/727 ( 71.8%) | Mutants:  9918/13813 |  63.1 mut/s | Mean Φ: 3.079 | Elapsed: 157.3s | ETA: 61.8s
+[ESSM DMS] Codon  525/727 ( 72.2%) | Mutants:  9975/13813 |  63.1 mut/s | Mean Φ: 3.079 | Elapsed: 158.2s | ETA: 60.9s
+[ESSM DMS] Codon  528/727 ( 72.6%) | Mutants: 10032/13813 |  63.1 mut/s | Mean Φ: 3.074 | Elapsed: 159.1s | ETA: 60.0s
+[ESSM DMS] Codon  531/727 ( 73.0%) | Mutants: 10089/13813 |  63.1 mut/s | Mean Φ: 3.067 | Elapsed: 160.0s | ETA: 59.0s
+[ESSM DMS] Codon  534/727 ( 73.5%) | Mutants: 10146/13813 |  63.1 mut/s | Mean Φ: 3.064 | Elapsed: 160.9s | ETA: 58.1s
+[ESSM DMS] Codon  537/727 ( 73.9%) | Mutants: 10203/13813 |  63.0 mut/s | Mean Φ: 3.059 | Elapsed: 161.8s | ETA: 57.3s
+[ESSM DMS] Codon  540/727 ( 74.3%) | Mutants: 10260/13813 |  63.0 mut/s | Mean Φ: 3.056 | Elapsed: 162.7s | ETA: 56.4s
+[ESSM DMS] Codon  543/727 ( 74.7%) | Mutants: 10317/13813 |  63.1 mut/s | Mean Φ: 3.055 | Elapsed: 163.6s | ETA: 55.4s
+[ESSM DMS] Codon  546/727 ( 75.1%) | Mutants: 10374/13813 |  63.0 mut/s | Mean Φ: 3.053 | Elapsed: 164.6s | ETA: 54.5s
+[ESSM DMS] Codon  549/727 ( 75.5%) | Mutants: 10431/13813 |  63.0 mut/s | Mean Φ: 3.052 | Elapsed: 165.4s | ETA: 53.6s
+[ESSM DMS] Codon  552/727 ( 75.9%) | Mutants: 10488/13813 |  63.1 mut/s | Mean Φ: 3.052 | Elapsed: 166.3s | ETA: 52.7s
+[ESSM DMS] Codon  555/727 ( 76.3%) | Mutants: 10545/13813 |  63.1 mut/s | Mean Φ: 3.047 | Elapsed: 167.2s | ETA: 51.8s
+[ESSM DMS] Codon  558/727 ( 76.8%) | Mutants: 10602/13813 |  63.1 mut/s | Mean Φ: 3.052 | Elapsed: 168.1s | ETA: 50.9s
+[ESSM DMS] Codon  561/727 ( 77.2%) | Mutants: 10659/13813 |  63.1 mut/s | Mean Φ: 3.046 | Elapsed: 169.0s | ETA: 50.0s
+[ESSM DMS] Codon  564/727 ( 77.6%) | Mutants: 10716/13813 |  63.1 mut/s | Mean Φ: 3.051 | Elapsed: 169.9s | ETA: 49.1s
+[ESSM DMS] Codon  567/727 ( 78.0%) | Mutants: 10773/13813 |  63.1 mut/s | Mean Φ: 3.055 | Elapsed: 170.7s | ETA: 48.2s
+[ESSM DMS] Codon  570/727 ( 78.4%) | Mutants: 10830/13813 |  63.1 mut/s | Mean Φ: 3.053 | Elapsed: 171.6s | ETA: 47.3s
+[ESSM DMS] Codon  573/727 ( 78.8%) | Mutants: 10887/13813 |  63.1 mut/s | Mean Φ: 3.049 | Elapsed: 172.5s | ETA: 46.4s
+[ESSM DMS] Codon  576/727 ( 79.2%) | Mutants: 10944/13813 |  63.1 mut/s | Mean Φ: 3.043 | Elapsed: 173.4s | ETA: 45.5s
+[ESSM DMS] Codon  579/727 ( 79.6%) | Mutants: 11001/13813 |  63.1 mut/s | Mean Φ: 3.039 | Elapsed: 174.3s | ETA: 44.6s
+[ESSM DMS] Codon  582/727 ( 80.1%) | Mutants: 11058/13813 |  63.1 mut/s | Mean Φ: 3.038 | Elapsed: 175.2s | ETA: 43.7s
+[ESSM DMS] Codon  585/727 ( 80.5%) | Mutants: 11115/13813 |  63.1 mut/s | Mean Φ: 3.038 | Elapsed: 176.1s | ETA: 42.8s
+[ESSM DMS] Codon  588/727 ( 80.9%) | Mutants: 11172/13813 |  63.1 mut/s | Mean Φ: 3.043 | Elapsed: 177.1s | ETA: 41.9s
+[ESSM DMS] Codon  591/727 ( 81.3%) | Mutants: 11229/13813 |  63.1 mut/s | Mean Φ: 3.042 | Elapsed: 178.0s | ETA: 41.0s
+[ESSM DMS] Codon  594/727 ( 81.7%) | Mutants: 11286/13813 |  63.1 mut/s | Mean Φ: 3.037 | Elapsed: 178.9s | ETA: 40.1s
+[ESSM DMS] Codon  597/727 ( 82.1%) | Mutants: 11343/13813 |  63.1 mut/s | Mean Φ: 3.037 | Elapsed: 179.8s | ETA: 39.1s
+[ESSM DMS] Codon  600/727 ( 82.5%) | Mutants: 11400/13813 |  63.1 mut/s | Mean Φ: 3.039 | Elapsed: 180.7s | ETA: 38.2s
+[ESSM DMS] Codon  603/727 ( 82.9%) | Mutants: 11457/13813 |  63.1 mut/s | Mean Φ: 3.046 | Elapsed: 181.6s | ETA: 37.4s
+[ESSM DMS] Codon  606/727 ( 83.4%) | Mutants: 11514/13813 |  63.1 mut/s | Mean Φ: 3.057 | Elapsed: 182.6s | ETA: 36.5s
+[ESSM DMS] Codon  609/727 ( 83.8%) | Mutants: 11571/13813 |  63.0 mut/s | Mean Φ: 3.059 | Elapsed: 183.5s | ETA: 35.6s
+[ESSM DMS] Codon  612/727 ( 84.2%) | Mutants: 11628/13813 |  63.0 mut/s | Mean Φ: 3.065 | Elapsed: 184.4s | ETA: 34.7s
+[ESSM DMS] Codon  615/727 ( 84.6%) | Mutants: 11685/13813 |  63.0 mut/s | Mean Φ: 3.067 | Elapsed: 185.3s | ETA: 33.8s
+[ESSM DMS] Codon  618/727 ( 85.0%) | Mutants: 11742/13813 |  63.0 mut/s | Mean Φ: 3.070 | Elapsed: 186.2s | ETA: 32.8s
+[ESSM DMS] Codon  621/727 ( 85.4%) | Mutants: 11799/13813 |  63.0 mut/s | Mean Φ: 3.078 | Elapsed: 187.1s | ETA: 31.9s
+[ESSM DMS] Codon  624/727 ( 85.8%) | Mutants: 11856/13813 |  63.0 mut/s | Mean Φ: 3.075 | Elapsed: 188.1s | ETA: 31.0s
+[ESSM DMS] Codon  627/727 ( 86.2%) | Mutants: 11913/13813 |  63.0 mut/s | Mean Φ: 3.074 | Elapsed: 189.0s | ETA: 30.1s
+[ESSM DMS] Codon  630/727 ( 86.7%) | Mutants: 11970/13813 |  63.0 mut/s | Mean Φ: 3.075 | Elapsed: 189.9s | ETA: 29.2s
+[ESSM DMS] Codon  633/727 ( 87.1%) | Mutants: 12027/13813 |  63.0 mut/s | Mean Φ: 3.078 | Elapsed: 190.8s | ETA: 28.3s
+[ESSM DMS] Codon  636/727 ( 87.5%) | Mutants: 12084/13813 |  63.0 mut/s | Mean Φ: 3.078 | Elapsed: 191.7s | ETA: 27.4s
+[ESSM DMS] Codon  639/727 ( 87.9%) | Mutants: 12141/13813 |  63.0 mut/s | Mean Φ: 3.078 | Elapsed: 192.6s | ETA: 26.5s
+[ESSM DMS] Codon  642/727 ( 88.3%) | Mutants: 12198/13813 |  63.0 mut/s | Mean Φ: 3.076 | Elapsed: 193.5s | ETA: 25.6s
+[ESSM DMS] Codon  645/727 ( 88.7%) | Mutants: 12255/13813 |  63.0 mut/s | Mean Φ: 3.077 | Elapsed: 194.4s | ETA: 24.7s
+[ESSM DMS] Codon  648/727 ( 89.1%) | Mutants: 12312/13813 |  63.0 mut/s | Mean Φ: 3.078 | Elapsed: 195.3s | ETA: 23.8s
+[ESSM DMS] Codon  651/727 ( 89.5%) | Mutants: 12369/13813 |  63.1 mut/s | Mean Φ: 3.084 | Elapsed: 196.2s | ETA: 22.9s
+[ESSM DMS] Codon  654/727 ( 90.0%) | Mutants: 12426/13813 |  63.0 mut/s | Mean Φ: 3.088 | Elapsed: 197.1s | ETA: 22.0s
+[ESSM DMS] Codon  657/727 ( 90.4%) | Mutants: 12483/13813 |  63.0 mut/s | Mean Φ: 3.088 | Elapsed: 198.0s | ETA: 21.1s
+[ESSM DMS] Codon  660/727 ( 90.8%) | Mutants: 12540/13813 |  63.1 mut/s | Mean Φ: 3.091 | Elapsed: 198.9s | ETA: 20.2s
+[ESSM DMS] Codon  663/727 ( 91.2%) | Mutants: 12597/13813 |  63.1 mut/s | Mean Φ: 3.095 | Elapsed: 199.7s | ETA: 19.3s
+[ESSM DMS] Codon  666/727 ( 91.6%) | Mutants: 12654/13813 |  63.1 mut/s | Mean Φ: 3.093 | Elapsed: 200.6s | ETA: 18.4s
+[ESSM DMS] Codon  669/727 ( 92.0%) | Mutants: 12711/13813 |  63.1 mut/s | Mean Φ: 3.095 | Elapsed: 201.5s | ETA: 17.5s
+[ESSM DMS] Codon  672/727 ( 92.4%) | Mutants: 12768/13813 |  63.1 mut/s | Mean Φ: 3.096 | Elapsed: 202.5s | ETA: 16.6s
+[ESSM DMS] Codon  675/727 ( 92.8%) | Mutants: 12825/13813 |  63.1 mut/s | Mean Φ: 3.091 | Elapsed: 203.4s | ETA: 15.7s
+[ESSM DMS] Codon  678/727 ( 93.3%) | Mutants: 12882/13813 |  63.1 mut/s | Mean Φ: 3.084 | Elapsed: 204.3s | ETA: 14.8s
+[ESSM DMS] Codon  681/727 ( 93.7%) | Mutants: 12939/13813 |  63.1 mut/s | Mean Φ: 3.079 | Elapsed: 205.2s | ETA: 13.9s
+[ESSM DMS] Codon  684/727 ( 94.1%) | Mutants: 12996/13813 |  63.1 mut/s | Mean Φ: 3.074 | Elapsed: 206.0s | ETA: 13.0s
+[ESSM DMS] Codon  687/727 ( 94.5%) | Mutants: 13053/13813 |  63.1 mut/s | Mean Φ: 3.067 | Elapsed: 206.9s | ETA: 12.0s
+[ESSM DMS] Codon  690/727 ( 94.9%) | Mutants: 13110/13813 |  63.1 mut/s | Mean Φ: 3.066 | Elapsed: 207.7s | ETA: 11.1s
+[ESSM DMS] Codon  693/727 ( 95.3%) | Mutants: 13167/13813 |  63.1 mut/s | Mean Φ: 3.065 | Elapsed: 208.6s | ETA: 10.2s
+[ESSM DMS] Codon  696/727 ( 95.7%) | Mutants: 13224/13813 |  63.1 mut/s | Mean Φ: 3.057 | Elapsed: 209.5s | ETA:  9.3s
+[ESSM DMS] Codon  699/727 ( 96.1%) | Mutants: 13281/13813 |  63.1 mut/s | Mean Φ: 3.049 | Elapsed: 210.3s | ETA:  8.4s
+[ESSM DMS] Codon  702/727 ( 96.6%) | Mutants: 13338/13813 |  63.2 mut/s | Mean Φ: 3.043 | Elapsed: 211.2s | ETA:  7.5s
+[ESSM DMS] Codon  705/727 ( 97.0%) | Mutants: 13395/13813 |  63.1 mut/s | Mean Φ: 3.042 | Elapsed: 212.1s | ETA:  6.6s
+[ESSM DMS] Codon  708/727 ( 97.4%) | Mutants: 13452/13813 |  63.2 mut/s | Mean Φ: 3.035 | Elapsed: 213.0s | ETA:  5.7s
+[ESSM DMS] Codon  711/727 ( 97.8%) | Mutants: 13509/13813 |  63.2 mut/s | Mean Φ: 3.028 | Elapsed: 213.8s | ETA:  4.8s
+[ESSM DMS] Codon  714/727 ( 98.2%) | Mutants: 13566/13813 |  63.2 mut/s | Mean Φ: 3.023 | Elapsed: 214.7s | ETA:  3.9s
+[ESSM DMS] Codon  717/727 ( 98.6%) | Mutants: 13623/13813 |  63.2 mut/s | Mean Φ: 3.016 | Elapsed: 215.6s | ETA:  3.0s
+[ESSM DMS] Codon  720/727 ( 99.0%) | Mutants: 13680/13813 |  63.2 mut/s | Mean Φ: 3.008 | Elapsed: 216.5s | ETA:  2.1s
+[ESSM DMS] Codon  723/727 ( 99.4%) | Mutants: 13737/13813 |  63.2 mut/s | Mean Φ: 3.001 | Elapsed: 217.4s | ETA:  1.2s
+[ESSM DMS] Codon  726/727 ( 99.9%) | Mutants: 13794/13813 |  63.2 mut/s | Mean Φ: 2.994 | Elapsed: 218.3s | ETA:  0.3s
+[ESSM DMS] Codon  727/727 (100.0%) | Mutants: 13813/13813 |  63.2 mut/s | Mean Φ: 2.991 | Elapsed: 218.5s | ETA:  0.0s
+[✓] Selection DMS Complete: 727 codons (13813 point mutations) in 218.48s (63.2 mut/s). Mean Plasticity Φ = 2.991, Max Φ = 7.802
+
+==================================================================================
+🎉 Digital DMS / ESSM Analysis Complete in 230.193 seconds!
+   Taxa: 110 | Codons: 727 | Total Evaluated Single Mutants: 13813
+==================================================================================
+
+Top Permissive / Evolvable Sites (High Plasticity Φ):
+Site   WT    Plasticity Φ    Baseline LRT    p-value      Max ΔLRT  
+-----------------------------------------------------------------
+92     K     7.8020          1.97            0.080        17.85     
+168    K     7.8020          1.97            0.080        17.85     
+326    K     7.5136          1.77            0.092        17.23     
+249    K     7.5136          1.77            0.092        17.23     
+231    K     7.5136          1.77            0.092        17.23     
+480    K     7.1006          1.55            0.107        16.40     
+266    K     7.1003          1.55            0.107        16.40     
+260    K     7.0962          1.55            0.107        16.40     
+
+Top Rigid / Catalytic Backbone Sites (Low Plasticity Φ):
+Site   WT    Plasticity Φ    Baseline LRT    p-value      Max ΔLRT  
+-----------------------------------------------------------------
+727    A     0.3418          0.05            0.414        1.40      
+125    D     0.4545          3.13            0.038        1.16      
+136    H     0.5800          1.37            0.121        1.29      
+137    N     0.6378          1.67            0.098        3.13      
+29     N     0.7391          0.63            0.214        3.18      
+291    I     0.7796          2.45            0.059        3.14      
+697    H     0.7889          1.57            0.105        1.87      
+138    N     0.7994          1.70            0.096        2.37      
+
+[✓] JSON results written to: /kaggle/working/hyphaeon_out/dms.json
+[✓] CSV results written to: /kaggle/working/hyphaeon_out/dms.csv
+[dms] rc=0
+
+===== epistasis =====
++ hyphaeon epistasis -a /kaggle/input/datasets/daniellecallan/k13-mixed-msa-qc/k13_ref_codon_msa.fasta --use-tn93 --focal-taxon Reference -o /kaggle/working/hyphaeon_out/epistasis.json
+[*] Executing Phylogenetic Branch Attribution, Co-Selection Networks & Selection DMS (ESSM)...
+[*] Alignment: /kaggle/input/datasets/daniellecallan/k13-mixed-msa-qc/k13_ref_codon_msa.fasta
+[*] Tree:      (skipped; estimating pairwise distances via TN93)
+[*] Tree skipped: Estimating pairwise sequence distances directly via TN93...
+[*] Duplicate Taxon Pruning: Collapsed 1573 identical duplicate sequence(s) (1683 -> 110 unique haplotypes).
+[!] Warning: 6 internal stop codon(s) found in 'ERR10109762_primary'. This may indicate a frameshift or pseudogene. Verify that the alignment is in-frame (codon-aligned).
+[!] Notice: Found 99 in-frame stop codon(s) across alignment matrix.
+[*] Computing Transformer Attributions across 727 codons...
+[Attribution] codon    64/  727 (  8.8%) |   61.9 codon/s | Elapsed:   1.0s | ETA:  10.7s
+[Attribution] codon   128/  727 ( 17.6%) |   65.5 codon/s | Elapsed:   2.0s | ETA:   9.1s
+[Attribution] codon   192/  727 ( 26.4%) |   67.2 codon/s | Elapsed:   2.9s | ETA:   8.0s
+[Attribution] codon   256/  727 ( 35.2%) |   67.8 codon/s | Elapsed:   3.8s | ETA:   7.0s
+[Attribution] codon   320/  727 ( 44.0%) |   68.2 codon/s | Elapsed:   4.7s | ETA:   6.0s
+[Attribution] codon   384/  727 ( 52.8%) |   67.9 codon/s | Elapsed:   5.7s | ETA:   5.1s
+[Attribution] codon   448/  727 ( 61.6%) |   68.0 codon/s | Elapsed:   6.6s | ETA:   4.1s
+[Attribution] codon   512/  727 ( 70.4%) |   68.2 codon/s | Elapsed:   7.5s | ETA:   3.2s
+[Attribution] codon   576/  727 ( 79.2%) |   68.3 codon/s | Elapsed:   8.4s | ETA:   2.2s
+[Attribution] codon   640/  727 ( 88.0%) |   68.1 codon/s | Elapsed:   9.4s | ETA:   1.3s
+[Attribution] codon   704/  727 ( 96.8%) |   68.2 codon/s | Elapsed:  10.3s | ETA:   0.3s
+[Attribution] codon   727/  727 (100.0%) |   68.7 codon/s | Elapsed:  10.6s | ETA:   0.0s
+[*] Starting Selection Deep Mutational Scanning (ESSM / Digital DMS)...
+    Target Taxon: PF3D7_1343700 (index 0) | Scope: 34 epistatic codons | Total Mutants: 646 | Batch Size: 64 (3 sites/pass)
+[ESSM DMS] Codon    3/34 (  8.8%) | Mutants:    57/646 |  68.5 mut/s | Mean Φ: 1.409 | Elapsed:  0.8s | ETA:  8.6s
+[ESSM DMS] Codon    6/34 ( 17.6%) | Mutants:   114/646 |  68.0 mut/s | Mean Φ: 1.659 | Elapsed:  1.7s | ETA:  7.8s
+[ESSM DMS] Codon    9/34 ( 26.5%) | Mutants:   171/646 |  68.0 mut/s | Mean Φ: 1.932 | Elapsed:  2.5s | ETA:  7.0s
+[ESSM DMS] Codon   12/34 ( 35.3%) | Mutants:   228/646 |  66.7 mut/s | Mean Φ: 1.646 | Elapsed:  3.4s | ETA:  6.3s
+[ESSM DMS] Codon   15/34 ( 44.1%) | Mutants:   285/646 |  66.9 mut/s | Mean Φ: 1.550 | Elapsed:  4.3s | ETA:  5.4s
+[ESSM DMS] Codon   18/34 ( 52.9%) | Mutants:   342/646 |  67.0 mut/s | Mean Φ: 1.749 | Elapsed:  5.1s | ETA:  4.5s
+[ESSM DMS] Codon   21/34 ( 61.8%) | Mutants:   399/646 |  66.5 mut/s | Mean Φ: 1.802 | Elapsed:  6.0s | ETA:  3.7s
+[ESSM DMS] Codon   24/34 ( 70.6%) | Mutants:   456/646 |  66.5 mut/s | Mean Φ: 1.775 | Elapsed:  6.9s | ETA:  2.9s
+[ESSM DMS] Codon   27/34 ( 79.4%) | Mutants:   513/646 |  66.3 mut/s | Mean Φ: 1.804 | Elapsed:  7.7s | ETA:  2.0s
+[ESSM DMS] Codon   30/34 ( 88.2%) | Mutants:   570/646 |  66.3 mut/s | Mean Φ: 1.845 | Elapsed:  8.6s | ETA:  1.1s
+[ESSM DMS] Codon   33/34 ( 97.1%) | Mutants:   627/646 |  66.4 mut/s | Mean Φ: 1.832 | Elapsed:  9.4s | ETA:  0.3s
+[ESSM DMS] Codon   34/34 (100.0%) | Mutants:   646/646 |  66.8 mut/s | Mean Φ: 1.830 | Elapsed:  9.7s | ETA:  0.0s
+[✓] Selection DMS Complete: 34 codons (646 point mutations) in 9.67s (66.8 mut/s). Mean Plasticity Φ = 1.830, Max Φ = 4.268
+
+==================================================================================
+🎉 Epistatic Analysis Complete in 31.041 seconds!
+   Taxa: 110 | Codons: 727 | Evaluated Branches: 0
+   Co-Selection Edges (FDR q <= 0.05): 280 | Discovered Sectors: 2
+==================================================================================
+
+Top Phylogenetic Branch Co-Selection Pairs (Ranked by CESI):
+Rank  Residue Pair     LRT 1/2      Co-Sel    Shared   CESI       FDR q-val   
+----------------------------------------------------------------------------
+#1    L48 <-> L708     8.0 / 11.2   1.0000    2        9.441      0.00e+00    
+#2    K33 <-> L708     7.4 / 11.2   1.0000    2        9.082      0.00e+00    
+#3    L62 <-> L708     7.4 / 11.2   1.0000    2        9.082      0.00e+00    
+#4    L152 <-> L708    11.1 / 11.2  0.7771    2        8.660      4.65e-23    
+#5    I178 <-> L708    5.8 / 11.2   1.0000    2        8.075      0.00e+00    
+#6    L172 <-> L708    5.6 / 11.2   1.0000    2        7.925      0.00e+00    
+#7    L184 <-> L708    5.6 / 11.2   1.0000    2        7.925      0.00e+00    
+#8    L177 <-> L708    6.5 / 11.2   0.9208    2        7.823      1.40e-45    
+#9    K33 <-> L48      7.4 / 8.0    1.0000    2        7.663      0.00e+00    
+#10   L48 <-> L62      8.0 / 7.4    1.0000    2        7.662      0.00e+00    
+#11   K33 <-> L62      7.4 / 7.4    1.0000    2        7.371      0.00e+00    
+#12   I148 <-> L152    5.1 / 11.1   0.9804    2        7.349      0.00e+00    
+
+Discovered Epistatic Sectors (Two-Stage Seed-and-Extend):
+
+Sector #2 (Size K = 15 residues): Sites [33, 48, 62, 71, 90, 101, 119, 146, 149, 176, 212, 267, 384, 568, 708]
+  • Spectral Coherence C(S): 0.9629 (p_perm < 0.0001 ***, null mean: 0.589) | Mean LRT: 2.77
+  • Consensus Signature: [ K33 - L48 - L62 - V71 - S90 - R101 - L119 - N146 - T149 - N176 ]
+
+Sector #1 (Size K = 19 residues): Sites [26, 35, 125, 148, 152, 170, 172, 177, 178, 182, 184, 193, 196, 256, 262, 273, 416, 517, 676]
+  • Spectral Coherence C(S): 0.8981 (p_perm < 0.0001 ***, null mean: 0.582) | Mean LRT: 3.88
+  • Consensus Signature: [ G26 - G35 - D125 - I148 - L152 - N170 - L172 - L177 - I178 - S182 ]
+
+Selection Deep Mutational Scanning (ESSM Intrinsic Plasticity):
+  Top Permissive / Evolvable Sites (High Plasticity):
+    • Site 184  (L): Plasticity = 4.268 | Baseline LRT = 5.61 (p = 8.915e-03)
+    • Site 172  (L): Plasticity = 4.268 | Baseline LRT = 5.61 (p = 8.915e-03)
+    • Site 119  (L): Plasticity = 3.950 | Baseline LRT = 0.64 (p = 2.125e-01)
+    • Site 262  (L): Plasticity = 3.850 | Baseline LRT = 1.65 (p = 9.952e-02)
+    • Site 273  (L): Plasticity = 3.515 | Baseline LRT = 1.33 (p = 1.247e-01)
+  Top Rigid / Catalytic Backbone Sites (Low Plasticity):
+    • Site 125  (D): Plasticity = 0.455 | Baseline LRT = 3.13 (p = 3.850e-02)
+    • Site 256  (V): Plasticity = 0.825 | Baseline LRT = 1.94 (p = 8.177e-02)
+    • Site 148  (I): Plasticity = 0.828 | Baseline LRT = 5.06 (p = 1.222e-02)
+    • Site 149  (T): Plasticity = 0.922 | Baseline LRT = 1.49 (p = 1.112e-01)
+    • Site 26   (G): Plasticity = 0.985 | Baseline LRT = 2.58 (p = 5.424e-02)
+
+[✓] JSON results written to: /kaggle/working/hyphaeon_out/epistasis.json
+[epistasis] rc=0
+
+===== splits =====
++ hyphaeon splits -a /kaggle/input/datasets/daniellecallan/k13-mixed-msa-qc/k13_ref_codon_msa.fasta --use-tn93 -o /kaggle/working/hyphaeon_out/splits.json -c /kaggle/working/hyphaeon_out/splits.csv
+[*] Tree skipped: Estimating pairwise sequence distances directly via TN93...
+[!] Warning: 6 internal stop codon(s) found in 'ERR10109762_primary'. This may indicate a frameshift or pseudogene. Verify that the alignment is in-frame (codon-aligned).
+[!] Notice: Found 1671 in-frame stop codon(s) across alignment matrix.
+================================================================================
+🌿 HyphAeon Spectral Graph Bisection Complete!
+   Taxa: 1683 | Alignment Codon Length: 727
+   Primary Root Split Eigengap: 0.0000 | Fiedler Value: -0.0000
+================================================================================
+
+Primary Macro-Clade Split:
+  • Left Clade (9 taxa): ERR019330_primary, ERR019331_primary, ERR019332_primary, ERR019333_primary, ERR019334_primary, ERR019335_primary, ERR10109762_primary, ERR10109766_primary...
+  • Right Clade (1674 taxa): ERR018951_primary, ERR042682_primary, ERR11871753_primary, ERR1172531_primary, ERR022907_primary, ERR10470808_primary, ERR10470747_primary, ERR10470819_primary...
+
+Derived Hierarchical Newick Tree:
+(((((((((((ERR019330_primary,ERR019331_primary,ERR019332_primary,ERR019333_primary,ERR019334_primary,ERR019335_primary,ERR10109762_primary),()):0.2000,()):0.2000,()):0.2000,()):0.2000,()):0.2000,()):0.2000,()):0.2000,()):0.2000,(ERR10109766_primary,ERR10109782_primary)):1.0000,((((((((ERR018951_primary,((ERR042682_primary,ERR11871753_primary),ERR1172531_primary):0.0000):0.0000,ERR022907_primary):0.2557,(ERR10470808_primary,((ERR10470747_primary,ERR10470819_primary),ERR10470734_primary):0.0000):0.0000):0.1581,(((((ERR012817_primary,ERR015331_primary,ERR015335_primary,ERR015361_primary,ERR018904_primary,ERR021978_primary,ERR023029_primary,ERR029972_primary,ERR032149_primary,ERR033038_primary,ERR036572_primary,ERR036574_primary,ERR039241_primary,ERR039904_primary,ERR042213_primary,ERR043318_primary,ERR045624_primary,ERR108410_primary,ERR10893437_primary,ERR111720_primary),(ERR012306_primary,ERR012407_primary,ERR015320_primary,ERR015343_primary,ERR019848_primary,ERR022850_primary,ERR023685_primary,ERR029100_primary,ERR043316_primary,ERR045666_primary,ERR054067_primary,ERR062593_primary,ERR062594_primary,ERR063560_primary,ERR1045281_primary,ERR10685395_primary,ERR107473_primary,ERR10764024_primary,ERR10764077_primary,ERR10804299_primary,ERR108407_primary,ERR10893069_primary,ERR10966509_primary,ERR11840448_primary,ERR11840560_primary)):0.0000,(ERR018937_primary,(ERR029959_primary,ERR037383_primary,ERR11840547_primary)):0.0000):0.0001,(((ERR018908_primary,ERR022914_primary,ERR1106545_primary,ERR1106565_primary,ERR114344_primary,ERR11840477_primary),(ERR012281_primary,ERR012801_primary,ERR015380_primary,ERR015389_primary,ERR022903_primary,ERR042654_primary)):0.0000,((ERR063637_primary,ERR114350_primary),(ERR012728_primary,ERR012841_primary,ERR015364_primary,ERR018894_primary,ERR018972_primary,ERR022904_primary,ERR022924_primary,ERR023686_primary,ERR033030_primary,ERR039187_primary,ERR039238_primary,ERR039240_primary,ERR039866_primary,ERR039871_primary,ERR039874_primary,ERR039885_primary,ERR039894_primary,ERR039926_primary,ERR042210_primary,ERR042214_primary,ERR042215_primary,ERR042649_primary,ERR042650_primary,ERR042664_primary,ERR043322_primary,ERR045649_primary,ERR063586_primary,ERR063588_primary,ERR063619_primary)):0.0000):0.0004):0.0031,((((ERR018918_primary,ERR022923_primary,ERR039868_primary,ERR039889_primary,ERR040013_primary,ERR040035_primary,ERR043319_primary,ERR045654_primary,ERR063585_primary,ERR067566_primary),(ERR023037_primary,ERR036590_primary,ERR039237_primary,ERR039867_primary,ERR039899_primary,ERR042208_primary,ERR042651_primary,ERR043314_primary,ERR043320_primary,ERR045650_primary)):0.0000,((ERR015430_primary,ERR022852_primary,ERR023038_primary,ERR034093_primary,ERR039890_primary,ERR040004_primary,ERR042658_primary,ERR043317_primary),(ERR015336_primary,ERR015376_primary,ERR019846_primary,ERR022917_primary,ERR022929_primary,ERR022930_primary,ERR029970_primary,ERR033032_primary,ERR036561_primary,ERR036566_primary,ERR036592_primary,ERR039176_primary,ERR039182_primary,ERR039188_primary,ERR039857_primary,ERR039858_primary,ERR039860_primary,ERR039863_primary,ERR039875_primary,ERR039876_primary,ERR039878_primary,ERR039879_primary,ERR039908_primary,ERR039911_primary,ERR039913_primary,ERR039916_primary,ERR039934_primary,ERR039955_primary,ERR039984_primary,ERR039987_primary,ERR040009_primary,ERR042211_primary,ERR042670_primary,ERR042671_primary,ERR043326_primary,ERR043327_primary,ERR043331_primary,ERR043333_primary,ERR063620_primary,ERR063623_primary,ERR063625_primary,ERR063630_primary,ERR1106613_primary,ERR1106614_primary,ERR1106619_primary,ERR1106620_primary,ERR1106621_primary,ERR114347_primary,ERR1172506_primary,ERR1172510_primary,ERR1172511_primary,ERR1172516_primary,ERR1172524_primary,ERR1172550_primary,ERR1172553_primary,ERR1172556_primary,ERR1172558_primary,ERR1172560_primary,ERR1172561_primary,ERR1172565_primary,ERR1172571_primary,ERR1172572_primary,ERR1172578_primary)):0.0000):0.0000,(((ERR015357_primary,ERR018934_primary,ERR042686_primary,ERR10789396_primary,ERR10789416_primary,ERR1081212_primary,ERR1081260_primary,ERR11840566_primary),ERR039212_primary):0.1160,(ERR10893305_primary,ERR10893371_primary)):0.0461):0.0121):0.0088):0.1597,((((((ERR11871789_primary,ERR11871792_primary,ERR11871843_primary),(ERR013215_primary,ERR020116_primary,ERR020120_primary,ERR045635_primary,ERR055495_primary,ERR1045311_primary,ERR10547982_primary,ERR1063589_primary,ERR10789425_primary,ERR10804240_primary,ERR10893379_primary,ERR1106526_primary,ERR1106527_primary,ERR1106587_primary,ERR1138777_primary,ERR1138781_primary,ERR114366_primary)):0.0000,((ERR012244_primary,ERR012251_primary,ERR012325_primary,ERR012452_primary,ERR012741_primary,ERR012749_primary,ERR012788_primary,ERR012798_primary,ERR012815_primary,ERR012891_primary,ERR013230_primary,ERR015316_primary,ERR015341_primary,ERR015362_primary,ERR015365_primary,ERR015377_primary,ERR015381_primary,ERR015398_primary,ERR015403_primary,ERR015408_primary,ERR015410_primary,ERR015412_primary,ERR015415_primary,ERR015420_primary,ERR015447_primary,ERR015449_primary,ERR015451_primary,ERR015452_primary,ERR015454_primary,ERR015455_primary,ERR015457_primary,ERR015459_primary,ERR018900_primary,ERR018926_primary,ERR018954_primary,ERR018958_primary,ERR018976_primary,ERR018977_primary,ERR018978_primary,ERR019043_primary,ERR019048_primary,ERR019051_primary,ERR019053_primary,ERR019058_primary,ERR019064_primary,ERR019545_primary,ERR019927_primary,ERR023159_primary,ERR023472_primary,ERR023680_primary,ERR042229_primary,ERR045582_primary,ERR045602_primary,ERR045604_primary,ERR045607_primary,ERR045610_primary,ERR047190_primary,ERR047191_primary,ERR054058_primary,ERR054059_primary,ERR059400_primary,ERR059407_primary,ERR059409_primary,ERR059411_primary,ERR063536_primary,ERR063540_primary,ERR063541_primary,ERR063548_primary,ERR063552_primary,ERR063598_primary,ERR063600_primary,ERR063607_primary,ERR1008804_primary,ERR10375891_primary,ERR10375951_primary,ERR10375952_primary,ERR10419572_primary,ERR10419588_primary,ERR10419595_primary,ERR10419609_primary,ERR1045284_primary,ERR1045288_primary,ERR1045308_primary,ERR1045321_primary,ERR1045322_primary,ERR10470735_primary,ERR10470768_primary,ERR10470777_primary,ERR10470789_primary,ERR10470798_primary,ERR10471014_primary,ERR10471194_primary,ERR10471227_primary,ERR10471236_primary,ERR10471285_primary,ERR10504611_primary,ERR10504679_primary,ERR1063594_primary,ERR1063595_primary,ERR1063603_primary,ERR1063606_primary,ERR1063613_primary,ERR1063614_primary,ERR1063616_primary,ERR10671937_primary,ERR10671960_primary,ERR10671969_primary,ERR10685393_primary,ERR10685551_primary,ERR10685634_primary,ERR107476_primary,ERR10763926_primary,ERR10764002_primary,ERR10764010_primary,ERR10764040_primary,ERR10764092_primary,ERR10764178_primary,ERR10764182_primary,ERR10764286_primary,ERR10764305_primary,ERR10764328_primary,ERR10764380_primary,ERR10789339_primary,ERR10789392_primary,ERR10789400_primary,ERR10789405_primary,ERR10789411_primary,ERR10789418_primary,ERR10789423_primary,ERR10789432_primary,ERR10789433_primary,ERR10789436_primary,ERR10789450_primary,ERR10804207_primary,ERR10804213_primary,ERR10804217_primary,ERR10804218_primary,ERR10804219_primary,ERR1081167_primary,ERR1081176_primary,ERR1081188_primary,ERR1081192_primary,ERR1081195_primary,ERR1081224_primary,ERR1081245_primary,ERR1081246_primary,ERR1081255_primary,ERR10853663_primary,ERR10853676_primary,ERR10853690_primary,ERR10853691_primary,ERR10853758_primary,ERR10893059_primary,ERR10893068_primary,ERR10893387_primary,ERR10966512_primary,ERR10966514_primary,ERR10966518_primary,ERR10966519_primary,ERR10966524_primary,ERR10966526_primary,ERR10966540_primary,ERR10966543_primary,ERR10966560_primary,ERR10966563_primary,ERR1099197_primary,ERR1099198_primary,ERR1099201_primary,ERR1099205_primary,ERR1099214_primary,ERR1099215_primary,ERR1106504_primary,ERR1106507_primary,ERR1106508_primary,ERR1106513_primary,ERR1106514_primary,ERR1106517_primary,ERR1106519_primary,ERR1106521_primary,ERR1106524_primary,ERR1106525_primary,ERR1106530_primary,ERR1106535_primary,ERR1106541_primary,ERR1106542_primary,ERR1106546_primary,ERR1106556_primary,ERR1106569_primary,ERR1106576_primary,ERR1138759_primary,ERR1138760_primary,ERR1138763_primary,ERR1138764_primary,ERR1138767_primary,ERR1138769_primary,ERR1138770_primary,ERR1138772_primary,ERR1138784_primary,ERR1138792_primary,ERR1138796_primary,ERR1138797_primary,ERR1138798_primary,ERR1138799_primary,ERR1138804_primary,ERR114355_primary,ERR114376_primary,ERR114389_primary,ERR114405_primary,ERR1144164_primary,ERR11471994_primary,ERR1172589_primary,ERR1172590_primary,ERR1172595_primary,ERR1172603_primary,ERR1172606_primary,ERR1172608_primary,ERR11840425_primary,ERR11840470_primary,ERR11840474_primary,ERR11840516_primary,ERR11840881_primary,ERR11871760_primary),(ERR012644_primary,ERR012680_primary,ERR015443_primary,ERR018929_primary,ERR018948_primary,ERR018949_primary,ERR019060_primary,ERR019849_primary,ERR019850_primary,ERR019928_primary,ERR020123_primary,ERR020124_primary,ERR020125_primary,ERR021975_primary,ERR021977_primary,ERR021979_primary,ERR022519_primary,ERR022521_primary,ERR022536_primary,ERR022701_primary,ERR022856_primary,ERR022860_primary,ERR022909_primary,ERR022910_primary,ERR022922_primary,ERR023466_primary,ERR027100_primary,ERR027112_primary,ERR029101_primary,ERR029102_primary,ERR029143_primary,ERR029404_primary,ERR029968_primary,ERR032148_primary,ERR033022_primary,ERR033025_primary,ERR033035_primary,ERR035359_primary,ERR036144_primary,ERR036152_primary,ERR036154_primary,ERR036158_primary,ERR037228_primary,ERR037230_primary,ERR037703_primary,ERR039897_primary,ERR039920_primary,ERR039930_primary,ERR039937_primary,ERR039971_primary,ERR039972_primary,ERR039979_primary,ERR039980_primary,ERR039981_primary,ERR042223_primary,ERR042224_primary,ERR042226_primary,ERR042228_primary,ERR042230_primary,ERR042231_primary,ERR042638_primary,ERR042640_primary,ERR042645_primary,ERR042647_primary,ERR042679_primary,ERR042690_primary,ERR042691_primary,ERR042694_primary,ERR042699_primary,ERR042705_primary,ERR042716_primary,ERR042721_primary,ERR043310_primary,ERR045583_primary,ERR045586_primary,ERR045590_primary,ERR045594_primary,ERR045601_primary,ERR045623_primary,ERR045628_primary,ERR045644_primary,ERR045661_primary,ERR047173_primary,ERR047182_primary,ERR047183_primary,ERR054056_primary,ERR054061_primary,ERR054062_primary,ERR055469_primary,ERR055489_primary,ERR055501_primary,ERR059381_primary,ERR059385_primary,ERR059393_primary,ERR063535_primary,ERR063565_primary,ERR063596_primary,ERR1045291_primary,ERR1045306_primary,ERR10471134_primary,ERR10471288_primary,ERR1063596_primary,ERR10763976_primary,ERR10764009_primary,ERR10789406_primary,ERR10789410_primary,ERR10789449_primary,ERR10804216_primary,ERR10804224_primary,ERR10804225_primary,ERR10804227_primary,ERR10804228_primary,ERR10804231_primary,ERR10804232_primary,ERR10804233_primary,ERR10804238_primary,ERR10804244_primary,ERR10804245_primary,ERR10804246_primary,ERR10804247_primary,ERR10804249_primary,ERR1081177_primary,ERR1081178_primary,ERR1081194_primary,ERR1081205_primary,ERR1081208_primary,ERR1081259_primary,ERR1081262_primary,ERR1081265_primary,ERR1081284_primary,ERR1081286_primary,ERR10853783_primary,ERR10853816_primary,ERR10893237_primary,ERR10893323_primary,ERR10893325_primary,ERR10893388_primary,ERR10893408_primary,ERR10893434_primary,ERR10966491_primary,ERR10966499_primary,ERR10966508_primary,ERR1106551_primary,ERR114365_primary,ERR1172487_primary,ERR11871881_primary)):0.0000):0.0000,ERR10966535_primary):0.0011,(((ERR019921_primary,ERR1106536_primary),ERR047175_primary):0.2677,(ERR072005_primary,((ERR018917_primary,ERR10685408_primary),ERR018905_primary):0.0000):0.0000):0.2288):0.0187,(((ERR045612_primary,ERR1138794_primary),ERR1138793_primary):0.0000,((((ERR10764100_primary,ERR1106553_primary),ERR1172609_primary):0.1844,(ERR019549_primary,(ERR019934_primary,ERR1081233_primary)):0.0085):0.8247,(((ERR012400_primary,ERR019546_primary,ERR059392_primary,ERR10685389_primary),(ERR018967_primary,ERR022537_primary,ERR042239_primary,ERR1015547_primary,ERR1024471_primary,ERR1081184_primary,ERR1081187_primary,ERR11840759_primary,ERR11840824_primary,ERR11840907_primary)):0.0378,(ERR015325_primary,ERR11871721_primary)):0.0687):0.2819):0.0941):0.0044):0.1226,(((((ERR10113962_primary,ERR11840883_primary),((ERR1081266_primary,ERR10966555_primary),((ERR015435_primary,ERR1081274_primary,ERR1172577_primary),ERR063549_primary):0.0000):0.0000):0.0601,(((ERR10789429_primary,ERR11871855_primary),ERR029957_primary):0.0000,((ERR10764079_primary,(ERR10966492_primary,ERR11840590_primary)):0.0013,ERR10966559_primary):0.0002):0.0010):0.2788,((((ERR012326_primary,ERR046413_primary),(ERR11471991_primary,ERR1172528_primary)):0.3527,((ERR018893_primary,ERR11471988_primary),ERR10160143_primary):0.2525):0.1317,((ERR012486_primary,ERR044171_primary),((ERR012480_primary,ERR1081250_primary),(DRR344522_primary,DRR344530_primary)):0.0312):0.3657):0.3732):0.1418,(((ERR11254081_primary,((DRR344523_primary,(DRR344524_primary,ERR10113963_primary)):0.0075,(DRR344529_primary,ERR10113965_primary)):0.0000):0.0014,((((DRR508169_primary,ERR012490_primary,ERR012496_primary,ERR015369_primary,ERR015433_primary,ERR019075_primary,ERR019077_primary,ERR023154_primary,ERR033026_primary,ERR034295_primary,ERR035360_primary,ERR039218_primary,ERR039891_primary,ERR046515_primary,ERR046519_primary,ERR067565_primary,ERR10311895_primary,ERR10311908_primary,ERR10311909_primary,ERR10311921_primary,ERR10764274_primary,ERR10764275_primary,ERR10764279_primary),(PF3D7_1343700,DRR079307_primary,DRR278261_primary,DRR344516_primary,DRR344519_primary,DRR344520_primary,DRR508162_primary,DRR508165_primary,DRR508166_primary,DRR508167_primary,DRR508168_primary,ERR012295_primary,ERR012323_primary,ERR012383_primary,ERR012384_primary,ERR012389_primary,ERR012409_primary,ERR012503_primary,ERR012518_primary,ERR012719_primary,ERR012725_primary,ERR012766_primary,ERR012821_primary,ERR012840_primary,ERR012848_primary,ERR012858_primary,ERR012868_primary,ERR015319_primary,ERR015324_primary,ERR015340_primary,ERR015342_primary,ERR015347_primary,ERR015350_primary,ERR015368_primary,ERR015387_primary,ERR015391_primary,ERR015393_primary,ERR015394_primary,ERR015409_primary,ERR015413_primary,ERR015414_primary,ERR015426_primary,ERR015434_primary,ERR015436_primary,ERR015453_primary,ERR018898_primary,ERR018899_primary,ERR018901_primary,ERR018902_primary,ERR018914_primary,ERR018915_primary,ERR018920_primary,ERR018936_primary,ERR018938_primary,ERR018939_primary,ERR018940_primary,ERR018942_primary,ERR018955_primary,ERR018962_primary,ERR018964_primary,ERR018979_primary,ERR019041_primary,ERR019046_primary,ERR019055_primary,ERR019057_primary,ERR019061_primary,ERR019062_primary,ERR019074_primary,ERR019539_primary,ERR019542_primary,ERR019544_primary,ERR019925_primary,ERR019929_primary,ERR019930_primary,ERR021976_primary,ERR022525_primary,ERR022526_primary,ERR022527_primary,ERR022528_primary,ERR022529_primary,ERR022530_primary,ERR022695_primary,ERR022696_primary,ERR022697_primary,ERR022702_primary,ERR022901_primary,ERR022920_primary,ERR022921_primary,ERR022926_primary,ERR023155_primary,ERR023158_primary,ERR023476_primary,ERR027105_primary,ERR027106_primary,ERR027107_primary,ERR027109_primary,ERR027110_primary,ERR027111_primary,ERR029091_primary,ERR029095_primary,ERR029412_primary,ERR029414_primary,ERR029416_primary,ERR029964_primary,ERR032150_primary,ERR033021_primary,ERR036141_primary,ERR036142_primary,ERR036146_primary,ERR036148_primary,ERR036576_primary,ERR036586_primary,ERR036591_primary,ERR037699_primary,ERR037700_primary,ERR037702_primary,ERR039190_primary,ERR039191_primary,ERR039192_primary,ERR039194_primary,ERR039195_primary,ERR039196_primary,ERR039209_primary,ERR039215_primary,ERR039216_primary,ERR039217_primary,ERR039235_primary,ERR039236_primary,ERR039873_primary,ERR039917_primary,ERR039919_primary,ERR039923_primary,ERR039925_primary,ERR039978_primary,ERR040036_primary,ERR042225_primary,ERR042677_primary,ERR042678_primary,ERR042680_primary,ERR042697_primary,ERR042703_primary,ERR042704_primary,ERR043372_primary,ERR043376_primary,ERR044163_primary,ERR044167_primary,ERR044187_primary,ERR044223_primary,ERR044231_primary,ERR044235_primary,ERR044243_primary,ERR045584_primary,ERR045587_primary,ERR045588_primary,ERR045589_primary,ERR045606_primary,ERR045617_primary,ERR045626_primary,ERR045631_primary,ERR045633_primary,ERR045634_primary,ERR045645_primary,ERR045648_primary,ERR045652_primary,ERR045665_primary,ERR045667_primary,ERR046405_primary,ERR046417_primary,ERR046513_primary,ERR046523_primary,ERR055471_primary,ERR055480_primary,ERR055481_primary,ERR055482_primary,ERR059380_primary,ERR059382_primary,ERR059383_primary,ERR059401_primary,ERR059406_primary,ERR059412_primary,ERR063547_primary,ERR063571_primary,ERR063572_primary,ERR063575_primary,ERR063576_primary,ERR063602_primary,ERR063604_primary,ERR063613_primary,ERR063614_primary,ERR063615_primary,ERR063633_primary,ERR067572_primary,ERR067575_primary,ERR072006_primary,ERR072007_primary,ERR072010_primary,ERR072011_primary,ERR072012_primary,ERR1015546_primary,ERR10311774_primary,ERR10311780_primary,ERR10311809_primary,ERR10311828_primary,ERR10311838_primary,ERR10311847_primary,ERR10312024_primary,ERR10312032_primary,ERR10312072_primary,ERR1035493_primary,ERR1035520_primary,ERR1035536_primary,ERR10375953_primary,ERR1045266_primary,ERR1045286_primary,ERR1045295_primary,ERR1045302_primary,ERR1045305_primary,ERR1045317_primary,ERR10470947_primary,ERR10504776_primary,ERR10504788_primary,ERR10504789_primary,ERR10547842_primary,ERR1063605_primary,ERR1063607_primary,ERR1063610_primary,ERR1063611_primary,ERR10685375_primary,ERR10685376_primary,ERR10685378_primary,ERR10685379_primary,ERR10685398_primary,ERR10685410_primary,ERR10685514_primary,ERR10685521_primary,ERR10685534_primary,ERR10685586_primary,ERR10685593_primary,ERR10685609_primary,ERR10685610_primary,ERR10685615_primary,ERR10685617_primary,ERR10763924_primary,ERR10763928_primary,ERR10763933_primary,ERR10763938_primary,ERR10763954_primary,ERR10763955_primary,ERR10763956_primary,ERR10763971_primary,ERR10763972_primary,ERR10764013_primary,ERR10764035_primary,ERR10764052_primary,ERR10789393_primary,ERR10789399_primary,ERR10789402_primary,ERR10789412_primary,ERR10789446_primary,ERR10804124_primary,ERR10804220_primary,ERR10804222_primary,ERR10804241_primary,ERR10806356_primary,ERR10806358_primary,ERR1081170_primary,ERR1081171_primary,ERR1081185_primary,ERR1081189_primary,ERR1081203_primary,ERR1081204_primary,ERR1081211_primary,ERR1081222_primary,ERR1081223_primary,ERR1081227_primary,ERR1081228_primary,ERR1081241_primary,ERR1081248_primary,ERR1081251_primary,ERR1081261_primary,ERR1081263_primary,ERR108417_primary,ERR108418_primary,ERR10853657_primary,ERR10853661_primary,ERR10853674_primary,ERR1172530_primary,ERR1172532_primary,ERR1172533_primary,ERR1172536_primary,ERR1172538_primary,ERR1172542_primary,ERR1172543_primary,ERR1172544_primary,ERR1172545_primary,ERR1172557_primary,ERR1172580_primary,ERR1172582_primary,ERR1172583_primary,ERR1172588_primary,ERR1172593_primary,ERR1172594_primary,ERR1172604_primary,ERR1172607_primary,ERR1172610_primary,ERR1172611_primary,ERR11766834_primary,ERR11766842_primary,ERR11766868_primary,ERR11766869_primary,ERR11766870_primary,ERR11766879_primary,ERR11766881_primary,ERR11766891_primary,ERR11766906_primary,ERR11766915_primary,ERR11766923_primary,ERR11766941_primary,ERR11766952_primary,ERR11766960_primary,ERR11766961_primary,ERR11766966_primary,ERR11766979_primary,ERR11766987_primary,ERR11766988_primary,ERR11767003_primary,ERR11767004_primary,ERR11767017_primary,ERR11767018_primary,ERR11767020_primary,ERR11767030_primary,ERR11767031_primary,ERR11767034_primary,ERR11767039_primary,ERR11767055_primary,ERR11767056_primary,ERR11767070_primary,ERR11767071_primary,ERR11767072_primary,ERR11767100_primary,ERR11767101_primary,ERR11767113_primary,ERR11767124_primary,ERR11767126_primary,ERR11767130_primary,ERR11767134_primary,ERR11767141_primary,ERR11767142_primary,ERR11767162_primary,ERR11767170_primary,ERR11767171_primary,ERR11767186_primary,ERR11767187_primary,ERR11767188_primary,ERR11767202_primary,ERR11767203_primary,ERR11767214_primary,ERR11767215_primary,ERR11767223_primary,ERR11767237_primary,ERR11767238_primary,ERR11767239_primary,ERR11767240_primary,ERR11767254_primary,ERR11767255_primary,ERR11767269_primary,ERR11767271_primary,ERR11767285_primary,ERR11767297_primary,ERR11767309_primary,ERR11767310_primary,ERR11767314_primary,ERR11767326_primary,ERR11767327_primary,ERR11767334_primary,ERR11767336_primary,ERR11767345_primary,ERR11767346_primary,ERR11840445_primary,ERR11840450_primary,ERR11840454_primary,ERR11840466_primary,ERR11840475_primary,ERR11840476_primary,ERR11840480_primary,ERR11840493_primary,ERR11840509_primary,ERR11840530_primary,ERR11840541_primary,ERR11840548_primary,ERR11840551_primary,ERR11840552_primary,ERR11840553_primary,ERR11840558_primary,ERR11840583_primary,ERR11840683_primary,ERR11840798_primary,ERR11840801_primary,ERR11840835_primary,ERR11840843_primary,ERR11840873_primary,ERR11840879_primary,ERR11840880_primary,ERR11840896_primary,ERR11840914_primary,ERR11840916_primary,ERR11840920_primary,ERR11840922_primary,ERR11840927_primary,ERR11867487_primary,ERR11867505_primary,ERR11871714_primary,ERR11871750_primary,ERR11871758_primary,ERR11871759_primary,ERR11871762_primary,ERR11871767_primary,ERR11871772_primary)):0.0000,((ERR022861_primary,ERR022862_primary,ERR022908_primary,ERR023160_primary,ERR023162_primary,ERR027084_primary,ERR027116_primary,ERR029148_primary,ERR029966_primary,ERR033028_primary,ERR044261_primary,ERR044263_primary,ERR044266_primary,ERR045460_primary,ERR10311932_primary,ERR10311950_primary,ERR10311959_primary,ERR10311968_primary,ERR10311970_primary,ERR10311978_primary,ERR1081267_primary,ERR1081283_primary,ERR108405_primary,ERR108406_primary,ERR1172515_primary,ERR1172522_primary,ERR1172573_primary,ERR11766942_primary,ERR11766949_primary,ERR11767152_primary,ERR11767160_primary,ERR11767354_primary,ERR11767355_primary,ERR11840770_primary,ERR11840793_primary,ERR11871770_primary,ERR11871771_primary),(DRR278262_primary,DRR344507_primary,DRR344508_primary,DRR344510_primary,DRR344511_primary,DRR344514_primary,DRR344527_primary,DRR446192_primary,DRR446197_primary,DRR446198_primary,DRR508170_primary,DRR508171_primary,DRR508172_primary,ERR007655_primary,ERR012232_primary,ERR012362_primary,ERR012363_primary,ERR012381_primary,ERR012414_primary,ERR012448_primary,ERR012478_primary,ERR012481_primary,ERR012681_primary,ERR012684_primary,ERR012691_primary,ERR012716_primary,ERR012780_primary,ERR012884_primary,ERR012892_primary,ERR012895_primary,ERR015327_primary,ERR015337_primary,ERR015339_primary,ERR015353_primary,ERR015354_primary,ERR015355_primary,ERR015358_primary,ERR015360_primary,ERR015371_primary,ERR015400_primary,ERR015401_primary,ERR015404_primary,ERR015407_primary,ERR015417_primary,ERR015423_primary,ERR015424_primary,ERR015439_primary,ERR015442_primary,ERR015446_primary,ERR015458_primary,ERR018909_primary,ERR018910_primary,ERR018911_primary,ERR018913_primary,ERR018924_primary,ERR018935_primary,ERR018944_primary,ERR018947_primary,ERR018952_primary,ERR018968_primary,ERR018970_primary,ERR018971_primary,ERR018974_primary,ERR019047_primary,ERR019049_primary,ERR019050_primary,ERR019066_primary,ERR019067_primary,ERR019069_primary,ERR019071_primary,ERR019073_primary,ERR019427_primary,ERR019429_primary,ERR019847_primary,ERR020111_primary,ERR020113_primary,ERR022522_primary,ERR022524_primary,ERR022531_primary,ERR022532_primary,ERR022557_primary,ERR022694_primary,ERR022857_primary,ERR022858_primary,ERR022859_primary,ERR022919_primary,ERR022939_primary,ERR023035_primary,ERR023036_primary,ERR023164_primary,ERR023166_primary,ERR023167_primary,ERR023168_primary,ERR027092_primary,ERR027098_primary,ERR027104_primary,ERR029083_primary,ERR029085_primary,ERR029089_primary,ERR029090_primary,ERR029405_primary,ERR029407_primary,ERR029408_primary,ERR029409_primary,ERR029973_primary,ERR033027_primary,ERR036163_primary,ERR036560_primary,ERR036598_primary,ERR036599_primary,ERR036602_primary,ERR037227_primary,ERR037704_primary,ERR039185_primary,ERR039197_primary,ERR039198_primary,ERR039199_primary,ERR039204_primary,ERR039207_primary,ERR039208_primary,ERR039220_primary,ERR039222_primary,ERR039225_primary,ERR039226_primary,ERR039230_primary,ERR039233_primary,ERR039862_primary,ERR039865_primary,ERR039886_primary,ERR039914_primary,ERR039944_primary,ERR039988_primary,ERR040005_primary,ERR042236_primary,ERR042639_primary,ERR042675_primary,ERR042676_primary,ERR042687_primary,ERR042688_primary,ERR042692_primary,ERR042693_primary,ERR042708_primary,ERR042709_primary,ERR043321_primary,ERR044191_primary,ERR044195_primary,ERR044199_primary,ERR044203_primary,ERR044207_primary,ERR044211_primary,ERR045578_primary,ERR045580_primary,ERR045593_primary,ERR045596_primary,ERR045618_primary,ERR045620_primary,ERR045621_primary,ERR045625_primary,ERR045636_primary,ERR045637_primary,ERR045639_primary,ERR045640_primary,ERR045641_primary,ERR045655_primary,ERR045656_primary,ERR045659_primary,ERR045660_primary,ERR045664_primary,ERR046450_primary,ERR046462_primary,ERR046467_primary,ERR046485_primary,ERR046501_primary,ERR046509_primary,ERR047177_primary,ERR047178_primary,ERR047185_primary,ERR054065_primary,ERR054070_primary,ERR054077_primary,ERR054078_primary,ERR055488_primary,ERR055493_primary,ERR055496_primary,ERR055500_primary,ERR059386_primary,ERR059389_primary,ERR059399_primary,ERR062585_primary,ERR063527_primary,ERR063551_primary,ERR063566_primary,ERR063570_primary,ERR063593_primary,ERR063599_primary,ERR063632_primary,ERR069570_primary,ERR069571_primary,ERR069575_primary,ERR072001_primary,ERR072004_primary,ERR1008806_primary,ERR10092091_primary,ERR10092093_primary,ERR10092094_primary,ERR1024467_primary,ERR1024468_primary,ERR10311770_primary,ERR10311848_primary,ERR10311861_primary,ERR10311862_primary,ERR10311864_primary,ERR10311879_primary,ERR10311894_primary,ERR10311979_primary,ERR10311980_primary,ERR10311983_primary,ERR10311998_primary,ERR10312005_primary,ERR10312008_primary,ERR10375917_primary,ERR10375919_primary,ERR10375949_primary,ERR1045267_primary,ERR1045269_primary,ERR1045271_primary,ERR1045283_primary,ERR1045307_primary,ERR1045309_primary,ERR1045315_primary,ERR10471284_primary,ERR10471372_primary,ERR1063599_primary,ERR1063600_primary,ERR1063612_primary,ERR1063615_primary,ERR10685382_primary,ERR10685383_primary,ERR10685392_primary,ERR10685541_primary,ERR10685544_primary,ERR10685545_primary,ERR10685562_primary,ERR10685584_primary,ERR10685633_primary,ERR107469_primary,ERR107472_primary,ERR107475_primary,ERR10763942_primary,ERR10763943_primary,ERR10763944_primary,ERR10763946_primary,ERR10763952_primary,ERR10763953_primary,ERR10763979_primary,ERR10763989_primary,ERR10764053_primary,ERR10764055_primary,ERR10764078_primary,ERR10764093_primary,ERR10764117_primary,ERR10764126_primary,ERR10764165_primary,ERR10764168_primary,ERR10764169_primary,ERR10764292_primary,ERR10764371_primary,ERR10789403_primary,ERR10789407_primary,ERR10789427_primary,ERR10789438_primary,ERR10804208_primary,ERR10804210_primary,ERR10804214_primary,ERR10804215_primary,ERR10804248_primary,ERR10804252_primary,ERR10804253_primary,ERR10804298_primary,ERR1081172_primary,ERR1081174_primary,ERR1081175_primary,ERR1081193_primary,ERR1081197_primary,ERR1081199_primary,ERR1081200_primary,ERR1081213_primary,ERR1081214_primary,ERR1081217_primary,ERR1081218_primary,ERR1081219_primary,ERR1081230_primary,ERR1081231_primary,ERR1081235_primary,ERR1081238_primary,ERR1081252_primary,ERR1081256_primary,ERR1081258_primary,ERR1081270_primary,ERR1081275_primary,ERR1081276_primary,ERR1081277_primary,ERR1081280_primary,ERR108408_primary,ERR108411_primary,ERR108412_primary,ERR108416_primary,ERR10853675_primary,ERR10853678_primary,ERR10853680_primary,ERR10853682_primary,ERR10853683_primary,ERR10853686_primary,ERR10853782_primary,ERR10892927_primary,ERR10893063_primary,ERR10893073_primary,ERR10893202_primary,ERR10893235_primary,ERR10893367_primary,ERR10893374_primary,ERR10893380_primary,ERR10893393_primary,ERR10893406_primary,ERR10893416_primary,ERR10893424_primary,ERR10893473_primary,ERR10914858_primary,ERR10914871_primary,ERR10966484_primary,ERR10966485_primary,ERR10966486_primary,ERR10966489_primary,ERR10966490_primary,ERR10966496_primary,ERR10966497_primary,ERR10966500_primary,ERR10966501_primary,ERR10966502_primary,ERR10966505_primary,ERR10966506_primary,ERR10966510_primary,ERR10966515_primary,ERR10966516_primary,ERR10966520_primary,ERR10966527_primary,ERR10966529_primary,ERR10966530_primary,ERR10966534_primary,ERR10966554_primary,ERR10966557_primary,ERR10966561_primary,ERR10966562_primary,ERR10966566_primary,ERR10966567_primary,ERR10966570_primary,ERR10970409_primary,ERR1099200_primary,ERR1099202_primary,ERR1099203_primary,ERR1099204_primary,ERR1099206_primary,ERR1106509_primary,ERR1106512_primary,ERR1106515_primary,ERR1106516_primary,ERR1106518_primary,ERR1106522_primary,ERR1106523_primary,ERR1106528_primary,ERR1106529_primary,ERR1106534_primary,ERR1106540_primary,ERR1106544_primary,ERR1106547_primary,ERR1106550_primary,ERR1106557_primary,ERR1106561_primary,ERR1106563_primary,ERR1106564_primary,ERR1106567_primary,ERR1106577_primary,ERR1106579_primary,ERR1106586_primary,ERR11254082_primary,ERR1138747_primary,ERR1138748_primary,ERR1138751_primary,ERR1138752_primary,ERR1138753_primary,ERR1138754_primary,ERR1138755_primary,ERR1138756_primary,ERR1138757_primary,ERR1138758_primary,ERR1138761_primary,ERR1138762_primary,ERR1138765_primary,ERR1138774_primary,ERR1138801_primary,ERR1138802_primary,ERR1138803_primary,ERR114341_primary,ERR114345_primary,ERR114346_primary,ERR114349_primary,ERR114351_primary,ERR114354_primary,ERR114356_primary,ERR114357_primary,ERR114359_primary,ERR114360_primary,ERR114361_primary,ERR114364_primary,ERR114368_primary,ERR114369_primary,ERR114370_primary,ERR114372_primary,ERR114374_primary,ERR114375_primary,ERR114377_primary,ERR114379_primary,ERR114381_primary,ERR114382_primary,ERR114383_primary,ERR114386_primary,ERR114387_primary,ERR114391_primary,ERR114392_primary,ERR114393_primary,ERR114394_primary,ERR114396_primary,ERR114397_primary,ERR114399_primary,ERR114400_primary,ERR114401_primary,ERR114403_primary,ERR114408_primary,ERR114409_primary,ERR114410_primary,ERR11471968_primary,ERR11471969_primary,ERR11471970_primary,ERR11471973_primary,ERR11471974_primary,ERR11471975_primary,ERR11471976_primary,ERR11471980_primary,ERR11471984_primary,ERR11471985_primary,ERR11471986_primary,ERR11471987_primary,ERR11471990_primary,ERR11471993_primary,ERR11471996_primary,ERR11471997_primary,ERR11471998_primary,ERR11472000_primary,ERR11472001_primary,ERR11472002_primary,ERR11472005_primary,ERR11472006_primary,ERR11472007_primary,ERR11472010_primary,ERR11472011_primary,ERR11506455_primary,ERR1172484_primary,ERR1172485_primary,ERR1172491_primary,ERR1172498_primary,ERR1172500_primary,ERR11871779_primary,ERR11871785_primary,ERR11871787_primary,ERR11871788_primary,ERR11871791_primary,ERR11871803_primary,ERR11871805_primary,ERR11871811_primary,ERR11871824_primary,ERR11871834_primary,ERR11871835_primary,ERR11871861_primary,ERR11871877_primary,ERR11871879_primary)):0.0000):0.0000,ERR006184_primary):0.0000):0.0001,(((ERR055476_primary,(ERR063529_primary,ERR11840901_primary)):0.0109,(ERR015445_primary,ERR040050_primary)):0.0720,(ERR10966525_primary,(((ERR018921_primary,ERR1081225_primary,ERR10966513_primary,ERR1106543_primary,ERR1106568_primary,ERR1138789_primary,ERR11840586_primary),(ERR045575_primary,ERR10763973_primary,ERR10789424_primary,ERR1081206_primary,ERR1081234_primary,ERR10893453_primary,ERR10966547_primary,ERR1099207_primary)):0.0000,((ERR012672_primary,ERR015318_primary,ERR015440_primary,ERR020122_primary),(ERR015379_primary,ERR015421_primary,ERR020110_primary)):0.0000):0.0000):0.0068):0.0238):0.0096):0.0039):0.1109,((((ERR042727_primary,ERR10547920_primary),(ERR023690_primary,ERR10966556_primary)):0.1803,((ERR1106539_primary,(ERR040033_primary,ERR047176_primary)):0.7189,(ERR019272_primary,(ERR039983_primary,ERR10764267_primary)):0.5185):0.8145):0.3463,(ERR10763960_primary,ERR1172555_primary)):0.0506):0.0556,(((DRR088034_primary,DRR088036_primary),DRR088035_primary):0.2357,(((ERR015390_primary,ERR018928_primary),((ERR10789439_primary,ERR1099210_primary),((ERR114406_primary,ERR11871737_primary),ERR012340_primary):0.0000):0.0017):0.2091,(ERR102953_primary,ERR108413_primary)):0.1179):0.8592):0.0006):0.0000;
+
+[✓] Newick tree saved to: /kaggle/working/hyphaeon_out/splits.json
+[✓] Split assignments saved to: /kaggle/working/hyphaeon_out/splits.csv
+[splits] rc=0
+
+===== filter =====
++ hyphaeon filter -a /kaggle/input/datasets/daniellecallan/k13-mixed-msa-qc/k13_ref_codon_msa.fasta --use-tn93 -o /kaggle/working/hyphaeon_out/filter.json -c /kaggle/working/hyphaeon_out/filter_audit.csv
+[*] Executing Automated Alignment Error Detection & Surgical Masking...
+[*] Alignment: /kaggle/input/datasets/daniellecallan/k13-mixed-msa-qc/k13_ref_codon_msa.fasta
+[*] Tree:      (skipped; estimating pairwise distances via TN93)
+[*] Tree skipped: Estimating pairwise sequence distances directly via TN93...
+[*] Duplicate Taxon Pruning: Collapsed 1573 identical duplicate sequence(s) (1683 -> 110 unique haplotypes).
+[!] Warning: 6 internal stop codon(s) found in 'ERR10109762_primary'. This may indicate a frameshift or pseudogene. Verify that the alignment is in-frame (codon-aligned).
+[!] Notice: Found 99 in-frame stop codon(s) across alignment matrix.
+[*] Step 1/4: Running Baseline Neural Inference across 727 codons (133 variable, batch_size=256)...
+[Filter: Baseline] Codon   133/  133 (100.0%) |   61.7 cod/s | Elapsed:   2.2s | ETA:   0.0s
+[*] Step 2/4: Spatial Hypergeometric Cluster Scanning (d <= 35, k >= 3)...
+    • Candidate Spatial Clusters Identified: 1
+[*] Step 3/4: Evaluating Outlier Contamination Index (OCI) across 1 patches...
+[Filter: OCI Audit] Patch   1/  1 | Top Outlier: ERR10109766_prim (Run=12, OCI=0.41) | Artifacts:   1
+[*] Step 4/4: Re-Evaluating Cleaned Alignment after Surgically Masking 63 codons...
+[*] Tree skipped: Estimating pairwise sequence distances directly via TN93...
+[*] Duplicate Taxon Pruning: Collapsed 1572 identical duplicate sequence(s) (1683 -> 111 unique haplotypes).
+[!] Warning: 6 internal stop codon(s) found in 'ERR10109762_primary'. This may indicate a frameshift or pseudogene. Verify that the alignment is in-frame (codon-aligned).
+[!] Notice: Found 99 in-frame stop codon(s) across alignment matrix.
+[Filter: Re-eval]  Codon   133/  133 (100.0%) |   61.3 cod/s | Elapsed:   2.2s | ETA:   0.0s
+
+================================================================================
+🎉 Alignment Filtering Complete in 5.693 seconds!
+   Taxa: 110 | Codons: 727
+   Candidate Patches Detected: 1 | Offender Artifacts Masked: 1
+   Total Codons Surgically Masked (NNN): 63
+================================================================================
+
+Metric Comparison (Raw -> Cleaned):
+  • Cauchy Omnibus p-value (CCT): 1.9255e-01 -> 4.7157e-02
+  • Significant Sites (p <= 0.05): 23 -> 25 (Suppressed: 0)
+  • Significant Sites (FDR q <= 0.10): 0 -> 2
+  • Mean Likelihood Ratio (LRT): 0.384 -> 0.434
+
+Surgically Masked Frameshift / Sequencing Artifacts:
+Patch (1-idx)   Span   k (p<=.05)   p_hypergeom    Outlier Taxon        Run   OCI   
+--------------------------------------------------------------------------------
+122-184         63     13           1.34e-06       ERR10109766_primary  12    0.41  
+
+[✓] Cleaned alignment saved to: /kaggle/working/hyphaeon_out/filter.json
+[✓] Artifact audit log written to: /kaggle/working/hyphaeon_out/filter_audit.csv
+[filter] rc=0

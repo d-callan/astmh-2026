@@ -1,0 +1,53 @@
+[{"stream_name":"stdout","time":1.643468832,"data":"[*] alignment: /kaggle/input/datasets/daniellecallan/k13-pfal-msa/k13_ref_codon_msa.fasta\n"}
+,{"stream_name":"stderr","time":3.303550395,"data":"WARNING: hyphaeon-core 0.4.0 does not provide the extra 'tn93'\n"}
+,{"stream_name":"stdout","time":12.861923095,"data":"[*] torch 2.11.0+cpu, cuda=False, device=cpu\n"}
+,{"stream_name":"stdout","time":12.861953204,"data":"[!] no GPU visible -- continuing on CPU (enable_gpu in metadata?)\n"}
+,{"stream_name":"stdout","time":12.86195841,"data":"\n"}
+,{"stream_name":"stdout","time":12.861962039,"data":"===== list-models =====\n"}
+,{"stream_name":"stdout","time":12.861965857,"data":"+ hyphaeon list-models\n"}
+,{"stream_name":"stdout","time":21.35012409,"data":"[list-models] rc=0\n"}
+,{"stream_name":"stdout","time":21.350288639,"data":"\n"}
+,{"stream_name":"stdout","time":21.350300308,"data":"===== meme =====\n"}
+,{"stream_name":"stdout","time":21.350305144,"data":"+ hyphaeon meme -a /kaggle/input/datasets/daniellecallan/k13-pfal-msa/k13_ref_codon_msa.fasta --use-tn93 -o /kaggle/working/hyphaeon_out/meme.json -c /kaggle/working/hyphaeon_out/meme.csv\n"}
+,{"stream_name":"stdout","time":32.445465086,"data":"[meme] rc=0\n"}
+,{"stream_name":"stdout","time":32.445521504,"data":"\n"}
+,{"stream_name":"stdout","time":32.445527613,"data":"===== dms =====\n"}
+,{"stream_name":"stdout","time":32.445532017,"data":"+ hyphaeon dms -a /kaggle/input/datasets/daniellecallan/k13-pfal-msa/k13_ref_codon_msa.fasta --use-tn93 --focal-taxon Reference -o /kaggle/working/hyphaeon_out/dms.json -c /kaggle/working/hyphaeon_out/dms.csv\n"}
+,{"stream_name":"stdout","time":463.199122135,"data":"[dms] rc=0\n"}
+,{"stream_name":"stdout","time":463.199629773,"data":"\n"}
+,{"stream_name":"stdout","time":463.199657756,"data":"===== epistasis =====\n"}
+,{"stream_name":"stdout","time":463.199664761,"data":"+ hyphaeon epistasis -a /kaggle/input/datasets/daniellecallan/k13-pfal-msa/k13_ref_codon_msa.fasta --use-tn93 --focal-taxon Reference -o /kaggle/working/hyphaeon_out/epistasis.json\n"}
+,{"stream_name":"stdout","time":528.699563305,"data":"[epistasis] rc=0\n"}
+,{"stream_name":"stdout","time":528.699602757,"data":"\n"}
+,{"stream_name":"stdout","time":528.69960753,"data":"===== splits =====\n"}
+,{"stream_name":"stdout","time":528.699611364,"data":"+ hyphaeon splits -a /kaggle/input/datasets/daniellecallan/k13-pfal-msa/k13_ref_codon_msa.fasta --use-tn93 -o /kaggle/working/hyphaeon_out/splits.json -c /kaggle/working/hyphaeon_out/splits.csv\n"}
+,{"stream_name":"stdout","time":1384.86557824,"data":"[splits] rc=0\n"}
+,{"stream_name":"stdout","time":1384.86653773,"data":"\n"}
+,{"stream_name":"stdout","time":1384.866565127,"data":"===== filter =====\n"}
+,{"stream_name":"stdout","time":1384.866572286,"data":"+ hyphaeon filter -a /kaggle/input/datasets/daniellecallan/k13-pfal-msa/k13_ref_codon_msa.fasta --use-tn93 -o /kaggle/working/hyphaeon_out/filter.json -c /kaggle/working/hyphaeon_out/filter_audit.csv\n"}
+,{"stream_name":"stdout","time":1397.453817422,"data":"[filter] rc=0\n"}
+,{"stream_name":"stdout","time":1397.453863369,"data":"\n"}
+,{"stream_name":"stdout","time":1397.453886415,"data":"===== suite summary =====\n"}
+,{"stream_name":"stdout","time":1397.453912195,"data":"  list-models: rc=0\n"}
+,{"stream_name":"stdout","time":1397.453918536,"data":"  meme: rc=0\n"}
+,{"stream_name":"stdout","time":1397.453923643,"data":"  dms: rc=0\n"}
+,{"stream_name":"stdout","time":1397.453928448,"data":"  epistasis: rc=0\n"}
+,{"stream_name":"stdout","time":1397.453933362,"data":"  splits: rc=0\n"}
+,{"stream_name":"stdout","time":1397.453938088,"data":"  filter: rc=0\n"}
+,{"stream_name":"stdout","time":1397.606288763,"data":"  dms.csv  87891\n"}
+,{"stream_name":"stdout","time":1397.606354731,"data":"  dms.json  1409580\n"}
+,{"stream_name":"stdout","time":1397.606361493,"data":"  epistasis.json  122775\n"}
+,{"stream_name":"stdout","time":1397.606528854,"data":"  filter.json  3861979\n"}
+,{"stream_name":"stdout","time":1397.606545955,"data":"  filter_audit.csv  417\n"}
+,{"stream_name":"stdout","time":1397.606626122,"data":"  meme.csv  38651\n"}
+,{"stream_name":"stdout","time":1397.606647834,"data":"  meme.json  118905\n"}
+,{"stream_name":"stdout","time":1397.606651899,"data":"  splits.csv  82209\n"}
+,{"stream_name":"stdout","time":1397.606655967,"data":"  splits.json  35654\n"}
+,{"stream_name":"stdout","time":1397.606838958,"data":"  suite_log.txt  84072\n"}
+,{"stream_name":"stderr","time":1400.959364598,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1400.95942627,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1401.306533831,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1401.306572983,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1402.279442372,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1403.622485294,"data":"[NbConvertApp] Writing 293607 bytes to __results__.html\n"}
+]

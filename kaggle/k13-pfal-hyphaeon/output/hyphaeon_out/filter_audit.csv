@@ -1,0 +1,2 @@
+patch_start_1idx,patch_end_1idx,span_codons,significant_sites_k,p_hypergeom,outlier_taxon,consecutive_mismatches,outlier_contamination_index,outlier_aa_sequence,consensus_aa_sequence,mean_raw_patch_lrt
+68,125,58,11,8.164069420502074e-11,ERR11840484_primary,12,0.021201413427312115,------------------------------------NNSHNNNNNNNNKKNINHNNNH,YGNVKDSLLESIDMSVLDSNFDSKKDFLPSNLSRTFNNMSKDNIGNKYLNKLLNKKKD,2.282953977584839

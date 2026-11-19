@@ -1,0 +1,15 @@
+{
+  "id": "daniellecallan/ama1-5k",
+  "title": "ama1-5k",
+  "code_file": "kernel.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "daniellecallan/ama1-strat5k"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}
