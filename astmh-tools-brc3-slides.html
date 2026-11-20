@@ -1131,32 +1131,32 @@
         <h2 class="slide-title">PrimAeon &amp; HyphAeon in Action: <em>P. falciparum</em> AMA1</h2>
         <div class="title-divider"></div>
 
-        <div class="cols" style="gap: 28px; align-items: center;">
-          <div class="col" style="flex: 0 0 445px;">
+        <div class="cols" style="gap: 24px; align-items: center;">
+          <div class="col" style="flex: 0 0 555px;">
             <div class="screenshot-frame">
-              <img src="demo-assets/primaeon-ama1.png" alt="PrimAeon browser screenshot for pfama1.codon.fasta showing 150 taxa, 622 codons, Episodic selection detected p_ACAT 0.001, and 6 called sites D36, K206, K230, K300, E405, D493" style="max-height: 472px;" />
+              <img src="demo-assets/primaeon-ama1.png" alt="PrimAeon site-by-site episodic selection graph for pfama1.codon.fasta showing 6 purple lollipop stems (D36, K206, K230, K300, E405, D493) above the top-5% LRT threshold across 622 codons" style="max-height: 480px;" />
             </div>
           </div>
 
           <div class="col anno-stack">
             <div class="anno-card">
-              <div class="anno-head">1. Gene-Wide Verdict (<span class="mono">150 &times; 622</span> codons)</div>
+              <div class="anno-head">1. Purple Stems = Adapting Hotspots</div>
               <p>
-                Top left immediately reports <strong>"Episodic selection detected, p<sub>ACAT</sub> 0.001"</strong> — strong gene-level proof that AMA1 is actively adapting across field isolates.
+                Across <strong>150 haplotypes &times; 622 codons</strong>, <strong>6 purple peaks</strong> (<strong>D36, K206, K230, K300, E405, D493</strong>) rise above the dashed call threshold (gene-wide <strong>p<sub>ACAT</sub> = 0.001</strong>).
               </p>
             </div>
 
             <div class="anno-card navy">
-              <div class="anno-head">2. Six Rapidly Adapting Codons Flagged</div>
+              <div class="anno-head">2. Grey Stems = Background Variation</div>
               <p>
-                Out of <strong>116 variable codons</strong>, PrimAeon isolates <strong>6 top adapting positions</strong> directly in the browser: <strong>D36, K206, K230, K300, E405, D493</strong> (clickable for site details).
+                The other <strong>110 variable codons</strong> stay below threshold while <strong>506 invariant codons</strong> are omitted — isolating likely immune-escape hotspots at a glance.
               </p>
             </div>
 
             <div class="anno-card teal">
-              <div class="anno-head">3. Zero-Install Browser Run + Sanity Checks</div>
+              <div class="anno-head">3. Interactive Thresholds &amp; Site Trees</div>
               <p>
-                Top bar shows execution in <strong>"this browser"</strong> with automatic alignment hygiene checks expanded below (<em>"What we did to your data"</em>).
+                Toggle cutoffs (<strong>Top 5%</strong>, <strong>q &le; 0.10</strong>, <strong>Z &ge; 2</strong>), overlay sequence entropy, or <strong>click any purple stem</strong> in the browser to inspect its site-level tree.
               </p>
             </div>
 
