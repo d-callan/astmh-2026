@@ -722,9 +722,10 @@
         <div class="title-divider"></div>
 
         <ul class="clean" style="margin-bottom: 26px;">
-          <li>Whatever the tool, the answer has the same shape: <strong>a ranked list of hits</strong> — which SRA samples contain your sequence — with match statistics and confidence metrics.</li>
+          <li><strong>kmindex</strong> → a JSON / matrix of hit samples with match scores — k-mer presence + coverage across the archive.</li>
+          <li><strong>LexicMap</strong> → BLAST-like alignments — which samples carry your sequence, and where it lands in each assembly.</li>
+          <li>Different shapes, same destination: <strong>translated into scored accessions</strong> — a ranked cohort in minutes to hours, not <strong>weeks of scripting and downloading</strong>.</li>
           <li>The uniform point: <strong>the archive is queryable by <em>content</em></strong> — annotation doesn't matter.</li>
-          <li>One marker gene → a cohort of accessions in minutes to hours — a question that used to mean <strong>weeks of scripting and downloading</strong>.</li>
         </ul>
 
         <div class="callout-dark" style="margin-bottom: 22px;">
@@ -735,7 +736,7 @@
         <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
         <div class="slide-footer">Results</div>
       </div>
-      <aside class="notes">Deliberately generic on output formats — every tool describes hits in its own way; the audience doesn't care. Honest framing: tools give you the hit list today; the fetch/haplotype steps are workflows still in development.</aside>
+      <aside class="notes">Accurate on shapes this time: kmindex gives a matrix/JSON of hit samples with scores; LexicMap gives BLAST-like alignments — different outputs, both reducible to scored accessions, which is all the cohort step needs. Honest framing: tools give you the hit list today; the fetch/haplotype steps are workflows still in development.</aside>
     </section>
 
     <!-- ============ 8. Haplotypes from hits (in development) ============ -->
