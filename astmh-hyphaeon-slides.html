@@ -755,10 +755,10 @@
       <aside class="notes">The whole story on one slide: sequence search found the samples (talk 1), haplotype reconstruction made the cohort, now ChronAeon triages/places/dates and HyphAeon screens for adaptation — all as Galaxy workflows, all recorded.</aside>
     </section>
 
-    <!-- ============ 8b. Proof by reproduction: ama1 ============ -->
+    <!-- ============ 8b. Proof by reproduction: AMA1 ============ -->
     <section>
       <div class="slide">
-        <h2 class="slide-title">Proof by Reproduction: <em>ama1</em> <span class="status-pill indev" style="font-size: 13px;">real results</span></h2>
+        <h2 class="slide-title">Proof by Reproduction: AMA1 <span class="status-pill indev" style="font-size: 13px;">real results</span></h2>
         <div class="title-divider"></div>
 
         <div class="cols" style="margin-bottom: 20px;">
@@ -766,14 +766,14 @@
             <div class="section-label" style="margin-top:0;">What we asked</div>
             <ul class="clean">
               <li>Same archive cohort machinery as Talk 1 — <strong>no curated alignment, no metadata</strong>, reads → codon MSA → suite.</li>
-              <li>Two genes, one pipeline: <strong>ama1</strong> (blood-stage immune antigen, published selection sites) vs. <strong>k13</strong> (artemisinin-resistance marker — conserved, founder alleles).</li>
+              <li>Two genes, one pipeline: <strong>AMA1</strong> (blood-stage immune antigen, published selection sites) vs. <strong>K13</strong> (artemisinin-resistance marker — conserved, founder alleles).</li>
             </ul>
           </div>
           <div class="col">
             <div class="section-label" style="margin-top:0;">What it found — and didn't</div>
             <ul class="clean">
-              <li><strong>ama1:</strong> 16 FDR-significant MEME sites, 11 in the published domain I–III epitope block; D242Y immunotype split recovered.</li>
-              <li><strong>k13:</strong> zero FDR-significant sites — <em>the correct negative</em> on a conserved gene.</li>
+              <li><strong>AMA1:</strong> 16 FDR-significant MEME sites, 11 in the published domain I–III epitope block; D242Y immunotype split recovered.</li>
+              <li><strong>K13:</strong> zero FDR-significant sites — <em>the correct negative</em> on a conserved gene.</li>
             </ul>
           </div>
         </div>
@@ -786,7 +786,7 @@
         <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
         <div class="slide-footer">Validation, not discovery</div>
       </div>
-      <aside class="notes">This is the trust-the-suite slide. ama1 is the answer-key gene: domain-I diversifying selection and the D242Y vaccine-immunotype dimorphism are published — hyphaeon recovered both from an uncurated, read-reconstructed cohort (3,655 sequences after coverage QC, 1,579 unique). The suite also caught its own artifact class: four signal-peptide hits came from 179 five-prime-truncated reconstructions — missing data scoring as episodic change. k13 on identical machinery gives the clean negative (no FDR hits; founder resistance alleles are genotype questions, not selection questions). Honest numbers: ~9h on a 4-core container is the serial case; the accession chunks split trivially across Galaxy jobs.</aside>
+      <aside class="notes">This is the trust-the-suite slide. AMA1 is the answer-key gene: domain-I diversifying selection and the D242Y vaccine-immunotype dimorphism are published — hyphaeon recovered both from an uncurated, read-reconstructed cohort (3,655 sequences after coverage QC, 1,579 unique). The suite also caught its own artifact class: four signal-peptide hits came from 179 five-prime-truncated reconstructions — missing data scoring as episodic change. K13 on identical machinery gives the clean negative (no FDR hits; founder resistance alleles are genotype questions, not selection questions). Honest numbers: ~9h on a 4-core container is the serial case; the accession chunks split trivially across Galaxy jobs.</aside>
     </section>
 
     <!-- ============ 9. Surveillance without annotation ============ -->

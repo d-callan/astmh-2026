@@ -787,17 +787,17 @@
       <aside class="notes">Mechanism in one breath: hit accession → stream its unitig graph from S3 → anchor the query gene by shared k-mers → walk with GraphAligner → full-length haplotype, including intra-host variants. GitHub: nekrut/disassembler — QR on the resources slide.</aside>
     </section>
 
-    <!-- ============ 8b. Worked example: ama1 (full pipeline) ============ -->
+    <!-- ============ 8b. Worked example: AMA1 (full pipeline) ============ -->
     <section>
       <div class="slide">
-        <h2 class="slide-title">A Concrete Example: <em>ama1</em> <span class="status-pill indev" style="font-size: 13px;">end to end, real results</span></h2>
+        <h2 class="slide-title">A Concrete Example: AMA1 <span class="status-pill indev" style="font-size: 13px;">end to end, real results</span></h2>
         <div class="title-divider"></div>
 
         <div class="cols" style="margin-bottom: 20px;">
           <div class="col">
             <div class="section-label" style="margin-top:0;">The query</div>
             <ul class="clean">
-              <li><strong>ama1</strong> — a <em>P. falciparum</em> blood-stage antigen, naturally variable: a good stress test for cohort reconstruction.</li>
+              <li><strong>AMA1</strong> — a <em>P. falciparum</em> blood-stage antigen, naturally variable: a good stress test for cohort reconstruction.</li>
               <li>1,869-bp CDS query sequence.</li>
             </ul>
           </div>
@@ -805,7 +805,7 @@
             <div class="section-label" style="margin-top:0;">Cohort — real numbers</div>
             <ul class="clean">
               <li><strong>45,879</strong> kmindex hits → 5,000-accession stratified sample → <strong>3,676 haplotypes</strong> reconstructed.</li>
-              <li><strong>1,579 unique sequences</strong> (vs. 107 for k13, the conserved artemisinin-resistance marker) — real within-species diversity, straight from reads.</li>
+              <li><strong>1,579 unique sequences</strong> (vs. 107 for K13, the conserved artemisinin-resistance marker) — real within-species diversity, straight from reads.</li>
             </ul>
           </div>
         </div>
@@ -818,7 +818,7 @@
         <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
         <div class="slide-footer">Worked example</div>
       </div>
-      <aside class="notes">Cohort-building only — hold the biology for the next talk. Real numbers: kmindex returned 45,879 hits; we stratified 5,000 accessions to oversample divergent-allele carriers (3k from the 0.5–0.75 score band); reconstruction gave 3,676 haplotypes, coverage QC kept 3,655. The k13 contrast is the honest caveat about cohorts: same machinery on a conserved gene (the artemisinin marker) yields 107 unique sequences — the gene's diversity sets the ceiling, not the pipeline. Runtime honesty: ~9h for 5k on 4 cores serial; chunks parallelize trivially in Galaxy, so that's the pessimistic case. If pressed on 'what did you find': that's literally the next talk — the cohort is the deliverable here.</aside>
+      <aside class="notes">Cohort-building only — hold the biology for the next talk. Real numbers: kmindex returned 45,879 hits; we stratified 5,000 accessions to oversample divergent-allele carriers (3k from the 0.5–0.75 score band); reconstruction gave 3,676 haplotypes, coverage QC kept 3,655. The K13 contrast is the honest caveat about cohorts: same machinery on a conserved gene (the artemisinin marker) yields 107 unique sequences — the gene's diversity sets the ceiling, not the pipeline. Runtime honesty: ~9h for 5k on 4 cores serial; chunks parallelize trivially in Galaxy, so that's the pessimistic case. If pressed on 'what did you find': that's literally the next talk — the cohort is the deliverable here.</aside>
     </section>
 
     <!-- ============ 9. What this unlocks ============ -->
@@ -930,7 +930,7 @@
         <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
         <div class="slide-footer">Future directions</div>
       </div>
-      <aside class="notes">Gene pages aren't landed yet — flag this as future directions. BioNym is our knowledge-graph pipeline (repo linked): the graph sits under the page and the page offers several doors into it — summary, ask-an-LLM, whole-graph view, and topic slices. Plus UCSC region links and workflow launchers wired to the gene's sequence — the ama1 run becomes a template: pick a gene, launch, get a haplotype cohort and a selection table back.</aside>
+      <aside class="notes">Gene pages aren't landed yet — flag this as future directions. BioNym is our knowledge-graph pipeline (repo linked): the graph sits under the page and the page offers several doors into it — summary, ask-an-LLM, whole-graph view, and topic slices. Plus UCSC region links and workflow launchers wired to the gene's sequence — the AMA1 run becomes a template: pick a gene, launch, get a haplotype cohort and a selection table back.</aside>
     </section>
 
     <!-- ============ 12. Bridge to next talk + resources ============ -->
