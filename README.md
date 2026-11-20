@@ -6,6 +6,8 @@ Slide decks from the 2026 ASTMH annual meeting, published as a static GitHub Pag
 
 | Deck | Talk | Presenter |
 | --- | --- | --- |
+| `astmh-brc-ai-intro-slides.html` | BRC-Analytics — AI + Galaxy + Infrastructure | Anton Nekrutenko (Penn State) |
+| `astmh-intro-slides.html` | BRC Analytics — Symposium Introduction | Anton Nekrutenko (Penn State) |
 | `astmh-malaria-slides.html` | Your Pathogen Question. A Reproducible Analysis. | Ananias A. Escalante (Temple University) |
 | `astmh-logan-slides.html` | Query the Whole Archive | Anton Nekrutenko (Penn State) |
 | `astmh-hyphaeon-slides.html` | Evolutionary Questions at Archive Scale | Sergei L. Kosakovsky Pond (Temple University) |
