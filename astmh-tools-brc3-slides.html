@@ -658,12 +658,12 @@
         <div class="kicker">ASTMH 2026 · Bioinformatics Resource Center</div>
         <h1>New Technologies in BRC:<br/>Querying Entire SRA, Agentic Analysis,<br/>Revolutionary New Tooling</h1>
         <div class="subtitle">
-          Logan Archive Search <span class="plus">+</span> <span class="mono" style="font-size:20px;">disassembler</span> <span class="plus">+</span> Aeon &amp; BUSHWHACKER <span class="plus">+</span> BRC 3.0 Precomputed Data
+          Agentic MCP &amp; Orbit <span class="plus">+</span> Logan Search <span class="plus">+</span> Aeon &amp; BUSHWHACKER <span class="plus">+</span> BRC 3.0 Data
         </div>
         <div class="kicker-divider"></div>
         <div class="pill-row">
+          <span class="pill"><i class="fa-solid fa-robot"></i> Agentic MCP &amp; Orbit</span>
           <span class="pill"><i class="fa-solid fa-magnifying-glass"></i> Sequence-First SRA Search</span>
-          <span class="pill"><i class="fa-solid fa-code-branch"></i> Cohort Reconstruction</span>
           <span class="pill"><i class="fa-solid fa-dna"></i> Browser &amp; Galaxy Inference</span>
           <span class="pill"><i class="fa-solid fa-layer-group"></i> Precomputed Multi-Omic Data</span>
         </div>
@@ -674,63 +674,224 @@
         <div class="slide-footer">ASTMH 2026 · November 2026</div>
       </div>
       <aside class="notes">
-        Welcome. This talk brings together two major advances for infectious-disease genomics on BRC Analytics and Galaxy: new archive-scale sequence search and evolutionary tools built around Logan, and BRC 3.0's uniform precomputed data baselines.
+        Welcome. This talk spans three linked capabilities on BRC Analytics and Galaxy: agentic access via MCP servers, Orbit, and User-Defined Tools; archive-scale sequence search and evolutionary analysis with Logan, disassembler, and the Aeon/BUSHWHACKER suite; and BRC 3.0's precomputed multi-omic baselines.
       </aside>
     </section>
 
-    <!-- ==================== SLIDE 2: TALK ROADMAP ==================== -->
+    <!-- ==================== SLIDE 2: AGENTIC GALAXY & BRC MCP ==================== -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">Agentic BRC &amp; Galaxy: Any Harness via MCP</h2>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="gap: 24px; align-items: center;">
+          <div class="col" style="flex: 0 0 645px;">
+            <div class="screenshot-frame">
+              <img src="demo-assets/galaxy-agents-hub.png" alt="galaxyproject.org/agents page showing Box 1 Pick your agent with six AI harnesses: Orbit, Claude Code, Codex CLI, Antigravity, Claude Desktop, and Pi / Cursor / Other" style="max-height: 432px;" />
+              <div class="screenshot-caption"><strong>galaxyproject.org/agents</strong> — one unified setup page across six AI agent harnesses</div>
+            </div>
+          </div>
+
+          <div class="col anno-stack" style="gap: 11px;">
+            <div class="anno-card">
+              <div class="anno-head">1. Both BRC &amp; Galaxy Expose MCP Servers</div>
+              <p>
+                <strong>BRC Analytics</strong> (<span class="mono">brc-analytics.org/api/v1/mcp</span>) and <strong>Galaxy</strong> (<span class="mono">uvx galaxy-mcp</span>, 48 tools) speak standard MCP — discover curated genomes and run real cloud jobs together.
+              </p>
+            </div>
+
+            <div class="anno-card navy">
+              <div class="anno-head">2. Bring Any AI Harness You Prefer</div>
+              <p>
+                Plug in <strong>Orbit</strong>, <strong>Claude Code</strong>, <strong>Codex CLI</strong>, <strong>Antigravity</strong>, <strong>Claude Desktop</strong>, or <strong>Pi / Cursor</strong> — every tool, workflow, and container executes as a tracked Galaxy job.
+              </p>
+            </div>
+
+            <div style="background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; display: flex; justify-content: space-around; align-items: center; gap: 10px;">
+              <div style="display:flex; flex-direction:column; align-items:center; gap:5px; text-align:center;">
+                <img src="qr-agents-hub.svg" alt="QR code for galaxyproject.org/agents" style="width:78px; height:78px; border:1px solid var(--border); border-radius:5px; padding:3px; background:#fff;" />
+                <div style="font-size:10.5px; font-weight:700; color:var(--navy); letter-spacing:0.4px;">galaxyproject.org/agents</div>
+              </div>
+              <div style="display:flex; flex-direction:column; align-items:center; gap:5px; text-align:center;">
+                <img src="qr-brc-mcp.svg" alt="QR code for BRC Analytics MCP endpoint" style="width:78px; height:78px; border:1px solid var(--border); border-radius:5px; padding:3px; background:#fff;" />
+                <div style="font-size:10.5px; font-weight:700; color:var(--navy); letter-spacing:0.4px;">BRC MCP</div>
+              </div>
+              <div style="display:flex; flex-direction:column; align-items:center; gap:5px; text-align:center;">
+                <img src="qr-galaxy-mcp.svg" alt="QR code for Galaxy MCP server" style="width:78px; height:78px; border:1px solid var(--border); border-radius:5px; padding:3px; background:#fff;" />
+                <div style="font-size:10.5px; font-weight:700; color:var(--navy); letter-spacing:0.4px;">Galaxy MCP</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" alt="BRC Analytics" class="slide-logo" />
+        <div class="slide-footer">Agentic Access · BRC + Galaxy MCP</div>
+      </div>
+      <aside class="notes">
+        Before diving into our new archive tools, notice how you can drive both BRC Analytics and Galaxy from any AI harness today. Because both expose standard MCP servers (brc-analytics.org/api/v1/mcp and uvx galaxy-mcp), galaxyproject.org/agents gives a single 4-step guide across all six major harnesses: Orbit, Claude Code, Codex CLI, Antigravity, Claude Desktop, and Pi/Cursor/Other.
+      </aside>
+    </section>
+
+    <!-- ==================== SLIDE 3: ORBIT WORKBENCH ==================== -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">Orbit: The Biologist's Agentic Workbench</h2>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="gap: 24px; align-items: center;">
+          <div class="col" style="flex: 0 0 675px;">
+            <div class="screenshot-frame">
+              <img src="demo-assets/orbit-interface.png" alt="Orbit Desktop Semantic Bench interface showing top green Galaxy compute stages branching to indigo local figure views, interactive volcano plot and table, and right co-scientist chat rail" style="max-height: 432px;" />
+              <div class="screenshot-caption"><strong>Orbit Desktop</strong> (<span class="mono">galaxyproject/orbit</span>) — Semantic Analysis Map, Figure Studio &amp; Co-Scientist Chat</div>
+            </div>
+          </div>
+
+          <div class="col anno-stack" style="gap: 11px;">
+            <div class="anno-card teal">
+              <div class="anno-head">1. Zero Terminal · Galaxy Built In</div>
+              <p>
+                Standalone desktop app shipping <span class="mono">galaxy-mcp</span> and <span class="mono">galaxy-skills</span> out of the box — connect your API key and collaborate in plain English.
+              </p>
+            </div>
+
+            <div class="anno-card navy">
+              <div class="anno-head">2. Cloud Compute + Instant Local Figures</div>
+              <p>
+                <strong>Green stages</strong> execute reproducibly on Galaxy clusters; <strong>indigo branches</strong> generate crisp interactive SVGs locally and pin figures straight to Galaxy pages.
+              </p>
+            </div>
+
+            <div style="background: var(--navy); color: var(--white); border-radius: 8px; border-left: 5px solid var(--highlight); padding: 12px 14px; display: flex; align-items: center; gap: 14px;">
+              <img src="qr-orbit.svg" alt="QR code for github.com/galaxyproject/orbit" style="width:82px; height:82px; border-radius:6px; padding:4px; background:#fff; flex-shrink:0;" />
+              <div>
+                <div style="font-size:11px; font-weight:700; color:var(--highlight); text-transform:uppercase; letter-spacing:1.2px; margin-bottom:4px;">Download &amp; Source</div>
+                <div style="font-size:14.5px; font-weight:700; color:#fff; margin-bottom:3px;">github.com/galaxyproject/orbit</div>
+                <div style="font-size:12.5px; color:#D8D8EC; line-height:1.35;">Every figure traces directly to its upstream Galaxy dataset and history.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" alt="BRC Analytics" class="slide-logo" />
+        <div class="slide-footer">Agentic Access · Orbit Desktop</div>
+      </div>
+      <aside class="notes">
+        For biologists who do not want to live in a terminal, Orbit is Galaxy's dedicated desktop workbench. Heavy compute stays on Galaxy (green map nodes), while Orbit branches off instant local figures (indigo nodes) with full dataset provenance and a co-scientist chat rail on the right.
+      </aside>
+    </section>
+
+    <!-- ==================== SLIDE 4: UDT SIGNUP FORM + QR ==================== -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">Unlock Custom Tools: User-Defined Tools Signup</h2>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="gap: 28px; align-items: center;">
+          <div class="col" style="flex: 0 0 495px;">
+            <div class="screenshot-frame">
+              <img src="demo-assets/udt-signup-form.png" alt="udt-signup.galaxyproject.org request access page for Galaxy user-defined tools on usegalaxy.org with ORCID sign-in" style="max-height: 468px;" />
+            </div>
+          </div>
+
+          <div class="col anno-stack" style="gap: 13px;">
+            <div class="anno-card navy">
+              <div class="anno-head">1. Run Any Container as a Native Galaxy Tool</div>
+              <p>
+                When no installed tool fits — like our new <span class="mono">disassembler</span>, <strong>RhizAeon</strong>, or <span class="mono">logan-walker</span> wrappers — you or your AI agent define a short YAML + container and run it directly in your history.
+              </p>
+            </div>
+
+            <div class="anno-card teal">
+              <div class="anno-head">2. 30-Second Request via ORCID iD</div>
+              <p>
+                Sign in with your <strong>ORCID iD</strong>, link your <span class="mono">usegalaxy.org</span> account, and share a sentence on what you plan to build. Standard tools work immediately while your request is approved.
+              </p>
+            </div>
+
+            <div style="background: var(--navy); color: var(--white); border-radius: 10px; border-left: 6px solid var(--highlight); padding: 16px 20px; display: flex; align-items: center; gap: 20px; box-shadow: 0 4px 16px rgba(40,40,91,0.14);">
+              <img src="qr-udt-signup.svg" alt="QR code for https://udt-signup.galaxyproject.org/" style="width:134px; height:134px; border-radius:8px; padding:5px; background:#fff; flex-shrink:0;" />
+              <div>
+                <div style="font-size:11.5px; font-weight:700; color:var(--highlight); text-transform:uppercase; letter-spacing:1.4px; margin-bottom:6px;">Scan to Request Beta Access</div>
+                <div style="font-family:'Courier New', monospace; font-size:18px; font-weight:700; color:#fff; margin-bottom:8px;">udt-signup.galaxyproject.org</div>
+                <div style="font-size:13.5px; color:#E0E0F2; line-height:1.4;">Per-account <strong style="color:var(--highlight);">User-Defined Tools</strong> access on <strong style="color:var(--highlight);">usegalaxy.org</strong> (Galaxy Main) — works from the web UI and any MCP agent.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" alt="BRC Analytics" class="slide-logo" />
+        <div class="slide-footer">Agentic Access · User-Defined Tools Signup</div>
+      </div>
+      <aside class="notes">
+        Pause here so anyone in the room can scan udt-signup.galaxyproject.org right now. Signing in with ORCID takes about 30 seconds and unlocks User-Defined Tools on usegalaxy.org — letting you and your AI agent wrap any BioContainer in YAML and execute it as a tracked Galaxy job without waiting for an administrator install.
+      </aside>
+    </section>
+
+    <!-- ==================== SLIDE 5: TALK ROADMAP ==================== -->
     <section>
       <div class="slide">
         <h2 class="slide-title">Talk Roadmap</h2>
         <div class="title-divider"></div>
 
-        <div class="cols" style="margin-bottom: 22px;">
-          <div class="col" style="flex: 1.15;">
-            <div class="card top-navy" style="height: 100%; box-sizing: border-box;">
+        <div class="cols" style="margin-bottom: 18px; gap: 16px;">
+          <div class="col" style="flex: 0.88;">
+            <div class="card top-teal" style="height: 100%; box-sizing: border-box;">
               <div style="display:flex; justify-content:space-between; align-items:center;">
                 <span class="card-num">PART 1</span>
+                <span class="status-pill teal">Live Now</span>
+              </div>
+              <div class="card-head" style="font-size: 20px;">Agentic Access &amp; UDTs</div>
+              <ul class="clean" style="margin-top: 6px;">
+                <li><strong>BRC + Galaxy MCP:</strong> Any AI harness via <span class="mono" style="font-size:12px;">galaxyproject.org/agents</span>.</li>
+                <li><strong>Orbit Desktop:</strong> Auditable cloud stages + instant local figures.</li>
+                <li><strong>Custom UDTs:</strong> Run any container via <span class="mono" style="font-size:12px;">udt-signup</span>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col" style="flex: 1.12;">
+            <div class="card top-navy" style="height: 100%; box-sizing: border-box;">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span class="card-num">PART 2</span>
                 <span class="status-pill navy">Archive-Scale Pipeline</span>
               </div>
-              <div class="card-head" style="font-size: 22px;">New Archive-Scale Tools</div>
-              <div class="pipeline" style="margin-top: 8px; flex-wrap: wrap;">
-                <div class="pipe-stage" style="padding: 10px 12px;">
+              <div class="card-head" style="font-size: 20px;">New Archive-Scale Tools</div>
+              <div class="pipeline" style="margin-top: 6px;">
+                <div class="pipe-stage" style="padding: 8px 10px;">
                   <div class="pipe-title">1. Logan</div>
                   <div class="pipe-sub">Unitigs &amp; contigs across SRA</div>
                 </div>
                 <div class="pipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                <div class="pipe-stage" style="padding: 10px 12px;">
+                <div class="pipe-stage" style="padding: 8px 10px;">
                   <div class="pipe-title">2. Indices</div>
                   <div class="pipe-sub"><span class="mono">kmindex</span> &amp; <span class="mono">LexicMap</span></div>
                 </div>
               </div>
-              <div class="pipeline" style="margin-top: 8px;">
-                <div class="pipe-stage" style="padding: 10px 12px;">
+              <div class="pipeline" style="margin-top: 6px;">
+                <div class="pipe-stage" style="padding: 8px 10px;">
                   <div class="pipe-title">3. disassembler</div>
                   <div class="pipe-sub">Clean codon cohorts</div>
                 </div>
                 <div class="pipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                <div class="pipe-stage terminal" style="padding: 10px 12px;">
+                <div class="pipe-stage terminal" style="padding: 8px 10px;">
                   <div class="pipe-title">4. Four Tools</div>
-                  <div class="pipe-sub">HyphAeon/PrimAeon · RhizAeon · ChronAeon · BUSHWHACKER</div>
+                  <div class="pipe-sub">HyphAeon · RhizAeon · ChronAeon · BUSHWHACKER</div>
                 </div>
-              </div>
-              <div class="card-label" style="margin-top: 8px;">
-                Turn a single gene query into thousands of clean field alleles and test selection, recombination, dating, and cross-clade jumps in minutes.
               </div>
             </div>
           </div>
 
-          <div class="col" style="flex: 0.85;">
+          <div class="col" style="flex: 0.86;">
             <div class="card top-accent" style="height: 100%; box-sizing: border-box;">
               <div style="display:flex; justify-content:space-between; align-items:center;">
-                <span class="card-num">PART 2</span>
-                <span class="status-pill">Ready-to-Browse Baselines</span>
+                <span class="card-num">PART 3</span>
+                <span class="status-pill">Ready-to-Browse</span>
               </div>
-              <div class="card-head" style="font-size: 22px;">BRC 3.0 Precomputed Data</div>
-              <ul class="clean" style="margin-top: 8px;">
-                <li><strong>Adaptive Loops (<span class="mono">Focaloops</span>):</strong> Reanalyze entire cohorts in hours rather than weeks.</li>
-                <li><strong>Uniform Multi-Omics:</strong> Standardized <span class="mono">RNA-seq</span>, <span class="mono">ChIP/CUT&amp;RUN</span>, <span class="mono">ATAC-seq</span> &amp; variants across expanding BRC genomes.</li>
-                <li><strong>Clade Alignments:</strong> Project variants across sister species and trace gene evolution.</li>
+              <div class="card-head" style="font-size: 20px;">BRC 3.0 Precomputed</div>
+              <ul class="clean" style="margin-top: 6px;">
+                <li><strong>Adaptive Loops:</strong> Entire cohorts reanalyzed in hours.</li>
+                <li><strong>Uniform Multi-Omics:</strong> <span class="mono">RNA-seq</span>, <span class="mono">ChIP</span>, <span class="mono">ATAC-seq</span> &amp; variants.</li>
+                <li><strong>Clade Alignments:</strong> Project variants &amp; trace gene evolution.</li>
               </ul>
             </div>
           </div>
@@ -739,7 +900,7 @@
         <div class="callout-light">
           <div class="label">The Big Picture</div>
           <p class="body">
-            <strong>Live archive interrogation (Part 1)</strong> meets <strong>uniform precomputed baselines (Part 2)</strong> — eliminating download and pipeline bottlenecks for pathogen and vector biologists.
+            <strong>Agentic access &amp; custom UDTs</strong> connect <strong>live archive interrogation</strong> with <strong>uniform BRC 3.0 baselines</strong> — removing download, install, and pipeline bottlenecks for pathogen biologists.
           </p>
         </div>
 
@@ -747,7 +908,7 @@
         <div class="slide-footer">Talk Roadmap</div>
       </div>
       <aside class="notes">
-        Two connected acts: first, how we search the raw public SRA by sequence and turn matches into evolutionary answers using Logan, disassembler, and the four Aeon/BUSHWHACKER tools; second, how BRC 3.0 brings precomputed multi-omic data and clade alignments across our curated organisms.
+        Three connected acts: first, agentic access across BRC and Galaxy via MCP, Orbit, and User-Defined Tools; second, querying the entire SRA and turning matches into evolutionary answers with Logan, disassembler, and the four Aeon/BUSHWHACKER tools; third, BRC 3.0 precomputed multi-omic data and clade alignments.
       </aside>
     </section>
 
