@@ -9,6 +9,7 @@ Slide decks from the 2026 ASTMH annual meeting, published as a static GitHub Pag
 | `astmh-intro-slides.html` | BRC-Analytics — AI + Galaxy + Infrastructure (Symposium Introduction) | Anton Nekrutenko (Penn State) |
 | `astmh-malaria-slides.html` | Your Pathogen Question. A Reproducible Analysis. | Ananias A. Escalante (Temple University) |
 | `astmh-tools-brc3-slides.html` | New Technologies in BRC: Querying Entire SRA, Agentic Analysis, Revolutionary New Tooling | Anton Nekrutenko (Penn State) |
+| `astmh-malaria-demo-slides.html` | Archive-Scale Malaria Genomics: Live Pipeline Walkthrough (Companion PPTX Demo) | Anton Nekrutenko (Penn State) |
 | `astmh-ai-tools-slides.html` | Verifiable AI for Pathogen Genomics | Danielle Callan (Temple University) |
 | `astmh-gtn-ai-slides.html` | Human-Written, Agent-Readable | Scott Cain (Galaxy Project) |
 

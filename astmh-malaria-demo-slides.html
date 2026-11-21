@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Archive-Scale Malaria Genomics: Live Pipeline Walkthrough — ASTMH 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- reveal.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css" id="theme" />
+
+  <!-- Fonts + Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+
+  <style>
+    :root {
+      /* BRC palette */
+      --navy:        #28285B;
+      --navy-dark:   #1F1F47;
+      --navy-soft:   #3F3F6E;
+      --accent:      #956F00;
+      --accent-soft: #B8881A;
+      --highlight:   #FFEB78;
+      --muted:       #637381;
+      --muted-light: #9AA2AE;
+      --panel:       #F7F7FB;
+      --border:      #E3E3ED;
+      --white:       #FFFFFF;
+      --teal:        #0F766E;
+      --teal-bg:     #F0FDFA;
+      --crimson:     #B91C1C;
+    }
+
+    /* ===== Print PDF: match paper size to slide dimensions (1280x760) ===== */
+    @page {
+      size: 1280px 760px;
+      margin: 0;
+    }
+
+    html.print-pdf .pdf-page {
+      height: 760px !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      overflow: hidden !important;
+    }
+    html.print-pdf .pdf-page:has(.section-slide) {
+      background: var(--navy) !important;
+      box-shadow: 0 40px 0 0 var(--navy);
+    }
+    html.print-pdf .pdf-page > section,
+    html.print-pdf .reveal .slides > section {
+      top: 0 !important;
+      left: 0 !important;
+      width: 1280px !important;
+      height: 760px !important;
+      min-height: 760px !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      transform: none !important;
+    }
+    html.print-pdf .slide {
+      height: 760px !important;
+    }
+
+    /* ===== Base reveal overrides ===== */
+    .reveal {
+      font-family: 'Inter', sans-serif;
+      color: var(--navy-soft);
+      font-size: 22px;
+    }
+    .reveal .slides { text-align: left; }
+    .reveal section { padding: 0; height: 100%; }
+
+    .reveal h1, .reveal h2, .reveal h3 {
+      font-family: 'Merriweather', serif;
+      color: var(--navy);
+      text-transform: none;
+      letter-spacing: -0.5px;
+      font-weight: 700;
+      margin: 0;
+    }
+    .reveal a { color: var(--navy); border-bottom: 2px solid var(--highlight); text-decoration: none; }
+    .reveal strong { color: var(--navy); font-weight: 600; }
+
+    /* ===== Slide frame (every slide) ===== */
+    .slide {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 48px 72px 52px;
+      box-sizing: border-box;
+      background: var(--white);
+    }
+    .slide::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 6px;
+      background: var(--navy);
+    }
+    .slide::after {
+      content: '';
+      position: absolute;
+      top: 6px; left: 0; right: 0;
+      height: 3px;
+      background: var(--accent);
+    }
+
+    .slide-logo {
+      position: absolute;
+      bottom: 16px;
+      left: 30px;
+      height: 22px;
+      width: auto;
+      opacity: 0.78;
+    }
+    .slide-footer {
+      position: absolute;
+      bottom: 20px;
+      right: 30px;
+      font-size: 12px;
+      color: var(--muted-light);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+    }
+
+    /* ===== Slide header ===== */
+    .slide-head-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 8px;
+    }
+    .slide h2.slide-title {
+      font-size: 33px;
+      line-height: 1.16;
+      margin: 0;
+    }
+    .act-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: var(--navy);
+      color: var(--highlight);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .act-badge.teal { background: var(--teal); color: var(--white); }
+    .act-badge.gold { background: var(--highlight); color: var(--accent); border: 1px solid #E5C84B; }
+
+    .slide .title-divider {
+      width: 60px;
+      height: 4px;
+      background: var(--accent);
+      margin-bottom: 18px;
+    }
+
+    /* ===== Title slide ===== */
+    .title-slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 72px 86px 64px;
+    }
+    .title-slide h1 {
+      font-size: 42px;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+    .title-slide .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 21px;
+      color: var(--navy-soft);
+      font-weight: 500;
+      margin-bottom: 24px;
+      line-height: 1.38;
+      max-width: 1060px;
+    }
+    .title-slide .subtitle .plus {
+      color: var(--accent);
+      font-weight: 700;
+      margin: 0 6px;
+    }
+    .title-slide .kicker-divider {
+      width: 80px;
+      height: 4px;
+      background: var(--accent);
+      margin-bottom: 26px;
+    }
+    .title-slide .author {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+    .title-slide .affiliation {
+      font-size: 18px;
+      color: var(--muted);
+    }
+
+    .kicker {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    .lead-copy {
+      font-size: 17.5px;
+      line-height: 1.44;
+      color: var(--navy-soft);
+      margin: 0 0 16px;
+    }
+    .mono {
+      font-family: 'Courier New', monospace;
+      font-size: 0.85em;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1px 6px;
+      color: var(--navy);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    /* ===== Columns & Grids ===== */
+    .cols {
+      display: flex;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .cols > .col { flex: 1; min-width: 0; }
+
+    .card-grid { display: grid; gap: 16px; }
+    .card-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .card-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+    .card-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+    /* ===== Cards ===== */
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      box-sizing: border-box;
+    }
+    .card.top-accent { border-top: 4px solid var(--accent); }
+    .card.top-navy   { border-top: 4px solid var(--navy); }
+    .card.top-teal   { border-top: 4px solid var(--teal); }
+    .card.top-red    { border-top: 4px solid var(--crimson); }
+    .card .card-head {
+      font-family: 'Merriweather', serif;
+      font-size: 17.5px;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.25;
+    }
+    .card .card-label {
+      font-size: 15px;
+      color: var(--navy-soft);
+      line-height: 1.42;
+    }
+
+    /* ===== Hero screenshot frame ===== */
+    .hero-frame {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(40, 40, 91, 0.10);
+      box-sizing: border-box;
+    }
+    .hero-frame img {
+      display: block;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 455px;
+      object-fit: contain;
+      border-radius: 4px;
+      border: 1px solid #DCDCE6;
+      background: var(--white);
+    }
+    .hero-caption {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 6px;
+      line-height: 1.3;
+    }
+
+    /* ===== Annotation stack ===== */
+    .anno-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      justify-content: center;
+    }
+    .anno-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--accent);
+      border-radius: 6px;
+      padding: 13px 16px;
+    }
+    .anno-card.navy { border-left-color: var(--navy); }
+    .anno-card.teal { border-left-color: var(--teal); }
+    .anno-card.red  { border-left-color: var(--crimson); }
+    .anno-card .anno-head {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+      color: var(--navy);
+      margin-bottom: 5px;
+    }
+    .anno-card p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.42;
+      color: var(--navy-soft);
+    }
+
+    /* ===== Dark & Light callouts ===== */
+    .callout-dark {
+      position: relative;
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 8px;
+      padding: 16px 22px 16px 28px;
+      box-shadow: 0 8px 22px rgba(40, 40, 91, 0.16);
+    }
+    .callout-dark::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 8px;
+      background: var(--accent);
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+    .callout-dark .label {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--highlight);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 5px;
+    }
+    .callout-dark .body {
+      font-family: 'Merriweather', serif;
+      font-size: 16.5px;
+      line-height: 1.42;
+      font-style: italic;
+      margin: 0;
+    }
+    .callout-dark .body strong {
+      color: var(--highlight);
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    /* ===== Pills & Pipeline ===== */
+    .pill-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 26px; }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .pill i { color: var(--accent); }
+
+    .pipeline { display: flex; align-items: stretch; gap: 10px; }
+    .pipe-stage {
+      flex: 1;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--navy);
+      border-radius: 6px;
+      padding: 11px 13px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .pipe-stage.teal { border-top-color: var(--teal); }
+    .pipe-stage.gold { border-top-color: var(--accent); }
+    .pipe-stage.terminal {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: var(--white);
+    }
+    .pipe-stage.terminal .pipe-title { color: var(--white); }
+    .pipe-stage.terminal .pipe-sub { color: var(--highlight); }
+    .pipe-title {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+    }
+    .pipe-sub {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+    .pipe-arrow {
+      display: flex; align-items: center;
+      color: var(--accent); font-size: 18px;
+    }
+
+    /* ===== Comparison table ===== */
+    table.cmp {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15.5px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(40, 40, 91, 0.06);
+    }
+    table.cmp th {
+      background: var(--navy);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 13.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 11px 16px;
+      text-align: left;
+    }
+    table.cmp th.k13 { background: var(--teal); }
+    table.cmp th.ama1 { background: #7C5800; }
+    table.cmp td {
+      padding: 9px 16px;
+      border-bottom: 1px solid var(--border);
+      color: var(--navy-soft);
+      vertical-align: middle;
+    }
+    table.cmp tr:nth-child(even) td { background: var(--panel); }
+    table.cmp tr:last-child td { border-bottom: none; }
+    table.cmp td.metric { font-weight: 700; color: var(--navy); width: 28%; }
+
+    /* ===== Stat strip ===== */
+    .stat-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .mini-stat {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--accent);
+      border-radius: 6px;
+      padding: 10px 12px;
+    }
+    .mini-stat.teal { border-top-color: var(--teal); }
+    .mini-stat.navy { border-top-color: var(--navy); }
+    .mini-stat .num {
+      font-family: 'Merriweather', serif;
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.1;
+    }
+    .mini-stat .lbl {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-top: 4px;
+    }
+
+    /* ===== QR cards ===== */
+    .qr-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 12px;
+    }
+    .qr-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--navy);
+      border-radius: 8px;
+      padding: 14px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 8px;
+    }
+    .qr-card.teal { border-top-color: var(--teal); }
+    .qr-card.gold { border-top-color: var(--accent); }
+    .qr-card img {
+      width: 118px;
+      height: 118px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 5px;
+    }
+    .qr-card .qr-title {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.25;
+    }
+    .qr-card .qr-desc {
+      font-size: 11.5px;
+      color: var(--muted);
+      line-height: 1.3;
+    }
+
+    /* SVG wrapper */
+    .svg-box {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 18px;
+      box-sizing: border-box;
+    }
+    .svg-box svg { display: block; width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+
+<div class="reveal">
+  <div class="slides">
+
+    <!-- ==================== SLIDE 1: TITLE ==================== -->
+    <section>
+      <div class="slide title-slide">
+        <div class="kicker">ASTMH 2026 · Live Pipeline Walkthrough</div>
+        <h1>Archive-Scale Malaria Genomics:<br/>Raw SRA to Evolutionary Inference</h1>
+        <div class="subtitle">
+          Agentic MCP &amp; UDTs <span class="plus">+</span> Logan Search <span class="plus">+</span> Kelch13 Sweep <span class="plus">+</span> AMA1 Selection &amp; Recombination
+        </div>
+        <div class="kicker-divider"></div>
+
+        <div class="pill-row">
+          <span class="pill"><i class="fa-solid fa-robot"></i> Agentic Galaxy + UDTs</span>
+          <span class="pill"><i class="fa-solid fa-magnifying-glass"></i> 38.1M SRA Runs</span>
+          <span class="pill"><i class="fa-solid fa-dna"></i> P. falciparum Kelch13 vs. AMA1</span>
+          <span class="pill"><i class="fa-solid fa-bolt"></i> Zero-Install Browser WASM</span>
+        </div>
+
+        <div class="author">Anton Nekrutenko</div>
+        <div class="affiliation">Pennsylvania State University · BRC Analytics · brc-analytics.org</div>
+
+        <img src="brc-logo.svg" alt="BRC Analytics" class="slide-logo" />
+        <div class="slide-footer">ASTMH 2026 · Companion Demo Deck</div>
+      </div>
+      <aside class="notes">
+        Welcome to the step-by-step malaria walkthrough companion deck. Every figure and metric in these 17 slides comes straight from a live, reproducible run on usegalaxy.org and zero-install WebAssembly tools in the browser — showing how one workflow separates a clonal artemisinin-resistance sweep in Kelch13 from balancing selection and intragenic recombination in AMA1 directly from 38.1 million raw public SRA sequencing runs.
+      </aside>
+    </section>
+
+    <!-- ==================== SLIDE 2: WALKTHROUGH ROADMAP ==================== -->
+    <section>
+      <div class="slide">
+        <div class="slide-head-row">
+          <h2 class="slide-title">One Workflow, Two Opposite Malaria Regimes</h2>
+          <span class="act-badge">Roadmap</span>
+        </div>
+        <div class="title-divider"></div>
+
+        <div class="pipeline" style="margin-bottom: 20px;">
+          <div class="pipe-stage">
+            <div class="pipe-title">0 · Agentic Setup</div>
+            <div class="pipe-sub">MCP + Orbit + custom Galaxy UDT containers</div>
+          </div>
+          <div class="pipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="pipe-stage teal">
+            <div class="pipe-title">1 · Archive Search</div>
+            <div class="pipe-sub"><span class="mono">kmindex</span> &amp; <span class="mono">LexicMap</span> across 38.1M SRA runs</div>
+          </div>
+          <div class="pipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="pipe-stage gold">
+            <div class="pipe-title">2 · Clean CDS Cohort</div>
+            <div class="pipe-sub"><span class="mono">disassembler</span> + <span class="mono">prep_cohort</span> on Galaxy</div>
+          </div>
+          <div class="pipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="pipe-stage terminal">
+            <div class="pipe-title">3 · Live Evolution</div>
+            <div class="pipe-sub">RhizAeon HTML + PrimAeon &amp; BUSHWHACKER WASM</div>
+          </div>
+        </div>
+
+        <div class="card-grid cols-2" style="margin-bottom: 18px;">
+          <div class="card top-teal" style="padding: 20px 24px;">
+            <div class="kicker" style="margin-bottom: 2px; color: var(--teal);">Control Regime · Recent Drug Sweep</div>
+            <div class="card-head" style="font-size: 21px;"><em>P. falciparum</em> Kelch13 (726 codons)</div>
+            <div class="card-label" style="font-size: 16px;">
+              <strong>106,236</strong> archive runs screened &rarr; <strong>42,021</strong> clean full CDS.<br/>
+              <strong>34.5% wild-type</strong>, recent propeller drug-resistance alleles (<span class="mono">C580Y</span>, <span class="mono">R539T</span>, <span class="mono">F446I</span>), and <strong>zero intragenic recombination</strong>.
+            </div>
+          </div>
+
+          <div class="card top-accent" style="padding: 20px 24px; background: #FFFDF2;">
+            <div class="kicker" style="margin-bottom: 2px; color: var(--accent);">Contrast Regime · Immune Evasion</div>
+            <div class="card-head" style="font-size: 21px;"><em>P. falciparum</em> AMA1 (622 codons)</div>
+            <div class="card-label" style="font-size: 16px;">
+              <strong>63,930</strong> archive runs screened &rarr; <strong>37,576</strong> clean full CDS.<br/>
+              Balancing selection holds wild-type to <strong>8.9%</strong>, lighting up <strong>episodic selection</strong>, <strong>110 epistasis pairs</strong>, and <strong>verified mosaic recombination</strong>.
+            </div>
+          </div>
+        </div>
+
+        <div class="callout-dark">
+          <div class="label">Walkthrough Design</div>
+          <p class="body">
+            Zero metadata filtering, zero local bioinformatics installs, and zero black boxes — <strong>every output below ran live</strong> through the exact same Galaxy workflow and browser WASM apps.
+          </p>
+        </div>
+
+        <img src="brc-logo.png" alt="BRC Analytics" class="slide-logo" />
+        <div class="slide-footer">Walkthrough Roadmap</div>
+      </div>
+      <aside class="notes">
+        Here is the arc of the next 10 to 15 minutes. We start with how an AI agent or Orbit triggers custom containers on Galaxy via MCP, search all 38.1 million public SRA runs by sequence alone, reconstruct stop-free coding alignments with disassembler, and run evolutionary inference on two contrasting malaria genes from the exact same parasite: Kelch13 as a clonal drug-resistance sweep control, and AMA1 as a textbook immune-evasion mosaic.
+      </aside>
+    </section>
+
+    <!-- ==================== SLIDE 3: OPENING — AGENTIC TRIGGER ==================== -->
+    <section>
+      <div class="slide">
+        <div class="slide-head-row">
+          <h2 class="slide-title">Agentic Trigger: Any AI Harness + Orbit via MCP</h2>
+          <span class="act-badge">Opening · MCP</span>
+        </div>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="align-items: center;">
+          <div class="col" style="flex: 1.3;">
+            <div class="hero-frame">
+              <img src="demo-assets/orbit-interface.png" alt="Orbit Desktop Semantic Workbench showing green Galaxy cloud stages and instant local figure views" style="max-height: 455px;" />
+              <div class="hero-caption">Orbit Desktop (<span class="mono">galaxyproject.org/agents</span>) — green cloud compute stages + instant local inspection</div>
+            </div>
+          </div>
+
+          <div class="col anno-stack" style="flex: 0.78;">
+            <div class="anno-card">
+              <div class="anno-head">1. BRC + Galaxy Speak Standard MCP</div>
+              <p>
+                Connect <strong>Orbit</strong>, <strong>Claude Code</strong>, <strong>Codex CLI</strong>, or <strong>Antigravity</strong> — browse curated BRC genomes and launch real cloud jobs on <span class="mono">usegalaxy.org</span>.
+              </p>
+            </div>
+
+            <div class="anno-card teal">
+              <div class="anno-head">2. Register Custom Tools as UDTs</div>
+              <p>
+                When a brand-new container (<span class="mono">disassembler</span>, <span class="mono">RhizAeon</span>) isn't installed yet, the agent authors a short YAML <strong>User-Defined Tool</strong> and runs it immediately in your history.
+              </p>
+            </div>
+
+            <div class="anno-card navy">
+              <div class="anno-head">3. Full Auditable Provenance</div>
+              <p>
+                Every step executes as a tracked Galaxy job — then exports a clean reusable workflow anyone at ASTMH can re-run with one click.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" alt="BRC Analytics" class="slide-logo" />
+        <div class="slide-footer">Opening · Agentic MCP &amp; Orbit</div>
+      </div>
+      <aside class="notes">
+        Before touching a single alignment, notice how the entire pipeline was assembled and run. Because both BRC Analytics and Galaxy expose standard MCP servers, any AI harness — including our zero-terminal Orbit desktop workbench — can define custom BioContainer tools as User-Defined Tools, test them live on usegalaxy.org, and save a tracked, reusable Galaxy workflow with complete provenance.
+      </aside>
+    </section>
+
+    <!-- ==================== SLIDE 4: ACT 1A — GALAXY LOGAN SEARCH ==================== -->
+    <section>
+      <div class="slide">
+        <div class="slide-head-row">
+          <h2 class="slide-title">Planetary Search Funnel on <span class="mono" style="font-size: 28px;">usegalaxy.org</span></h2>
+          <span class="act-badge teal">Act 1a · Archive Search</span>
+        </div>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="align-items: center;">
+          <div class="col" style="flex: 0.92;">
+            <div class="hero-frame">
+              <img src="demo-assets/galaxy-logan-history.png" alt="Live usegalaxy.org history running kmindex and LexicMap queries for Kelch13 and AMA1" style="max-height: 455px;" />
+              <div class="hero-caption">Live <span class="mono">usegalaxy.org</span> history: <span class="mono">kmindex</span> + <span class="mono">LexicMap</span> on Kelch13 &amp; AMA1</div>
+            </div>
+          </div>
+
+          <div class="col" style="flex: 1.08; display: flex; flex-direction: column; gap: 14px;">
+            <p class="lead-copy" style="margin: 0;">
+              Drop two reference FASTAs into Galaxy and query <strong>all 38.1 million SRA runs</strong> (86.6 Pb raw reads) by sequence content — bypassing broken submitter metadata.
+            </p>
+
+            <div class="card-grid cols-2">
+              <div class="card top-teal" style="padding: 14px 16px;">
+                <div class="kicker" style="margin-bottom: 2px; color: var(--teal);">Kelch13 · 2,181 bp</div>
+                <div class="card-head" style="font-size: 26px;">106,236 runs</div>
+                <div class="card-label" style="font-size: 14px;">
+                  <strong>56,303</strong> via <span class="mono">kmindex</span> (unitigs)<br/>
+                  <strong>106,236</strong> via <span class="mono">LexicMap</span> (162,947 contig hits)
+                </div>
+              </div>
+
+              <div class="card top-accent" style="padding: 14px 16px;">
+                <div class="kicker" style="margin-bottom: 2px; color: var(--accent);">AMA1 · 1,869 bp</div>
+                <div class="card-head" style="font-size: 26px;">63,930 runs</div>
+                <div class="card-label" style="font-size: 14px;">
+                  <strong>45,879</strong> via <span class="mono">kmindex</span> (unitigs)<br/>
+                  <strong>63,930</strong> via <span class="mono">LexicMap</span> (84,291 contig hits)
+                </div>
+              </div>
+            </div>
+
+            <div class="callout-dark" style="padding: 14px 20px 14px 26px;">
+              <div class="label">Why Pair Both Indices?</div>
+              <p class="body" style="font-size: 15.5px;">
+                <strong>kmindex</strong> screens unitigs in minutes for conserved genes; <strong>LexicMap</strong> aligns contigs directly — rescuing tens of thousands of divergent immune-evasion hits where SNPs break exact 31-mers.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" alt="BRC Analytics" class="slide-logo" />
+        <div class="slide-footer">Act 1a · Planetary Search Funnel</div>
+      </div>
+      <aside class="notes">
+        Act 1 starts directly in Galaxy. We upload two tiny reference coding sequences — Kelch13 and AMA1 — and run both kmindex and LexicMap across the entire 38.1-million-run Logan archive. Notice the funnel jump: LexicMap recovers 106,236 Kelch13 runs and 63,930 AMA1 runs, including thousands hidden inside mislabeled host or mixed clinical samples.
+      </aside>
+    </section>
+
+    <!-- ==================== SLIDE 5: ACT 1B — ONE-CLICK GALAXY UDT WORKFLOW ==================== -->
+    <section>
+      <div class="slide">
+        <div class="slide-head-row">
+          <h2 class="slide-title">One-Click Reproducible Galaxy UDT Workflow</h2>
+          <span class="act-badge teal">Act 1b · Live Workflow</span>
+        </div>
+        <div class="title-divider"></div>
+
+        <p class="lead-copy" style="margin-bottom: 14px;">
+          Our self-contained Galaxy workflow bundles three custom BioContainer UDTs — turning raw <span class="mono">LexicMap</span> hit tables into stop-free codon alignments and interactive recombination reports in <strong>&lt;2 minutes of compute</strong>.
+        </p>
+
+        <div class="svg-box" style="margin-bottom: 16px;">
+          <svg viewBox="0 0 1100 228" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M 0 1 L 10 5 L 0 9 z" fill="#956F00"/>
+              </marker>
+            </defs>
+
+            <!-- Inputs -->
+            <rect x="8" y="18" width="170" height="72" rx="8" fill="#FFFFFF" stroke="#28285B" stroke-width="2"/>
+            <rect x="8" y="18" width="170" height="22" rx="6" fill="#28285B"/>
+            <text x="20" y="33" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#FFEB78">INPUT 1 · FASTA</text>
+            <text x="20" y="57" font-family="Inter, sans-serif" font-size="13.5" font-weight="700" fill="#28285B">Reference CDS</text>
+            <text x="20" y="76" font-family="Inter, sans-serif" font-size="11.5" fill="#637381">pfk13 / pfama1</text>
+
+            <rect x="8" y="128" width="170" height="72" rx="8" fill="#FFFFFF" stroke="#28285B" stroke-width="2"/>
+            <rect x="8" y="128" width="170" height="22" rx="6" fill="#28285B"/>
+            <text x="20" y="143" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#FFEB78">INPUT 2 · TABULAR</text>
+            <text x="20" y="167" font-family="Inter, sans-serif" font-size="13.5" font-weight="700" fill="#28285B">LexicMap Hits</text>
+            <text x="20" y="186" font-family="Inter, sans-serif" font-size="11.5" fill="#637381">262–389 MB hit table</text>
+
+            <!-- Arrows to Step 1 -->
+            <path d="M 178 54 C 208 54, 205 94, 232 94" fill="none" stroke="#956F00" stroke-width="2.4" marker-end="url(#arr)"/>
+            <path d="M 178 164 C 208 164, 205 124, 232 124" fill="none" stroke="#956F00" stroke-width="2.4" marker-end="url(#arr)"/>
+
+            <!-- Step 1: Tiler UDT -->
+            <rect x="236" y="42" width="232" height="136" rx="8" fill="#FFFFFF" stroke="#0F766E" stroke-width="2.2"/>
+            <rect x="236" y="42" width="232" height="26" rx="6" fill="#0F766E"/>
+            <text x="248" y="59" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">UDT 1 · disassembler_lexicmap_tiler</text>
+            <text x="248" y="88" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#28285B">Stitch Contigs &amp; Rescue Multi-Hit</text>
+            <text x="248" y="109" font-family="Inter, sans-serif" font-size="12" fill="#3F3F6E">• Quarantine stops &amp; frameshifts</text>
+            <text x="248" y="128" font-family="Inter, sans-serif" font-size="12" fill="#3F3F6E">• Collapse unique haplotypes + audit</text>
+            <rect x="248" y="143" width="208" height="24" rx="4" fill="#F0FDFA" stroke="#99F6E4"/>
+            <text x="256" y="159" font-family="Inter, sans-serif" font-size="11.5" font-weight="700" fill="#0F766E">OK · 60.7s (K13) / 34.8s (AMA1)</text>
+
+            <!-- Arrow Step 1 -> Step 2 -->
+            <path d="M 468 110 L 504 110" fill="none" stroke="#956F00" stroke-width="2.4" marker-end="url(#arr)"/>
+
+            <!-- Step 2: Prep Cohort UDT -->
+            <rect x="508" y="42" width="236" height="136" rx="8" fill="#FFFFFF" stroke="#956F00" stroke-width="2.2"/>
+            <rect x="508" y="42" width="236" height="26" rx="6" fill="#956F00"/>
+            <text x="520" y="59" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">UDT 2 · prep_cohort_conditioner</text>
+            <text x="520" y="88" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#28285B">Balance &amp; Strip Terminal Stops</text>
+            <text x="520" y="109" font-family="Inter, sans-serif" font-size="12" fill="#3F3F6E">• 100 top-freq + 50 max-diverse</text>
+            <text x="520" y="128" font-family="Inter, sans-serif" font-size="12" fill="#3F3F6E">• Stop-free in-frame codon FASTA</text>
+            <rect x="520" y="143" width="212" height="24" rx="4" fill="#FFFDF0" stroke="#E5C84B"/>
+            <text x="528" y="159" font-family="Inter, sans-serif" font-size="11.5" font-weight="700" fill="#956F00">OK · 150 taxa × 726 / 622 codons</text>
+
+            <!-- Fork Arrows Step 2 -> Step 3 & Browser WASM -->
+            <path d="M 744 82 C 772 82, 770 58, 798 58" fill="none" stroke="#956F00" stroke-width="2.4" marker-end="url(#arr)"/>
+            <path d="M 744 138 C 772 138, 770 166, 798 166" fill="none" stroke="#28285B" stroke-width="2.4" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+
+            <!-- Step 3: RhizAeon UDT -->
+            <rect x="802" y="14" width="290" height="92" rx="8" fill="#FFFFFF" stroke="#0F766E" stroke-width="2.2"/>
+            <rect x="802" y="14" width="290" height="24" rx="6" fill="#0F766E"/>
+            <text x="814" y="30" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">UDT 3 · rhizaeon_recombination_scanner</text>
+            <text x="814" y="55" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#28285B">Interactive HTML Recombination Report</text>
+            <text x="814" y="75" font-family="Inter, sans-serif" font-size="11.5" fill="#3F3F6E">K13: 0.47s (Clonal H0) · AMA1: 5.4s (+5.31 Z)</text>
+            <text x="814" y="94" font-family="Inter, sans-serif" font-size="11.5" font-weight="700" fill="#0F766E">Live in Galaxy History · 534–567 KB HTML</text>
+
+            <!-- Output Branch: Browser WASM -->
+            <rect x="802" y="122" width="290" height="92" rx="8" fill="#28285B" stroke="#28285B" stroke-width="2"/>
+            <text x="816" y="146" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#FFEB78">ZERO-INSTALL BROWSER WASM HANDOFF</text>
+            <text x="816" y="169" font-family="Inter, sans-serif" font-size="13.5" font-weight="700" fill="#FFFFFF">PrimAeon + BUSHWHACKER</text>
+            <text x="816" y="189" font-family="Inter, sans-serif" font-size="11.5" fill="#E2E5F2">Drop Galaxy stop-free CDS FASTA directly:</text>
+            <text x="816" y="205" font-family="Inter, sans-serif" font-size="11.5" font-weight="700" fill="#FFEB78">Selection · Epistasis · Digital DMS · Shunts</text>
+          </svg>
+        </div>
+
+        <div class="card-grid cols-2">
+          <div class="card top-teal" style="padding: 13px 18px;">
+            <div class="card-head" style="font-size: 16px;">Verified Live Showcase Run · 22 / 22 Datasets Green</div>
+            <div class="card-label" style="font-size: 14.5px;">
+              Both Kelch13 and AMA1 executed end-to-end on <span class="mono">usegalaxy.org</span> in a single clean history — zero manual file munging between stages.
+            </div>
+          </div>
+          <div class="card top-navy" style="padding: 13px 18px;">
+            <div class="card-head" style="font-size: 16px;">Portable Across Any Galaxy Instance</div>
+            <div class="card-label" style="font-size: 14.5px;">
+              Tool YAML + BioContainer pins travel embedded inside the <span class="mono">.gxwf.yml</span> / <span class="mono">.ga</span> workflow — import and run with one click.
+            </div>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" alt="BRC Analytics" class="slide-logo" />
+        <div class="slide-footer">Act 1b · Reproducible Galaxy UDT Workflow</div>
+      </div>
+      <aside class="notes">
+        Here is the exact five-step Galaxy workflow that produced every downstream alignment and HTML dashboard in this talk. Three User-Defined Tools chain directly together: disassembler tiles fragmented LexicMap contigs in 35 to 61 seconds; prep_cohort balances 150 representative haplotypes into a stop-free in-frame codon alignment in 25 seconds; and RhizAeon scans for recombination in under 6 seconds — while handing the exact same Galaxy codon alignment straight to PrimAeon and BUSHWHACKER in the browser. All 22 datasets for both Kelch13 and AMA1 finished green in one showcase history.
+      </aside>
+    </section>
+
+    <!-- ==================== SLIDE 6: ACT 2A — KELCH13 SWEEP CENSUS ==================== -->
+    <section>
+      <div class="slide">
+        <div class="slide-head-row">
+          <h2 class="slide-title">Kelch13 Archive Sweep Census (Full Output)</h2>
+          <span class="act-badge teal">Act 2a · Kelch13</span>
+        </div>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="align-items: center;">
+          <div class="col" style="flex: 1.32;">
+            <div class="hero-frame">
+              <img src="demo-assets/walkthrough/k13-sweep-full.png" alt="Kelch13 sweep census built from live Galaxy disassembler output: 106,236 runs screened, 42,021 clean full CDS, 5,771 multi-HSP rescued" style="max-height: 455px;" />
+              <div class="hero-caption">Live Galaxy <span class="mono">disassembler_lexicmap_tiler</span> output — 106,236 SRA runs processed in 60.7 s</div>
+            </div>
+          </div>
+
+          <div class="col anno-stack" style="flex: 0.72;">
+            <div class="anno-card teal">
+              <div class="anno-head">1. 42,021 Clean Full-Length CDS</div>
+              <p>
+                Reconstructed straight from raw SRA assemblies with <strong>100.0% median identity</strong> — zero curated metadata required.
+              </p>
+            </div>
+
+            <div class="anno-card">
+              <div class="anno-head">2. 5,771 Fragmented Runs Rescued</div>
+              <p>
+                Multi-hit contig stitching recovers thousands of split assemblies while cleanly quarantining <strong>148 premature stops</strong> &amp; <strong>309 frameshifts</strong>.
+              </p>
+            </div>
+
+            <div class="anno-card navy">
+              <div class="anno-head">3. Clonal Sweep Signature</div>
+              <p>
+                <strong>8,321</strong> unique haplotypes, but wild-type alone accounts for <strong>34.5%</strong> (14,514 runs) — hallmark of a recent selective sweep.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" alt="BRC Analytics" class="slide-logo" />
+        <div class="slide-footer">Act 2a · Kelch13 Sweep Census</div>
+      </div>
+      <aside class="notes">
+        Act 2 looks at the live Galaxy output for Plasmodium falciparum Kelch13. Out of 106,236 screened SRA runs, disassembler recovered 42,021 clean full-length coding sequences in 60.7 seconds, rescuing 5,771 split multi-hit assemblies and automatically quarantining stops and frameshifts. Over one-third of all runs remain wild-type — classic signature of a recent drug-resistance sweep.
+      </aside>
+    </section>
+
+    <!-- ==================== SLIDE 7: ACT 2B — KELCH13 ZOOM ==================== -->
+    <section>
+      <div class="slide">
+        <div class="slide-head-row">
+          <h2 class="slide-title">Kelch13 Zoom: N-Terminal vs. WHO Propeller Sweeps</h2>
+          <span class="act-badge teal">Act 2b · Zoom</span>
+        </div>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="align-items: center;">
+          <div class="col" style="flex: 1.35;">
+            <div class="hero-frame">
+              <img src="demo-assets/walkthrough/k13-sweep-zoom.png" alt="Zoomed Kelch13 lollipop plot showing K189T in N-terminal domain and C580Y, R539T, F446I, A675V in the propeller drug pocket" style="max-height: 455px;" />
+              <div class="hero-caption">Zoomed lollipop track along the 726-aa Kelch13 protein (live Galaxy run counts)</div>
+            </div>
+          </div>
+
+          <div class="col anno-stack" style="flex: 0.68;">
+            <div class="anno-card navy">
+              <div class="anno-head">N-Terminal Background (aa 1–440)</div>
+              <p>
+                <strong><span class="mono">K189T</span> (9,859 runs)</strong> &amp; <strong><span class="mono">K189N</span> (781)</strong> dominate outside the propeller — common African polymorphism, not artemisinin resistance.
+              </p>
+            </div>
+
+            <div class="anno-card red">
+              <div class="anno-head">Propeller Drug Pocket (aa 441–726)</div>
+              <p>
+                <strong><span class="mono">C580Y</span> (3,845 runs)</strong> towers above the propeller blades — the signature Southeast Asian hard sweep recovered directly from raw reads.
+              </p>
+            </div>
+
+            <div class="anno-card teal">
+              <div class="anno-head">Full WHO Watchlist Recovered</div>
+              <p>
+                <span class="mono">R539T</span> (189), <span class="mono">Y493H</span> (133), <span class="mono">F446I</span> (133), <span class="mono">R561H</span> (99), <span class="mono">I543T</span> (84), <span class="mono">M476I</span> (46), <span class="mono">A675V</span> (45), <span class="mono">P553L</span> (45).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" alt="BRC Analytics" class="slide-logo" />
+        <div class="slide-footer">Act 2b · Kelch13 Resistance Lollipops</div>
+      </div>
+      <aside class="notes">
+        Zooming into the Kelch13 lollipop plot separates two distinct signals cleanly. On the left in the N-terminal domain sit K189T (9,859 runs) and K189N (781 runs) — high-frequency background polymorphism. On the right inside the Kelch propeller drug pocket sit the entire WHO-validated artemisinin-resistance watchlist led by C580Y at 3,845 runs, alongside R539T, Y493H, F446I, R561H, I543T, and A675V — all recovered straight from public SRA contigs.
+      </aside>
+    </section>
+
+    <!-- ==================== SLIDE 8: ACT 2C — KELCH13 CLONAL CONTROL ==================== -->
+    <section>
+      <div class="slide">
+        <div class="slide-head-row">
+          <h2 class="slide-title">Kelch13 in Galaxy RhizAeon: Clonal Negative Control</h2>
+          <span class="act-badge teal">Act 2c · Clonal Control</span>
+        </div>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="align-items: center;">
+          <div class="col" style="flex: 1.35;">
+            <div class="hero-frame">
+              <img src="demo-assets/walkthrough/k13-rhizaeon-live.png" alt="Live Galaxy RhizAeon dashboard for Kelch13 showing 0 breakpoints, +0.00 Z, and one flat conserved coldspot across all 2,178 nt" style="max-height: 455px;" />
+              <div class="hero-caption">Live Galaxy dataset #13 — Kelch13 <span class="mono">RhizAeon v0.1.6</span> HTML dashboard (0.47 s compute)</div>
+            </div>
+          </div>
+
+          <div class="col anno-stack" style="flex: 0.68;">
+            <div class="anno-card teal">
+              <div class="anno-head">1. Zero Breakpoints (+0.00 Z)</div>
+              <p>
+                Across <strong>150 balanced Kelch13 haplotypes</strong> (2,178 nt), RhizAeon reports <strong>0 recombination events</strong> — one continuous conserved coldspot.
+              </p>
+            </div>
+
+            <div class="anno-card navy">
+              <div class="anno-head">2. Why This Control Matters</div>
+              <p>
+                Clinical Kelch13 drug-resistance haplotypes sit just <strong>1–2 SNPs from wild-type</strong> (<span class="mono">K189T</span>, <span class="mono">C580Y</span>) — evolving clonally over a ~15-year sweep.
+              </p>
+            </div>
+
+            <div class="anno-card">
+              <div class="anno-head">3. Now Switch Genes — Same Pipeline</div>
+              <p>
+                Feed <strong><em>P. falciparum</em> AMA1</strong> through the exact same Galaxy workflow and watch every evolutionary detector light up.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" alt="BRC Analytics" class="slide-logo" />
+        <div class="slide-footer">Act 2c · Kelch13 Clonal Control</div>
+      </div>
+      <aside class="notes">
+        Before jumping to AMA1, look at Kelch13's live RhizAeon dashboard generated directly inside the same Galaxy history in under half a second: zero breakpoints, plus-zero Z, one flat conserved coldspot from nucleotide 1 to 2,178. That proves RhizAeon does not cry wolf on a clonal drug sweep. Now let's switch to AMA1 in the exact same pipeline.
+      </aside>
+    </section>
+
+    <!-- ==================== SLIDE 9: ACT 3A — REGIME SHIFT TABLE & WASM HANDOFF ==================== -->
+    <section>
+      <div class="slide">
+        <div class="slide-head-row">
+          <h2 class="slide-title">Regime Shift: Kelch13 vs. AMA1 (Live Galaxy Metrics)</h2>
+          <span class="act-badge gold">Act 3a · Contrast &amp; Handoff</span>
+        </div>
+        <div class="title-divider"></div>
+
+        <table class="cmp" style="margin-bottom: 18px;">
+          <thead>
+            <tr>
+              <th>Live Galaxy Workflow Metric</th>
+              <th class="k13"><em>P. falciparum</em> Kelch13 (Drug Sweep)</th>
+              <th class="ama1"><em>P. falciparum</em> AMA1 (Immune Evasion)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="metric">SRA Runs Screened (LexicMap)</td>
+              <td><strong>106,236</strong> runs (162,947 hits)</td>
+              <td><strong>63,930</strong> runs (84,291 hits)</td>
+            </tr>
+            <tr>
+              <td class="metric">Clean Full-Length CDS (+ Rescued)</td>
+              <td><strong>42,021</strong> full CDS (+ 5,771 multi-hit rescued)</td>
+              <td><strong>37,576</strong> full CDS (+ 6,636 multi-hit rescued)</td>
+            </tr>
+            <tr>
+              <td class="metric">Unique Clean Haplotypes &amp; Entropy</td>
+              <td><strong>8,321</strong> haplotypes · H = <strong>6.58 bits</strong></td>
+              <td><strong>11,458</strong> haplotypes · H = <strong>10.19 bits</strong></td>
+            </tr>
+            <tr>
+              <td class="metric">Wild-Type Frequency</td>
+              <td><strong style="color: var(--teal);">34.5%</strong> (14,514 runs — recent sweep)</td>
+              <td><strong style="color: var(--crimson);">8.9%</strong> (3,335 runs — balancing selection)</td>
+            </tr>
+            <tr>
+              <td class="metric">Galaxy Stop-Free Codon MSA</td>
+              <td><strong>150 &times; 726</strong> codons (330 KB) · 26 s</td>
+              <td><strong>150 &times; 622</strong> codons (283 KB) · 25 s</td>
+            </tr>
+            <tr>
+              <td class="metric">Galaxy RhizAeon Verdict</td>
+              <td><strong>Non-recombinant (H0)</strong> · 0 events · 0.47 s</td>
+              <td><strong style="color: var(--crimson);">Mosaic Recombinant</strong> · 2 breakpoints (+5.31 Z) · 5.4 s</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="callout-dark">
+          <div class="label">Next Click · Galaxy CDS Alignment &rarr; Zero-Install Browser WASM</div>
+          <p class="body">
+            Drop Galaxy's stop-free AMA1 alignment (<strong>150 taxa &times; 622 codons, 283 KB</strong>) straight into <strong>PrimAeon</strong> and <strong>BUSHWHACKER</strong> in Chrome — <strong>zero upload, zero install, local WebAssembly compute</strong>.
+          </p>
+        </div>
+
+        <img src="brc-logo.png" alt="BRC Analytics" class="slide-logo" />
+        <div class="slide-footer">Act 3a · Kelch13 vs. AMA1 Regime Shift</div>
+      </div>
+      <aside class="notes">
+        Pause on this side-by-side table — every single number comes directly from our live Galaxy JSON summaries. Despite screening fewer total runs, AMA1 yields 11,458 unique haplotypes with 10.19 bits of Shannon entropy, and wild-type drops from 34.5 percent in Kelch13 down to just 8.9 percent in AMA1 — a textbook balancing-selection signature explaining why single-allele AMA1 vaccines struggle. Now we drop that exact 283-kilobyte stop-free AMA1 FASTA straight into PrimAeon WebAssembly.
+      </aside>
+    </section>
+
+    <!-- ==================== SLIDE 10: ACT 3B — PRIMAEON EPISODIC SELECTION ==================== -->
+    <section>
+      <div class="slide">
+        <div class="slide-head-row">
+          <h2 class="slide-title">PrimAeon WASM: Instant Episodic Selection on AMA1</h2>
+          <span class="act-badge gold">Act 3b · Selection</span>
+        </div>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="align-items: center;">
+          <div class="col" style="flex: 1.32;">
+            <div class="hero-frame">
+              <img src="demo-assets/walkthrough/primaeon-selection-fig1.png" alt="Live PrimAeon WASM Figure 1 lollipop plot and Figure 2 ranked scree plot on Galaxy AMA1 alignment calling D36, K206, K230, K300, E405, D493" style="max-height: 455px;" />
+              <div class="hero-caption">Live <span class="mono">veg.github.io/primaeon</span> run on Galaxy's <span class="mono">ama1_balanced_codon_msa.fasta</span> — 0 warnings, 0 repairs</div>
+            </div>
+          </div>
+
+          <div class="col anno-stack" style="flex: 0.72;">
+            <div class="anno-card">
+              <div class="anno-head">1. Gene-Wide Verdict (p<sub>ACAT</sub> = 0.001)</div>
+              <p>
+                Tree-free neural surrogate scores all <strong>116 variable codons</strong> locally in the browser — confirming strong episodic selection across AMA1.
+              </p>
+            </div>
+
+            <div class="anno-card navy">
+              <div class="anno-head">2. Six Sharp Selection Peaks</div>
+              <p>
+                Top 5% threshold (<span class="mono">LRT &ge; 10.15</span>) calls <strong><span class="mono">D36</span>, <span class="mono">K206</span>, <span class="mono">K230</span>, <span class="mono">K300</span>, <span class="mono">E405</span>, <span class="mono">D493</span></strong> — cleanly separated on the scree elbow below.
+              </p>
+            </div>
+
+            <div class="anno-card teal">
+              <div class="anno-head">3. Exact Immunological Hotspots</div>
+              <p>
+                <strong>K206, K230, K300</strong> map onto Domain I antigenic-escape loops around the hydrophobic trough; <strong>E405</strong> (DII) &amp; <strong>D493</strong> (DIII) mark distal antibody targets.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" alt="BRC Analytics" class="slide-logo" />
+        <div class="slide-footer">Act 3b · PrimAeon Episodic Selection</div>
+      </div>
+      <aside class="notes">
+        Within seconds of dropping our live Galaxy AMA1 alignment into PrimAeon, the browser computes tree-free episodic selection across all 622 codons with zero warnings or manual alignment repairs. Six sites jump clearly above the top-5-percent threshold: D36, K206, K230, K300, E405, and D493 — pinning down the exact Domain I escape loops and Domain II/III antibody-evasion hotspots known to drive strain-specific immunity.
+      </aside>
+    </section>
+
+    <!-- ==================== SLIDE 11: ACT 3C — PRIMAEON EPISTASIS NETWORK ==================== -->
+    <section>
+      <div class="slide">
+        <div class="slide-head-row">
+          <h2 class="slide-title">PrimAeon WASM: Co-Selection (Epistasis) Network</h2>
+          <span class="act-badge gold">Act 3c · Epistasis</span>
+        </div>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="align-items: center;">
+          <div class="col" style="flex: 1.32;">
+            <div class="hero-frame">
+              <img src="demo-assets/walkthrough/primaeon-epistasis-alt.png" alt="Live PrimAeon Figure 3 co-selection network showing 110 co-selected pairs across 42 AMA1 sites forming 2 sectors" style="max-height: 455px;" />
+              <div class="hero-caption">Live PrimAeon Figure 3 — 110 co-selected pairs over 42 sites, 2 modularity sectors (1,000 permutations)</div>
+            </div>
+          </div>
+
+          <div class="col anno-stack" style="flex: 0.72;">
+            <div class="anno-card navy">
+              <div class="anno-head">1. Escape Residues Travel in Pairs</div>
+              <p>
+                Scroll down one screen: PrimAeon maps <strong>110 significant co-selection edges</strong> across 42 sites (<span class="mono">BH q &le; 0.05</span>, <span class="mono">CESI &ge; 2.0</span>).
+              </p>
+            </div>
+
+            <div class="anno-card">
+              <div class="anno-head">2. Cross-Domain Coupling</div>
+              <p>
+                Top ranked edges bridge structural domains: <strong><span class="mono">S283&harr;K300</span></strong>, <strong><span class="mono">D200&harr;K405</span></strong>, <strong><span class="mono">E206&harr;K405</span></strong> (DI&harr;DII), and <strong><span class="mono">K485&harr;D493</span></strong> (DIII).
+              </p>
+            </div>
+
+            <div class="anno-card teal">
+              <div class="anno-head">3. Structural Compensation</div>
+              <p>
+                AMA1 cannot mutate surface loops freely without disturbing the RON2-binding cleft — epistatic partner mutations stabilize escape alleles.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" alt="BRC Analytics" class="slide-logo" />
+        <div class="slide-footer">Act 3c · Co-Selection &amp; Sectors</div>
+      </div>
+      <aside class="notes">
+        Scrolling down inside the exact same browser report reveals Section 3: the co-selection and epistasis network. PrimAeon identifies 110 statistically validated co-selected pairs across 42 AMA1 sites organized into two sectors — linking Domain I cluster-1 escape positions like D200 and E206 directly to K405 in Domain II, and K485 to D493 in Domain III. Antigenic escape mutations travel as coordinated structural cassettes rather than isolated point changes.
+      </aside>
+    </section>
+
+    <!-- ==================== SLIDE 12: ACT 3D — DIGITAL DEEP MUTATIONAL SCAN ==================== -->
+    <section>
+      <div class="slide">
+        <div class="slide-head-row">
+          <h2 class="slide-title">PrimAeon WASM: Digital Deep Mutational Scan</h2>
+          <span class="act-badge gold">Act 3d · Digital DMS</span>
+        </div>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="align-items: center;">
+          <div class="col" style="flex: 1.32;">
+            <div class="hero-frame">
+              <img src="demo-assets/walkthrough/primaeon-dms-complete.png" alt="Live PrimAeon Figure 6 Digital Deep Mutational Scan across 622 AMA1 codons x 19 amino acid substitutions (11,818 in-silico mutants)" style="max-height: 455px;" />
+              <div class="hero-caption">Live PrimAeon Figure 6 — 622 codons &times; 19 substitutions = 11,818 in-silico mutants scored locally</div>
+            </div>
+          </div>
+
+          <div class="col anno-stack" style="flex: 0.72;">
+            <div class="anno-card">
+              <div class="anno-head">1. Saturation Mutagenesis in Browser</div>
+              <p>
+                Every wild-type AMA1 residue is substituted in silico to all <strong>19 alternate amino acids</strong> — measuring <span class="mono">&Delta;LRT</span> and intrinsic plasticity across the entire protein.
+              </p>
+            </div>
+
+            <div class="anno-card teal">
+              <div class="anno-head">2. Plastic Loops vs. Locked Core</div>
+              <p>
+                Bright purple tracks mark <strong>structurally plastic surface sites</strong> free to escape immunity; pale/grey spans mark <strong>locked core &amp; disulfide anchors</strong>.
+              </p>
+            </div>
+
+            <div class="anno-card navy">
+              <div class="anno-head">3. Vaccine Target Prioritization</div>
+              <p>
+                Click any column to inspect all 19 mutant effects — pinpointing evolutionarily constrained epitopes hardest for the parasite to escape.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" alt="BRC Analytics" class="slide-logo" />
+        <div class="slide-footer">Act 3d · Digital DMS (11,818 Mutants)</div>
+      </div>
+      <aside class="notes">
+        Further down the same browser report, PrimAeon performs an in-silico Digital Deep Mutational Scan — testing all 11,818 single-amino-acid substitutions across the 622 codons of AMA1 locally in WebAssembly. The top track summarizes intrinsic plasticity per site, separating mutationally tolerant surface loops from rigid conserved core residues and disulfide-bonded structural scaffolds — giving vaccine designers a rapid map of where escape is cheap versus structurally costly.
+      </aside>
+    </section>
+
+    <!-- ==================== SLIDE 13: ACT 4A — RHIZAEON AMA1 LANDSCAPE ==================== -->
+    <section>
+      <div class="slide">
+        <div class="slide-head-row">
+          <h2 class="slide-title">RhizAeon on Galaxy: AMA1 Intragenic Recombination</h2>
+          <span class="act-badge">Act 4a · Hotspots</span>
+        </div>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="align-items: center;">
+          <div class="col" style="flex: 1.35;">
+            <div class="hero-frame">
+              <img src="demo-assets/walkthrough/ama1-rhizaeon-landscape.png" alt="Live Galaxy RhizAeon dashboard on AMA1 showing 2 verified breakpoints, +5.31 Z, and sharp hotspots at nt 734 and nt 1,534" style="max-height: 455px;" />
+              <div class="hero-caption">Live Galaxy dataset #22 — AMA1 <span class="mono">RhizAeon v0.1.6</span> HTML report (5.4 s compute; contrast with flat Kelch13)</div>
+            </div>
+          </div>
+
+          <div class="col anno-stack" style="flex: 0.68;">
+            <div class="anno-card red">
+              <div class="anno-head">1. +5.31 Z vs. +0.00 Z in Kelch13</div>
+              <p>
+                Same Galaxy UDT detects <strong>2 verified cohort breakpoints</strong> (<span class="mono">p = 2.88&times;10<sup>&minus;8</sup></span>) across 6 mosaic recombinants &amp; 144 clonal lineages.
+              </p>
+            </div>
+
+            <div class="anno-card">
+              <div class="anno-head">2. Exact Structural Coordinates</div>
+              <p>
+                <strong>nt 736 (aa 245)</strong> splits <strong>inside Domain I</strong> right past escape loop c1L; <strong>nt 1,535 (aa 511)</strong> sits <strong>inside Domain III</strong> upstream of the conserved C-terminal tail.
+              </p>
+            </div>
+
+            <div class="anno-card teal">
+              <div class="anno-head">3. Classic Malaria Literature Confirmed</div>
+              <p>
+                Recovers the high intragenic recombination &amp; epitope mosaicism shown by <strong>Polley &amp; Conway (2001)</strong> and <strong>Takala et al. (2009)</strong> directly from raw SRA.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" alt="BRC Analytics" class="slide-logo" />
+        <div class="slide-footer">Act 4a · RhizAeon AMA1 Landscape</div>
+      </div>
+      <aside class="notes">
+        Act 4 opens Galaxy dataset #22 — the live RhizAeon interactive HTML report on AMA1. Compare this immediately to the flat blue Kelch13 control we saw five slides ago: here two razor-sharp orange hotspot peaks erupt at nucleotide 736 (codon 245, inside Domain I right downstream of the hyper-variable cluster-1 escape loop) and nucleotide 1,535 (codon 511, inside Domain III just before the conserved transmembrane tail), at plus-5.31 Z and Fisher p equals 2.88 times 10 to the minus 8 — confirming the classic intragenic recombination and mosaicism established by Polley and Conway and Takala et al.
+      </aside>
+    </section>
+
+    <!-- ==================== SLIDE 14: ACT 4B — RHIZAEON MOSAIC DRILL-DOWN ==================== -->
+    <section>
+      <div class="slide">
+        <div class="slide-head-row">
+          <h2 class="slide-title">RhizAeon Zoom: Mosaic Alignment &amp; Signal Proof</h2>
+          <span class="act-badge">Act 4b · Mosaic Proof</span>
+        </div>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="align-items: center;">
+          <div class="col" style="flex: 1.35;">
+            <div class="hero-frame">
+              <img src="demo-assets/walkthrough/ama1-rhizaeon-mosaic.png" alt="Zoomed RhizAeon Cohort Mosaic Alignment Matrix showing 6 orange-blue-orange recombinants above Donor 1 and Donor 2 plus multi-channel likelihood plateaus and SNP rug" style="max-height: 455px;" />
+              <div class="hero-caption">Live Galaxy RhizAeon Section 2 &amp; 3 — clicked focal recombinant audited across 35 informative SNPs</div>
+            </div>
+          </div>
+
+          <div class="col anno-stack" style="flex: 0.68;">
+            <div class="anno-card">
+              <div class="anno-head">1. Six Mosaic Haplotypes Boxed in Red</div>
+              <p>
+                Orange flanks match <strong>Donor 1 (<span class="mono">L189H</span> backbone, d = 0.001)</strong>; the <strong>800-nt blue interior tract</strong> jumps cleanly to <strong>Donor 2 (<span class="mono">D36N</span> lineage, d = 0.009)</strong>.
+              </p>
+            </div>
+
+            <div class="anno-card navy">
+              <div class="anno-head">2. Physical Likelihood Plateaus</div>
+              <p>
+                Gold shaded bands (<span class="mono">nt 727–799</span> &amp; <span class="mono">nt 1,508–1,632</span>) show the exact uninformative-SNP uncertainty floor around each breakpoint.
+              </p>
+            </div>
+
+            <div class="anno-card teal">
+              <div class="anno-head">3. SNP-by-SNP Audit Track</div>
+              <p>
+                Bottom segregating-site rug colors every SNP orange (matches P1) vs. blue (matches P2) — full visual verification in one click.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" alt="BRC Analytics" class="slide-logo" />
+        <div class="slide-footer">Act 4b · RhizAeon Mosaic Drill-Down</div>
+      </div>
+      <aside class="notes">
+        Clicking any recombinant row inside the Galaxy HTML dashboard brings up this exact audit view. At the top, six recombinant haplotypes display orange flanks matching Donor 1 surrounding an 800-nucleotide blue interior tract derived from Donor 2, with the two parental donors right underneath. Below, the synchronized signal inspector overlays the log-likelihood surface, exact gold uncertainty plateaus from nucleotides 727 to 799 and 1508 to 1632, and the SNP-by-SNP rug proving the crossover across 35 informative sites.
+      </aside>
+    </section>
+
+    <!-- ==================== SLIDE 15: ACT 4C — BUSHWHACKER WASM NETWORK ==================== -->
+    <section>
+      <div class="slide">
+        <div class="slide-head-row">
+          <h2 class="slide-title">BUSHWHACKER WASM: Cross-Clade Mosaic (155 ms)</h2>
+          <span class="act-badge">Act 4c · Reticulate Shunts</span>
+        </div>
+        <div class="title-divider"></div>
+
+        <div class="cols" style="align-items: center;">
+          <div class="col" style="flex: 1.35;">
+            <div class="hero-frame">
+              <img src="demo-assets/walkthrough/bushwhacker-live-top.png" alt="Live BUSHWHACKER Rust WASM output on Galaxy AMA1 alignment showing 6 clades, 76 splits, 21 polytomies, and 26 dashed red convergent shunts computed in 155 ms" style="max-height: 455px;" />
+              <div class="hero-caption">Live <span class="mono">veg.github.io/bushwhacker</span> run on Galaxy's AMA1 alignment — 155 ms in Rust WASM, zero server upload</div>
+            </div>
+          </div>
+
+          <div class="col anno-stack" style="flex: 0.68;">
+            <div class="anno-card red">
+              <div class="anno-head">1. 26 Non-Tree Shunts (+73.65 nats)</div>
+              <p>
+                Red dashed cross-clade arcs rescue <strong>36.4% compression gain</strong> (21,950 &rarr; 13,882 nats) across 6 clades, 76 splits, and 21 polytomies.
+              </p>
+            </div>
+
+            <div class="anno-card">
+              <div class="anno-head">2. Top Shunt Hits Loop c1L Directly</div>
+              <p>
+                Strongest shunt (<strong>+7.94 nats, P = 99.96%</strong>) connects distant clades specifically at <strong>codons 173, 199, 207, 228</strong> — squarely inside the Domain I immune-escape loop.
+              </p>
+            </div>
+
+            <div class="anno-card teal">
+              <div class="anno-head">3. Why Single Trees Mislead on AMA1</div>
+              <p>
+                BUSHWHACKER keeps honest polytomies and peels reticulate shunts explicitly — revealing horizontal sharing in <strong>155 milliseconds</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" alt="BRC Analytics" class="slide-logo" />
+        <div class="slide-footer">Act 4c · BUSHWHACKER WASM Shunts</div>
+      </div>
+      <aside class="notes">
+        Finally, we drop the exact same live Galaxy AMA1 alignment into BUSHWHACKER in the browser. In just 155 milliseconds of local Rust WebAssembly, BUSHWHACKER builds a six-clade backbone with 76 supported splits and 21 honest polytomies, then peels 26 non-tree reticulate shunts saving 73.65 nats of model description length. Even better, inspecting the top shunt (+7.94 nats, 99.96 percent posterior support) pinpoints codons 173, 199, 207, and 228 — right inside AMA1's Domain I cluster-1 escape loop.
+      </aside>
+    </section>
+
+    <!-- ==================== SLIDE 16: SYNTHESIS TAKE-HOME ==================== -->
+    <section>
+      <div class="slide">
+        <div class="slide-head-row">
+          <h2 class="slide-title">What Just Happened — Without Leaving the Browser</h2>
+          <span class="act-badge">Summary</span>
+        </div>
+        <div class="title-divider"></div>
+
+        <div class="card-grid cols-3" style="margin-bottom: 20px;">
+          <div class="card top-navy" style="padding: 20px 22px;">
+            <div class="kicker" style="margin-bottom: 4px; color: var(--navy);">1 · Agentic &amp; Custom</div>
+            <div class="card-head" style="font-size: 19px;">MCP + Orbit + UDTs</div>
+            <div class="card-label" style="font-size: 15.5px;">
+              Any AI harness connects to BRC &amp; Galaxy, wraps brand-new BioContainers as native <strong>User-Defined Tools</strong>, and saves 1-click reproducible workflows.
+            </div>
+          </div>
+
+          <div class="card top-teal" style="padding: 20px 22px;">
+            <div class="kicker" style="margin-bottom: 4px; color: var(--teal);">2 · Archive-Wide Scale</div>
+            <div class="card-head" style="font-size: 19px;">38.1M SRA Runs &rarr; Clean CDS</div>
+            <div class="card-label" style="font-size: 15.5px;">
+              <strong>Logan</strong> + <strong>disassembler</strong> screened <strong>170k+ malaria archive hits</strong> into stop-free coding cohorts in ~1 minute — zero metadata trust required.
+            </div>
+          </div>
+
+          <div class="card top-accent" style="padding: 20px 22px;">
+            <div class="kicker" style="margin-bottom: 4px; color: var(--accent);">3 · Zero-Install Depth</div>
+            <div class="card-head" style="font-size: 19px;">Galaxy HTML + Browser WASM</div>
+            <div class="card-label" style="font-size: 15.5px;">
+              Cleanly separated a clonal drug sweep (<strong>Kelch13</strong>: 34.5% WT, 0 breakpoints) from recombinant immune evasion (<strong>AMA1</strong>: 8.9% WT, +5.31 Z, 26 shunts).
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-strip" style="margin-bottom: 18px;">
+          <div class="mini-stat teal">
+            <div class="num">22 / 22</div>
+            <div class="lbl">Live Galaxy Showcase Datasets Green</div>
+          </div>
+          <div class="mini-stat">
+            <div class="num">11,818</div>
+            <div class="lbl">In-Silico AMA1 Mutants Scored in Browser</div>
+          </div>
+          <div class="mini-stat navy">
+            <div class="num">155 ms</div>
+            <div class="lbl">BUSHWHACKER Full Mosaic Network in WASM</div>
+          </div>
+        </div>
+
+        <div class="callout-dark">
+          <div class="label">The Bottom Line for Pathogen Biologists</div>
+          <p class="body">
+            Drop a gene sequence into Galaxy, run one workflow, and move from <strong>planetary raw reads to resistance sweeps, epistasis networks, Digital DMS, and mosaic recombination proof</strong> before your coffee cools.
+          </p>
+        </div>
+
+        <img src="brc-logo.png" alt="BRC Analytics" class="slide-logo" />
+        <div class="slide-footer">Summary · End-to-End Malaria Pipeline</div>
+      </div>
+      <aside class="notes">
+        To wrap up: everything you just saw ran end-to-end across public infrastructure with zero local installation. Agentic MCP and Galaxy UDTs bridged new containers directly onto usegalaxy.org; Logan and disassembler turned 170,000 raw SRA hits into stop-free coding alignments in about a minute; and RhizAeon, PrimAeon, and BUSHWHACKER cleanly separated Kelch13's clonal sweep from AMA1's episodic selection, epistasis, plasticity, and intragenic mosaicism.
+      </aside>
+    </section>
+
+    <!-- ==================== SLIDE 17: TRY IT TODAY (QR HUB) ==================== -->
+    <section>
+      <div class="slide">
+        <div class="slide-head-row">
+          <h2 class="slide-title">Try the Entire Pipeline Today</h2>
+          <span class="act-badge gold">Resources &amp; QR Links</span>
+        </div>
+        <div class="title-divider"></div>
+
+        <p class="lead-copy" style="margin-bottom: 20px;">
+          Every component in this walkthrough is open-source and live now — scan below to connect your AI agent, request UDT beta access, query Logan, or run WASM tools in your browser.
+        </p>
+
+        <div class="qr-grid" style="margin-bottom: 22px;">
+          <div class="qr-card">
+            <img src="qr-agents-hub.svg" alt="Agentic Galaxy Hub QR" />
+            <div class="qr-title">Agentic Galaxy</div>
+            <div class="qr-desc">galaxyproject.org/agents<br/>6 AI harnesses + MCP</div>
+          </div>
+
+          <div class="qr-card teal">
+            <img src="qr-orbit.svg" alt="Orbit Desktop QR" />
+            <div class="qr-title">Orbit Desktop</div>
+            <div class="qr-desc">Zero-terminal Galaxy workbench</div>
+          </div>
+
+          <div class="qr-card gold">
+            <img src="qr-udt-signup.svg" alt="UDT Signup QR" />
+            <div class="qr-title">UDT Beta Access</div>
+            <div class="qr-desc">Run custom containers on usegalaxy.org</div>
+          </div>
+
+          <div class="qr-card">
+            <img src="qr-logan-search.svg" alt="Logan Search QR" />
+            <div class="qr-title">Logan Search</div>
+            <div class="qr-desc">Query 38.1M SRA assemblies</div>
+          </div>
+
+          <div class="qr-card teal">
+            <img src="qr-disassembler.svg" alt="disassembler QR" />
+            <div class="qr-title">disassembler</div>
+            <div class="qr-desc">Archive hits &rarr; stop-free CDS</div>
+          </div>
+
+          <div class="qr-card gold">
+            <img src="qr-primaeon.svg" alt="PrimAeon QR" />
+            <div class="qr-title">PrimAeon WASM</div>
+            <div class="qr-desc">Selection, epistasis &amp; Digital DMS</div>
+          </div>
+        </div>
+
+        <div class="callout-dark" style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+          <div>
+            <div class="label">BRC Analytics · Galaxy Project · HyPhy / Aeon Team</div>
+            <p class="body" style="font-size: 16px;">
+              <strong>brc-analytics.org</strong> &nbsp;&middot;&nbsp; <strong>usegalaxy.org</strong> &nbsp;&middot;&nbsp; <strong>veg.github.io/primaeon</strong> &nbsp;&middot;&nbsp; <strong>veg.github.io/bushwhacker</strong>
+            </p>
+          </div>
+          <div style="text-align: right; font-size: 14px; color: #D2D5E6; white-space: nowrap;">
+            Anton Nekrutenko · Penn State<br/>ASTMH 2026
+          </div>
+        </div>
+
+        <img src="brc-logo.png" alt="BRC Analytics" class="slide-logo" />
+        <div class="slide-footer">Thank You · Try It Today</div>
+      </div>
+      <aside class="notes">
+        Every tool, workflow, and container shown in this walkthrough is open-source and available right now. Scan any of these six QR codes to set up Agentic Galaxy, install Orbit, request User-Defined Tools access on usegalaxy.org, search Logan, or run PrimAeon directly in your browser. Thank you — happy to take questions.
+      </aside>
+    </section>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    slideNumber: 'c/t',
+    transition: 'fade',
+    controls: true,
+    progress: true,
+    width: 1280,
+    height: 760,
+    margin: 0.04,
+    plugins: [ RevealNotes ]
+  });
+</script>
+</body>
+</html>
