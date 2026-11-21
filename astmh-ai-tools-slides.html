@@ -567,31 +567,19 @@
         <h2 class="slide-title">Where Does AI Fit in Our Work?</h2>
         <div class="title-divider"></div>
 
-        <p class="emph" style="margin-bottom: 26px;">
+        <p class="emph" style="margin-bottom: 22px;">
           AI is all around us — and we're all figuring out <span class="hl">how it fits into scientific work</span>.
         </p>
 
-        <div class="cols" style="margin-bottom: 26px;">
+        <div class="cols" style="margin-bottom: 22px;">
           <div class="col">
-            <div class="section-label" style="margin-top:0;">A concrete failure mode, from our preprint</div>
+            <div class="section-label" style="margin-top:0;">Every position in the room</div>
             <ul class="clean">
-              <li>We gave <strong>30 unguided agents</strong> the same dataset on their own machines</li>
-              <li>They splintered into <strong>18 incompatible pipelines</strong></li>
-              <li>Disposable scripts, no shared record — <strong>nothing to check, nothing to rerun</strong></li>
+              <li><strong>Enthusiasts, skeptics, and everyone in between</strong> — the room doesn't have to agree</li>
+              <li>What's needed is a <strong>scientific approach to the question itself</strong>: evaluate model behavior, identify patterns and failure modes, <strong>systematically mitigate the risks</strong></li>
             </ul>
           </div>
-          <div class="col" style="flex: 0 0 420px; display: flex; gap: 24px; align-items: center;">
-            <div style="display: flex; gap: 12px; align-items: stretch;">
-              <div class="stat" style="padding: 16px 20px;">
-                <div class="stat-num" style="font-size: 44px;">30</div>
-                <div class="stat-label" style="font-size: 12px;">agents</div>
-              </div>
-              <div class="between-arrow" style="font-size: 22px;"><i class="fa-solid fa-arrow-right"></i></div>
-              <div class="stat" style="padding: 16px 20px;">
-                <div class="stat-num" style="font-size: 44px;">18</div>
-                <div class="stat-label" style="font-size: 12px;">incompatible<br/>pipelines</div>
-              </div>
-            </div>
+          <div class="col" style="flex: 0 0 200px; display: flex; align-items: center; justify-content: center;">
             <div class="qr-block">
               <img src="qr-preprint.svg" alt="Preprint QR" />
               <div class="qr-label">bioRxiv<br/>2026.10.26.761864</div>
@@ -609,79 +597,131 @@
         <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
         <div class="slide-footer">Motivation</div>
       </div>
-      <aside class="notes">There's a real range of responses to AI in the room — say it, don't put it on the slide. The preprint experiment is the concrete, non-vibe evidence: 30 unguided local agents → 18 incompatible pipelines on the same dataset, no trail. QR + full citation on the slide so skeptics can check it themselves.</aside>
+      <aside class="notes">Name the room out loud — enthusiasts, skeptics, everyone between; we don't need agreement, we need evidence. The preprint is the scientific approach applied to the question itself: measure agent behavior, find failure modes, mitigate. QR + full citation so anyone can check.</aside>
     </section>
 
-    <!-- ============ 3. The middle ground ============ -->
+    <!-- ============ 3. Alluvial: thirty agents ============ -->
     <section>
       <div class="slide">
-        <h2 class="slide-title">The Middle Ground: Agents on Public Infrastructure</h2>
+        <h2 class="slide-title">Thirty Agents, One Dataset</h2>
         <div class="title-divider"></div>
 
-        <div class="cols" style="margin-bottom: 24px;">
-          <div class="col">
-            <div class="section-label" style="margin-top:0;">Instead of improvising on a laptop</div>
-            <ul class="clean">
-              <li>Agentic work runs on <strong>shared, record-keeping infrastructure</strong> — what Galaxy has provided for 20+ years</li>
-              <li>BRC Analytics layers <strong>curated pathogen data + workflows</strong> on top</li>
-            </ul>
+        <img src="agent-alluvial.png" alt="Alluvial diagram tracing the pipeline choices of 30 agents" style="display:block; margin: 0 auto; max-width: 100%; max-height: 470px;" />
 
-            <div class="section-label">Every agent action leaves a trail</div>
-            <ul class="clean" style="margin-bottom: 0;">
-              <li>Tool versions, parameters, intermediate datasets, visual workflow</li>
-              <li>Auditable by the scientist, the advisor, <strong>the reviewer</strong></li>
-            </ul>
-          </div>
-          <div class="col" style="flex: 0 0 360px; display: flex; align-items: center;">
-            <div class="callout-dark" style="width: 100%;">
-              <div class="label">Design principle</div>
-              <p class="body">Put the agent <strong style="color:var(--highlight);">where the record lives</strong>. Everything in this talk follows from that.</p>
+        <p style="text-align:center; font-size: 22px; color: var(--navy-soft); margin: 18px 0 10px;">
+          <strong>30 agents</strong> produced <strong>18 incompatible pipelines</strong> — and they ran on <strong>local, unverified scripts</strong>.
+        </p>
+
+        <p class="small" style="text-align:center;">Planning cohort, n=30 — bold ribbons trace one representative trajectory per model family. Figure: <em>Verifiable Agentic Science on Public Infrastructure</em> (bioRxiv 2026.10.26.761864).</p>
+
+        <div class="slide-footer">Motivation</div>
+      </div>
+      <aside class="notes">Slow down on the diagram: three model families, one planning cohort — the ribbons splinter at nearly every decision point (reference genome, engine, trimmer, aligner, counted feature, model scope). 30 agents, 18 incompatible pipelines, all on local unverified scripts. The punchline is printed under the figure.</aside>
+    </section>
+
+    <!-- ============ 4. What verification caught ============ -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">What the Trail Actually Caught</h2>
+        <div class="title-divider"></div>
+
+        <p class="emph" style="margin-bottom: 22px;">
+          Zoom in on those ribbons — <span class="hl">every fork is a silent, consequential choice</span>.
+        </p>
+
+        <div class="card-grid cols-3" style="margin-bottom: 20px;">
+          <div class="card accent" style="min-height: 0;">
+            <i class="fa-solid fa-dna card-icon"></i>
+            <div class="card-label" style="font-size: 15px;">The wrong-organism ribbon<br/>
+              <span style="font-weight: 400; color: var(--white); opacity: 0.85; font-size: 13px;">One plan's "<em>B. cereus</em> ATCC&nbsp;10987" was actually <em>Salmonella</em> SC-B67 (GCF_000008105.1) — a mislabeled accession. And between <em>valid</em> assemblies: anQ-h4 lacks the cytK2 toxin locus entirely, so the toxin reads "undetected" vs. actively transcribed.</span>
             </div>
+          </div>
+          <div class="card accent" style="min-height: 0;">
+            <i class="fa-solid fa-screwdriver-wrench card-icon"></i>
+            <div class="card-label" style="font-size: 15px;">The tool-stack splinter<br/>
+              <span style="font-weight: 400; color: var(--white); opacity: 0.85; font-size: 13px;">Engines ranged from custom Nextflow to ad-hoc Bash/R; aligners split HISAT2 / Bowtie2 / Kallisto; rRNA handling diverged on SortMeRNA. Four plans silently reversed library strandedness — real transcripts miscounted.</span>
+            </div>
+          </div>
+          <div class="card accent" style="min-height: 0;">
+            <i class="fa-solid fa-chart-column card-icon"></i>
+            <div class="card-label" style="font-size: 15px;">The major fork: model scope<br/>
+              <span style="font-weight: 400; color: var(--white); opacity: 0.85; font-size: 13px;">18 plans analyzed only the 5 target replicates; the rest — including all 10 Claude plans — pooled all 19 libraries to estimate variance. Same data, different statistical power, different DEG calls.</span>
+            </div>
+          </div>
+        </div>
+
+        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
+        <div class="slide-footer">Evidence</div>
+      </div>
+      <aside class="notes">Zoom-in slide — point back at the alluvial for each card. First fork: one Gemini plan's 'ATCC 10987' was actually Salmonella SC-B67 — wrong genus, every coordinate downstream invalid. Even between valid assemblies, anQ-h4 simply lacks the cytK2 locus, so the same data reads 'toxin undetected' or 'actively transcribed' depending on that one ribbon. Middle: the tool stacks splinter — custom Nextflow, ad-hoc Bash/R, three different aligners — and four plans silently flipped strandedness. Right: the major fork, model scope — 18 plans on the 5 target samples, the rest pooled all 19 for variance. 18 distinct workflows, 29 of 30 differ from the published one. This is what 'unverifiable' looks like concretely.</aside>
+    </section>
+
+    <!-- ============ 5. Failure modes -> guardrails ============ -->
+    <section>
+      <div class="slide">
+        <h2 class="slide-title">Two Failure Modes, Two Guardrails</h2>
+        <div class="title-divider"></div>
+
+        <p class="emph" style="margin-bottom: 24px;">
+          The splintering isn't random — <span class="hl">each failure mode maps to a mitigation</span>.
+        </p>
+
+        <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 18px; align-items: stretch;">
+          <div class="section-label" style="margin: 0;">Failure modes</div>
+          <div></div>
+          <div class="section-label" style="margin: 0;">Guardrails</div>
+
+          <div class="callout-light" style="background: var(--panel);">
+            <div class="label">Consistency</div>
+            <p class="body">Faced with ambiguous choices, agents diverge — <strong>same dataset, 18 incompatible pipelines</strong>.</p>
+          </div>
+          <div class="pipe-arrow" style="align-self: center; font-size: 24px;"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="callout-dark">
+            <div class="label">BRC Analytics + GTN</div>
+            <p class="body">Strong curation — curated organisms, assemblies, vetted workflows, and training materials, so the agent starts on checked ground.</p>
+          </div>
+
+          <div class="callout-light" style="background: var(--panel);">
+            <div class="label">Traceability</div>
+            <p class="body">Disposable local scripts — <strong>no record of versions, parameters, or steps</strong>. Nothing to check, nothing to rerun.</p>
+          </div>
+          <div class="pipe-arrow" style="align-self: center; font-size: 24px;"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="callout-dark">
+            <div class="label">Galaxy</div>
+            <p class="body">Execution on public infrastructure — every action provenance-tracked, every run shareable and auditable.</p>
           </div>
         </div>
 
         <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
         <div class="slide-footer">Motivation</div>
       </div>
-      <aside class="notes">This is the middle ground: don't fight AI adoption — route it onto infrastructure where every step is on the record.</aside>
+      <aside class="notes">Two identifiable failure modes → two mitigations. Consistency under ambiguity is a curation problem — that's BRC Analytics. Traceability is an infrastructure problem — that's Galaxy's 20 years of provenance-tracked execution. This is the middle ground: don't fight adoption, route the work where the record lives.</aside>
     </section>
 
-    <!-- ============ 4. Three doors ============ -->
+    <!-- ============ 6. Three doors ============ -->
     <section>
       <div class="slide">
         <h2 class="slide-title">Three Doors, Same Infrastructure</h2>
         <div class="title-divider"></div>
 
         <div class="card-grid cols-3" style="margin-bottom: 22px;">
-          <div class="card">
+          <div class="card accent">
             <i class="fa-solid fa-comments card-icon"></i>
             <div class="card-label">Analysis Assistant<br/>
-              <span style="font-weight: 400; color: var(--muted); font-size: 14px;">Chat embedded in the site — zero install, zero account.</span>
+              <span style="font-weight: 400; color: var(--white); opacity: 0.85; font-size: 14px;">Chat embedded in the site — zero install, zero account.</span>
             </div>
           </div>
-          <div class="card">
+          <div class="card accent">
             <i class="fa-solid fa-plug card-icon"></i>
             <div class="card-label">MCP servers<br/>
-              <span style="font-weight: 400; color: var(--muted); font-size: 14px;">Public endpoints — bring your own client and model.</span>
+              <span style="font-weight: 400; color: var(--white); opacity: 0.85; font-size: 14px;">Public endpoints — bring your own client and model.</span>
             </div>
           </div>
-          <div class="card">
+          <div class="card accent">
             <i class="fa-solid fa-diagram-project card-icon"></i>
             <div class="card-label">Orbit<br/>
-              <span style="font-weight: 400; color: var(--muted); font-size: 14px;">Agentic workbench that drafts <em>and runs</em> real workflows.</span>
+              <span style="font-weight: 400; color: var(--white); opacity: 0.85; font-size: 14px;">Agentic workbench that drafts <em>and runs</em> real workflows.</span>
             </div>
-          </div>
-        </div>
-
-        <div class="pipeline" style="margin-bottom: 22px;">
-          <div class="pipe-stage terminal">
-            <div class="pipe-title">BRC Analytics</div>
-            <div class="pipe-sub">Curated organisms → assemblies → workflows</div>
-          </div>
-          <div class="pipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          <div class="pipe-stage terminal">
-            <div class="pipe-title">Galaxy</div>
-            <div class="pipe-sub">Execution + durable, shareable history</div>
           </div>
         </div>
 
@@ -696,7 +736,7 @@
       <aside class="notes">Set up the three-way tour. Same destination regardless of door: BRC curation on top, Galaxy execution underneath.</aside>
     </section>
 
-    <!-- ============ 5. Analysis Assistant ============ -->
+    <!-- ============ 7. Analysis Assistant ============ -->
     <section>
       <div class="slide">
         <h2 class="slide-title">Analysis Assistant — the Zero-Commitment Door</h2>
@@ -734,7 +774,7 @@
       <aside class="notes">Emphasize the handoff — the assistant navigates and plumbs; the actual compute is real tools in a public history.</aside>
     </section>
 
-    <!-- ============ 6. Assistant vignette ============ -->
+    <!-- ============ 8. Assistant vignette ============ -->
     <section>
       <div class="slide" style="padding-top: 45px;">
         <h2 class="slide-title" style="margin-bottom: 8px;">What a Session Looks Like</h2>
@@ -750,7 +790,7 @@
       <aside class="notes">Real session, actual site. The opening question — K13 variation in P. falciparum 3D7 — gets organism confirmation, the right reference assembly (of 27 available), and the start of the workflow recommendation. Point at the Analysis Setup panel: 0/7 configured at the start — it fills in as the conversation decides things. The powered-by line at the bottom is worth a sentence for the skeptics: the model is named, the data handling is stated.</aside>
     </section>
 
-    <!-- ============ 7. Assistant vignette II ============ -->
+    <!-- ============ 9. Assistant vignette II ============ -->
     <section>
       <div class="slide" style="padding-top: 45px;">
         <h2 class="slide-title" style="margin-bottom: 8px;">What a Session Looks Like</h2>
@@ -766,7 +806,7 @@
       <aside class="notes">Same session, further along — the refinement beat. 'A small amount of public data to test the suggested workflow' gets a real table: recent P. falciparum WGS runs from Burkina Faso with sizes, and a smallest-first recommendation for a quick pipeline test. The beat to point at is the right panel: Analysis Setup has moved to 2/7 — Workflow and Data Characteristics done. The checklist is the handoff forming in real time.</aside>
     </section>
 
-    <!-- ============ 8. MCP: two servers ============ -->
+    <!-- ============ 10. MCP: two servers ============ -->
     <section>
       <div class="slide">
         <h2 class="slide-title">MCP — Two Servers: What vs Where</h2>
@@ -810,7 +850,7 @@
       <aside class="notes">For the already-bought-in crowd: keep your client — Claude Code, Codex, Antigravity, or a local model. BRC MCP is hosted + public; Galaxy MCP installs via uvx and points at a Galaxy instance. The guardrail is that BRC curation — not just raw tools — is what the agent sees.</aside>
     </section>
 
-    <!-- ============ 9. Orbit ============ -->
+    <!-- ============ 11. Orbit ============ -->
     <section>
       <div class="slide">
         <h2 class="slide-title">Orbit — Agentic Workbench with a Paper Trail</h2>
@@ -849,50 +889,7 @@
       <aside class="notes">Orbit is the local-harness door — verifiable agentic science on your own machine, your own LLM. Human approval at every gate.</aside>
     </section>
 
-    <!-- ============ 10. What verification caught ============ -->
-    <section>
-      <div class="slide">
-        <h2 class="slide-title">What Verification Actually Caught</h2>
-        <div class="title-divider"></div>
-
-        <p class="emph" style="margin-bottom: 24px;">
-          In the preprint's agentic reproduction of published studies, the complete trail
-          <span class="hl">exposed problems invisible until you could check</span>.
-        </p>
-
-        <div class="card-grid cols-3" style="margin-bottom: 24px;">
-          <div class="card" style="min-height: 0;">
-            <i class="fa-solid fa-eye-slash card-icon"></i>
-            <div class="card-label" style="font-size: 16px;">Unstated modeling choices<br/>
-              <span style="font-weight: 400; color: var(--muted); font-size: 13px;">Decisions the paper never mentioned, visible only in the record</span>
-            </div>
-          </div>
-          <div class="card" style="min-height: 0;">
-            <i class="fa-solid fa-code-branch card-icon"></i>
-            <div class="card-label" style="font-size: 16px;">Reference-genome mismatches<br/>
-              <span style="font-weight: 400; color: var(--muted); font-size: 13px;">Wrong or drifting references caught by comparing histories</span>
-            </div>
-          </div>
-          <div class="card" style="min-height: 0;">
-            <i class="fa-solid fa-scissors card-icon"></i>
-            <div class="card-label" style="font-size: 16px;">Subsampled tutorial inputs<br/>
-              <span style="font-weight: 400; color: var(--muted); font-size: 13px;">Published workflows silently demoed on tiny data</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="callout-light">
-          <div class="label">Why this matters here</div>
-          <p class="body">For field and clinical pathogen work, this is the difference between <strong>"AI helped"</strong> and <strong>"I trust this result."</strong></p>
-        </div>
-
-        <img src="brc-logo.png" class="slide-logo" alt="BRC Analytics" />
-        <div class="slide-footer">Evidence</div>
-      </div>
-      <aside class="notes">Payoff slide — verification isn't abstract virtue; it caught real problems in real published studies.</aside>
-    </section>
-
-    <!-- ============ 11. Where the three fit ============ -->
+    <!-- ============ 12. Where the three fit ============ -->
     <section>
       <div class="slide">
         <h2 class="slide-title">Where the Three Fit</h2>
@@ -949,7 +946,7 @@
       <aside class="notes">One-line summary per door: who it's for, what it touches, what it records.</aside>
     </section>
 
-    <!-- ============ 12. Takeaways ============ -->
+    <!-- ============ 13. Takeaways ============ -->
     <section>
       <div class="slide">
         <h2 class="slide-title">Takeaways</h2>
